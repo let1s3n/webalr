@@ -1,0 +1,26 @@
+//Abstracts
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+//Base
+@import "base/reset";
+@import "base/general";
+
+//Layout
+@import "layout/layout";
+
+//Components
+@import "components/components";
+@import "components/navbar";
+@import "components/footer";
+
+
+// Bootstrap Helpers
+//@import "bootstrap/scss/helpers";
+
+// Bootstrap Utilities
+@import "bootstrap/scss/utilities/api";
+
+// Pages
+@import "pages/home";
+
