@@ -161,5 +161,23 @@ $utilities: map-merge(
 
 @import "bootstrap/scss/utilities";
 
+
+
+$utilities: map-merge(
+  $utilities, (
+    "custom-font": (
+        rfs: false,
+        responsive: true,
+        property: font-size,
+        class: custom-font,
+        values: (
+          1:$font-size-base*4.375,
+          2: $font-size-base*3.5,
+          3: $font-size-base*3
+        )
+      )
+    ),
+  );
+
 @import "bootstrap/scss/root";
 

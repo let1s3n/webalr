@@ -1,0 +1,22 @@
+body{
+  background:rgb(2,0,36);
+  background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(63,65,37,1) 50%, rgba(166,172,40,1) 100%);
+  /* background-position: left top;
+  background-size:100%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.logo{
+  transition: transform 2s;
+  &:hover{
+    transform: scale(1.2);
+  }
+  /* &--big{
+    width: 200px;
+    height: auto;
+  } */
+}

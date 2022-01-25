@@ -13,9 +13,10 @@ function MyApp({ Component, pageProps }) {
  
   return (
     <SSRProvider>
-      <Layout>
+      <Component {...pageProps} />
+      {/* <Layout>
         <Component {...pageProps} />
-      </Layout>
+      </Layout> */}
     </SSRProvider>
   )
 }
