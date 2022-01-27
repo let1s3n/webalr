@@ -15,7 +15,7 @@ export default function Home() {
         <meta name="description" content="Peruanos en busca de la excelencia haciendo minería responsable." />
         <meta name="keywords" content="minera, minería, acumulación los rosales, minería responsable, minería peruana" />
       </Head>
-      <Image className="logo" src="/images/logo-alr.png" width={200} height={200} alt="ALR logo"/>
+      {/* <Image className="logo" src="/images/logo-alr-blanco.png" width={200} height={200} alt="ALR logo"/> */}
       {/* <Row xs={1} className="g-0">
         <Col className="text-center">
           <Image className="logo logo--big" src="/images/logo-alr.png" />
