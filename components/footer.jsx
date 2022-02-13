@@ -1,16 +1,16 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
-
-import { Container, Row, Col,Image} from 'react-bootstrap';
+import Image from 'next/image'
+import { Container, Row, Col} from 'react-bootstrap';
 import { ImLinkedin } from "react-icons/im";
 const Footer = () => {
 
   return (
-    <Container fluid className="main-footer position-fixed bottom-0 text-white py-3 px-2 py-lg-5 px-lg-5">
+    <Container fluid className="main-footer text-white py-3 px-2 py-lg-5 px-lg-5">
       <Row>
         <Col xs={12} lg={2} xxl={2} className="d-flex justify-content-center align-items-center">
           
-            <Image className="logo" src="/images/logo-alr.png" alt="ALR logo" />
+            <Image className="logo" src="/images/logo-alr-square.png" alt="ALR logo" width={200} height={200}/>
 
           
         </Col>

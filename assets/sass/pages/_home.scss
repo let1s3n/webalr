@@ -1,0 +1,21 @@
+.hero-section{
+  position: relative;
+  height: 729px;
+  .hero-image{
+    z-index: -1;
+  }
+  .hero-text{
+    bottom: 156px;
+    left: 35px;
+  }
+  .hero-illustration{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width:488px;
+    height:308px;
+  }
+  .carousel-inner{
+    height: 100%;
+  }
+}

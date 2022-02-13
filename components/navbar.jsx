@@ -1,39 +1,98 @@
+import React, { useState, useEffect } from "react";
 import Link from 'next/link'
-
-import { Navbar, NavDropdown, Container, Nav, Row, Col, Image, Button, Offcanvas } from 'react-bootstrap';
-
+import Image from 'next/image'
+import { Navbar, NavDropdown, Container, Nav, Row, Col, Button, Offcanvas } from 'react-bootstrap';
+import cookieCutter from 'cookie-cutter'
+import CustomModal from "./customModal";
+import CustomOffCanvas from "./customOffCanvas";
+import usePathName from "../hooks/usePathName";
 
 const NavBar = () => {
+  const [modalShow, setModalShow] = useState(false);
+  const [offCanvasShow, setOffCanvasShow] = useState(false);
+  const [locale, setLocale] = useState('');
+  const currentpath = usePathName();
+
+  useEffect(() => {
+    let cookie = cookieCutter.get('i18next');
+    setLocale(cookie);
+
+  }, [])
+
+
+  useEffect(() => {
+    console.log(currentpath)
+  }, [currentpath])
 
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-      <Container>
-        <Row>
-          <Col>
-            <Link href="/" passHref><Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand></Link>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+    <Navbar bg="blue1" className={currentpath === '/' ? "px-4 py-2 w-100 bg-opacity-70 position-absolute top-0" : "main-navbar px-4 py-2 w-100 bg-opacity-70"} expand={false} style={{ zIndex: 1 }}>
+      <Container fluid className="g-0">
+        <Row className="g-0 w-100" style={{columnGap:50+'px'}}>
+          <Col xs="auto">
+            <Link href="/" passHref>
+              <Image src="/images/logo-alr.png" alt="logo-alr" width={80} height={50} />
+            </Link>
+            <Navbar.Toggle className="d-xl-none border-0" onClick={() => setOffCanvasShow(true)} />
+            <CustomOffCanvas show={offCanvasShow} onHide={() => setOffCanvasShow(false)} />
           </Col>
-          <Col>
-            <ul className="list-unstyled m-0 d-none d-xl-flex flex-row me-auto text-white" style={{ columnGap: 2 + 'rem' }}>
+          <Col className="d-flex align-items-center justify-content-center">
+            <ul className="list-unstyled m-0 d-none d-xl-flex flex-row text-white" style={{ columnGap: 2 + 'rem' }}>
             <li>
-                <Link href="/proyectos" passHref>
-                  <Nav.Link>Proyectos</Nav.Link>
+                <Link href="/" passHref>
+                  <Nav.Link className="text-white py-2 fw-400 text-uppercase">HOME</Nav.Link>
                 </Link>
               </li>
               <li>
-                <Link href="/socios" passHref>
-                  <Nav.Link>Socios</Nav.Link>
+                <Link href="/politicas" passHref>
+                  <Nav.Link className="text-white py-2 fw-400 text-uppercase">POLÍTICAS</Nav.Link>
                 </Link>
               </li>
               <li>
                 <Link href="/nosotros" passHref>
-                  <Nav.Link>Nosotros</Nav.Link>
+                  <Nav.Link className="text-white py-2 fw-400 text-uppercase">SOBRE NOSOTROS</Nav.Link>
                 </Link>
               </li>
+              <li>
+                <Link href="/blog" passHref>
+                  <Nav.Link className="text-white py-2 fw-400 text-uppercase">BLOG</Nav.Link>
+                </Link>
+              </li>
+              <li>
+                <Link href="/contacto" passHref>
+                  <Nav.Link className="text-white py-2 fw-400 text-uppercase">CONTÁCTENOS</Nav.Link>
+                </Link>
+              </li>
+
             </ul>
           </Col>
+          <Col xs="auto" className="d-flex align-items-center">
+            <Row className="justify-content-between g-0 align-items-center">
+              <Col className="text-center">
+                <Link href="/contactanos">
+                  <Button className="customBtn--small d-flex justify-content-center align-items-center rounded-pill me-3 px-3 py-3" variant="outline-primary5">
+                    Contact us
+                  </Button>
+                </Link>
+              </Col>
+              {/* <Col className="text-center">
+                <Button className="rounded-circle p-0 border-0" variant="link" onClick={() => setModalShow(true)}>
+                  {locale === 'en' ?
+                    <Image src="/images/es-icon.svg" className="d-inline-block" style={{ width: 1.5 + 'rem' }} />
+                    :
+                    <Image src="/images/en-icon.svg" className="d-inline-block" style={{ width: 1.5 + 'rem' }} />
+                  }
+
+                </Button>
+              </Col> */}
+            </Row>
+          </Col>
         </Row>
+
       </Container>
+      <CustomModal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
     </Navbar>
   )
 }
