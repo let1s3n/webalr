@@ -26,7 +26,7 @@ function CustomModal(props) {
         </Modal.Title> */}
       </Modal.Header>
       <Modal.Body className="text-center pt-0" style={{ paddingBottom: 5 + 'rem' }}>
-        <Image className="idiomas-logo mb-2" src="/images/logo-mobile-black.svg" />
+        <Image className="idiomas-logo mb-2" src="/images/logo-alr.png" />
         <p className="mb-3 fs-md-5">
           Choose your lenguage
         </p>
@@ -52,7 +52,7 @@ function CustomModal(props) {
         overflow:hidden;
       }
         .modal-backdrop.show{
-          background-image:linear-gradient(180deg,#1C34AF 0%, #13408B 100%);
+          background-color:#427AA1;
           opacity:.9;
         }
         /* .modal-dialog{

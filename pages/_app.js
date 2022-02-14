@@ -1,22 +1,51 @@
 // import App from 'next/app'
-
+import { useState,useEffect } from 'react';
 import SSRProvider from 'react-bootstrap/SSRProvider';
 
 
-/* import '../assets/sass/app.scss' */
+import i18n from "i18next";
+import { useTranslation, initReactI18next } from "react-i18next";
+import LanguageDetector from 'i18next-browser-languagedetector';
+import HttpApi from 'i18next-http-backend';
+
+
 import Layout from '../components/layout'
-import { useEffect } from 'react';
+import Loader from '../components/loader'
+
 import '../assets/sass/app.scss'
 
+i18n
+  .use(initReactI18next)
+  .use(LanguageDetector) // passes i18n down to react-i18next
+  .use(HttpApi)
+  .init({
+    fallbackLng: "es",
+    detection: {
+      order: ['cookie', 'htmlTag', 'localStorage', 'path', 'subdomain'],
+      caches: ['cookie'],
+    },
+    backend: {
+      loadPath: `${process.env.NEXT_PUBLIC_URL}data/locales/{{lng}}/translation.json`,
+    },
+    react: { useSuspense: false },
+
+  });
 
 function MyApp({ Component, pageProps }) {
- 
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setLoading(false);
+  }, []);
   return (
     <SSRProvider>
-      {/* <Component {...pageProps} /> */}
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      {!loading ?
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+        :
+        <Loader />
+      }
     </SSRProvider>
   )
 }

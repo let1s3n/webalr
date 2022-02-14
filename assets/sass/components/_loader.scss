@@ -1,0 +1,12 @@
+.loader{
+  width: 100vw;
+  height: 100vh;
+  /* background-color:$white;
+  background-position: left top;
+  background-size:100%; */
+  z-index: 99999;
+  .logo-loader{
+    width: 200px;
+    height: 200px;
+  }
+}

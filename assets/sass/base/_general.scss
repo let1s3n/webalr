@@ -1,19 +1,9 @@
-/* body{
-  @include media-breakpoint-up(lg) {
-    
-    background-position: left top;
-  }
-  
-  background-image: url("/images/bg-planta.jpg");
-  
-  
-  background-position: center;
-  background-size:cover;
-  background-repeat: no-repeat;
-  
-  width: 100vw;
-  height: 100vh;
-} */
+body.modal-open {
+  position: fixed;
+  overflow-y: scroll !important;
+  width: 100%;
+  padding-right: 0!important;
+}
 
 .logo{
   @include media-breakpoint-up(sm) {
@@ -43,4 +33,43 @@ a{
   &:visited{
     color: unset;
   }
+}
+button{
+  &:focus{
+    box-shadow: none !important;
+    /* background-color: unset !important;
+    color:map-get($theme-colors , "primary5" ) !important; */
+  }
+}
+.carousel-indicators{
+  button{
+    border: none !important;
+  }
+}
+
+.carousel-control-next-icon{
+  background-image: url("/images/next-icon.svg") !important;
+}
+.carousel-control-prev-icon{
+  background-image: url("/images/prev-icon.svg") !important;
+}
+.carousel-control-prev,.carousel-control-next{
+  justify-content: normal !important;
+  opacity: 1 !important;
+  width: auto !important;
+}
+.carousel-control-next{
+  right: 124px !important;
+}
+.carousel-control-prev{
+  left: 62px !important;
+}
+.visually-hidden{
+  display: none;
+}
+.idiomas-logo{
+  width: 54.6px;
+}
+.dropdown-logo{
+  width: 56px;
 }

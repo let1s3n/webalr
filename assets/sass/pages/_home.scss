@@ -19,3 +19,26 @@
     height: 100%;
   }
 }
+
+.quienes-somos{
+  
+  .card{
+    flex:unset;
+    @include media-breakpoint-up(md){
+      
+      width: 389px;
+      
+    }
+    width: 100%;
+    height: 478px;
+  }
+  .card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .card-img-overlay{
+    background-color: rgba(0, 0, 0, .4);
+  }
+  
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Latina Televisión",
+    "title": "Multi OTT platform",
+    "year":2019,
+    "website":"https://www.latina.pe",
+    "necessity": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. At ipsum augue pulvinar vulputate. Vivamus malesuada augue egestas ac ultrices mollis. Cursus arcu, ut cras augue egestas ipsum. Metus sed nec lectus sed non risus morbi. Dis justo, mauris id aenean urna, ipsum. Blandit gravida ridiculus elit imperdiet pellentesque. Commodo convallis ultricies urna, arcu diam. Ipsum aliquam, eros, cras commodo. Neque dignissim quis varius mollis est commodo risus. Bibendum lacinia orci, elit eros est eget consectetur vitae. Suspendisse egestas iaculis tristique arcu, sit elementum ante feugiat. Feugiat risus sem vel lacus nisl est nibh molestie tristique. Turpis purus cras odio a tortor laoreet quis urna. Turpis non donec a sit sit volutpat sit eu etiam. Quis diam tristique nam ornare ut hendrerit vitae consequat morbi. Odio mauris cursus commodo dictumst sed turpis",
+    "solution": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget dui urna. Proin viverra nisi id est vulputate tincidunt. Vestibulum justo enim, dapibus sit amet ultrices id, varius a velit. Nunc efficitur augue eget semper ullamcorper. Curabitur quis pharetra sapien, et congue risus. Etiam a ligula quam. Praesent sagittis gravida tortor, vitae consequat leo varius ut. Aliquam posuere ipsum vitae porttitor luctus. Mauris hendrerit massa vel leo tincidunt aliquet. Phasellus orci quam, porttitor sed risus nec, euismod auctor augue.",
+    "platforms":[
+      "mobile",
+      "desktop",
+      "smartTV"
+    ],
+    "techStack":[
+      "android",
+      "apple",
+      "net",
+      "github"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "San fernando",
+    "title": "Multi OTT platform",
+    "year":2019,
+    "website":"https://www.latina.pe",
+    "necessity": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. At ipsum augue pulvinar vulputate. Vivamus malesuada augue egestas ac ultrices mollis. Cursus arcu, ut cras augue egestas ipsum. Metus sed nec lectus sed non risus morbi. Dis justo, mauris id aenean urna, ipsum. Blandit gravida ridiculus elit imperdiet pellentesque. Commodo convallis ultricies urna, arcu diam. Ipsum aliquam, eros, cras commodo. Neque dignissim quis varius mollis est commodo risus. Bibendum lacinia orci, elit eros est eget consectetur vitae. Suspendisse egestas iaculis tristique arcu, sit elementum ante feugiat. Feugiat risus sem vel lacus nisl est nibh molestie tristique. Turpis purus cras odio a tortor laoreet quis urna. Turpis non donec a sit sit volutpat sit eu etiam. Quis diam tristique nam ornare ut hendrerit vitae consequat morbi. Odio mauris cursus commodo dictumst sed turpis",
+    "solution": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget dui urna. Proin viverra nisi id est vulputate tincidunt. Vestibulum justo enim, dapibus sit amet ultrices id, varius a velit. Nunc efficitur augue eget semper ullamcorper. Curabitur quis pharetra sapien, et congue risus. Etiam a ligula quam. Praesent sagittis gravida tortor, vitae consequat leo varius ut. Aliquam posuere ipsum vitae porttitor luctus. Mauris hendrerit massa vel leo tincidunt aliquet. Phasellus orci quam, porttitor sed risus nec, euismod auctor augue.",
+    "platforms":[
+      "mobile",
+      "desktop",
+      "smartTV"
+    ],
+    "techStack":[
+      "android",
+      "apple",
+      "net",
+      "github"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Solutions",
+    "title": "Multi OTT platform",
+    "year":2019,
+    "website":"https://www.latina.pe",
+    "necessity": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. At ipsum augue pulvinar vulputate. Vivamus malesuada augue egestas ac ultrices mollis. Cursus arcu, ut cras augue egestas ipsum. Metus sed nec lectus sed non risus morbi. Dis justo, mauris id aenean urna, ipsum. Blandit gravida ridiculus elit imperdiet pellentesque. Commodo convallis ultricies urna, arcu diam. Ipsum aliquam, eros, cras commodo. Neque dignissim quis varius mollis est commodo risus. Bibendum lacinia orci, elit eros est eget consectetur vitae. Suspendisse egestas iaculis tristique arcu, sit elementum ante feugiat. Feugiat risus sem vel lacus nisl est nibh molestie tristique. Turpis purus cras odio a tortor laoreet quis urna. Turpis non donec a sit sit volutpat sit eu etiam. Quis diam tristique nam ornare ut hendrerit vitae consequat morbi. Odio mauris cursus commodo dictumst sed turpis",
+    "solution": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget dui urna. Proin viverra nisi id est vulputate tincidunt. Vestibulum justo enim, dapibus sit amet ultrices id, varius a velit. Nunc efficitur augue eget semper ullamcorper. Curabitur quis pharetra sapien, et congue risus. Etiam a ligula quam. Praesent sagittis gravida tortor, vitae consequat leo varius ut. Aliquam posuere ipsum vitae porttitor luctus. Mauris hendrerit massa vel leo tincidunt aliquet. Phasellus orci quam, porttitor sed risus nec, euismod auctor augue.",
+    "platforms":[
+      "mobile",
+      "desktop",
+      "smartTV"
+    ],
+    "techStack":[
+      "android",
+      "apple",
+      "net",
+      "github"
+    ]
+  }
+]

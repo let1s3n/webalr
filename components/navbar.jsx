@@ -28,9 +28,9 @@ const NavBar = () => {
     <Navbar bg="blue1" className={currentpath === '/' ? "px-4 py-2 w-100 bg-opacity-70 position-absolute top-0" : "main-navbar px-4 py-2 w-100 bg-opacity-70"} expand={false} style={{ zIndex: 1 }}>
       <Container fluid className="g-0">
         <Row className="g-0 w-100" style={{columnGap:50+'px'}}>
-          <Col xs="auto">
+          <Col xs="auto" className="d-flex">
             <Link href="/" passHref>
-              <Image src="/images/logo-alr.png" alt="logo-alr" width={80} height={50} />
+              <Image src="/images/logo-alr.png" alt="logo-alr" width={80} height={50} priority/>
             </Link>
             <Navbar.Toggle className="d-xl-none border-0" onClick={() => setOffCanvasShow(true)} />
             <CustomOffCanvas show={offCanvasShow} onHide={() => setOffCanvasShow(false)} />
@@ -67,23 +67,17 @@ const NavBar = () => {
           </Col>
           <Col xs="auto" className="d-flex align-items-center">
             <Row className="justify-content-between g-0 align-items-center">
+              
               <Col className="text-center">
-                <Link href="/contactanos">
-                  <Button className="customBtn--small d-flex justify-content-center align-items-center rounded-pill me-3 px-3 py-3" variant="outline-primary5">
-                    Contact us
-                  </Button>
-                </Link>
-              </Col>
-              {/* <Col className="text-center">
                 <Button className="rounded-circle p-0 border-0" variant="link" onClick={() => setModalShow(true)}>
                   {locale === 'en' ?
-                    <Image src="/images/es-icon.svg" className="d-inline-block" style={{ width: 1.5 + 'rem' }} />
+                    <Image src="/images/es-icon.svg" className="d-inline-block" width={24} height={24} />
                     :
-                    <Image src="/images/en-icon.svg" className="d-inline-block" style={{ width: 1.5 + 'rem' }} />
+                    <Image src="/images/en-icon.svg" className="d-inline-block" width={24} height={24} />
                   }
 
                 </Button>
-              </Col> */}
+              </Col>
             </Row>
           </Col>
         </Row>

@@ -7,7 +7,7 @@ const Footer = () => {
 
   return (
     <Container fluid className="main-footer text-white py-3 px-2 py-lg-5 px-lg-5">
-      <Row>
+      <Row className="g-0">
         <Col xs={12} lg={2} xxl={2} className="d-flex justify-content-center align-items-center">
           
             <Image className="logo" src="/images/logo-alr-square.png" alt="ALR logo" width={200} height={200}/>
@@ -32,7 +32,7 @@ const Footer = () => {
           </Row>
         </Col>
         <Col xs={6} lg={3} xxl={2} className="d-flex justify-content-center align-items-center">
-          <Row xs={1}>
+          <Row xs={1} className="g-0">
             <Col>
               <p className="m-0 fs-4 fw-600 text-center">Síguenos</p>
             </Col>
@@ -42,7 +42,7 @@ const Footer = () => {
           </Row>
         </Col>
         <Col xs={6} lg={3} xxl={2} className="d-flex justify-content-center align-items-center">
-          <Row xs={1}>
+          <Row xs={1} className="g-0">
             <Col className="text-center">
               <p className="m-0 fs-5">Políticas</p>
             </Col>
