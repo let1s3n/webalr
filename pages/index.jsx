@@ -1,10 +1,15 @@
+import React, { useState, useEffect } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Container, Carousel, Row, Col,CardGroup,Card } from 'react-bootstrap'
+import { Container, Carousel, Row, Col, CardGroup, Card } from 'react-bootstrap'
 import useWindowDimensions from "../hooks/useWindowDimensions";
 export default function Home() {
   const { height, width } = useWindowDimensions();
+  useEffect(() => {
+    console.log(width)
+  }, [width])
+  
   return (
     <>
       <Head>
@@ -26,6 +31,7 @@ export default function Home() {
               alt="Foto de la planta de día"
               layout="fill"
               objectFit="cover"
+              /* objectPosition={width >= 1200 ? "left top" : "center"} */
               objectPosition="left top"
               priority
             />
@@ -77,24 +83,22 @@ export default function Home() {
           <h3 className="fw-bold text-blue1 mb-5">“Somos una empresa peruana productora de metales preciosos con más de 40 años de fundada que realiza actividad minera a 4,000 msnm en Vilque Puno PERÚ”</h3>
 
         </Container>
-        <Container fluid className="bg-yellow2 bg-opacity-10 pt-17 px-11 pb-5">
-          <Row style={{ columnGap: 103 + 'px' }}>
+        <Container fluid className="bg-yellow2 bg-opacity-10 pt-5 pt-xl-17 px-5 px-xl-11 pb-5">
+          <Row style={{ columnGap: 103 + 'px', rowGap: 50 + 'px' }}>
             <Col>
-              <h3 className="mb-5">
+              <h3 className="mb-5 fs-4 fs-sm-3">
                 <span className="text-blue2">Nuestra</span><span className="text-yellow2"> Historia</span>
               </h3>
-              <p className="m-0 fs-5 fw-light lh-base" style={{ textAlign: 'justify' }}>
-                Somos una empresa peruana productora de metales preciosos con más de 40 años de fundada que realiza actividad minera a 4,000 msnm en Vilque Puno PERÚ operando Planta Metalúrgica Los Rosales de 340 TMD a través de un circuito de cianuración en tanques CIP obteniendo doré para el mercado internacional LBMA a través de la Swiss Better Gold (SBG).
-                Planta Metalúrgica Los Rosales de 340 TMD a través de un circuito de cianuración en tanques CIP obteniendo doré para el mercado internacional LBMA a través de la Swiss Better Gold (SBG).
+              <p className="quienes-somos-text m-0 fs-6 fs-sm-5 fw-light lh-base">
+                Somos una empresa peruana productora de metales preciosos con más de 40 años de fundada que realiza actividad minera a 4,000 msnm en Vilque Puno PERÚ.
               </p>
             </Col>
             <Col>
-              <h3 className="mb-5">
+              <h3 className="mb-5 fs-4 fs-sm-3">
                 <span className="text-blue2">Somos una</span><span className="text-yellow2"> Empresa Peruana</span>
               </h3>
-              <p className="m-0 fs-5 fw-light text-justify lh-base" style={{ textAlign: 'justify' }}>
-                Somos una empresa peruana productora de metales preciosos con más de 40 años de fundada que realiza actividad minera a 4,000 msnm en Vilque Puno PERÚ operando Planta Metalúrgica Los Rosales de 340 TMD a través de un circuito de cianuración en tanques CIP obteniendo doré para el mercado internacional LBMA a través de la Swiss Better Gold (SBG).
-                Planta Metalúrgica Los Rosales de 340 TMD a través de un circuito de cianuración en tanques CIP obteniendo doré para el mercado internacional LBMA a través de la Swiss Better Gold (SBG).
+              <p className="quienes-somos-text m-0 fs-6 fs-sm-5 fw-light text-justify lh-base">
+                Operamos en la Planta Metalúrgica Los Rosales de 340 TMD a través de un circuito de cianuración en tanques CIP obteniendo doré para el mercado internacional LBMA a través de la Swiss Better Gold (SBG).
               </p>
             </Col>
           </Row>
@@ -106,9 +110,9 @@ export default function Home() {
           </div>
         </Container>
         <div className="py-4 px-xl-7">
-        
-          <CardGroup className="justify-content-center" style={{columnGap:67+'px'}}>
-            <Card className="text-white">
+
+          <CardGroup className="justify-content-center" style={{ columnGap: 67 + 'px' }}>
+            <Card className="text-white mx-auto mx-sm-0">
               <Card.Img src="/images/mision.jpg" alt="Misión de ALR" />
               <Card.ImgOverlay className="d-flex align-items-center justify-content-center">
                 <Card.Title className="fs-2 m-0">NUESTRA MISIÓN</Card.Title>
@@ -119,18 +123,18 @@ export default function Home() {
                 <Card.Text>Last updated 3 mins ago</Card.Text> */}
               </Card.ImgOverlay>
             </Card>
-            <Card className="text-white">
+            <Card className="text-white mx-auto mx-sm-0">
               <Card.Img src="/images/vision.jpg" alt="Visión de ALR" />
               <Card.ImgOverlay className="d-flex align-items-center justify-content-center">
                 <Card.Title className="fs-2 m-0">NUESTRA VISIÓN</Card.Title>
-               
+
               </Card.ImgOverlay>
             </Card>
-            <Card className="text-white">
+            <Card className="text-white mx-auto mx-sm-0">
               <Card.Img src="/images/valores.jpg" alt="Valores de ALR" />
               <Card.ImgOverlay className="d-flex align-items-center justify-content-center">
                 <Card.Title className="fs-2 m-0">VALORES</Card.Title>
-                
+
               </Card.ImgOverlay>
             </Card>
           </CardGroup>

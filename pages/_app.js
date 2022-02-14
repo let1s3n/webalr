@@ -1,5 +1,6 @@
 // import App from 'next/app'
 import { useState,useEffect } from 'react';
+import { useRouter } from "next/router";
 import SSRProvider from 'react-bootstrap/SSRProvider';
 
 
@@ -32,20 +33,32 @@ i18n
   });
 
 function MyApp({ Component, pageProps }) {
-  const [loading, setLoading] = useState(true);
+  const router = useRouter();
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    setLoading(false);
-  }, []);
+    const handleStart = (url) => {
+      url !== router.pathname ? setLoading(true) : setLoading(false);
+    };
+    const handleComplete = (url) => setLoading(false);
+
+    router.events.on("routeChangeStart", handleStart);
+    router.events.on("routeChangeComplete", handleComplete);
+    router.events.on("routeChangeError", handleComplete);
+  }, [router]);
   return (
     <SSRProvider>
-      {!loading ?
+      <Loader loading={loading}/>
+      <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      {/* {!loading ?
         <Layout>
           <Component {...pageProps} />
         </Layout>
         :
         <Loader />
-      }
+      } */}
     </SSRProvider>
   )
 }

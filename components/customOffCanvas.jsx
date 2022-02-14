@@ -13,18 +13,7 @@ function CustomOffCanvas(props) {
     setLocale(cookie);
 
   }, [])
-  /*
   
-
-
-
-  
-  useEffect(() => {
-    console.log("Locale: " + locale)
-    cookieCutter.set('i18next', locale);
-  }, [locale])
-
-  */
 
   const handleLocaleSwap = () => {
     document.cookie = `i18next=${locale==='es'?'en':'es'}`;
@@ -42,7 +31,7 @@ function CustomOffCanvas(props) {
       </Offcanvas.Header>
       <Offcanvas.Body>
         <Container fluid className="d-flex flex-column align-items-center">
-          <Image className="idiomas-logo mb-5" src="/images/logo-mobile-black.svg" />
+          <Image className="idiomas-logo mb-5" src="/images/logo-alr.png" />
           <div className="d-flex align-items-center mb-6" style={{ columnGap: 1 + 'rem' }}>
             {locale === 'en' ?
               <>
@@ -62,49 +51,41 @@ function CustomOffCanvas(props) {
             <li className="mb-4" onClick={props.onHide}>
               <Link href="/">
                 <a className="text-secondary">
-                  Home <Image className="d-block mx-auto" src="/images/divider.svg" style={{ width: 100 + 'px' }} />
+                  Home {/* <Image className="d-block mx-auto" src="/images/divider.svg" style={{ width: 100 + 'px' }} /> */}
                 </a>
               </Link>
             </li>
             <li className="mb-4" onClick={props.onHide}>
-              <Link href="/proyectos">
+              <Link href="/politicas">
                 <a className="text-secondary">
-                  Projects
+                  Políticas
                 </a>
               </Link>
             </li>
             <li className="mb-4" onClick={props.onHide}>
-              <Link href="/procesos">
+              <Link href="/nosotros">
                 <a className="text-secondary">
-                  Process
+                  Sobre Nosotros
                 </a>
               </Link>
             </li>
             <li className="mb-4" onClick={props.onHide}>
-              <Link href="/servicios">
+              <Link href="/blog">
                 <a className="text-secondary">
-                  Services
+                  Blog
                 </a>
               </Link>
             </li>
             <li className="mb-4" onClick={props.onHide}>
-              <Link href="/trabaja-con-nosotros">
+              <Link href="/contacto">
                 <a className="text-secondary">
-                  Work with us
-                </a>
-              </Link>
-            </li>
-            <li onClick={props.onHide}>
-
-              <Link href="/contactanos">
-                <a className="text-secondary">
-                  Contact us
+                  Contáctenos
                 </a>
               </Link>
             </li>
           </ul>
           <div className="d-flex flex-column">
-            <p className="m-0 fs-5 fw-600">Follow us</p>
+            <p className="m-0 fs-5 fw-600">Síguenos</p>
             <div className="d-flex">
               <Image src="/images/linkedin-icon.svg" />
               <Image src="/images/facebook-icon.svg" />
