@@ -9,13 +9,13 @@ export default function Home() {
   useEffect(() => {
     console.log(width)
   }, [width])
-  
+
   return (
     <>
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
         <title>SMRL Acumulación Los Rosales</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
         <meta name="title" content="SMRL Acumulación Los Rosales" />
@@ -80,13 +80,13 @@ export default function Home() {
       </section>
       <section className="quienes-somos pt-6">
         <Container fluid="md">
-          <h3 className="fw-bold text-blue1 mb-5">“Somos una empresa peruana productora de metales preciosos con más de 40 años de fundada que realiza actividad minera a 4,000 msnm en Vilque Puno PERÚ”</h3>
+          <h3 className="fw-bold text-blue1 mb-5 text-center">“Somos una empresa peruana productora de metales preciosos con más de 40 años de fundada que realiza actividad minera a 4,000 msnm en Vilque Puno PERÚ”</h3>
 
         </Container>
         <Container fluid className="bg-yellow2 bg-opacity-10 pt-5 pt-xl-17 px-5 px-xl-11 pb-5">
-          <Row style={{ columnGap: 103 + 'px', rowGap: 50 + 'px' }}>
+          <Row className="custom-row flex-column flex-sm-row">
             <Col>
-              <h3 className="mb-5 fs-4 fs-sm-3">
+              <h3 className="mb-5 fs-4 fs-xxl-3">
                 <span className="text-blue2">Nuestra</span><span className="text-yellow2"> Historia</span>
               </h3>
               <p className="quienes-somos-text m-0 fs-6 fs-sm-5 fw-light lh-base">
@@ -94,7 +94,7 @@ export default function Home() {
               </p>
             </Col>
             <Col>
-              <h3 className="mb-5 fs-4 fs-sm-3">
+              <h3 className="mb-5 fs-4 fs-xxl-3">
                 <span className="text-blue2">Somos una</span><span className="text-yellow2"> Empresa Peruana</span>
               </h3>
               <p className="quienes-somos-text m-0 fs-6 fs-sm-5 fw-light text-justify lh-base">
@@ -104,18 +104,35 @@ export default function Home() {
           </Row>
 
         </Container>
-        <Container fluid className="g-0">
-          <div className="w-50 bg-blue2 bg-opacity-10" style={{ padding: 32 + 'px', borderRadius: '0px 20px 20px 0px' }}>
-            <h2 className="text-blue2">NUESTRA MISIÓN, VISIÓN Y VALORES</h2>
+        <Container fluid className="g-0 mt-5 bg-blue2 bg-opacity-10">
+          <div className="w-75 w-xxl-50 bg-blue3" style={{ padding: 32 + 'px', borderRadius: '0px 20px 20px 0px' }}>
+            <h2 className="text-blue2 m-0 fw-bolder">NUESTRA MISIÓN, VISIÓN Y VALORES</h2>
           </div>
         </Container>
         <div className="py-4 px-xl-7">
 
-          <CardGroup className="justify-content-center" style={{ columnGap: 67 + 'px' }}>
+          <CardGroup className="justify-content-center align-items-center flex-column flex-xxl-row" style={{ columnGap: 67 + 'px' }}>
             <Card className="text-white mx-auto mx-sm-0">
               <Card.Img src="/images/mision.jpg" alt="Misión de ALR" />
               <Card.ImgOverlay className="d-flex align-items-center justify-content-center">
-                <Card.Title className="fs-2 m-0">NUESTRA MISIÓN</Card.Title>
+                <Card.Title>
+                  <Link href="/nosotros#mision-section">
+                    <a>
+                      <Row>
+                        <Col xs="auto">
+                          <h2 className="m-0 text-white">NUESTRA MISIÓN</h2>
+                        </Col>
+                        <Col xs="auto">
+                          <Image
+                            src="/images/arrow-right-white.svg"
+                            width={32}
+                            height={32}
+                          />
+                        </Col>
+                      </Row>
+                    </a>
+                  </Link>
+                </Card.Title>
                 {/* <Card.Text>
                   This is a wider card with supporting text below as a natural lead-in to
                   additional content. This content is a little bit longer.
@@ -126,22 +143,125 @@ export default function Home() {
             <Card className="text-white mx-auto mx-sm-0">
               <Card.Img src="/images/vision.jpg" alt="Visión de ALR" />
               <Card.ImgOverlay className="d-flex align-items-center justify-content-center">
-                <Card.Title className="fs-2 m-0">NUESTRA VISIÓN</Card.Title>
+                <Card.Title className="fs-2 m-0">
+                  <Link href="/nosotros#vision-section">
+                    <a>
+                      <Row>
+                        <Col xs="auto">
+                          <h2 className="m-0 text-white">NUESTRA VISIÓN</h2>
+                        </Col>
+                        <Col xs="auto">
+                          <Image
+                            src="/images/arrow-right-white.svg"
+                            width={32}
+                            height={32}
+                          />
+                        </Col>
+                      </Row>
+                    </a>
+                  </Link>
+                </Card.Title>
 
               </Card.ImgOverlay>
             </Card>
             <Card className="text-white mx-auto mx-sm-0">
               <Card.Img src="/images/valores.jpg" alt="Valores de ALR" />
               <Card.ImgOverlay className="d-flex align-items-center justify-content-center">
-                <Card.Title className="fs-2 m-0">VALORES</Card.Title>
+                <Card.Title className="fs-2 m-0">
+                  <Link href="/nosotros#valores-section">
+                    <a>
+                      <Row>
+                        <Col xs="auto">
+                          <h2 className="m-0 text-white">VALORES</h2>
+                        </Col>
+                        <Col xs="auto">
+                          <Image
+                            src="/images/arrow-right-white.svg"
+                            width={32}
+                            height={32}
+                          />
+                        </Col>
+                      </Row>
+                    </a>
+                  </Link>
+                </Card.Title>
 
               </Card.ImgOverlay>
             </Card>
           </CardGroup>
         </div>
       </section>
-      <section className="mision"></section>
-      <section className="novedades"></section>
+      <section className="novedades">
+        <Container fluid className="g-0 mt-5 bg-yellow2 bg-opacity-10 d-flex flex-row-reverse">
+          <div className="w-75 w-xxl-50 bg-yellow3" style={{ padding: 32 + 'px', borderRadius: '20px 0px 0px 20px' }}>
+            <h2 className="text-yellow2 m-0 fw-bolder">ÚLTIMAS NOTICIAS</h2>
+          </div>
+        </Container>
+        <Container className="my-6 my-md-10 my-xxl-17" fluid="xxl">
+          <Carousel controls={width >= 1280 ? true : false} interval={null}>
+            <Carousel.Item>
+              <Row xs={1} md={2}>
+                <Col>
+                  <Image
+                    src="/images/CSM.jpg"
+                    width={770}
+                    height={499}
+                    layout="responsive"
+                  />
+                </Col>
+                <Col>
+                  <h2 className="m-0 mb-3 text-yellow2">
+                    Visita de Colorado School of Mines
+                  </h2>
+                  <p className="m-0 pe-5">
+                    Visita del 22 de septiembre del 2021 a SMRL ACUMULACIÓN LOS ROSALES en Puno - Perú de la delegación de Colorado School of Mines - USA.
+                  </p>
+                </Col>
+              </Row>
+            </Carousel.Item>
+            <Carousel.Item>
+              <Row xs={1} md={2}>
+                <Col>
+                  <Image
+                    src="/images/planta-noticias.jpg"
+                    width={770}
+                    height={499}
+                    layout="responsive"
+                  />
+                </Col>
+                <Col>
+                  <h2 className="m-0 mb-3 text-yellow2">
+                    Objetivos 2022
+                  </h2>
+                  <p className="m-0 pe-5">
+                    Seguimos firmes en nuestros objetivos y al año 2022 somos la mayor operación integral de reprocesamiento de PAMs de metales preciosos en Puno - Perú y una de las principales del país, logrando trazabilidad y sostenibilidad simultaneamente.
+                  </p>
+                </Col>
+              </Row>
+            </Carousel.Item>
+            <Carousel.Item>
+              <Row xs={1} md={2}>
+                <Col>
+                  <Image
+                    src="/images/hero2.jpg"
+                    width={770}
+                    height={499}
+                    layout="responsive"
+                  />
+                </Col>
+                <Col>
+                  <h2 className="m-0 mb-3 text-yellow2">
+                    Aumento en nuestra capacidad
+                  </h2>
+                  <p className="m-0 pe-5">
+                    Hemos ampliado nuestra capacidad a 340 TMD en Planta Metalúrgica Los Rosales Puno en función a autorizaciones sectoriales otorgadas en marzo 2021. Reutilizando PAMs utilizando mecanismos ambientales que garantizan nulo impacto al entorno. Cumplimos con la normatividad y simultaneamente crecemos.
+                  </p>
+                </Col>
+              </Row>
+            </Carousel.Item>
+          </Carousel>
+        </Container>
+      </section>
 
 
     </>

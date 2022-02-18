@@ -52,11 +52,11 @@ const NavBar = () => {
                   <Nav.Link className="text-white py-2 fw-400 text-uppercase">SOBRE NOSOTROS</Nav.Link>
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/blog" passHref>
                   <Nav.Link className="text-white py-2 fw-400 text-uppercase">BLOG</Nav.Link>
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/contacto" passHref>
                   <Nav.Link className="text-white py-2 fw-400 text-uppercase">CONTÁCTENOS</Nav.Link>

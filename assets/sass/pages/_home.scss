@@ -21,6 +21,7 @@
 }
 
 .quienes-somos{
+  min-height: 100vh;
   .quienes-somos-text{
     @include media-breakpoint-up(xxl){
       
@@ -39,7 +40,6 @@
       height: 478px;
       
     }
-    /* width: 100%; */
     width: 299px;
     height: 380px;
     
@@ -49,8 +49,69 @@
     height: 100%;
     object-fit: cover;
   }
+
   .card-img-overlay{
-    background-color: rgba(0, 0, 0, .4);
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    &:hover{
+      opacity: 1;
+      background-color: rgba(0, 0, 0, .4);
+    }
   }
-  
+  .custom-row{
+    @include media-breakpoint-up(xxl){
+      gap: 50px 103px;
+    }
+
+    gap: 50px 15px;
+  }
+}
+
+.novedades{
+  min-height: 100vh;
+  .carousel-control-next{
+    /* right: 124px !important; */
+    @include media-breakpoint-up(xxl){
+      right: -20px !important;
+    }
+    right: 0px !important;
+  }
+  .carousel-control-prev{
+    /* left: 62px !important; */
+    left: -50px !important;
+  }
+  .carousel-indicators{
+    @include media-breakpoint-up(xxl){
+      margin-top: 2.5rem;
+    }
+    @include media-breakpoint-up(xxxxl){
+      margin-top: 4rem;
+    }
+    margin-bottom: 0px;
+    top: 100%;
+    margin-top: 1rem;
+    bottom:unset;
+    height: 12px;
+    [data-bs-target]{
+      background-color: $blue2;
+    }
+  }
+  .carousel-item{
+    opacity:0;
+    transition: all .5s ease-in-out !important;
+    &>.row{
+      @include media-breakpoint-up(md){
+        height: 250px;
+      }
+      @include media-breakpoint-up(xxl){
+        height: auto;
+      }
+      /* height: auto; */
+      height: 460px;
+      row-gap:1rem;
+    }
+  }
+  .active.carousel-item{
+    opacity:1;
+  }
 }
