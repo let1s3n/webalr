@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import Head from 'next/head'
-import Image from 'next/image'
+/* import Image from 'next/image' */
 import Link from 'next/link'
-import { Container, Carousel, Row, Col, CardGroup, Card } from 'react-bootstrap'
+import { Container, Carousel, Row, Col, CardGroup, Card,Image } from 'react-bootstrap'
 import useWindowDimensions from "../hooks/useWindowDimensions";
 export default function Home() {
   const { height, width } = useWindowDimensions();
@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
         <title>SMRL Acumulación Los Rosales</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
@@ -29,11 +29,10 @@ export default function Home() {
               className="hero-image"
               src="/images/hero.jpg"
               alt="Foto de la planta de día"
-              layout="fill"
+              /* layout="fill"
               objectFit="cover"
-              /* objectPosition={width >= 1200 ? "left top" : "center"} */
               objectPosition="left top"
-              priority
+              priority */
             />
             <h1 className="hero-text position-absolute text-white">
               <span className="d-block bg-yellow2 bg-opacity-60 fw-normal px-4 mb-2">PERUANOS EN BUSCA DE LA EXCELENCIA</span>
@@ -44,9 +43,10 @@ export default function Home() {
               <Image
                 src="/images/hero-illustration.svg"
                 alt='hero-illustration'
-                layout='fill'
+                fluid
+                /* layout='fill'
                 objectFit='cover'
-                objectPosition="left top"
+                objectPosition="left top" */
               />
             </div>
           </Carousel.Item>
@@ -55,10 +55,10 @@ export default function Home() {
               className="hero-image"
               src="/images/hero2.jpg"
               alt="Foto de la planta de noche"
-              layout="fill"
+              /* layout="fill"
               objectFit="cover"
               objectPosition="center"
-              priority
+              priority */
 
             />
             <h1 className="hero-text position-absolute text-white">
@@ -109,9 +109,9 @@ export default function Home() {
             <h2 className="text-blue2 m-0 fw-bolder">NUESTRA MISIÓN, VISIÓN Y VALORES</h2>
           </div>
         </Container>
-        <div className="py-4 px-xl-7">
+        <div className="py-4 px-xl-4">
 
-          <CardGroup className="justify-content-center align-items-center flex-column flex-xxl-row" style={{ columnGap: 67 + 'px' }}>
+          <CardGroup className="justify-content-xl-center align-items-center flex-column flex-xl-row">
             <Card className="text-white mx-auto mx-sm-0">
               <Card.Img src="/images/mision.jpg" alt="Misión de ALR" />
               <Card.ImgOverlay className="d-flex align-items-center justify-content-center">
@@ -125,8 +125,7 @@ export default function Home() {
                         <Col xs="auto">
                           <Image
                             src="/images/arrow-right-white.svg"
-                            width={32}
-                            height={32}
+                            className="arrow-right"
                           />
                         </Col>
                       </Row>
@@ -153,8 +152,7 @@ export default function Home() {
                         <Col xs="auto">
                           <Image
                             src="/images/arrow-right-white.svg"
-                            width={32}
-                            height={32}
+                            className="arrow-right"
                           />
                         </Col>
                       </Row>
@@ -177,8 +175,7 @@ export default function Home() {
                         <Col xs="auto">
                           <Image
                             src="/images/arrow-right-white.svg"
-                            width={32}
-                            height={32}
+                            className="arrow-right"
                           />
                         </Col>
                       </Row>
@@ -200,60 +197,54 @@ export default function Home() {
         <Container className="my-6 my-md-10 my-xxl-17" fluid="xxl">
           <Carousel controls={width >= 1280 ? true : false} interval={null}>
             <Carousel.Item>
-              <Row xs={1} md={2}>
-                <Col>
+              <Row>
+                <Col xs={12} sm={6} md={8} lg={6} xxl={8}>
                   <Image
                     src="/images/CSM.jpg"
-                    width={770}
-                    height={499}
-                    layout="responsive"
+                    className="novedades-img"
                   />
                 </Col>
-                <Col>
+                <Col xs={12} sm={6} md={4} lg={6} xxl={4}>
                   <h2 className="m-0 mb-3 text-yellow2">
                     Visita de Colorado School of Mines
                   </h2>
-                  <p className="m-0 pe-5">
+                  <p className="text-justify--mobile m-0">
                     Visita del 22 de septiembre del 2021 a SMRL ACUMULACIÓN LOS ROSALES en Puno - Perú de la delegación de Colorado School of Mines - USA.
                   </p>
                 </Col>
               </Row>
             </Carousel.Item>
             <Carousel.Item>
-              <Row xs={1} md={2}>
-                <Col>
+              <Row>
+                <Col xs={12} sm={6} md={8} lg={6} xxl={8}>
                   <Image
                     src="/images/planta-noticias.jpg"
-                    width={770}
-                    height={499}
-                    layout="responsive"
+                    className="novedades-img"
                   />
                 </Col>
-                <Col>
+                <Col xs={12} sm={6} md={4} lg={6} xxl={4}>
                   <h2 className="m-0 mb-3 text-yellow2">
                     Objetivos 2022
                   </h2>
-                  <p className="m-0 pe-5">
+                  <p className="text-justify--mobile m-0">
                     Seguimos firmes en nuestros objetivos y al año 2022 somos la mayor operación integral de reprocesamiento de PAMs de metales preciosos en Puno - Perú y una de las principales del país, logrando trazabilidad y sostenibilidad simultaneamente.
                   </p>
                 </Col>
               </Row>
             </Carousel.Item>
             <Carousel.Item>
-              <Row xs={1} md={2}>
-                <Col>
+              <Row>
+                <Col xs={12} sm={6} md={8} lg={6} xxl={8}>
                   <Image
                     src="/images/hero2.jpg"
-                    width={770}
-                    height={499}
-                    layout="responsive"
+                    className="novedades-img"
                   />
                 </Col>
-                <Col>
+                <Col xs={12} sm={6} md={4} lg={6} xxl={4}>
                   <h2 className="m-0 mb-3 text-yellow2">
                     Aumento en nuestra capacidad
                   </h2>
-                  <p className="m-0 pe-5">
+                  <p className="text-justify--mobile m-0">
                     Hemos ampliado nuestra capacidad a 340 TMD en Planta Metalúrgica Los Rosales Puno en función a autorizaciones sectoriales otorgadas en marzo 2021. Reutilizando PAMs utilizando mecanismos ambientales que garantizan nulo impacto al entorno. Cumplimos con la normatividad y simultaneamente crecemos.
                   </p>
                 </Col>

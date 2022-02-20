@@ -1,9 +1,9 @@
 import { Modal, Button, Image } from 'react-bootstrap';
-import {useRouter} from 'next/router';
+import { useRouter } from 'next/router';
 function CustomModal(props) {
   const router = useRouter();
   const handleLocaleChange = (e) => {
-    
+
     /* console.log(e.target.closest("[data-locale]").dataset.locale) */
     document.cookie = `i18next=${e.target.closest("[data-locale]").dataset.locale}`;
     router.reload(window.location.pathname);
@@ -31,11 +31,11 @@ function CustomModal(props) {
           Choose your lenguage
         </p>
         <div className="d-flex flex-column align-items-center" style={{ rowGap: 1 + 'rem' }}>
-          <div className="d-flex align-items-center gap-3 pe-1" style={{ columnGap: 1 + 'rem' }} onClick={handleLocaleChange} data-locale="en" style={{cursor:'pointer'}}>
-            <Image src="/images/en-icon.svg"/>
+          <div className="d-flex align-items-center gap-3 pe-1" style={{ columnGap: 1 + 'rem' }} onClick={handleLocaleChange} data-locale="en" style={{ cursor: 'pointer' }}>
+            <Image src="/images/en-icon.svg" />
             <p className="m-0 fs-md-5">English</p>
           </div>
-          <div className="d-flex align-items-center gap-3" style={{ columnGap: 1 + 'rem' }} onClick={handleLocaleChange} data-locale="es" style={{cursor:'pointer'}}>
+          <div className="d-flex align-items-center gap-3" style={{ columnGap: 1 + 'rem' }} onClick={handleLocaleChange} data-locale="es" style={{ cursor: 'pointer' }}>
             <Image src="/images/es-icon.svg" />
             <p className="m-0 fs-md-5">Spanish</p>
           </div>

@@ -4,4 +4,14 @@
       display: block !important;
     }
   }
+
+  .nosotros-img{
+    @include media-breakpoint-up(xxl){  
+      width: 720px;
+      height: 400px;
+    }
+
+    
+    
+  }
 }

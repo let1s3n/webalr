@@ -1,3 +1,7 @@
+/* .main-container{
+  background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(238,238,222,1) 35%, rgba(250,255,214,1) 100%);
+} */
 body.modal-open {
   position: fixed;
   overflow-y: scroll !important;
@@ -72,4 +76,17 @@ button{
 }
 .dropdown-logo{
   width: 56px;
+}
+
+.arrow-right{
+  width: 32px;
+  height: 32px;
+}
+
+.text-justify{
+  &--mobile{
+    @include media-breakpoint-down(sm) {
+      text-align: justify;
+    }
+  }
 }

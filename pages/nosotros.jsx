@@ -1,10 +1,62 @@
-import React from 'react';
-import Image from 'next/image'
-import { Container, Row, Col } from 'react-bootstrap'
+import React, { useState, useEffect } from 'react'
+/* import Image from 'next/image' */
+import { Container, Row, Col, Carousel,Image } from 'react-bootstrap'
+import useWindowDimensions from "../hooks/useWindowDimensions";
 const nosotros = () => {
+  const { height, width } = useWindowDimensions();
+  useEffect(() => {
+    console.log(width)
+  }, [width])
   return (
-    <div className="nosotros-page p-5">
-      <Container fluid>
+    <div className="nosotros-page">
+      <section className="hero-section">
+        <Carousel controls={width >= 1440 ? true : false} interval={null} className="h-100">
+          <Carousel.Item className="h-100">
+            <Image
+              className="hero-image hero-image--center"
+              src="/images/nosotros1.jpg"
+              alt="Charla de seguridad"
+            />
+            <h1 className="hero-text position-absolute text-white">
+              <span className="d-block bg-yellow2 bg-opacity-60 fw-normal px-4 mb-2">PERUANOS EN BUSCA DE LA EXCELENCIA</span>
+              <span className="d-inline-block bg-basic1 bg-opacity-40 fw-600 px-4 mb-2">HACIENDO</span> <br />
+              <span className="d-inline-block fw-bolder bg-blue2 bg-opacity-60 px-4">MINERÍA RESPONSABLE</span>
+            </h1>
+            <div className="hero-illustration">
+              <Image
+                src="/images/hero-illustration.svg"
+                alt='hero-illustration'
+                layout='fill'
+                objectFit='cover'
+                objectPosition="left top"
+              />
+            </div>
+          </Carousel.Item>
+          <Carousel.Item className="h-100">
+            <Image
+              className="hero-image hero-image--center"
+              src="/images/nosotros2.jpg"
+              alt="Equipo de laboratorio químico"
+            />
+            <h1 className="hero-text position-absolute text-white">
+              <span className="d-block bg-yellow2 bg-opacity-60 fw-normal px-4 mb-2">PROCESAMOS MÁS DE 120,000 TM/AÑO</span>
+              <span className="d-inline-block bg-basic1 bg-opacity-40 fw-600 px-4 mb-2">DE MINERAL AURÍFERO PROPIO</span> <br />
+              <span className="d-inline-block fw-bolder bg-blue2 bg-opacity-60 px-4">Y PAMs</span>
+            </h1>
+            <div className="hero-illustration">
+              <Image
+                src="/images/hero-illustration.svg"
+                alt='hero-illustration'
+                layout='fill'
+                objectFit='cover'
+                objectPosition="left top"
+              />
+            </div>
+          </Carousel.Item>
+        </Carousel>
+      </section>
+      <Container fluid className="p-5">
+
         <section id="vision-section" className="vision-section mb-4">
           <Container fluid="xxl" className="bg-blue2 bg-opacity-10 g-0">
             <Row className="g-0">
@@ -20,9 +72,7 @@ const nosotros = () => {
                 <Image
                   src="/images/vision-col.jpg"
                   alt="Imagen visión"
-                  width={720}
-                  height={400}
-                  priority
+                  className="nosotros-img"
                 />
               </Col>
             </Row>
@@ -40,13 +90,11 @@ const nosotros = () => {
                 </p>
               </Col>
               <Col xs="auto">
-              
+
                 <Image
                   src="/images/mision-col.jpg"
                   alt="Imagen visión"
-                  width={720}
-                  height={400}
-                  priority
+                  className="nosotros-img"
                 />
               </Col>
             </Row>
@@ -68,9 +116,7 @@ const nosotros = () => {
                 <Image
                   src="/images/valores.jpg"
                   alt="Imagen visión"
-                  width={720}
-                  height={400}
-                  priority
+                  className="nosotros-img"
                 />
               </Col>
             </Row>
