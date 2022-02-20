@@ -21,10 +21,6 @@ export default function Home() {
               className="hero-image"
               src="/images/hero.jpg"
               alt="Foto de la planta de día"
-            /* layout="fill"
-            objectFit="cover"
-            objectPosition="left top"
-            priority */
             />
             <h1 className="hero-text position-absolute text-white">
               <span className="d-block bg-yellow2 bg-opacity-60 fw-normal px-4 mb-2">PERUANOS EN BUSCA DE LA EXCELENCIA</span>
@@ -36,9 +32,6 @@ export default function Home() {
                 src="/images/hero-illustration.svg"
                 alt='hero-illustration'
                 fluid
-              /* layout='fill'
-              objectFit='cover'
-              objectPosition="left top" */
               />
             </div>
           </Carousel.Item>
@@ -75,7 +68,7 @@ export default function Home() {
           <h3 className="fw-bold text-blue1 mb-5 text-center">“Somos una empresa peruana productora de metales preciosos con más de 40 años de fundada que realiza actividad minera a 4,000 msnm en Vilque Puno PERÚ”</h3>
 
         </Container>
-        <Container fluid className="bg-yellow2 bg-opacity-10 pt-5 pt-xl-17 px-5 px-xl-11 pb-5">
+        <Container fluid className="bg-yellow2 bg-opacity-10 pt-5 pt-xl-11 px-5 px-xl-11 pb-5">
           <Row className="custom-row flex-column flex-sm-row">
             <Col>
               <h3 className="mb-5 fs-4 fs-xxl-3">
@@ -180,6 +173,7 @@ export default function Home() {
           </CardGroup>
         </div>
       </section>
+      
       <section className="novedades">
         <Container fluid className="g-0 mt-5 bg-yellow2 bg-opacity-10 d-flex flex-row-reverse">
           <div className="w-75 w-xxl-50 bg-yellow3" style={{ padding: 32 + 'px', borderRadius: '20px 0px 0px 20px' }}>
