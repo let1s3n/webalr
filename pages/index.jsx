@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import Head from 'next/head'
-/* import Image from 'next/image' */
 import Link from 'next/link'
-import { Container, Carousel, Row, Col, CardGroup, Card,Image } from 'react-bootstrap'
+import { Container, Carousel, Row, Col, CardGroup, Card, Image } from 'react-bootstrap'
 import useWindowDimensions from "../hooks/useWindowDimensions";
 export default function Home() {
   const { height, width } = useWindowDimensions();
@@ -13,14 +12,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
         <title>SMRL Acumulación Los Rosales</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-        <meta name="title" content="SMRL Acumulación Los Rosales" />
-        <meta name="description" content="Peruanos en busca de la excelencia haciendo minería responsable." />
-        <meta name="keywords" content="minera, minería, acumulación los rosales, minería responsable, minería peruana" />
       </Head>
       <section className="hero-section">
         <Carousel controls={width >= 1440 ? true : false} interval={null} className="h-100">
@@ -29,10 +21,10 @@ export default function Home() {
               className="hero-image"
               src="/images/hero.jpg"
               alt="Foto de la planta de día"
-              /* layout="fill"
-              objectFit="cover"
-              objectPosition="left top"
-              priority */
+            /* layout="fill"
+            objectFit="cover"
+            objectPosition="left top"
+            priority */
             />
             <h1 className="hero-text position-absolute text-white">
               <span className="d-block bg-yellow2 bg-opacity-60 fw-normal px-4 mb-2">PERUANOS EN BUSCA DE LA EXCELENCIA</span>
@@ -44,9 +36,9 @@ export default function Home() {
                 src="/images/hero-illustration.svg"
                 alt='hero-illustration'
                 fluid
-                /* layout='fill'
-                objectFit='cover'
-                objectPosition="left top" */
+              /* layout='fill'
+              objectFit='cover'
+              objectPosition="left top" */
               />
             </div>
           </Carousel.Item>
@@ -55,10 +47,10 @@ export default function Home() {
               className="hero-image"
               src="/images/hero2.jpg"
               alt="Foto de la planta de noche"
-              /* layout="fill"
-              objectFit="cover"
-              objectPosition="center"
-              priority */
+            /* layout="fill"
+            objectFit="cover"
+            objectPosition="center"
+            priority */
 
             />
             <h1 className="hero-text position-absolute text-white">

@@ -1,8 +1,8 @@
 // import App from 'next/app'
-import { useState,useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from "next/router";
 import SSRProvider from 'react-bootstrap/SSRProvider';
-
+import Head from 'next/head'
 
 import i18n from "i18next";
 import { useTranslation, initReactI18next } from "react-i18next";
@@ -47,19 +47,17 @@ function MyApp({ Component, pageProps }) {
     router.events.on("routeChangeError", handleComplete);
   }, [router]);
   return (
-    <SSRProvider>
-      <Loader loading={loading}/>
-      <Layout>
-          <Component {...pageProps} />
-        </Layout>
-      {/* {!loading ?
+    <>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+      </Head>
+      <SSRProvider>
+        <Loader loading={loading} />
         <Layout>
           <Component {...pageProps} />
         </Layout>
-        :
-        <Loader />
-      } */}
-    </SSRProvider>
+      </SSRProvider>
+    </>
   )
 }
 
