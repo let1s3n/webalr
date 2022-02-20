@@ -14,7 +14,7 @@ const nosotros = () => {
       </Head>
       <div className="nosotros-page">
         <section className="hero-section">
-          <Carousel controls={width >= 1440 ? true : false} interval={null} className="h-100">
+          <Carousel controls={width >= 1280 ? true : false} interval={null} className="h-100">
             <Carousel.Item className="h-100">
               <Image
                 className="hero-image hero-image--center"
