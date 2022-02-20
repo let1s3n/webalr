@@ -1,3 +1,35 @@
-.main-footer{
+/* .main-footer{
   background-color: rgba($color: #326182, $alpha: .4);
+} */
+
+/* .facebook-icon{
+  &:hover{
+    color:#3b5998;
+  }
+}
+.linkedin-icon{
+  &:hover{
+    color:#0072b1;
+  }
+}
+
+.youtube-icon{
+  &:hover{
+    color:#c4302b;
+  }
+}
+.twitter-icon{
+  &:hover{
+    color:#26a7de;
+  }
+} */
+
+.footer-illustration{
+  @include media-breakpoint-up(xxl){       
+    left: 0px;
+    top: 0px;
+  }
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
 }
