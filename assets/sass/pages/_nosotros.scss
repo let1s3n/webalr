@@ -6,12 +6,13 @@
   }
 
   .nosotros-img{
-    @include media-breakpoint-up(xxl){  
+    /* @include media-breakpoint-up(xxl){  
       width: 720px;
       height: 400px;
-    }
+    } */
+    width:100%;
+    height: 100%;
 
-    
     
   }
 }
