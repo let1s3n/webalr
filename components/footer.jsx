@@ -42,10 +42,10 @@ const Footer = () => {
             </Col>
             <Col className="text-center">
               <div className="d-flex justify-content-center" style={{columnGap:.5+'rem'}}>
-                <a href="#" target="_blank"><IoLogoFacebook className="facebook-icon fs-md-5 fs-xxl-4" /></a>
-                <a href="#" target="_blank"><IoLogoYoutube className="youtube-icon fs-md-5 fs-xxl-4" /></a>
-                <a href="https://www.linkedin.com/company/mineralosrosales" target="_blank"><IoLogoLinkedin className="linkedin-icon fs-md-5 fs-xxl-4" /></a>
-                <a href="#" target="_blank"><IoLogoTwitter className="twitter-icon fs-md-5 fs-xxl-4" /></a>
+                <a href="#" target="_blank"><IoLogoFacebook className="facebook-icon fs-md-5 fs-xxl-4 text-white" /></a>
+                <a href="#" target="_blank"><IoLogoYoutube className="youtube-icon fs-md-5 fs-xxl-4 text-white" /></a>
+                <a href="https://www.linkedin.com/company/mineralosrosales" target="_blank"><IoLogoLinkedin className="linkedin-icon fs-md-5 fs-xxl-4 text-white" /></a>
+                <a href="#" target="_blank"><IoLogoTwitter className="twitter-icon fs-md-5 fs-xxl-4 text-white" /></a>
               </div>
             </Col>
           </Row>
