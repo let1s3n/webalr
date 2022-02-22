@@ -62,11 +62,30 @@ $utilities: map-merge(
         values: (
           1:$font-size-base*4.375,
           2: $font-size-base*3.5,
-          3: $font-size-base*3
+          3: $font-size-base*3,
+          6:$font-size-base*1.125
         )
       )
     ),
   );
+
+  $utilities: map-merge(
+  $utilities, (
+    "position": map-merge(
+      map-get($utilities, "position"),
+      ( responsive: true ),
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities, (
+    "translate-middle": map-merge(
+      map-get($utilities, "translate-middle"),
+      ( responsive: true ),
+    ),
+  )
+);
 
   $utilities: map-merge(
     $utilities, (

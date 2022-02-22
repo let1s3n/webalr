@@ -25,7 +25,7 @@ const NavBar = () => {
   }, [currentpath])
 
   return (
-    <Navbar bg="blue1" className={currentpath === '/' || currentpath === '/nosotros' ? "px-4 py-2 w-100 bg-opacity-70 position-absolute top-0" : "main-navbar px-4 py-2 w-100 bg-opacity-70"} expand={false} style={{ zIndex: 2 }}>
+    <Navbar bg="blue1" className={currentpath === '/' || currentpath === '/nosotros' || currentpath === '/politicas' ? "px-4 py-2 w-100 bg-opacity-70 position-absolute top-0" : "main-navbar px-4 py-2 w-100 bg-opacity-70"} expand={false} style={{ zIndex: 2 }}>
       <Container fluid className="g-0">
         <Row className="g-0 w-100" style={{ columnGap: 50 + 'px' }}>
           <Col xs="auto" className="d-flex">

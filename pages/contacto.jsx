@@ -1,8 +1,13 @@
 import React from 'react'
-
+import { Container } from 'react-bootstrap'
+import CustomForm from '../components/customForm'
 const Contacto = () => {
   return (
-    <h1>CONTACTO</h1>
+    <section className="contacto-page py-10">
+    <Container fluid="md">
+      <CustomForm/>
+    </Container>
+    </section>
   )
 }
 
