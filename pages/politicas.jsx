@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link'
 import { Container, Pagination, Row, Col, Carousel, Image,Button } from 'react-bootstrap'
-import { Document, Page } from 'react-pdf/dist/umd/entry.webpack5';
+import dynamic from 'next/dynamic';
 import useWindowDimensions from "../hooks/useWindowDimensions";
+const PdfViewer = dynamic(
+  () => import('../components/pdfViewer'),
+  { ssr: false }
+);
 const Politicas = () => {
   const { height, width } = useWindowDimensions();
   useEffect(() => {
@@ -78,9 +82,7 @@ const Politicas = () => {
       <Container fluid="md" className="py-10">
         <Row xs={1} xl={2} xxl={3} className="politicas-grid overflow-hidden">
           <Col className="d-flex flex-column flex-md-row align-items-center align-items-md-start justify-content-xl-center">
-            <Document file="/politicas/Politica_de_Seguridad_Salud_y_MA16.12.21.pdf" onLoadError={console.error}>
-              <Page pageNumber={1} />
-            </Document>
+            <PdfViewer url="/politicas/Politica_de_Seguridad_Salud_y_MA16.12.21.pdf" pageNumber={1}/>
             <div className="d-flex flex-column pt-3 text-center text-md-start h-100 position-relative" style={{flex:1}}>
               <h5>Política de Seguridad, Salud y Medio Ambiente</h5>
               <p className="m-0"><span>Publicación: </span> 01 de Nov. 2021</p>
@@ -92,9 +94,7 @@ const Politicas = () => {
             </div>
           </Col>
           <Col className="d-flex flex-column flex-md-row align-items-center align-items-md-start justify-content-xl-center">
-            <Document file="/politicas/Politica_derechos_humanos_081221.pdf" onLoadError={console.error}>
-              <Page pageNumber={1} />
-            </Document>
+            <PdfViewer url="/politicas/Politica_derechos_humanos_081221.pdf" pageNumber={1}/>
             <div className="d-flex flex-column pt-3 text-center text-md-start h-100 position-relative" style={{flex:1}}>
               <h5>Política de Derechos Humanos</h5>
               <p className="m-0"><span>Publicación: </span> 01 de Nov. 2021</p>
@@ -107,9 +107,7 @@ const Politicas = () => {
 
           </Col>
           <Col className="d-flex flex-column flex-md-row align-items-center align-items-md-start justify-content-xl-center">
-            <Document file="/politicas/Politica_inclusion_e_igualdad_laboral_13-12-2021.pdf" onLoadError={console.error}>
-              <Page pageNumber={1} />
-            </Document>
+            <PdfViewer url="/politicas/Politica_inclusion_e_igualdad_laboral_13-12-2021.pdf" pageNumber={1}/>
             <div className="d-flex flex-column pt-3 text-center text-md-start h-100 position-relative" style={{flex:1}}>
               <h5>Política de Inclusión e Igualdad Laboral</h5>
               <p className="m-0"><span>Publicación: </span> 01 de Nov. 2021</p>
@@ -121,9 +119,7 @@ const Politicas = () => {
             </div>
           </Col>
           <Col className="d-flex flex-column flex-md-row align-items-center align-items-md-start justify-content-xl-center">
-            <Document file="/politicas/Politica_responsabilidad_social_y_rrcc101221.pdf" onLoadError={console.error}>
-              <Page pageNumber={1} />
-            </Document>
+            <PdfViewer url="/politicas/Politica_responsabilidad_social_y_rrcc101221.pdf" pageNumber={1}/>
             <div className="d-flex flex-column pt-3 text-center text-md-start h-100 position-relative" style={{flex:1}}>
               <h5>Política de Responsabilidad Social y RR.CC.</h5>
               <p className="m-0"><span>Publicación: </span> 01 de Nov. 2021</p>
@@ -135,9 +131,7 @@ const Politicas = () => {
             </div>
           </Col>
           <Col className="d-flex flex-column flex-md-row align-items-center align-items-md-start justify-content-xl-center">
-            <Document file="/politicas/Politica_trabajo_forzoso_131221.pdf" onLoadError={console.error}>
-              <Page pageNumber={1} />
-            </Document>
+            <PdfViewer url="/politicas/Politica_trabajo_forzoso_131221.pdf" pageNumber={1}/>
             <div className="d-flex flex-column pt-3 text-center text-md-start h-100 position-relative" style={{flex:1}}>
               <h5>Política Contra el Trabajo Forzoso</h5>
               <p className="m-0"><span>Publicación: </span> 01 de Nov. 2021</p>
@@ -149,9 +143,7 @@ const Politicas = () => {
             </div>
           </Col>
           <Col className="d-flex flex-column flex-md-row align-items-center align-items-md-start justify-content-xl-center">
-            <Document file="/politicas/Politica_trabajo_infantil_081221.pdf" onLoadError={console.error}>
-              <Page pageNumber={1} />
-            </Document>
+            <PdfViewer url="/politicas/Politica_trabajo_infantil_081221.pdf" pageNumber={1}/>
             <div className="d-flex flex-column pt-3 text-center text-md-start h-100 position-relative" style={{flex:1}}>
               <h5>Política Contra el Trabajo Infantil</h5>
               <p className="m-0"><span>Publicación: </span> 01 de Nov. 2021</p>
@@ -163,23 +155,6 @@ const Politicas = () => {
             </div>
           </Col>
         </Row>
-        {/* <Pagination>
-        <Pagination.Item key={1} active={true}>
-          1
-        </Pagination.Item>
-        <Pagination.Item key={2}>
-          2
-        </Pagination.Item>
-        <Pagination.Item key={3}>
-          3
-        </Pagination.Item>
-        <Pagination.Item key={4}>
-          4
-        </Pagination.Item>
-        <Pagination.Item key={5}>
-         5
-        </Pagination.Item>
-      </Pagination> */}
       </Container>
     </section>
   );
