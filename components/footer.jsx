@@ -35,13 +35,13 @@ const Footer = () => {
             </Col>
           </Row>
         </Col>
-        <Col xs={6} lg={3} xxl={2} className="d-flex justify-content-center pt-4" style={{ zIndex: 2 }}> 
+        <Col xs={6} lg={3} xxl={2} className="d-flex justify-content-center pt-4" style={{ zIndex: 2 }}>
           <Row xs={1} className="g-0">
             <Col>
               <p className="m-0 fw-600 custom-font-xxl-6 text-center">Síguenos</p>
             </Col>
             <Col className="text-center">
-              <div className="d-flex justify-content-center" style={{columnGap:.5+'rem'}}>
+              <div className="d-flex justify-content-center" style={{ columnGap: .5 + 'rem' }}>
                 <a href="#" target="_blank"><IoLogoFacebook className="facebook-icon fs-md-5 fs-xxl-4 text-white" /></a>
                 <a href="https://www.youtube.com/channel/UCAhc79crxjz1PDF-AP9-hLA/featured" target="_blank"><IoLogoYoutube className="youtube-icon fs-md-5 fs-xxl-4 text-white" /></a>
                 <a href="https://www.linkedin.com/company/mineralosrosales" target="_blank"><IoLogoLinkedin className="linkedin-icon fs-md-5 fs-xxl-4 text-white" /></a>
@@ -53,7 +53,11 @@ const Footer = () => {
         <Col xs={6} lg={3} xxl={2} className="d-flex justify-content-center pt-4" style={{ zIndex: 2 }}>
           <Row xs={1} className="g-0">
             <Col className="text-center">
-              <p className="m-0 custom-font-6">Políticas</p>
+              <Link href="/politicas">
+                <a>
+                  <p className="m-0 custom-font-6">Políticas</p>
+                </a>
+              </Link>
             </Col>
             <Col className="text-center">
               <p className="m-0 custom-font-6">SUNAT</p>
