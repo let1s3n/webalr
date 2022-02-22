@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link'
 import { Container, Pagination, Row, Col, Carousel, Image,Button } from 'react-bootstrap'
-import { Document, Page } from 'react-pdf/dist/esm/entry.webpack5';
+import { Document, Page } from 'react-pdf/dist/umd/entry.webpack5';
 import useWindowDimensions from "../hooks/useWindowDimensions";
 const Politicas = () => {
   const { height, width } = useWindowDimensions();
