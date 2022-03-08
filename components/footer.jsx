@@ -1,10 +1,6 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
-/* import Image from 'next/image' */
 import { Container, Row, Col, Image } from 'react-bootstrap';
-/* import { ImFacebook2,ImYoutube,ImLinkedin,ImTwitter } from "react-icons/im"; */
-/* import { GrFacebook,GrYoutube,GrLinkedin,GrTwitter } from "react-icons/gr"; */
-/* import { FaFacebookSquare,FaYoutubeSquare,FaLinkedin,FaTwitterSquare } from "react-icons/fa"; */
 import { IoLogoFacebook, IoLogoYoutube, IoLogoLinkedin, IoLogoTwitter } from "react-icons/io5";
 
 const Footer = () => {

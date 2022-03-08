@@ -11,7 +11,7 @@ class MyDocument extends Document {
           <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
           <meta name="title" content="SMRL Acumulación Los Rosales" />
           <meta name="description" content="Peruanos en busca de la excelencia haciendo minería responsable." />
-          <meta name="keywords" content="minera, minería, acumulación los rosales, minería responsable, minería peruana" />
+          <meta name="keywords" content="empresa minera, minera, minería, acumulación los rosales, minería responsable, minería peruana" />
         </Head>
         <body>
           <Main />

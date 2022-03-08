@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { Container, Carousel, Row, Col, CardGroup, Card, Image } from 'react-bootstrap'
 import useWindowDimensions from "../hooks/useWindowDimensions";
 export default function Home() {
-  const { height, width } = useWindowDimensions();
+  const { width } = useWindowDimensions();
   useEffect(() => {
     console.log(width)
   }, [width])
@@ -76,7 +76,7 @@ export default function Home() {
                 <span className="text-blue2">Somos una</span><span className="text-yellow2"> Empresa Peruana</span>
               </h3>
               <p className="quienes-somos-text m-0 fs-6 fs-sm-5 fw-light text-justify lh-base">
-                Operamos en la Planta Metalúrgica Los Rosales de 340 TMD a través de un circuito de cianuración en tanques CIP obteniendo doré para el mercado internacional LBMA a través de la Swiss Better Gold (SBG).
+                Operamos en la Planta Metalúrgica Los Rosales de 340 TMD a través de un circuito de cianuración en tanques CIP obteniendo doré para el mercado internacional LBMA.
               </p>
             </Col>
           </Row>

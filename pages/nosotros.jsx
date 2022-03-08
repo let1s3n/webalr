@@ -162,12 +162,12 @@ const nosotros = () => {
           </section>
 
         </Container>
-        <section className="perfiles d-flex flex-column justify-content-center align-items-center">
-          <div className="mb-5 align-self-start ps-5">
+        <section className="perfiles d-flex flex-column justify-content-center align-items-center py-md-3">
+          <div className="mb-5 align-self-start ps-2 ps-xxl-5">
             <h2 className="text-black">Dirección</h2>
           </div>
           <Container fluid>
-            <CardGroup className="justify-content-xl-center align-items-center flex-column flex-xl-row" style={{ rowGap: 2 + 'rem' }}>
+            <CardGroup className="justify-content-xl-between justify-content-xxl-center align-items-center flex-column flex-xl-row" style={{ rowGap: 2 + 'rem' }}>
               <Card className="text-white mx-auto mx-sm-0 border-0">
                 <Card.Img src="/images/Jose_Carneiro.jpg" alt="Gerente General" />
                 <Card.ImgOverlay className="d-none d-xl-flex flex-column align-items-center pt-6">

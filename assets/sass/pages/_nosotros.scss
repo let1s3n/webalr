@@ -63,9 +63,9 @@
     min-height: 100vh;
     .card-group{
       overflow: hidden;
-      @include media-breakpoint-up(xl){
-        column-gap: 10px;
-      }
+      /* @include media-breakpoint-up(xl){
+        column-gap: .5rem;
+      } */
       @include media-breakpoint-up(xxl){
         column-gap: 67px;
       }
