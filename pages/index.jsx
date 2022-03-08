@@ -40,10 +40,6 @@ export default function Home() {
               className="hero-image"
               src="/images/hero2.jpg"
               alt="Foto de la planta de noche"
-            /* layout="fill"
-            objectFit="cover"
-            objectPosition="center"
-            priority */
 
             />
             <h1 className="hero-text position-absolute text-white">
@@ -55,9 +51,6 @@ export default function Home() {
               <Image
                 src="/images/hero-illustration.svg"
                 alt='hero-illustration'
-                layout='fill'
-                objectFit='cover'
-                objectPosition="left top"
               />
             </div>
           </Carousel.Item>

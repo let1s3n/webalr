@@ -50,9 +50,6 @@ const Politicas = () => {
               <Image
                 src="/images/hero-illustration.svg"
                 alt='hero-illustration'
-                layout='fill'
-                objectFit='cover'
-                objectPosition="left top"
               />
             </div>
           </Carousel.Item>
@@ -71,9 +68,6 @@ const Politicas = () => {
               <Image
                 src="/images/hero-illustration.svg"
                 alt='hero-illustration'
-                layout='fill'
-                objectFit='cover'
-                objectPosition="left top"
               />
             </div>
           </Carousel.Item>

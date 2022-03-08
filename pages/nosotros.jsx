@@ -30,9 +30,6 @@ const nosotros = () => {
                 <Image
                   src="/images/hero-illustration.svg"
                   alt='hero-illustration'
-                  layout='fill'
-                  objectFit='cover'
-                  objectPosition="left top"
                 />
               </div>
             </Carousel.Item>
@@ -51,9 +48,6 @@ const nosotros = () => {
                 <Image
                   src="/images/hero-illustration.svg"
                   alt='hero-illustration'
-                  layout='fill'
-                  objectFit='cover'
-                  objectPosition="left top"
                 />
               </div>
             </Carousel.Item>
@@ -188,8 +182,8 @@ const nosotros = () => {
                   <Card.Title className="fs-3 m-0">
                     Gerente General CEO
                   </Card.Title>
-                  <Card.Text className="mt-4">
-                    Empresario que desde 1986 en Minero Perú SA, se involucró desde diversas posiciones en múltiples instituciones y corporaciones públicas y privadas en indistintos sectores. A la fecha es Gerente General CEO de SMRL Acumulación Los Rosales y Presidente del Directorio CEO en Minera Mirasol SA, Refinería Rocafuerte SA y San Roque 16 Gold SA así como de otras empresas vinculadas en las que en el ande y costa peruana opera en minería de metales preciosos.
+                  <Card.Text className="mt-4 text-justify--mobile">
+                    Empresario minero que desde 1986 en Minero Perú SA, se involucró desde diversas posiciones en múltiples instituciones y corporaciones públicas y privadas en indistintos sectores. A la fecha es Gerente General CEO de SMRL Acumulación Los Rosales y Presidente del Directorio CEO en Minera Mirasol SA y Minera Rocafuerte SA así como de otras empresas vinculadas en las que en el altiplano de los andes y costa norte peruana opera en minería de metales preciosos.
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -208,7 +202,7 @@ const nosotros = () => {
                   <Card.Title className="fs-3 m-0">
                     Gerente Legal y Financiero
                   </Card.Title>
-                  <Card.Text className="mt-4">
+                  <Card.Text className="mt-4 text-justify--mobile">
                     Abogado por la Universidad San Martin de Porres. Maestro en Finanzas y Derecho Corporativo, con mención en tributación por ESAN. Estudios de Maestría en Derecho Civil por la Universidad San Martin de Porres, y especialización en Derecho Financiero a través del Programa de Educación Ejecutiva (PEE) por ESAN. Más de diez años de experiencia en derecho corporativo, temas patrimoniales, tributarios y mineros.
                   </Card.Text>
                 </Card.Body>
@@ -229,7 +223,7 @@ const nosotros = () => {
                   <Card.Title className="fs-3 m-0">
                     Jefe de Control de Gestión
                   </Card.Title>
-                  <Card.Text className="mt-4">
+                  <Card.Text className="mt-4 text-justify--mobile">
                     Ingeniero Industrial de la Universidad de Lima con experiencia en empresas multinacionales del rubro alimentos y consumo masivo (ALICORP SAA), retail (TOTTUS SAA) y minería (Compañía Minera Antamina SA).
                   </Card.Text>
                 </Card.Body>
