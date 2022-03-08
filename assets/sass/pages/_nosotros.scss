@@ -63,14 +63,25 @@
     min-height: 100vh;
     .card-group{
       overflow: hidden;
+      @include media-breakpoint-up(xl){
+        column-gap: 10px;
+      }
+      @include media-breakpoint-up(xxl){
+        column-gap: 67px;
+      }
+      
     }
     .card{
-      @include media-breakpoint-up(md){
+      overflow: hidden;
+      @include media-breakpoint-up(xl){
         height: 478px;
         width: 389px;
+        flex: none !important;
       }
+      
       width: auto;
       height: auto;
+      
       &:hover{
         .card-img-overlay{
           @include media-breakpoint-up(xl){
@@ -100,13 +111,5 @@
       } */
     }
   
-    .card-group{
-      @include media-breakpoint-up(xl){
-        column-gap: 10px;
-      }
-      @include media-breakpoint-up(xxl){
-        column-gap: 67px;
-      }
-    }
   }
 }

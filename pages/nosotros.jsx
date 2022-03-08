@@ -181,7 +181,7 @@ const nosotros = () => {
                     Gerente General CEO
                   </Card.Title>
                   <Card.Text className="mt-4">
-                    Empresario que desde 1986 en Minero Perú SA, se involucró desde diversas posiciones en múltiples instituciones y corporaciones públicas y privadas en indistintos sectores. A la fecha es Gerente General CEO de SMRL Acumulación Los Rosales y Presidente del Directorio CEO en Minera Mirasol SA, Refinería Rocafuerte SA y San Roque 16 Gold SA así como de otras empresas vinculadas en las que en el ande y costa peruana opera en minería de metales preciosos.
+                    Empresario minero que desde 1986 en Minero Perú SA, se involucró desde diversas posiciones en múltiples instituciones y corporaciones públicas y privadas en indistintos sectores. A la fecha es Gerente General CEO de SMRL Acumulación Los Rosales y Presidente del Directorio CEO en Minera Mirasol SA y Minera Rocafuerte SA así como de otras empresas vinculadas en las que en el altiplano de los andes y costa norte peruana opera en minería de metales preciosos.
                   </Card.Text>
                 </Card.ImgOverlay>
                 <Card.Body className="d-xl-none text-black">
@@ -213,25 +213,7 @@ const nosotros = () => {
                   </Card.Text>
                 </Card.Body>
               </Card>
-              <Card className="text-white mx-auto mx-sm-0 border-0">
-                <Card.Img src="/images/Antonella_Rios.jpg" alt="Jefa de Gestión Humana" />
-                <Card.ImgOverlay className="d-none d-xl-flex flex-column align-items-center pt-6">
-                  <Card.Title className="fs-3 m-0">
-                    Jefa de Gestión Humana
-                  </Card.Title>
-                  <Card.Text className="mt-4">
-                    Administradora de profesion, especialista en gestion del talento con experiencia en rubros de salud, educación, hoteleria y retail. Cuento con experiencia en manejo de personal asi como en legislación y compensacion laboral.
-                  </Card.Text>
-                </Card.ImgOverlay>
-                <Card.Body className="d-xl-none text-black">
-                  <Card.Title className="fs-3 m-0">
-                    Jefa de Gestión Humana
-                  </Card.Title>
-                  <Card.Text className="mt-4">
-                    Administradora de profesion, especialista en gestion del talento con experiencia en rubros de salud, educación, hoteleria y retail. Cuento con experiencia en manejo de personal asi como en legislación y compensacion laboral.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
+
               <Card className="text-white mx-auto mx-sm-0 border-0">
                 <Card.Img src="/images/Andre_Carneiro.jpg" alt="Jefe de Control" />
                 <Card.ImgOverlay className="d-none d-xl-flex flex-column align-items-center pt-6">
