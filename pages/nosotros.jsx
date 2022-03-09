@@ -171,16 +171,22 @@ const nosotros = () => {
               <Card className="text-white mx-auto mx-sm-0 border-0">
                 <Card.Img src="/images/Jose_Carneiro.jpg" alt="Gerente General" />
                 <Card.ImgOverlay className="d-none d-xl-flex flex-column align-items-center pt-6">
-                  <Card.Title className="fs-3 m-0">
-                    Gerente General CEO
+                  <Card.Title className="fs-3 m-0 text-center">
+                    <div className="d-flex flex-column">
+                      José Carneiro Arévalo
+                      <span className="fs-4">Gerente General CEO</span>
+                    </div>
                   </Card.Title>
                   <Card.Text className="mt-4">
                     Empresario minero que desde 1986 en Minero Perú SA, se involucró desde diversas posiciones en múltiples instituciones y corporaciones públicas y privadas en indistintos sectores. A la fecha es Gerente General CEO de SMRL Acumulación Los Rosales y Presidente del Directorio CEO en Minera Mirasol SA y Minera Rocafuerte SA así como de otras empresas vinculadas en las que en el altiplano de los andes y costa norte peruana opera en minería de metales preciosos.
                   </Card.Text>
                 </Card.ImgOverlay>
                 <Card.Body className="d-xl-none text-black">
-                  <Card.Title className="fs-3 m-0">
-                    Gerente General CEO
+                  <Card.Title className="fs-3 m-0 text-center">
+                    <div className="d-flex flex-column">
+                      José Carneiro Arévalo
+                      <span className="fs-4">Gerente General CEO</span>
+                    </div>
                   </Card.Title>
                   <Card.Text className="mt-4 text-justify--mobile">
                     Empresario minero que desde 1986 en Minero Perú SA, se involucró desde diversas posiciones en múltiples instituciones y corporaciones públicas y privadas en indistintos sectores. A la fecha es Gerente General CEO de SMRL Acumulación Los Rosales y Presidente del Directorio CEO en Minera Mirasol SA y Minera Rocafuerte SA así como de otras empresas vinculadas en las que en el altiplano de los andes y costa norte peruana opera en minería de metales preciosos.
@@ -190,8 +196,11 @@ const nosotros = () => {
               <Card className="text-white mx-auto mx-sm-0 border-0">
                 <Card.Img src="/images/Hector_Gomez.jpg" alt="Gerente Legal y de Finanzas" />
                 <Card.ImgOverlay className="d-none d-xl-flex flex-column align-items-center pt-6">
-                  <Card.Title className="fs-3 m-0">
-                    Gerente Legal y Financiero
+                  <Card.Title className="fs-3 m-0 text-center">
+                    <div className="d-flex flex-column">
+                      Héctor J. Gómez Bermeo
+                      <span className="fs-4"> Gerente Legal y Financiero</span>
+                    </div>
                   </Card.Title>
                   <Card.Text className="mt-4">
                     Abogado por la Universidad San Martin de Porres. Maestro en Finanzas y Derecho Corporativo, con mención en tributación por ESAN. Estudios de Maestría en Derecho Civil por la Universidad San Martin de Porres, y especialización en Derecho Financiero a través del Programa de Educación Ejecutiva (PEE) por ESAN. Más de diez años de experiencia en derecho corporativo, temas patrimoniales, tributarios y mineros.
@@ -199,8 +208,11 @@ const nosotros = () => {
 
                 </Card.ImgOverlay>
                 <Card.Body className="d-xl-none text-black">
-                  <Card.Title className="fs-3 m-0">
-                    Gerente Legal y Financiero
+                  <Card.Title className="fs-3 m-0 text-center">
+                    <div className="d-flex flex-column">
+                      Héctor J. Gómez Bermeo
+                      <span className="fs-4"> Gerente Legal y Financiero</span>
+                    </div>
                   </Card.Title>
                   <Card.Text className="mt-4 text-justify--mobile">
                     Abogado por la Universidad San Martin de Porres. Maestro en Finanzas y Derecho Corporativo, con mención en tributación por ESAN. Estudios de Maestría en Derecho Civil por la Universidad San Martin de Porres, y especialización en Derecho Financiero a través del Programa de Educación Ejecutiva (PEE) por ESAN. Más de diez años de experiencia en derecho corporativo, temas patrimoniales, tributarios y mineros.
@@ -211,8 +223,11 @@ const nosotros = () => {
               <Card className="text-white mx-auto mx-sm-0 border-0">
                 <Card.Img src="/images/Andre_Carneiro.jpg" alt="Jefe de Control" />
                 <Card.ImgOverlay className="d-none d-xl-flex flex-column align-items-center pt-6">
-                  <Card.Title className="fs-3 m-0">
-                    Jefe de Control de Gestión
+                  <Card.Title className="fs-3 m-0 text-center">
+                    <div className="d-flex flex-column">
+                      André Carneiro Escalante
+                      <span className="fs-4">Jefe de Control de Gestión</span>
+                    </div>
                   </Card.Title>
                   <Card.Text className="mt-4">
                     Ingeniero Industrial de la Universidad de Lima con experiencia en empresas multinacionales del rubro alimentos y consumo masivo (ALICORP SAA), retail (TOTTUS SAA) y minería (Compañía Minera Antamina SA).
@@ -220,8 +235,11 @@ const nosotros = () => {
 
                 </Card.ImgOverlay>
                 <Card.Body className="d-xl-none text-black">
-                  <Card.Title className="fs-3 m-0">
-                    Jefe de Control de Gestión
+                  <Card.Title className="fs-3 m-0 text-center">
+                    <div className="d-flex flex-column">
+                      André Carneiro Escalante
+                      <span className="fs-4"> Jefe de Control de Gestión</span>
+                    </div>
                   </Card.Title>
                   <Card.Text className="mt-4 text-justify--mobile">
                     Ingeniero Industrial de la Universidad de Lima con experiencia en empresas multinacionales del rubro alimentos y consumo masivo (ALICORP SAA), retail (TOTTUS SAA) y minería (Compañía Minera Antamina SA).
