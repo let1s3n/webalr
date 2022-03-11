@@ -178,7 +178,7 @@ const nosotros = () => {
                     </div>
                   </Card.Title>
                   <Card.Text className="mt-4">
-                    Empresario minero que desde 1986 en Minero Perú SA, se involucró desde diversas posiciones en múltiples instituciones y corporaciones públicas y privadas en indistintos sectores. A la fecha es Gerente General CEO de SMRL Acumulación Los Rosales y Presidente del Directorio CEO en Minera Mirasol SA y Minera Rocafuerte SA así como de otras empresas vinculadas en las que en el altiplano de los andes y costa norte peruana opera en minería de metales preciosos.
+                    Empresario que desde 1986 en Minero Perú SA, se involucró desde diversas posiciones en múltiples instituciones y corporaciones públicas y privadas en indistintos sectores. A la fecha es Gerente General CEO de SMRL Acumulación Los Rosales y Presidente del Directorio CEO en Minera Mirasol SA y Minera Rocafuerte SA así como de otras empresas vinculadas en las que en el altiplano de los andes y costa norte peruana opera en minería de metales preciosos.
                   </Card.Text>
                 </Card.ImgOverlay>
                 <Card.Body className="d-xl-none text-black">
@@ -189,7 +189,7 @@ const nosotros = () => {
                     </div>
                   </Card.Title>
                   <Card.Text className="mt-4 text-justify--mobile">
-                    Empresario minero que desde 1986 en Minero Perú SA, se involucró desde diversas posiciones en múltiples instituciones y corporaciones públicas y privadas en indistintos sectores. A la fecha es Gerente General CEO de SMRL Acumulación Los Rosales y Presidente del Directorio CEO en Minera Mirasol SA y Minera Rocafuerte SA así como de otras empresas vinculadas en las que en el altiplano de los andes y costa norte peruana opera en minería de metales preciosos.
+                    Empresario que desde 1986 en Minero Perú SA, se involucró desde diversas posiciones en múltiples instituciones y corporaciones públicas y privadas en indistintos sectores. A la fecha es Gerente General CEO de SMRL Acumulación Los Rosales y Presidente del Directorio CEO en Minera Mirasol SA y Minera Rocafuerte SA así como de otras empresas vinculadas en las que en el altiplano de los andes y costa norte peruana opera en minería de metales preciosos.
                   </Card.Text>
                 </Card.Body>
               </Card>
