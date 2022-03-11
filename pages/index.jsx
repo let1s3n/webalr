@@ -2,13 +2,14 @@ import React, { useEffect } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import { Container, Carousel, Row, Col, CardGroup, Card, Image } from 'react-bootstrap'
+import { useTranslation } from "react-i18next";
 import useWindowDimensions from "../hooks/useWindowDimensions";
 export default function Home() {
   const { width } = useWindowDimensions();
   useEffect(() => {
     console.log(width)
   }, [width])
-
+  const { t } = useTranslation();
   return (
     <>
       <Head>
@@ -23,9 +24,9 @@ export default function Home() {
               alt="Foto de la planta de día"
             />
             <h1 className="hero-text position-absolute text-white">
-              <span className="d-block bg-yellow2 bg-opacity-60 fw-normal px-4 mb-2">PERUANOS EN BUSCA DE LA EXCELENCIA</span>
-              <span className="d-inline-block bg-basic1 bg-opacity-40 fw-600 px-4 mb-2">HACIENDO</span> <br />
-              <span className="d-inline-block fw-bolder bg-blue2 bg-opacity-60 px-4">MINERÍA RESPONSABLE</span>
+              <span className="d-block bg-yellow2 bg-opacity-60 fw-normal px-4 mb-2">{t('hero_text1')}</span>
+              <span className="d-inline-block bg-basic1 bg-opacity-40 fw-600 px-4 mb-2">{t('hero_text2')}</span> <br />
+              <span className="d-inline-block fw-bolder bg-blue2 bg-opacity-60 px-4">{t('hero_text3')}</span>
             </h1>
             <div className="hero-illustration">
               <Image
@@ -43,9 +44,9 @@ export default function Home() {
 
             />
             <h1 className="hero-text position-absolute text-white">
-              <span className="d-block bg-yellow2 bg-opacity-60 fw-normal px-4 mb-2">PROCESAMOS MÁS DE 120,000 TM/AÑO</span>
-              <span className="d-inline-block bg-basic1 bg-opacity-40 fw-600 px-4 mb-2">DE MINERAL AURÍFERO PROPIO</span> <br />
-              <span className="d-inline-block fw-bolder bg-blue2 bg-opacity-60 px-4">Y PAMs</span>
+              <span className="d-block bg-yellow2 bg-opacity-60 fw-normal px-4 mb-2">{t('hero_text4')}</span>
+              <span className="d-inline-block bg-basic1 bg-opacity-40 fw-600 px-4 mb-2">{t('hero_text5')}</span> <br />
+              <span className="d-inline-block fw-bolder bg-blue2 bg-opacity-60 px-4">{t('hero_text6')}</span>
             </h1>
             <div className="hero-illustration">
               <Image
@@ -58,25 +59,27 @@ export default function Home() {
       </section>
       <section className="quienes-somos pt-6">
         <Container fluid="md">
-          <h3 className="fw-bold text-blue1 mb-5 text-center">“Somos una empresa peruana productora de metales preciosos con más de 40 años de fundada que realiza actividad minera a 4,000 msnm en Vilque Puno PERÚ”</h3>
+          <h3 className="fw-bold text-blue1 mb-5 text-center">{t('who_we_are')}</h3>
+          {/* Test multilenguaje */}
+          {/* <h3>{t('welcome_to_react')}</h3> */}
 
         </Container>
         <Container fluid className="bg-yellow2 bg-opacity-10 pt-5 pt-xl-11 px-5 px-xl-11 pb-5">
           <Row className="custom-row flex-column flex-sm-row">
             <Col>
               <h3 className="mb-5 fs-4 fs-xxl-3">
-                <span className="text-blue2">Nuestra</span><span className="text-yellow2"> Historia</span>
+                <span className="text-blue2">{t('our_history1')}</span><span className="text-yellow2"> {t('our_history2')}</span>
               </h3>
               <p className="quienes-somos-text m-0 fs-6 fs-sm-5 fw-light lh-base">
-                Somos una empresa peruana productora de metales preciosos con más de 40 años de fundada que realiza actividad minera a 4,000 msnm en Vilque Puno PERÚ.
+                {t('who_we_are')}
               </p>
             </Col>
             <Col>
               <h3 className="mb-5 fs-4 fs-xxl-3">
-                <span className="text-blue2">Somos una</span><span className="text-yellow2"> Empresa Peruana</span>
+                <span className="text-blue2">{t('peruvian_enterprise1')}</span><span className="text-yellow2"> {t('peruvian_enterprise2')}</span>
               </h3>
               <p className="quienes-somos-text m-0 fs-6 fs-sm-5 fw-light text-justify lh-base">
-                Operamos en la Planta Metalúrgica Los Rosales de 340 TMD a través de un circuito de cianuración en tanques CIP obteniendo doré para el mercado internacional LBMA.
+                {t('peruvian_enterprise3')}
               </p>
             </Col>
           </Row>
@@ -84,7 +87,7 @@ export default function Home() {
         </Container>
         <Container fluid className="g-0 mt-5 bg-blue2 bg-opacity-10">
           <div className="w-75 w-xxl-50 bg-blue3" style={{ padding: 32 + 'px', borderRadius: '0px 20px 20px 0px' }}>
-            <h2 className="text-blue2 m-0 fw-bolder">NUESTRA MISIÓN, VISIÓN Y VALORES</h2>
+            <h2 className="text-blue2 m-0 fw-bolder">{t('our_mission_vision_values_title')}</h2>
           </div>
         </Container>
         <div className="py-4 px-xl-4">
@@ -98,7 +101,7 @@ export default function Home() {
                     <a>
                       <Row>
                         <Col xs="auto">
-                          <h2 className="m-0 text-white">NUESTRA MISIÓN</h2>
+                          <h2 className="m-0 text-white">{t('our_mission')}</h2>
                         </Col>
                         <Col xs="auto">
                           <Image
@@ -125,7 +128,7 @@ export default function Home() {
                     <a>
                       <Row>
                         <Col xs="auto">
-                          <h2 className="m-0 text-white">NUESTRA VISIÓN</h2>
+                          <h2 className="m-0 text-white">{t('our_vision')}</h2>
                         </Col>
                         <Col xs="auto">
                           <Image
@@ -148,7 +151,7 @@ export default function Home() {
                     <a>
                       <Row>
                         <Col xs="auto">
-                          <h2 className="m-0 text-white">VALORES</h2>
+                          <h2 className="m-0 text-white">{t('our_values')}</h2>
                         </Col>
                         <Col xs="auto">
                           <Image
@@ -166,11 +169,11 @@ export default function Home() {
           </CardGroup>
         </div>
       </section>
-      
+
       <section className="novedades">
         <Container fluid className="g-0 mt-5 bg-yellow2 bg-opacity-10 d-flex flex-row-reverse">
           <div className="w-75 w-xxl-50 bg-yellow3" style={{ padding: 32 + 'px', borderRadius: '20px 0px 0px 20px' }}>
-            <h2 className="text-yellow2 m-0 fw-bolder">ÚLTIMAS NOTICIAS</h2>
+            <h2 className="text-yellow2 m-0 fw-bolder">{t('last_news')}</h2>
           </div>
         </Container>
         <Container className="my-6 my-md-10 my-xxl-17" fluid="xxl">
@@ -185,10 +188,10 @@ export default function Home() {
                 </Col>
                 <Col xs={12} sm={6} md={4} lg={6} xxl={4}>
                   <h2 className="m-0 mb-3 text-yellow2">
-                    Visita de Colorado School of Mines
+                    {t('visit_CSM_title')}
                   </h2>
                   <p className="text-justify--mobile m-0">
-                    Visita del 22 de septiembre del 2021 a SMRL ACUMULACIÓN LOS ROSALES en Puno - Perú de la delegación de Colorado School of Mines - USA.
+                    {t('visit_CSM_text')}
                   </p>
                 </Col>
               </Row>
@@ -203,10 +206,10 @@ export default function Home() {
                 </Col>
                 <Col xs={12} sm={6} md={4} lg={6} xxl={4}>
                   <h2 className="m-0 mb-3 text-yellow2">
-                    Objetivos 2022
+                    {t('objetivos_2022_title')}
                   </h2>
                   <p className="text-justify--mobile m-0">
-                    Seguimos firmes en nuestros objetivos y al año 2022 somos la mayor operación integral de reprocesamiento de PAMs de metales preciosos en Puno - Perú y una de las principales del país, logrando trazabilidad y sostenibilidad simultaneamente.
+                    {t('objetivos_2022_text')}
                   </p>
                 </Col>
               </Row>
@@ -221,10 +224,10 @@ export default function Home() {
                 </Col>
                 <Col xs={12} sm={6} md={4} lg={6} xxl={4}>
                   <h2 className="m-0 mb-3 text-yellow2">
-                    Aumento en nuestra capacidad
+                    {t('aumento_capacidad_title')}
                   </h2>
                   <p className="text-justify--mobile m-0">
-                    Hemos ampliado nuestra capacidad a 340 TMD en Planta Metalúrgica Los Rosales Puno en función a autorizaciones sectoriales otorgadas en marzo 2021. Reutilizando PAMs utilizando mecanismos ambientales que garantizan nulo impacto al entorno. Cumplimos con la normatividad y simultaneamente crecemos.
+                    {t('aumento_capacidad_text')}
                   </p>
                 </Col>
               </Row>

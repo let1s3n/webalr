@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Navbar, NavDropdown, Container, Nav, Row, Col, Button, Offcanvas } from 'react-bootstrap';
 import cookieCutter from 'cookie-cutter'
+import { useTranslation } from "react-i18next";
 import CustomModal from "./customModal";
 import CustomOffCanvas from "./customOffCanvas";
 import usePathName from "../hooks/usePathName";
@@ -23,7 +24,7 @@ const NavBar = () => {
   useEffect(() => {
     console.log(currentpath)
   }, [currentpath])
-
+  const { t } = useTranslation();
   return (
     <Navbar bg="blue1" className={currentpath === '/' || currentpath === '/nosotros' || currentpath === '/politicas' ? "px-4 py-2 w-100 bg-opacity-70 position-absolute top-0" : "main-navbar px-4 py-2 w-100 bg-opacity-70"} expand={false} style={{ zIndex: 2 }}>
       <Container fluid className="g-0">
@@ -44,23 +45,23 @@ const NavBar = () => {
               </li>
               <li>
                 <Link href="/nosotros" passHref>
-                  <Nav.Link className="text-white py-2 fw-400 text-uppercase">SOBRE NOSOTROS</Nav.Link>
+                  <Nav.Link className="text-white py-2 fw-400 text-uppercase">{t('about_us')}</Nav.Link>
                 </Link>
               </li>
               <li>
                 <Link href="/politicas" passHref>
-                  <Nav.Link className="text-white py-2 fw-400 text-uppercase">POLÍTICAS</Nav.Link>
+                  <Nav.Link className="text-white py-2 fw-400 text-uppercase">{t('policies')}</Nav.Link>
                 </Link>
               </li>
 
               <li>
                 <Link href="/responsabilidad" passHref>
-                  <Nav.Link className="text-white py-2 fw-400 text-uppercase">RESPONSABILIDAD</Nav.Link>
+                  <Nav.Link className="text-white py-2 fw-400 text-uppercase">{t('responsibility')}</Nav.Link>
                 </Link>
               </li>
               <li>
                 <Link href="/contacto" passHref>
-                  <Nav.Link className="text-white py-2 fw-400 text-uppercase">CONTÁCTENOS</Nav.Link>
+                  <Nav.Link className="text-white py-2 fw-400 text-uppercase">{t('contact_us')}</Nav.Link>
                 </Link>
               </li>
 
@@ -72,9 +73,21 @@ const NavBar = () => {
               <Col className="text-center">
                 <Button className="rounded-circle p-0 border-0" variant="link" onClick={() => setModalShow(true)}>
                   {locale === 'en' ?
-                    <Image src="/images/es-icon.svg" className="d-inline-block" width={24} height={24} />
+                    <>
+                      <Image src="/images/es-icon.svg" className="d-inline-block" width={24} height={24} />
+                      <Image src="/images/fr-icon.svg" className="d-inline-block" width={24} height={24} />
+                    </>
                     :
-                    <Image src="/images/en-icon.svg" className="d-inline-block" width={24} height={24} />
+                    locale === 'fr' ?
+                      <>
+                        <Image src="/images/en-icon.svg" className="d-inline-block" width={24} height={24} />
+                        <Image src="/images/es-icon.svg" className="d-inline-block" width={24} height={24} />
+                      </>
+                      :
+                      <>
+                        <Image src="/images/en-icon.svg" className="d-inline-block" width={24} height={24} />
+                        <Image src="/images/fr-icon.svg" className="d-inline-block" width={24} height={24} />
+                      </>
                   }
 
                 </Button>

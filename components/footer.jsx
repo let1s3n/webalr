@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import Link from "next/link";
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import { IoLogoFacebook, IoLogoYoutube, IoLogoLinkedin, IoLogoTwitter } from "react-icons/io5";
-
+import { useTranslation } from "react-i18next";
 const Footer = () => {
-
+  const { t } = useTranslation();
   return (
     <Container fluid className="main-footer bg-blue1 text-white py-3 px-0 py-lg-5 position-relative overflow-hidden">
       <Row className="g-0 px-2 px-lg-5">
@@ -18,7 +18,7 @@ const Footer = () => {
           <Row className="w-100 justify-content-md-evenly justify-content-lg-start ps-xl-5 ps-xxl-6" style={{ rowGap: 1 + 'rem' }}>
             <Col xs="auto" className="ms-lg-3">
               <p className="m-0 custom-font-xxl-6">
-                Planta Metalúrgica Los Rosales <br />
+              {t('footer_ALR')} <br />
                 VILQUE, PUNO, PERÚ
               </p>
             </Col>
@@ -34,7 +34,7 @@ const Footer = () => {
         <Col xs={6} lg={3} xxl={2} className="d-flex justify-content-center pt-4" style={{ zIndex: 2 }}>
           <Row xs={1} className="g-0">
             <Col>
-              <p className="m-0 fw-600 custom-font-xxl-6 text-center">Síguenos</p>
+              <p className="m-0 fw-600 custom-font-xxl-6 text-center">{t('footer_follow_us')}</p>
             </Col>
             <Col className="text-center">
               <div className="d-flex justify-content-center" style={{ columnGap: .5 + 'rem' }}>
@@ -51,7 +51,7 @@ const Footer = () => {
             <Col className="text-center">
               <Link href="/politicas">
                 <a>
-                  <p className="m-0 custom-font-6">Políticas</p>
+                  <p className="m-0 custom-font-6">{t('footer_policies')}</p>
                 </a>
               </Link>
             </Col>

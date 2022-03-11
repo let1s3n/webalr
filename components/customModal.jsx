@@ -1,5 +1,6 @@
 import { Modal, Button, Image } from 'react-bootstrap';
 import { useRouter } from 'next/router';
+import { useTranslation } from "react-i18next";
 function CustomModal(props) {
   const router = useRouter();
   const handleLocaleChange = (e) => {
@@ -8,6 +9,7 @@ function CustomModal(props) {
     document.cookie = `i18next=${e.target.closest("[data-locale]").dataset.locale}`;
     router.reload(window.location.pathname);
   }
+  const { t } = useTranslation();
   return (
     <Modal
       {...props}
@@ -28,16 +30,21 @@ function CustomModal(props) {
       <Modal.Body className="text-center pt-0" style={{ paddingBottom: 5 + 'rem' }}>
         <Image className="idiomas-logo mb-2" src="/images/logo-alr.png" />
         <p className="mb-3 fs-md-5">
-          Choose your lenguage
+          {t('choose_language')}
         </p>
         <div className="d-flex flex-column align-items-center" style={{ rowGap: 1 + 'rem' }}>
-          <div className="d-flex align-items-center gap-3 pe-1" style={{ columnGap: 1 + 'rem' }} onClick={handleLocaleChange} data-locale="en" style={{ cursor: 'pointer' }}>
-            <Image src="/images/en-icon.svg" />
+          <div className="d-flex align-items-center gap-3 pe-1" style={{ columnGap: 1 + 'rem', cursor: 'pointer',width:116+'px' }} onClick={handleLocaleChange} data-locale="en">
+
+            <Image src="/images/en-icon.svg" style={{width:28+'px'}}/>
             <p className="m-0 fs-md-5">English</p>
           </div>
-          <div className="d-flex align-items-center gap-3" style={{ columnGap: 1 + 'rem' }} onClick={handleLocaleChange} data-locale="es" style={{ cursor: 'pointer' }}>
-            <Image src="/images/es-icon.svg" />
+          <div className="d-flex align-items-center gap-3" style={{ columnGap: 1 + 'rem', cursor: 'pointer',width:116+'px' }} onClick={handleLocaleChange} data-locale="es">
+            <Image src="/images/es-icon.svg" style={{width:28+'px'}} />
             <p className="m-0 fs-md-5">Spanish</p>
+          </div>
+          <div className="d-flex align-items-center gap-3" style={{ columnGap: 1 + 'rem', cursor: 'pointer',width:116+'px' }} onClick={handleLocaleChange} data-locale="fr">
+            <Image src="/images/fr-icon.svg" style={{width:28+'px',height:27+'px'}} />
+            <p className="m-0 fs-md-5">French</p>
           </div>
         </div>
       </Modal.Body>
