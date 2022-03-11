@@ -194,6 +194,32 @@ const nosotros = () => {
                 </Card.Body>
               </Card>
               <Card className="text-white mx-auto mx-sm-0 border-0">
+                <Card.Img src="/images/Jhon_Quispe.jpg" alt="Jefe de Operaciones y Comercialización" />
+                <Card.ImgOverlay className="d-none d-xl-flex flex-column align-items-center pt-6">
+                  <Card.Title className="fs-3 m-0 text-center">
+                    <div className="d-flex flex-column">
+                      Jhon Quispe De la Cruz
+                      <span className="fs-4">Jefe de Operaciones y Comercialización</span>
+                    </div>
+                  </Card.Title>
+                  <Card.Text className="mt-4">
+                    Ingeniero Químico Colegiado con Diploma en Gestión Comercial (ESAN), +12 años de experiencia liderando áreas de producción, calidad y comercial en jefaturas de empresas en sector minero e industrial. Encargado en negociación, administración y operaciones comerciales de contratos en concentrados polimetálicos, metálicos refinados y minerales.
+                  </Card.Text>
+
+                </Card.ImgOverlay>
+                <Card.Body className="d-xl-none text-black">
+                  <Card.Title className="fs-3 m-0 text-center">
+                    <div className="d-flex flex-column">
+                      Jhon Quispe De la Cruz
+                      <span className="fs-4"> Jefe de Operaciones y Comercialización</span>
+                    </div>
+                  </Card.Title>
+                  <Card.Text className="mt-4 text-justify--mobile">
+                    Ingeniero Químico Colegiado con Diploma en Gestión Comercial (ESAN), +12 años de experiencia liderando áreas de producción, calidad y comercial en jefaturas de empresas en sector minero e industrial. Encargado en negociación, administración y operaciones comerciales de contratos en concentrados polimetálicos, metálicos refinados y minerales.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+              <Card className="text-white mx-auto mx-sm-0 border-0">
                 <Card.Img src="/images/Hector_Gomez.jpg" alt="Gerente Legal y de Finanzas" />
                 <Card.ImgOverlay className="d-none d-xl-flex flex-column align-items-center pt-6">
                   <Card.Title className="fs-3 m-0 text-center">
@@ -219,7 +245,6 @@ const nosotros = () => {
                   </Card.Text>
                 </Card.Body>
               </Card>
-
               <Card className="text-white mx-auto mx-sm-0 border-0">
                 <Card.Img src="/images/Andre_Carneiro.jpg" alt="Jefe de Control" />
                 <Card.ImgOverlay className="d-none d-xl-flex flex-column align-items-center pt-6">
