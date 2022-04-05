@@ -274,6 +274,141 @@ const nosotros = () => {
                   </Card.Text>
                 </Card.Body>
               </Card>
+
+              <Card className="text-white mx-auto mx-sm-0 border-0">
+                <Card.Img src="/images/Darwin_Delgado.jpg" alt="Jefe de Control" />
+                <Card.ImgOverlay className="d-none d-xl-flex flex-column align-items-center pt-6">
+                  <Card.Title className="fs-3 m-0 text-center">
+                    <div className="d-flex flex-column">
+                      {t('darwin_delgado_title1')}
+                      <span className="fs-4">{t('darwin_delgado_title2')}</span>
+                    </div>
+                  </Card.Title>
+                  <Card.Text className="mt-4">
+                    {t('darwin_delgado_text')}
+                  </Card.Text>
+
+                </Card.ImgOverlay>
+                <Card.Body className="d-xl-none text-black">
+                  <Card.Title className="fs-3 m-0 text-center">
+                    <div className="d-flex flex-column">
+                      {t('darwin_delgado_title1')}
+                      <span className="fs-4"> {t('darwin_delgado_title2')}</span>
+                    </div>
+                  </Card.Title>
+                  <Card.Text className="mt-4 text-justify--mobile">
+                    {t('darwin_delgado_text')}
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+
+              <Card className="text-white mx-auto mx-sm-0 border-0">
+                <Card.Img src="/images/Rolando_Algarate.jpg" alt="Jefe de Control" />
+                <Card.ImgOverlay className="d-none d-xl-flex flex-column align-items-center pt-6">
+                  <Card.Title className="fs-3 m-0 text-center">
+                    <div className="d-flex flex-column">
+                      {t('rolando_algarate_title1')}
+                      <span className="fs-4">{t('rolando_algarate_title2')}</span>
+                    </div>
+                  </Card.Title>
+                  <Card.Text className="mt-4">
+                    {t('rolando_algarate_text')}
+                  </Card.Text>
+
+                </Card.ImgOverlay>
+                <Card.Body className="d-xl-none text-black">
+                  <Card.Title className="fs-3 m-0 text-center">
+                    <div className="d-flex flex-column">
+                      {t('rolando_algarate_title1')}
+                      <span className="fs-4"> {t('rolando_algarate_title2')}</span>
+                    </div>
+                  </Card.Title>
+                  <Card.Text className="mt-4 text-justify--mobile">
+                    {t('rolando_algarate_text')}
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+
+              <Card className="text-white mx-auto mx-sm-0 border-0">
+                <Card.Img src="/images/William_Medrano.jpg" alt="Jefe de Control" />
+                <Card.ImgOverlay className="d-none d-xl-flex flex-column align-items-center pt-6">
+                  <Card.Title className="fs-3 m-0 text-center">
+                    <div className="d-flex flex-column">
+                      {t('william_medrano_title1')}
+                      <span className="fs-4">{t('william_medrano_title2')}</span>
+                    </div>
+                  </Card.Title>
+                  <Card.Text className="mt-4">
+                    {t('william_medrano_text')}
+                  </Card.Text>
+
+                </Card.ImgOverlay>
+                <Card.Body className="d-xl-none text-black">
+                  <Card.Title className="fs-3 m-0 text-center">
+                    <div className="d-flex flex-column">
+                      {t('william_medrano_title1')}
+                      <span className="fs-4"> {t('william_medrano_title2')}</span>
+                    </div>
+                  </Card.Title>
+                  <Card.Text className="mt-4 text-justify--mobile">
+                    {t('william_medrano_text')}
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+
+              <Card className="text-white mx-auto mx-sm-0 border-0">
+                <Card.Img src="/images/Oliver_Huaman.jpg" alt="Jefe de Permisos y Relaciones Comunitarias" />
+                <Card.ImgOverlay className="d-none d-xl-flex flex-column align-items-center pt-6">
+                  <Card.Title className="fs-3 m-0 text-center">
+                    <div className="d-flex flex-column">
+                      {t('oliver_huaman_title1')}
+                      <span className="fs-4">{t('oliver_huaman_title2')}</span>
+                    </div>
+                  </Card.Title>
+                  <Card.Text className="mt-4">
+                    {t('oliver_huaman_text')}
+                  </Card.Text>
+
+                </Card.ImgOverlay>
+                <Card.Body className="d-xl-none text-black">
+                  <Card.Title className="fs-3 m-0 text-center">
+                    <div className="d-flex flex-column">
+                      {t('oliver_huaman_title1')}
+                      <span className="fs-4"> {t('oliver_huaman_title2')}</span>
+                    </div>
+                  </Card.Title>
+                  <Card.Text className="mt-4 text-justify--mobile">
+                    {t('oliver_huaman_text')}
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+
+              <Card className="text-white mx-auto mx-sm-0 border-0">
+                <Card.Img src="/images/Rafael_Farfan.jpg" alt="Jefe de Control" />
+                <Card.ImgOverlay className="d-none d-xl-flex flex-column align-items-center pt-6">
+                  <Card.Title className="fs-3 m-0 text-center">
+                    <div className="d-flex flex-column">
+                      {t('rafael_farfan_title1')}
+                      <span className="fs-4">{t('rafael_farfan_title2')}</span>
+                    </div>
+                  </Card.Title>
+                  <Card.Text className="mt-4">
+                    {t('rafael_farfan_text')}
+                  </Card.Text>
+
+                </Card.ImgOverlay>
+                <Card.Body className="d-xl-none text-black">
+                  <Card.Title className="fs-3 m-0 text-center">
+                    <div className="d-flex flex-column">
+                      {t('rafael_farfan_title1')}
+                      <span className="fs-4"> {t('rafael_farfan_title2')}</span>
+                    </div>
+                  </Card.Title>
+                  <Card.Text className="mt-4 text-justify--mobile">
+                    {t('rafael_farfan_text')}
+                  </Card.Text>
+                </Card.Body>
+              </Card>
             </CardGroup>
           </Container>
         </section>
