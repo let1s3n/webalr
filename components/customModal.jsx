@@ -4,8 +4,6 @@ import { useTranslation } from "react-i18next";
 function CustomModal(props) {
   const router = useRouter();
   const handleLocaleChange = (e) => {
-
-    /* console.log(e.target.closest("[data-locale]").dataset.locale) */
     document.cookie = `i18next=${e.target.closest("[data-locale]").dataset.locale}`;
     router.reload(window.location.pathname);
   }
