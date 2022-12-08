@@ -10,7 +10,7 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import HttpApi from 'i18next-http-backend';
 
 
-import Layout from '../components/layout'
+import Default from '../components/layout/Default/Default'
 import Loader from '../components/loader'
 
 import '../assets/sass/app.scss'
@@ -58,24 +58,11 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <SSRProvider>
         <Loader loading={loading} />
-        <Layout>
+        <Default>
           <Component {...pageProps} />
-        </Layout>
+        </Default>
       </SSRProvider>
     </>
   )
 }
-
-// Only uncomment this method if you have blocking data requirements for
-// every single page in your application. This disables the ability to
-// perform automatic static optimization, causing every page in your app to
-// be server-side rendered.
-//
-// MyApp.getInitialProps = async (appContext) => {
-//   // calls page's `getInitialProps` and fills `appProps.pageProps`
-//   const appProps = await App.getInitialProps(appContext);
-//
-//   return {...appProps}
-// }
-
 export default MyApp

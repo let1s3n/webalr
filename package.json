@@ -2,10 +2,9 @@
   "private": true,
   "homepage": "https://acumulacionlosrosales.com/",
   "scripts": {
-    "dev": "node server.js",
+    "dev": "next dev",
     "build": "next build",
-    "export": "next export",
-    "start": "cross-env NODE_ENV=production node server.js"
+    "start": "next start"
   },
   "dependencies": {
     "bootstrap": "^5.1.3",

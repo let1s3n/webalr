@@ -4,12 +4,14 @@ import Link from 'next/link'
 import { Container, Carousel, Row, Col, CardGroup, Card, Image } from 'react-bootstrap'
 import { useTranslation } from "react-i18next";
 import useWindowDimensions from "../hooks/useWindowDimensions";
+
 export default function Home() {
   const { width } = useWindowDimensions();
   useEffect(() => {
     console.log(width)
   }, [width])
   const { t } = useTranslation();
+  
   return (
     <>
       <Head>
@@ -235,8 +237,6 @@ export default function Home() {
           </Carousel>
         </Container>
       </section>
-
-
     </>
   )
 }
