@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 
 import { Container, Row, Col, Carousel, Image, Button } from 'react-bootstrap'
-import dynamic from 'next/dynamic';
 import { useTranslation } from "react-i18next";
 import useWindowDimensions from "../../../hooks/useWindowDimensions";
 
