@@ -28,7 +28,8 @@ i18n
     defaultNS: 'general',
     backend: {
       loadPath: `${process.env.NEXT_PUBLIC_URL}data/locales/{{lng}}/{{ns}}.json`,
-    }
+    },
+    react: { useSuspense: false },
 
   });
 
