@@ -102,7 +102,7 @@ const Home = () => {
             <Card className="text-white mx-auto mx-sm-0">
               <Card.Img src="/images/mision.jpg" alt="Misión de ALR" />
               <Card.ImgOverlay className="d-flex align-items-center justify-content-center">
-                <Card.Title>
+                {/* <Card.Title>
                   <Link href="/nosotros#mision-section">
 
                     <Row>
@@ -119,14 +119,14 @@ const Home = () => {
                     </Row>
 
                   </Link>
-                </Card.Title>
+                </Card.Title> */}
 
               </Card.ImgOverlay>
             </Card>
             <Card className="text-white mx-auto mx-sm-0">
               <Card.Img src="/images/vision.jpg" alt="Visión de ALR" />
               <Card.ImgOverlay className="d-flex align-items-center justify-content-center">
-                <Card.Title className="fs-2 m-0">
+                {/* <Card.Title className="fs-2 m-0">
                   <Link href="/nosotros#vision-section">
 
                     <Row>
@@ -143,14 +143,14 @@ const Home = () => {
                     </Row>
 
                   </Link>
-                </Card.Title>
+                </Card.Title> */}
 
               </Card.ImgOverlay>
             </Card>
             <Card className="text-white mx-auto mx-sm-0">
               <Card.Img src="/images/valores.jpg" alt="Valores de ALR" />
               <Card.ImgOverlay className="d-flex align-items-center justify-content-center">
-                <Card.Title className="fs-2 m-0">
+               {/*  <Card.Title className="fs-2 m-0">
                   <Link href="/nosotros#valores-section">
 
                     <Row>
@@ -167,7 +167,7 @@ const Home = () => {
                     </Row>
 
                   </Link>
-                </Card.Title>
+                </Card.Title> */}
 
               </Card.ImgOverlay>
             </Card>
