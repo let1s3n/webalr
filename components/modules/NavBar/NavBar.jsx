@@ -5,9 +5,9 @@ import { Navbar, NavDropdown, Container, Nav, Row, Col, Button, Offcanvas } from
 import cookieCutter from 'cookie-cutter'
 import i18n from "i18next";
 import { useTranslation } from "react-i18next";
-import CustomModal from "./customModal";
-import CustomOffCanvas from "./customOffCanvas";
-import usePathName from "../../hooks/usePathName";
+import CustomModal from "../customModal";
+import CustomOffCanvas from "../customOffCanvas";
+import usePathName from "../../../hooks/usePathName";
 
 const NavBar = () => {
   const [loading, setLoading] = useState(true);
