@@ -1,8 +1,16 @@
 import React, { useEffect } from 'react'
 
+import dynamic from 'next/dynamic';
+
 import { Container, Row, Col, Carousel, Image, Button } from 'react-bootstrap'
 import { useTranslation } from "react-i18next";
 import useWindowDimensions from "../../../hooks/useWindowDimensions";
+
+
+const PdfViewer = dynamic(
+  () => import('../components/modules/pdfViewer'),
+  { ssr: false }
+);
 
 const Politicas = () => {
 
