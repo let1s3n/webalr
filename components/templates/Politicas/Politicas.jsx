@@ -14,7 +14,7 @@ const PdfViewer = dynamic(
 
 const Politicas = () => {
 
-  const { width } = useWindowDimensions();
+  const { height, width } = useWindowDimensions();
   useEffect(() => {
     console.log(width)
   }, [width])

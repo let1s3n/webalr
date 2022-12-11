@@ -23,6 +23,10 @@ const NavBar = () => {
 
   }, [])
 
+  useEffect(() => {
+    console.log("DAYANES: ", t('about_us', { ns: 'general' }))
+  }, [t])
+
   return (
 
     <Navbar bg="blue1" className={currentpath === '/' || currentpath === '/nosotros' || currentpath === '/politicas' ? "px-4 py-2 w-100 bg-opacity-70 position-absolute top-0" : "main-navbar px-4 py-2 w-100 bg-opacity-70"} expand={false} style={{ zIndex: 2 }}>

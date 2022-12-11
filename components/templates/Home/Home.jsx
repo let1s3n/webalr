@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useState } from 'react'
 
 import i18n from "i18next";
 import { useTranslation } from "react-i18next";
@@ -11,8 +11,13 @@ const Home = () => {
 
   const { height, width } = useWindowDimensions();
   const { t } = useTranslation();
+  /* const [loading, setLoading] = useState(true);
+  i18n
+    .loadNamespaces(['general'])
+    .then(() => { setLoading(false) }); */
 
   return (
+
     <>
       <section className="hero-section">
         <Carousel controls={width >= 1280 ? true : false} interval={null} className="h-100">
@@ -243,6 +248,7 @@ const Home = () => {
         </Container>
       </section>
     </>
+
   )
 }
 
