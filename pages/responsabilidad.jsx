@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 
 import Responsabilidad from '../components/templates/Responsabilidad/Responsabilidad'
-const Responsabilidad = () => {
+const responsabilidad = () => {
   return (
     <>
       <Head>
@@ -13,4 +13,4 @@ const Responsabilidad = () => {
   )
 }
 
-export default Responsabilidad
+export default responsabilidad

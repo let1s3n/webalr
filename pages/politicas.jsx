@@ -4,7 +4,7 @@ import dynamic from 'next/dynamic';
 import Politicas from '../components/templates/Politicas/Politicas'
 
 const PdfViewer = dynamic(
-  () => import('../components/pdfViewer'),
+  () => import('../components/modules/pdfViewer'),
   { ssr: false }
 );
 const politicas = () => {
