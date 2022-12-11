@@ -8,7 +8,7 @@ import useWindowDimensions from "../../../hooks/useWindowDimensions";
 
 
 const PdfViewer = dynamic(
-  () => import('../components/modules/pdfViewer'),
+  () => import('../../modules/pdfViewer'),
   { ssr: false }
 );
 
