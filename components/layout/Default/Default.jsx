@@ -1,5 +1,3 @@
-// components/layout.js
-
 import Navbar from '../../navbar'
 import Footer from '../../footer'
 

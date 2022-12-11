@@ -94,16 +94,16 @@
 }
 
 .novedades{
-  /* min-height: 100vh; */
+  
   .carousel-control-next{
-    /* right: 124px !important; */
+    
     @include media-breakpoint-up(xxl){
       right: -20px !important;
     }
     right: 0px !important;
   }
   .carousel-control-prev{
-    /* left: 62px !important; */
+    
     @include media-breakpoint-up(xl) {
       left: 0px !important;
     }
@@ -151,12 +151,6 @@
   }
 
   .novedades-img{
-   /*  @include media-breakpoint-up(xxl){
-      height: 499px;
-    }
-    @include media-breakpoint-up(md){
-      height: 350px;
-    } */
     width: 100%;
     height: auto;
   }
