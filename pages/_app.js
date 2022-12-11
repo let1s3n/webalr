@@ -9,11 +9,10 @@ import { useTranslation, initReactI18next } from "react-i18next";
 import LanguageDetector from 'i18next-browser-languagedetector';
 import HttpApi from 'i18next-http-backend';
 
+import '../assets/sass/app.scss'
 
 import Default from '../components/layout/Default/Default'
 import Loader from '../components/elements/Loader/Loader'
-
-import '../assets/sass/app.scss'
 
 i18n
   .use(initReactI18next)
@@ -25,10 +24,11 @@ i18n
       order: ['cookie', 'htmlTag', 'localStorage', 'path', 'subdomain'],
       caches: ['cookie'],
     },
+    ns: ['general'],
+    defaultNS: 'general',
     backend: {
-      loadPath: `${process.env.NEXT_PUBLIC_URL}data/locales/{{lng}}/translation.json`,
-    },
-    react: { useSuspense: false },
+      loadPath: `${process.env.NEXT_PUBLIC_URL}data/locales/{{lng}}/{{ns}}.json`,
+    }
 
   });
 

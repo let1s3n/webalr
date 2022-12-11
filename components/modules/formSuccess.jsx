@@ -41,7 +41,7 @@ const FormSuccess = () => {
       <Container fluid className="py-11 py-md-17 d-md-flex flex-column justify-content-center g-0">
         <Row className="mb-4">
           <Col>
-            <Image src="/images/logo-alr.png" style={{width:200+'px'}}/>
+            <Image src="/images/logo-alr.png" style={{width:200+'px'}} alt="logo alr"/>
           </Col>
         </Row>
         <Row className="mb-2">

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 
+import i18n from "i18next";
 import { useTranslation } from "react-i18next";
 import Link from 'next/link'
 import { Container, Carousel, Row, Col, CardGroup, Card, Image } from 'react-bootstrap'
@@ -8,15 +9,14 @@ import useWindowDimensions from "../../../hooks/useWindowDimensions";
 
 const Home = () => {
 
-  const { width } = useWindowDimensions();
-  useEffect(() => {
-    console.log(width)
-  }, [width])
+  const { height, width } = useWindowDimensions();
   const { t } = useTranslation();
+
   return (
     <>
       <section className="hero-section">
         <Carousel controls={width >= 1280 ? true : false} interval={null} className="h-100">
+
           <Carousel.Item className="h-100">
             <Image
               className="hero-image"
@@ -24,9 +24,9 @@ const Home = () => {
               alt="Foto de la planta de día"
             />
             <h1 className="hero-text position-absolute text-white">
-              <span className="d-block bg-yellow2 bg-opacity-60 fw-normal px-4 mb-2">{t('hero_text1')}</span>
-              <span className="d-inline-block bg-basic1 bg-opacity-40 fw-600 px-4 mb-2">{t('hero_text2')}</span> <br />
-              <span className="d-inline-block fw-bolder bg-blue2 bg-opacity-60 px-4">{t('hero_text3')}</span>
+              <span className="d-block bg-yellow2 bg-opacity-60 fw-normal px-4 mb-2">{t('hero_text1', { ns: 'general' })}</span>
+              <span className="d-inline-block bg-basic1 bg-opacity-40 fw-600 px-4 mb-2">{t('hero_text2', { ns: 'general' })}</span> <br />
+              <span className="d-inline-block fw-bolder bg-blue2 bg-opacity-60 px-4">{t('hero_text3', { ns: 'general' })}</span>
             </h1>
             <div className="hero-illustration">
               <Image
@@ -44,9 +44,9 @@ const Home = () => {
 
             />
             <h1 className="hero-text position-absolute text-white">
-              <span className="d-block bg-yellow2 bg-opacity-60 fw-normal px-4 mb-2">{t('hero_text4')}</span>
-              <span className="d-inline-block bg-basic1 bg-opacity-40 fw-600 px-4 mb-2">{t('hero_text5')}</span> <br />
-              <span className="d-inline-block fw-bolder bg-blue2 bg-opacity-60 px-4">{t('hero_text6')}</span>
+              <span className="d-block bg-yellow2 bg-opacity-60 fw-normal px-4 mb-2">{t('hero_text4', { ns: 'general' })}</span>
+              <span className="d-inline-block bg-basic1 bg-opacity-40 fw-600 px-4 mb-2">{t('hero_text5', { ns: 'general' })}</span> <br />
+              <span className="d-inline-block fw-bolder bg-blue2 bg-opacity-60 px-4">{t('hero_text6', { ns: 'general' })}</span>
             </h1>
             <div className="hero-illustration">
               <Image
@@ -55,31 +55,32 @@ const Home = () => {
               />
             </div>
           </Carousel.Item>
+
         </Carousel>
       </section>
       <section className="quienes-somos pt-6">
         <Container fluid="md">
-          <h3 className="fw-bold text-blue1 mb-5 text-center">{t('who_we_are')}</h3>
+          <h3 className="fw-bold text-blue1 mb-5 text-center">{t('who_we_are', { ns: 'general' })}</h3>
           {/* Test multilenguaje */}
-          {/* <h3>{t('welcome_to_react')}</h3> */}
+          {/* <h3>{t('welcome_to_react', { ns: 'general' })}</h3> */}
 
         </Container>
         <Container fluid className="bg-yellow2 bg-opacity-10 pt-5 pt-xl-11 px-5 px-xl-11 pb-5">
           <Row className="custom-row flex-column flex-sm-row">
             <Col>
               <h3 className="mb-5 fs-4 fs-xxl-3">
-                <span className="text-blue2">{t('our_history1')}</span><span className="text-yellow2"> {t('our_history2')}</span>
+                <span className="text-blue2">{t('our_history1', { ns: 'general' })}</span><span className="text-yellow2"> {t('our_history2', { ns: 'general' })}</span>
               </h3>
               <p className="quienes-somos-text m-0 fs-6 fs-sm-5 fw-light lh-base">
-                {t('who_we_are')}
+                {t('who_we_are', { ns: 'general' })}
               </p>
             </Col>
             <Col>
               <h3 className="mb-5 fs-4 fs-xxl-3">
-                <span className="text-blue2">{t('peruvian_enterprise1')}</span><span className="text-yellow2"> {t('peruvian_enterprise2')}</span>
+                <span className="text-blue2">{t('peruvian_enterprise1', { ns: 'general' })}</span><span className="text-yellow2"> {t('peruvian_enterprise2', { ns: 'general' })}</span>
               </h3>
               <p className="quienes-somos-text m-0 fs-6 fs-sm-5 fw-light text-justify lh-base">
-                {t('peruvian_enterprise3')}
+                {t('peruvian_enterprise3', { ns: 'general' })}
               </p>
             </Col>
           </Row>
@@ -87,7 +88,7 @@ const Home = () => {
         </Container>
         <Container fluid className="g-0 mt-5 bg-blue2 bg-opacity-10">
           <div className="w-75 w-xxl-50 bg-blue3" style={{ padding: 32 + 'px', borderRadius: '0px 20px 20px 0px' }}>
-            <h2 className="text-blue2 m-0 fw-bolder">{t('our_mission_vision_values_title')}</h2>
+            <h2 className="text-blue2 m-0 fw-bolder">{t('our_mission_vision_values_title', { ns: 'general' })}</h2>
           </div>
         </Container>
         <div className="py-4 px-xl-4">
@@ -98,26 +99,23 @@ const Home = () => {
               <Card.ImgOverlay className="d-flex align-items-center justify-content-center">
                 <Card.Title>
                   <Link href="/nosotros#mision-section">
-                    <a>
-                      <Row>
-                        <Col xs="auto">
-                          <h2 className="m-0 text-white">{t('our_mission')}</h2>
-                        </Col>
-                        <Col xs="auto">
-                          <Image
-                            src="/images/arrow-right-white.svg"
-                            className="arrow-right"
-                          />
-                        </Col>
-                      </Row>
-                    </a>
+
+                    <Row>
+                      <Col xs="auto">
+                        <h2 className="m-0 text-white">{t('our_mission', { ns: 'general' })}</h2>
+                      </Col>
+                      <Col xs="auto">
+                        <Image
+                          src="/images/arrow-right-white.svg"
+                          className="arrow-right"
+                          alt="arrow right"
+                        />
+                      </Col>
+                    </Row>
+
                   </Link>
                 </Card.Title>
-                {/* <Card.Text>
-                  This is a wider card with supporting text below as a natural lead-in to
-                  additional content. This content is a little bit longer.
-                </Card.Text>
-                <Card.Text>Last updated 3 mins ago</Card.Text> */}
+
               </Card.ImgOverlay>
             </Card>
             <Card className="text-white mx-auto mx-sm-0">
@@ -125,19 +123,20 @@ const Home = () => {
               <Card.ImgOverlay className="d-flex align-items-center justify-content-center">
                 <Card.Title className="fs-2 m-0">
                   <Link href="/nosotros#vision-section">
-                    <a>
-                      <Row>
-                        <Col xs="auto">
-                          <h2 className="m-0 text-white">{t('our_vision')}</h2>
-                        </Col>
-                        <Col xs="auto">
-                          <Image
-                            src="/images/arrow-right-white.svg"
-                            className="arrow-right"
-                          />
-                        </Col>
-                      </Row>
-                    </a>
+
+                    <Row>
+                      <Col xs="auto">
+                        <h2 className="m-0 text-white">{t('our_vision', { ns: 'general' })}</h2>
+                      </Col>
+                      <Col xs="auto">
+                        <Image
+                          src="/images/arrow-right-white.svg"
+                          className="arrow-right"
+                          alt="arrow right white"
+                        />
+                      </Col>
+                    </Row>
+
                   </Link>
                 </Card.Title>
 
@@ -148,19 +147,20 @@ const Home = () => {
               <Card.ImgOverlay className="d-flex align-items-center justify-content-center">
                 <Card.Title className="fs-2 m-0">
                   <Link href="/nosotros#valores-section">
-                    <a>
-                      <Row>
-                        <Col xs="auto">
-                          <h2 className="m-0 text-white">{t('our_values')}</h2>
-                        </Col>
-                        <Col xs="auto">
-                          <Image
-                            src="/images/arrow-right-white.svg"
-                            className="arrow-right"
-                          />
-                        </Col>
-                      </Row>
-                    </a>
+
+                    <Row>
+                      <Col xs="auto">
+                        <h2 className="m-0 text-white">{t('our_values', { ns: 'general' })}</h2>
+                      </Col>
+                      <Col xs="auto">
+                        <Image
+                          src="/images/arrow-right-white.svg"
+                          className="arrow-right"
+                          alt="arrow right white"
+                        />
+                      </Col>
+                    </Row>
+
                   </Link>
                 </Card.Title>
 
@@ -173,65 +173,72 @@ const Home = () => {
       <section className="novedades">
         <Container fluid className="g-0 mt-5 bg-yellow2 bg-opacity-10 d-flex flex-row-reverse">
           <div className="w-75 w-xxl-50 bg-yellow3" style={{ padding: 32 + 'px', borderRadius: '20px 0px 0px 20px' }}>
-            <h2 className="text-yellow2 m-0 fw-bolder">{t('last_news')}</h2>
+            <h2 className="text-yellow2 m-0 fw-bolder">{t('last_news', { ns: 'general' })}</h2>
           </div>
         </Container>
         <Container className="my-6 my-md-10 my-xxl-17" fluid="xxl">
           <Carousel controls={width >= 1280 ? true : false} interval={null}>
+
             <Carousel.Item>
               <Row>
                 <Col xs={12} sm={6} md={8} lg={6} xxl={8}>
                   <Image
                     src="/images/CSM.jpg"
                     className="novedades-img"
+                    alt="novedades img"
                   />
                 </Col>
                 <Col xs={12} sm={6} md={4} lg={6} xxl={4}>
                   <h2 className="m-0 mb-3 text-yellow2">
-                    {t('visit_CSM_title')}
+                    {t('visit_CSM_title', { ns: 'general' })}
                   </h2>
                   <p className="text-justify--mobile m-0">
-                    {t('visit_CSM_text')}
+                    {t('visit_CSM_text', { ns: 'general' })}
                   </p>
                 </Col>
               </Row>
             </Carousel.Item>
+
             <Carousel.Item>
               <Row>
                 <Col xs={12} sm={6} md={8} lg={6} xxl={8}>
                   <Image
                     src="/images/planta-noticias.jpg"
                     className="novedades-img"
+                    alt="novedades img"
                   />
                 </Col>
                 <Col xs={12} sm={6} md={4} lg={6} xxl={4}>
                   <h2 className="m-0 mb-3 text-yellow2">
-                    {t('objetivos_2022_title')}
+                    {t('objetivos_2022_title', { ns: 'general' })}
                   </h2>
                   <p className="text-justify--mobile m-0">
-                    {t('objetivos_2022_text')}
+                    {t('objetivos_2022_text', { ns: 'general' })}
                   </p>
                 </Col>
               </Row>
             </Carousel.Item>
+
             <Carousel.Item>
               <Row>
                 <Col xs={12} sm={6} md={8} lg={6} xxl={8}>
                   <Image
                     src="/images/hero2.jpg"
                     className="novedades-img"
+                    alt="novedades img"
                   />
                 </Col>
                 <Col xs={12} sm={6} md={4} lg={6} xxl={4}>
                   <h2 className="m-0 mb-3 text-yellow2">
-                    {t('aumento_capacidad_title')}
+                    {t('aumento_capacidad_title', { ns: 'general' })}
                   </h2>
                   <p className="text-justify--mobile m-0">
-                    {t('aumento_capacidad_text')}
+                    {t('aumento_capacidad_text', { ns: 'general' })}
                   </p>
                 </Col>
               </Row>
             </Carousel.Item>
+
           </Carousel>
         </Container>
       </section>

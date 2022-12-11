@@ -24,9 +24,9 @@ const Nosotros = () => {
               alt="Charla de seguridad"
             />
             <h1 className="hero-text position-absolute text-white">
-              <span className="d-block bg-yellow2 bg-opacity-60 fw-normal px-4 mb-2">{t('hero_text1')}</span>
-              <span className="d-inline-block bg-basic1 bg-opacity-40 fw-600 px-4 mb-2">{t('hero_text2')}</span> <br />
-              <span className="d-inline-block fw-bolder bg-blue2 bg-opacity-60 px-4">{t('hero_text3')}</span>
+              <span className="d-block bg-yellow2 bg-opacity-60 fw-normal px-4 mb-2">{t('hero_text1', { ns: 'general' })}</span>
+              <span className="d-inline-block bg-basic1 bg-opacity-40 fw-600 px-4 mb-2">{t('hero_text2', { ns: 'general' })}</span> <br />
+              <span className="d-inline-block fw-bolder bg-blue2 bg-opacity-60 px-4">{t('hero_text3', { ns: 'general' })}</span>
             </h1>
             <div className="hero-illustration">
               <Image
@@ -42,9 +42,9 @@ const Nosotros = () => {
               alt="Equipo de laboratorio químico"
             />
             <h1 className="hero-text position-absolute text-white">
-              <span className="d-block bg-yellow2 bg-opacity-60 fw-normal px-4 mb-2">{t('hero_text4')}</span>
-              <span className="d-inline-block bg-basic1 bg-opacity-40 fw-600 px-4 mb-2">{t('hero_text5')}</span> <br />
-              <span className="d-inline-block fw-bolder bg-blue2 bg-opacity-60 px-4">{t('hero_text6')}</span>
+              <span className="d-block bg-yellow2 bg-opacity-60 fw-normal px-4 mb-2">{t('hero_text4', { ns: 'general' })}</span>
+              <span className="d-inline-block bg-basic1 bg-opacity-40 fw-600 px-4 mb-2">{t('hero_text5', { ns: 'general' })}</span> <br />
+              <span className="d-inline-block fw-bolder bg-blue2 bg-opacity-60 px-4">{t('hero_text6', { ns: 'general' })}</span>
             </h1>
             <div className="hero-illustration">
               <Image
@@ -77,18 +77,18 @@ const Nosotros = () => {
               </Carousel>
             </Col>
             <Col>
-              <h2 className="mb-3 text-black">{t('us_our_history_title')}</h2>
+              <h2 className="mb-3 text-black">{t('us_our_history_title', { ns: 'general' })}</h2>
               <p className="m-0 text-justify--mobile">
-                {t('us_our_history_text_p1')}
+                {t('us_our_history_text_p1', { ns: 'general' })}
                 <br />
                 <br />
-                {t('us_our_history_text_p2')}
+                {t('us_our_history_text_p2', { ns: 'general' })}
                 <br />
                 <br />
-                {t('us_our_history_text_p3')}
+                {t('us_our_history_text_p3', { ns: 'general' })}
                 <br />
                 <br />
-                {t('us_our_history_text_p4')}
+                {t('us_our_history_text_p4', { ns: 'general' })}
 
               </p>
             </Col>
@@ -102,10 +102,10 @@ const Nosotros = () => {
             <Row className="g-0" xs={1} md={2}>
               <Col>
                 <div className="bg-blue3 d-flex align-items-center justify-content-center">
-                  <h2 className="fw-bolder m-0 text-blue2">{t('us_vision_title')}</h2>
+                  <h2 className="fw-bolder m-0 text-blue2">{t('us_vision_title', { ns: 'general' })}</h2>
                 </div>
                 <p className="m-0 p-4 fs-xxl-5">
-                  {t('us_vision_text')}
+                  {t('us_vision_text', { ns: 'general' })}
                 </p>
               </Col>
               <Col>
@@ -123,10 +123,10 @@ const Nosotros = () => {
             <Row className="g-0" xs={1} md={2}>
               <Col>
                 <div className="bg-yellow3 d-flex align-items-center justify-content-center">
-                  <h2 className="fw-bolder m-0 text-yellow2">{t('us_mission_title')}</h2>
+                  <h2 className="fw-bolder m-0 text-yellow2">{t('us_mission_title', { ns: 'general' })}</h2>
                 </div>
                 <p className="m-0 p-4 fs-xxl-5">
-                  {t('us_mission_text')}
+                  {t('us_mission_text', { ns: 'general' })}
                 </p>
               </Col>
               <Col>
@@ -145,11 +145,11 @@ const Nosotros = () => {
             <Row className="g-0" xs={1} md={2}>
               <Col>
                 <div className="bg-white d-flex align-items-center justify-content-center">
-                  <h2 className="fw-bolder m-0">{t('us_values_title')}</h2>
+                  <h2 className="fw-bolder m-0">{t('us_values_title', { ns: 'general' })}</h2>
                 </div>
 
                 <p className="m-0 p-4 fs-xxl-5">
-                  {t('us_values_text')}
+                  {t('us_values_text', { ns: 'general' })}
                 </p>
               </Col>
               <Col>
@@ -175,23 +175,23 @@ const Nosotros = () => {
               <Card.ImgOverlay className="d-none d-xl-flex flex-column align-items-center pt-6">
                 <Card.Title className="fs-3 m-0 text-center">
                   <div className="d-flex flex-column">
-                    {t('jose_carneiro_title1')}
-                    <span className="fs-4">{t('jose_carneiro_title2')}</span>
+                    {t('jose_carneiro_title1', { ns: 'general' })}
+                    <span className="fs-4">{t('jose_carneiro_title2', { ns: 'general' })}</span>
                   </div>
                 </Card.Title>
                 <Card.Text className="mt-4">
-                  {t('jose_carneiro_text')}
+                  {t('jose_carneiro_text', { ns: 'general' })}
                 </Card.Text>
               </Card.ImgOverlay>
               <Card.Body className="d-xl-none text-black">
                 <Card.Title className="fs-3 m-0 text-center">
                   <div className="d-flex flex-column">
-                    {t('jose_carneiro_title1')}
-                    <span className="fs-4">{t('jose_carneiro_title2')}</span>
+                    {t('jose_carneiro_title1', { ns: 'general' })}
+                    <span className="fs-4">{t('jose_carneiro_title2', { ns: 'general' })}</span>
                   </div>
                 </Card.Title>
                 <Card.Text className="mt-4 text-justify--mobile">
-                  {t('jose_carneiro_text')}
+                  {t('jose_carneiro_text', { ns: 'general' })}
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -200,24 +200,24 @@ const Nosotros = () => {
               <Card.ImgOverlay className="d-none d-xl-flex flex-column align-items-center pt-6">
                 <Card.Title className="fs-3 m-0 text-center">
                   <div className="d-flex flex-column">
-                    {t('jhon_quispe_title1')}
-                    <span className="fs-4">{t('jhon_quispe_title2')}</span>
+                    {t('jhon_quispe_title1', { ns: 'general' })}
+                    <span className="fs-4">{t('jhon_quispe_title2', { ns: 'general' })}</span>
                   </div>
                 </Card.Title>
                 <Card.Text className="mt-4">
-                  {t('jhon_quispe_text')}
+                  {t('jhon_quispe_text', { ns: 'general' })}
                 </Card.Text>
 
               </Card.ImgOverlay>
               <Card.Body className="d-xl-none text-black">
                 <Card.Title className="fs-3 m-0 text-center">
                   <div className="d-flex flex-column">
-                    {t('jhon_quispe_title1')}
-                    <span className="fs-4"> {t('jhon_quispe_title2')}</span>
+                    {t('jhon_quispe_title1', { ns: 'general' })}
+                    <span className="fs-4"> {t('jhon_quispe_title2', { ns: 'general' })}</span>
                   </div>
                 </Card.Title>
                 <Card.Text className="mt-4 text-justify--mobile">
-                  {t('jhon_quispe_text')}
+                  {t('jhon_quispe_text', { ns: 'general' })}
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -226,24 +226,24 @@ const Nosotros = () => {
               <Card.ImgOverlay className="d-none d-xl-flex flex-column align-items-center pt-6">
                 <Card.Title className="fs-3 m-0 text-center">
                   <div className="d-flex flex-column">
-                    {t('hector_gomez_title1')}
-                    <span className="fs-4"> {t('hector_gomez_title2')}</span>
+                    {t('hector_gomez_title1', { ns: 'general' })}
+                    <span className="fs-4"> {t('hector_gomez_title2', { ns: 'general' })}</span>
                   </div>
                 </Card.Title>
                 <Card.Text className="mt-4">
-                  {t('hector_gomez_text')}
+                  {t('hector_gomez_text', { ns: 'general' })}
                 </Card.Text>
 
               </Card.ImgOverlay>
               <Card.Body className="d-xl-none text-black">
                 <Card.Title className="fs-3 m-0 text-center">
                   <div className="d-flex flex-column">
-                    {t('hector_gomez_title1')}
-                    <span className="fs-4"> {t('hector_gomez_title2')}</span>
+                    {t('hector_gomez_title1', { ns: 'general' })}
+                    <span className="fs-4"> {t('hector_gomez_title2', { ns: 'general' })}</span>
                   </div>
                 </Card.Title>
                 <Card.Text className="mt-4 text-justify--mobile">
-                  {t('hector_gomez_text')}
+                  {t('hector_gomez_text', { ns: 'general' })}
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -252,24 +252,24 @@ const Nosotros = () => {
               <Card.ImgOverlay className="d-none d-xl-flex flex-column align-items-center pt-6">
                 <Card.Title className="fs-3 m-0 text-center">
                   <div className="d-flex flex-column">
-                    {t('andre_carneiro_title1')}
-                    <span className="fs-4">{t('andre_carneiro_title2')}</span>
+                    {t('andre_carneiro_title1', { ns: 'general' })}
+                    <span className="fs-4">{t('andre_carneiro_title2', { ns: 'general' })}</span>
                   </div>
                 </Card.Title>
                 <Card.Text className="mt-4">
-                  {t('andre_carneiro_text')}
+                  {t('andre_carneiro_text', { ns: 'general' })}
                 </Card.Text>
 
               </Card.ImgOverlay>
               <Card.Body className="d-xl-none text-black">
                 <Card.Title className="fs-3 m-0 text-center">
                   <div className="d-flex flex-column">
-                    {t('andre_carneiro_title1')}
-                    <span className="fs-4"> {t('andre_carneiro_title2')}</span>
+                    {t('andre_carneiro_title1', { ns: 'general' })}
+                    <span className="fs-4"> {t('andre_carneiro_title2', { ns: 'general' })}</span>
                   </div>
                 </Card.Title>
                 <Card.Text className="mt-4 text-justify--mobile">
-                  {t('andre_carneiro_text')}
+                  {t('andre_carneiro_text', { ns: 'general' })}
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -279,24 +279,24 @@ const Nosotros = () => {
               <Card.ImgOverlay className="d-none d-xl-flex flex-column align-items-center pt-6">
                 <Card.Title className="fs-3 m-0 text-center">
                   <div className="d-flex flex-column">
-                    {t('darwin_delgado_title1')}
-                    <span className="fs-4">{t('darwin_delgado_title2')}</span>
+                    {t('darwin_delgado_title1', { ns: 'general' })}
+                    <span className="fs-4">{t('darwin_delgado_title2', { ns: 'general' })}</span>
                   </div>
                 </Card.Title>
                 <Card.Text className="mt-4">
-                  {t('darwin_delgado_text')}
+                  {t('darwin_delgado_text', { ns: 'general' })}
                 </Card.Text>
 
               </Card.ImgOverlay>
               <Card.Body className="d-xl-none text-black">
                 <Card.Title className="fs-3 m-0 text-center">
                   <div className="d-flex flex-column">
-                    {t('darwin_delgado_title1')}
-                    <span className="fs-4"> {t('darwin_delgado_title2')}</span>
+                    {t('darwin_delgado_title1', { ns: 'general' })}
+                    <span className="fs-4"> {t('darwin_delgado_title2', { ns: 'general' })}</span>
                   </div>
                 </Card.Title>
                 <Card.Text className="mt-4 text-justify--mobile">
-                  {t('darwin_delgado_text')}
+                  {t('darwin_delgado_text', { ns: 'general' })}
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -306,24 +306,24 @@ const Nosotros = () => {
               <Card.ImgOverlay className="d-none d-xl-flex flex-column align-items-center pt-6">
                 <Card.Title className="fs-3 m-0 text-center">
                   <div className="d-flex flex-column">
-                    {t('rolando_algarate_title1')}
-                    <span className="fs-4">{t('rolando_algarate_title2')}</span>
+                    {t('rolando_algarate_title1', { ns: 'general' })}
+                    <span className="fs-4">{t('rolando_algarate_title2', { ns: 'general' })}</span>
                   </div>
                 </Card.Title>
                 <Card.Text className="mt-4">
-                  {t('rolando_algarate_text')}
+                  {t('rolando_algarate_text', { ns: 'general' })}
                 </Card.Text>
 
               </Card.ImgOverlay>
               <Card.Body className="d-xl-none text-black">
                 <Card.Title className="fs-3 m-0 text-center">
                   <div className="d-flex flex-column">
-                    {t('rolando_algarate_title1')}
-                    <span className="fs-4"> {t('rolando_algarate_title2')}</span>
+                    {t('rolando_algarate_title1', { ns: 'general' })}
+                    <span className="fs-4"> {t('rolando_algarate_title2', { ns: 'general' })}</span>
                   </div>
                 </Card.Title>
                 <Card.Text className="mt-4 text-justify--mobile">
-                  {t('rolando_algarate_text')}
+                  {t('rolando_algarate_text', { ns: 'general' })}
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -333,24 +333,24 @@ const Nosotros = () => {
               <Card.ImgOverlay className="d-none d-xl-flex flex-column align-items-center pt-6">
                 <Card.Title className="fs-3 m-0 text-center">
                   <div className="d-flex flex-column">
-                    {t('william_medrano_title1')}
-                    <span className="fs-4">{t('william_medrano_title2')}</span>
+                    {t('william_medrano_title1', { ns: 'general' })}
+                    <span className="fs-4">{t('william_medrano_title2', { ns: 'general' })}</span>
                   </div>
                 </Card.Title>
                 <Card.Text className="mt-4">
-                  {t('william_medrano_text')}
+                  {t('william_medrano_text', { ns: 'general' })}
                 </Card.Text>
 
               </Card.ImgOverlay>
               <Card.Body className="d-xl-none text-black">
                 <Card.Title className="fs-3 m-0 text-center">
                   <div className="d-flex flex-column">
-                    {t('william_medrano_title1')}
-                    <span className="fs-4"> {t('william_medrano_title2')}</span>
+                    {t('william_medrano_title1', { ns: 'general' })}
+                    <span className="fs-4"> {t('william_medrano_title2', { ns: 'general' })}</span>
                   </div>
                 </Card.Title>
                 <Card.Text className="mt-4 text-justify--mobile">
-                  {t('william_medrano_text')}
+                  {t('william_medrano_text', { ns: 'general' })}
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -360,24 +360,24 @@ const Nosotros = () => {
               <Card.ImgOverlay className="d-none d-xl-flex flex-column align-items-center pt-6">
                 <Card.Title className="fs-3 m-0 text-center">
                   <div className="d-flex flex-column">
-                    {t('oliver_huaman_title1')}
-                    <span className="fs-4">{t('oliver_huaman_title2')}</span>
+                    {t('oliver_huaman_title1', { ns: 'general' })}
+                    <span className="fs-4">{t('oliver_huaman_title2', { ns: 'general' })}</span>
                   </div>
                 </Card.Title>
                 <Card.Text className="mt-4">
-                  {t('oliver_huaman_text')}
+                  {t('oliver_huaman_text', { ns: 'general' })}
                 </Card.Text>
 
               </Card.ImgOverlay>
               <Card.Body className="d-xl-none text-black">
                 <Card.Title className="fs-3 m-0 text-center">
                   <div className="d-flex flex-column">
-                    {t('oliver_huaman_title1')}
-                    <span className="fs-4"> {t('oliver_huaman_title2')}</span>
+                    {t('oliver_huaman_title1', { ns: 'general' })}
+                    <span className="fs-4"> {t('oliver_huaman_title2', { ns: 'general' })}</span>
                   </div>
                 </Card.Title>
                 <Card.Text className="mt-4 text-justify--mobile">
-                  {t('oliver_huaman_text')}
+                  {t('oliver_huaman_text', { ns: 'general' })}
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -387,24 +387,24 @@ const Nosotros = () => {
               <Card.ImgOverlay className="d-none d-xl-flex flex-column align-items-center pt-6">
                 <Card.Title className="fs-3 m-0 text-center">
                   <div className="d-flex flex-column">
-                    {t('rafael_farfan_title1')}
-                    <span className="fs-4">{t('rafael_farfan_title2')}</span>
+                    {t('rafael_farfan_title1', { ns: 'general' })}
+                    <span className="fs-4">{t('rafael_farfan_title2', { ns: 'general' })}</span>
                   </div>
                 </Card.Title>
                 <Card.Text className="mt-4">
-                  {t('rafael_farfan_text')}
+                  {t('rafael_farfan_text', { ns: 'general' })}
                 </Card.Text>
 
               </Card.ImgOverlay>
               <Card.Body className="d-xl-none text-black">
                 <Card.Title className="fs-3 m-0 text-center">
                   <div className="d-flex flex-column">
-                    {t('rafael_farfan_title1')}
-                    <span className="fs-4"> {t('rafael_farfan_title2')}</span>
+                    {t('rafael_farfan_title1', { ns: 'general' })}
+                    <span className="fs-4"> {t('rafael_farfan_title2', { ns: 'general' })}</span>
                   </div>
                 </Card.Title>
                 <Card.Text className="mt-4 text-justify--mobile">
-                  {t('rafael_farfan_text')}
+                  {t('rafael_farfan_text', { ns: 'general' })}
                 </Card.Text>
               </Card.Body>
             </Card>

@@ -18,7 +18,7 @@ const Footer = () => {
           <Row className="w-100 justify-content-md-evenly justify-content-lg-start ps-xl-5 ps-xxl-6" style={{ rowGap: 1 + 'rem' }}>
             <Col xs="auto" className="ms-lg-3">
               <p className="m-0 custom-font-xxl-6">
-              {t('footer_ALR')} <br />
+                {t('footer_ALR', { ns: 'general' })} <br />
                 VILQUE, PUNO, PERÚ
               </p>
             </Col>
@@ -34,7 +34,7 @@ const Footer = () => {
         <Col xs={6} lg={3} xxl={2} className="d-flex justify-content-center pt-4" style={{ zIndex: 2 }}>
           <Row xs={1} className="g-0">
             <Col>
-              <p className="m-0 fw-600 custom-font-xxl-6 text-center">{t('footer_follow_us')}</p>
+              <p className="m-0 fw-600 custom-font-xxl-6 text-center">{t('footer_follow_us', { ns: 'general' })}</p>
             </Col>
             <Col className="text-center">
               <div className="d-flex justify-content-center" style={{ columnGap: .5 + 'rem' }}>
@@ -50,9 +50,9 @@ const Footer = () => {
           <Row xs={1} className="g-0">
             <Col className="text-center">
               <Link href="/politicas">
-                <a>
-                  <p className="m-0 custom-font-6">{t('footer_policies')}</p>
-                </a>
+
+                <p className="m-0 custom-font-6">{t('footer_policies', { ns: 'general' })}</p>
+
               </Link>
             </Col>
             <Col className="text-center">
@@ -64,7 +64,7 @@ const Footer = () => {
           </Row>
         </Col>
       </Row>
-      <Image className="footer-illustration position-absolute" src="/images/footer-illustration.svg" style={{ zIndex: 1 }} />
+      <Image className="footer-illustration position-absolute" src="/images/footer-illustration.svg" style={{ zIndex: 1 }} alt="footer illustration"/>
     </Container>
   )
 }
