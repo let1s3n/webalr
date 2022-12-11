@@ -51,18 +51,16 @@ function MyApp({ Component, pageProps }) {
     console.log(`${process.env.NEXT_PUBLIC_URL}data/locales/{{lng}}/translation.json`);
     console.log(`${process.env.NEXT_PUBLIC_URL}`);
   }, []);
+
   return (
-    <>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-      </Head>
-      <SSRProvider>
-        <Loader loading={loading} />
-        <Default>
-          <Component {...pageProps} />
-        </Default>
-      </SSRProvider>
-    </>
+
+    <SSRProvider>
+      <Loader loading={loading} />
+      <Default>
+        <Component {...pageProps} />
+      </Default>
+    </SSRProvider>
+
   )
 }
 export default MyApp
