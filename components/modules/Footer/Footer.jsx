@@ -49,9 +49,9 @@ const Footer = () => {
         <Col xs={6} lg={3} xxl={2} className="d-flex justify-content-center pt-4" style={{ zIndex: 2 }}>
           <Row xs={1} className="g-0">
             <Col className="text-center">
-              <Link href="/politicas">
+              <Link href="/politicas" className="m-0 custom-font-6">
 
-                <p className="m-0 custom-font-6">{t('footer_policies', { ns: 'general' })}</p>
+                {/* <p className="m-0 custom-font-6"> */}{t('footer_policies', { ns: 'general' })}{/* </p> */}
 
               </Link>
             </Col>
