@@ -6,7 +6,7 @@ import cookieCutter from 'cookie-cutter'
 import { useTranslation } from "react-i18next";
 import CustomModal from "./customModal";
 import CustomOffCanvas from "./customOffCanvas";
-import usePathName from "../hooks/usePathName";
+import usePathName from "../../hooks/usePathName";
 
 const NavBar = () => {
   const [modalShow, setModalShow] = useState(false);

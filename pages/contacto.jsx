@@ -1,9 +1,9 @@
 import React from 'react'
 import Head from 'next/head'
 
-import Contacto from '../components/templates/Contacto'
+import Contacto from '../components/templates/Contacto/Contacto'
 
-const Contacto = () => {
+const contacto = () => {
   return (
     <>
       <Head>
@@ -15,4 +15,4 @@ const Contacto = () => {
   )
 }
 
-export default Contacto
+export default contacto

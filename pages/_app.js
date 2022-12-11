@@ -11,7 +11,7 @@ import HttpApi from 'i18next-http-backend';
 
 
 import Default from '../components/layout/Default/Default'
-import Loader from '../components/loader'
+import Loader from '../components/elements/Loader/Loader'
 
 import '../assets/sass/app.scss'
 

@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import Link from 'next/link'
 import { Container, Carousel, Row, Col, CardGroup, Card, Image } from 'react-bootstrap'
 
-import useWindowDimensions from "../hooks/useWindowDimensions";
+import useWindowDimensions from "../../../hooks/useWindowDimensions";
 
 const Home = () => {
 

@@ -1,9 +1,9 @@
 import React from 'react'
 import Head from 'next/head'
 
-import Home from '../components/templates/Home'
+import Home from '../components/templates/Home/Home'
 
-export default function Home() {
+const index = () => {
 
   return (
     <>
@@ -14,3 +14,5 @@ export default function Home() {
     </>
   )
 }
+
+export default index
