@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Link from "next/link";
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import { IoLogoFacebook, IoLogoYoutube, IoLogoLinkedin, IoLogoTwitter } from "react-icons/io5";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 const Footer = () => {
   const { t } = useTranslation();
   return (

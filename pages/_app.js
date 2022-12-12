@@ -2,21 +2,21 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from "next/router";
 import SSRProvider from 'react-bootstrap/SSRProvider';
-import Head from 'next/head'
+import { appWithTranslation } from 'next-i18next'
 
-import i18n from "i18next";
+/* import i18n from "i18next";
 import { useTranslation, initReactI18next } from "react-i18next";
 import LanguageDetector from 'i18next-browser-languagedetector';
-import HttpApi from 'i18next-http-backend';
+import HttpApi from 'i18next-http-backend'; */
 
 import '../assets/sass/app.scss'
 
 import Default from '../components/layout/Default/Default'
 import Loader from '../components/elements/Loader/Loader'
 
-i18n
+/* i18n
   .use(initReactI18next)
-  .use(LanguageDetector) // passes i18n down to react-i18next
+  .use(LanguageDetector)
   .use(HttpApi)
   .init({
     fallbackLng: "es",
@@ -36,7 +36,7 @@ i18n
       useSuspense: true
     }
 
-  });
+  }); */
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -53,10 +53,10 @@ function MyApp({ Component, pageProps }) {
     router.events.on("routeChangeError", handleComplete);
   }, [router]);
 
-  useEffect(() => {
+  /* useEffect(() => {
     console.log(`${process.env.NEXT_PUBLIC_URL}data/locales/{{lng}}/translation.json`);
     console.log(`${process.env.NEXT_PUBLIC_URL}`);
-  }, []);
+  }, []); */
 
   return (
 
@@ -69,4 +69,4 @@ function MyApp({ Component, pageProps }) {
 
   )
 }
-export default MyApp
+export default appWithTranslation(MyApp)

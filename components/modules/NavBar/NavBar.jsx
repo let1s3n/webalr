@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { Navbar, NavDropdown, Container, Nav, Row, Col, Button, Offcanvas } from 'react-bootstrap';
 import cookieCutter from 'cookie-cutter'
 import i18n from "i18next";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 import CustomModal from "../customModal";
 import CustomOffCanvas from "../customOffCanvas";
 import usePathName from "../../../hooks/usePathName";
@@ -23,14 +23,12 @@ const NavBar = () => {
 
   }, [])
 
-  useEffect(() => {
-    console.log("DAYANES: ", t('about_us', { ns: 'general' }))
-  }, [t])
-
   return (
 
     <Navbar bg="blue1" className={currentpath === '/' || currentpath === '/nosotros' || currentpath === '/politicas' ? "px-4 py-2 w-100 bg-opacity-70 position-absolute top-0" : "main-navbar px-4 py-2 w-100 bg-opacity-70"} expand={false} style={{ zIndex: 2 }}>
+
       <Container fluid className="g-0">
+
         <Row className="g-0 w-100" style={{ columnGap: 50 + 'px' }}>
 
           <Col xs="auto" className="d-flex">
@@ -104,10 +102,12 @@ const NavBar = () => {
         </Row>
 
       </Container>
+
       <CustomModal
         show={modalShow}
         onHide={() => setModalShow(false)}
       />
+
     </Navbar>
 
   )

@@ -1,13 +1,36 @@
+import { useEffect, useState } from 'react';
 import { Modal, Button, Image } from 'react-bootstrap';
 import { useRouter } from 'next/router';
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
+import { i18n } from "../../next-i18next.config"
+
 function CustomModal(props) {
   const router = useRouter();
-  const handleLocaleChange = (e) => {
-    document.cookie = `i18next=${e.target.closest("[data-locale]").dataset.locale}`;
-    router.reload(window.location.pathname);
-  }
   const { t } = useTranslation();
+  const [language, setLanguage] = useState(i18n.language);
+
+  const handleLocaleChange = (e) => {
+    /* document.cookie = `i18next=${e.target.closest("[data-locale]").dataset.locale}`;
+    router.reload(window.location.pathname); */
+
+    /* language === "en" ? setLanguage("zh") : setLanguage("en") */
+    setLanguage(e.target.closest("[data-locale]").dataset.locale);
+    /* i18n.changeLanguage(language) */
+  }
+
+
+  useEffect(() => {
+    console.log("language: ", language)
+
+  }, [language])
+
+  useEffect(() => {
+    console.log("i18n: ", i18n)
+
+  }, [i18n])
+
+
+
   return (
     <Modal
       {...props}
@@ -17,6 +40,7 @@ function CustomModal(props) {
     >
       <div className="position-absolute top-0 start-0 border border-primary2 border-1 rounded-circle translate-middle" style={{ width: 150 + 'px', height: 150 + 'px' }}></div>
       <div className="position-absolute top-100 start-100 border border-primary2 border-1 rounded-circle translate-middle" style={{ width: 150 + 'px', height: 150 + 'px' }}></div>
+
       <Modal.Header className="border-0" style={{ marginLeft: 45 + 'px', marginRight: 45 + 'px' }}>
         <Button variant="link" className="btn-close" aria-label="Close" onClick={props.onHide}>
           <Image src="/images/btn-close.svg" alt="btn close"></Image>
@@ -44,9 +68,6 @@ function CustomModal(props) {
           </div>
         </div>
       </Modal.Body>
-      {/* <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
-      </Modal.Footer> */}
 
       <style global jsx>{`
       .modal-content{

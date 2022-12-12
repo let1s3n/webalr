@@ -1,4 +1,7 @@
+const { i18n } = require('./next-i18next.config')
+
 const nextConfig = {
+  i18n,
   reactStrictMode: true,
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
     config.plugins.push(

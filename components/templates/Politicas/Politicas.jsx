@@ -3,7 +3,7 @@ import React, { useEffect } from 'react'
 import dynamic from 'next/dynamic';
 
 import { Container, Row, Col, Carousel, Image, Button } from 'react-bootstrap'
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 import useWindowDimensions from "../../../hooks/useWindowDimensions";
 
 
@@ -15,9 +15,7 @@ const PdfViewer = dynamic(
 const Politicas = () => {
 
   const { height, width } = useWindowDimensions();
-  useEffect(() => {
-    console.log(width)
-  }, [width])
+  
   const { t } = useTranslation();
 
   return (
