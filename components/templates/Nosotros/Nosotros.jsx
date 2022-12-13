@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 import { Container, Row, Col, Carousel, Image, Card, CardGroup } from 'react-bootstrap'
-import { useTranslation } from "next-i18next";
+import { useTranslation } from "react-i18next";
 import useWindowDimensions from "../../../hooks/useWindowDimensions";
 
 const Nosotros = () => {

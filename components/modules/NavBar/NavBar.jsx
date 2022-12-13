@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { Navbar, NavDropdown, Container, Nav, Row, Col, Button, Offcanvas } from 'react-bootstrap';
 import cookieCutter from 'cookie-cutter'
 import i18n from "i18next";
-import { useTranslation } from "next-i18next";
+import { useTranslation } from "react-i18next";
 import CustomModal from "../customModal";
 import CustomOffCanvas from "../customOffCanvas";
 import usePathName from "../../../hooks/usePathName";

@@ -2,19 +2,18 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from "next/router";
 import SSRProvider from 'react-bootstrap/SSRProvider';
-import { appWithTranslation } from 'next-i18next'
 
-/* import i18n from "i18next";
-import { useTranslation, initReactI18next } from "react-i18next";
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
 import LanguageDetector from 'i18next-browser-languagedetector';
-import HttpApi from 'i18next-http-backend'; */
+import HttpApi from 'i18next-http-backend';
 
 import '../assets/sass/app.scss'
 
 import Default from '../components/layout/Default/Default'
 import Loader from '../components/elements/Loader/Loader'
 
-/* i18n
+i18n
   .use(initReactI18next)
   .use(LanguageDetector)
   .use(HttpApi)
@@ -33,10 +32,10 @@ import Loader from '../components/elements/Loader/Loader'
       escapeValue: false,
     },
     react: {
-      useSuspense: true
+      useSuspense: false
     }
 
-  }); */
+  });
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -69,4 +68,4 @@ function MyApp({ Component, pageProps }) {
 
   )
 }
-export default appWithTranslation(MyApp)
+export default MyApp

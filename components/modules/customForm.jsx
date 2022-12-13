@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Container, Button, Form, Row, Col } from 'react-bootstrap';
-import { useTranslation } from "next-i18next";
+import { useTranslation } from "react-i18next";
 import FormSuccess from "./formSuccess";
 
 const CustomForm = () => {

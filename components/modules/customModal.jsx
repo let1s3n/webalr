@@ -1,35 +1,19 @@
 import { useEffect, useState } from 'react';
 import { Modal, Button, Image } from 'react-bootstrap';
 import { useRouter } from 'next/router';
-import { useTranslation } from "next-i18next";
-import { i18n } from "../../next-i18next.config"
+import { useTranslation } from "react-i18next";
+
 
 function CustomModal(props) {
   const router = useRouter();
   const { t } = useTranslation();
-  const [language, setLanguage] = useState(i18n.language);
+
 
   const handleLocaleChange = (e) => {
-    /* document.cookie = `i18next=${e.target.closest("[data-locale]").dataset.locale}`;
-    router.reload(window.location.pathname); */
+    document.cookie = `i18next=${e.target.closest("[data-locale]").dataset.locale}`;
+    router.reload(window.location.pathname);
 
-    /* language === "en" ? setLanguage("zh") : setLanguage("en") */
-    setLanguage(e.target.closest("[data-locale]").dataset.locale);
-    /* i18n.changeLanguage(language) */
   }
-
-
-  useEffect(() => {
-    console.log("language: ", language)
-
-  }, [language])
-
-  useEffect(() => {
-    console.log("i18n: ", i18n)
-
-  }, [i18n])
-
-
 
   return (
     <Modal

@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 
-/* import i18n from "i18next";
-import { useTranslation } from "next-i18next"; */
-import { useTranslation } from 'next-i18next'
+import i18n from "i18next";
+import { useTranslation } from "react-i18next";
+
 import Link from 'next/link'
 import { Container, Carousel, Row, Col, CardGroup, Card, Image } from 'react-bootstrap'
 
@@ -11,8 +11,7 @@ import useWindowDimensions from "../../../hooks/useWindowDimensions";
 const Home = ({ locale }) => {
 
   const { height, width } = useWindowDimensions();
-  /* const { t } = useTranslation(); */
-  const { t } = useTranslation('general')
+  const { t } = useTranslation();
 
   return (
 
