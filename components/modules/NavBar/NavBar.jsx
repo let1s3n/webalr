@@ -23,6 +23,11 @@ const NavBar = () => {
 
   }, [])
 
+  useEffect(() => {
+    console.log("locale: ", locale)
+
+  }, [locale])
+
   return (
 
     <Navbar bg="blue1" className={currentpath === '/' || currentpath === '/nosotros' || currentpath === '/politicas' ? "px-4 py-2 w-100 bg-opacity-70 position-absolute top-0" : "main-navbar px-4 py-2 w-100 bg-opacity-70"} expand={false} style={{ zIndex: 2 }}>
@@ -32,8 +37,10 @@ const NavBar = () => {
         <Row className="g-0 w-100" style={{ columnGap: 50 + 'px' }}>
 
           <Col xs="auto" className="d-flex">
-            <Link href="/" passHref>
-              <Image src="/images/logo-alr.png" alt="logo-alr" width={80} height={50} priority className="img-logo" />
+            <Link href="/">
+              <div>
+                <Image src="/images/logo-alr.png" width={80} height={50} priority className="img-logo" alt="logo-alr" />
+              </div>
             </Link>
             <Navbar.Toggle className="d-xl-none border-0" onClick={() => setOffCanvasShow(true)} />
             <CustomOffCanvas show={offCanvasShow} onHide={() => setOffCanvasShow(false)} />
