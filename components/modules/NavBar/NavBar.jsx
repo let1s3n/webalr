@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Link from 'next/link'
-import Image from 'next/image'
-import { Navbar, NavDropdown, Container, Nav, Row, Col, Button, Offcanvas } from 'react-bootstrap';
+/* import Image from 'next/image' */
+import { Navbar, NavDropdown, Container, Nav, Row, Col, Button, Offcanvas,Image } from 'react-bootstrap';
 import cookieCutter from 'cookie-cutter'
 import i18n from "i18next";
 import { useTranslation } from "react-i18next";
@@ -39,7 +39,7 @@ const NavBar = () => {
           <Col xs="auto" className="d-flex">
             <Link href="/">
               <div>
-                <Image src="/images/logo-alr.png" width={80} height={50} priority className="img-logo" alt="logo-alr" />
+                <Image src="/images/logo-alr.png" className="img-logo" alt="logo-alr" />
               </div>
             </Link>
             <Navbar.Toggle className="d-xl-none border-0" onClick={() => setOffCanvasShow(true)} />
@@ -85,19 +85,19 @@ const NavBar = () => {
                 <Button className="rounded-circle p-0 border-0" variant="link" onClick={() => setModalShow(true)}>
                   {locale === 'en' ?
                     <>
-                      <Image src="/images/es-icon.svg" className="d-inline-block" width={24} height={24} alt="es icon" />
-                      <Image src="/images/fr-icon.svg" className="d-inline-block" width={24} height={24} alt="fr icon" />
+                      <Image src="/images/es-icon.svg" className="d-inline-block imgFlag" alt="es icon" />
+                      <Image src="/images/fr-icon.svg" className="d-inline-block imgFlag" alt="fr icon" />
                     </>
                     :
                     locale === 'fr' ?
                       <>
-                        <Image src="/images/en-icon.svg" className="d-inline-block" width={24} height={24} alt="en icon" />
-                        <Image src="/images/es-icon.svg" className="d-inline-block" width={24} height={24} alt="es icon" />
+                        <Image src="/images/en-icon.svg" className="d-inline-block imgFlag" alt="en icon" />
+                        <Image src="/images/es-icon.svg" className="d-inline-block imgFlag" alt="es icon" />
                       </>
                       :
                       <>
-                        <Image src="/images/en-icon.svg" className="d-inline-block" width={24} height={24} alt="en icon" />
-                        <Image src="/images/fr-icon.svg" className="d-inline-block" width={24} height={24} alt="fr icon" />
+                        <Image src="/images/en-icon.svg" className="d-inline-block imgFlag" alt="en icon" />
+                        <Image src="/images/fr-icon.svg" className="d-inline-block imgFlag" alt="fr icon" />
                       </>
                   }
 
