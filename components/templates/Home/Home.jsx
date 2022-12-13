@@ -99,10 +99,10 @@ const Home = ({ locale }) => {
             <Card className="text-white mx-auto mx-sm-0">
               <Card.Img src="/images/mision.jpg" alt="Misión de ALR" />
               <Card.ImgOverlay className="d-flex align-items-center justify-content-center">
-                {/* <Card.Title>
+                <Card.Title>
                   <Link href="/nosotros#mision-section">
 
-                    <Row>
+                    <Row style={{ cursor: "pointer" }}>
                       <Col xs="auto">
                         <h2 className="m-0 text-white">{t('our_mission')}</h2>
                       </Col>
@@ -116,17 +116,17 @@ const Home = ({ locale }) => {
                     </Row>
 
                   </Link>
-                </Card.Title> */}
+                </Card.Title>
 
               </Card.ImgOverlay>
             </Card>
             <Card className="text-white mx-auto mx-sm-0">
               <Card.Img src="/images/vision.jpg" alt="Visión de ALR" />
               <Card.ImgOverlay className="d-flex align-items-center justify-content-center">
-                {/* <Card.Title className="fs-2 m-0">
+                <Card.Title className="fs-2 m-0">
                   <Link href="/nosotros#vision-section">
 
-                    <Row>
+                    <Row style={{ cursor: "pointer" }}>
                       <Col xs="auto">
                         <h2 className="m-0 text-white">{t('our_vision')}</h2>
                       </Col>
@@ -140,17 +140,17 @@ const Home = ({ locale }) => {
                     </Row>
 
                   </Link>
-                </Card.Title> */}
+                </Card.Title>
 
               </Card.ImgOverlay>
             </Card>
             <Card className="text-white mx-auto mx-sm-0">
               <Card.Img src="/images/valores.jpg" alt="Valores de ALR" />
               <Card.ImgOverlay className="d-flex align-items-center justify-content-center">
-                {/*  <Card.Title className="fs-2 m-0">
+                <Card.Title className="fs-2 m-0">
                   <Link href="/nosotros#valores-section">
 
-                    <Row>
+                    <Row style={{ cursor: "pointer" }}>
                       <Col xs="auto">
                         <h2 className="m-0 text-white">{t('our_values')}</h2>
                       </Col>
@@ -164,7 +164,7 @@ const Home = ({ locale }) => {
                     </Row>
 
                   </Link>
-                </Card.Title> */}
+                </Card.Title>
 
               </Card.ImgOverlay>
             </Card>
