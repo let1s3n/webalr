@@ -2,87 +2,118 @@ body.modal-open {
   position: fixed;
   overflow-y: scroll !important;
   width: 100%;
-  padding-right: 0!important;
+  padding-right: 0 !important;
 }
 
-.logo{
+.logo {
   @include media-breakpoint-up(sm) {
     width: 200px;
   }
+
   width: 150px;
   transition: transform 2s;
-  &:hover{
+
+  &:hover {
     transform: scale(1.2);
   }
 }
 
-.fw-500{
+.fw-500 {
   font-weight: 500 !important;
 }
-.fw-600{
+
+.fw-600 {
   font-weight: 600 !important;
 }
 
-a{
+a {
   text-decoration: none;
   color: unset;
-  &:active{
+
+  &:active {
     outline: none;
     color: unset;
   }
-  &:visited{
+
+  &:visited {
     color: unset;
   }
 }
-button{
-  &:focus{
+
+button {
+  &:focus {
     box-shadow: none !important;
     /* background-color: unset !important;
     color:map-get($theme-colors , "primary5" ) !important; */
   }
 }
-.carousel-indicators{
-  button{
+
+.carousel-indicators {
+  button {
     border: none !important;
   }
 }
 
-.carousel-control-next-icon{
+.carousel-control-next-icon {
   background-image: url("/images/next-icon.svg") !important;
 }
-.carousel-control-prev-icon{
+
+.carousel-control-prev-icon {
   background-image: url("/images/prev-icon.svg") !important;
 }
-.carousel-control-prev,.carousel-control-next{
+
+.carousel-control-prev,
+.carousel-control-next {
   justify-content: normal !important;
   opacity: 1 !important;
   width: auto !important;
 }
-.carousel-control-next{
+
+.carousel-control-next {
   right: 124px !important;
 }
-.carousel-control-prev{
+
+.carousel-control-prev {
   left: 62px !important;
 }
-.visually-hidden{
+
+.visually-hidden {
   display: none;
 }
-.idiomas-logo{
+
+.idiomas-logo {
   width: 54.6px;
 }
-.dropdown-logo{
+
+.dropdown-logo {
   width: 56px;
 }
 
-.arrow-right{
+.arrow-right {
   width: 32px;
   height: 32px;
 }
 
-.text-justify{
-  &--mobile{
+.text-justify {
+  &--mobile {
     @include media-breakpoint-down(sm) {
       text-align: justify;
     }
   }
+}
+
+.futuraLight {
+  font-family: 'futura-light';
+}
+
+.futuraRegular {
+  font-family: 'futura-regular';
+}
+
+.futuraMedium {
+  font-family: 'futura-medium';
+}
+
+.futuraBold {
+  font-family: 'futura-bold';
 }

@@ -6,7 +6,7 @@ class MyDocument extends Document {
       // Agregamos el idioma que deseemos, aquí por ejemplo español.
       <Html lang="es">
         <Head />
-        <body>
+        <body className="futuraRegular">
           <Main />
           <NextScript />
         </body>
