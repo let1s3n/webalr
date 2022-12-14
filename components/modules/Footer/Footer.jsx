@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 const Footer = () => {
   const { t } = useTranslation();
   return (
-    <Container fluid className="main-footer bg-blue1 text-white py-3 px-0 py-lg-5 position-relative overflow-hidden">
+    <Container fluid className="main-footer bg-primary text-white py-3 px-0 py-lg-5 position-relative overflow-hidden">
       <Row className="g-0 px-2 px-lg-5">
         <Col xs={12} lg={2} xxl={2} className="d-flex justify-content-center align-items-center" style={{ zIndex: 2 }}>
 
@@ -31,20 +31,20 @@ const Footer = () => {
             </Col>
           </Row>
         </Col>
-        <Col xs={6} lg={3} xxl={2} className="d-flex justify-content-center pt-4" style={{ zIndex: 2 }}>
-          <Row xs={1} className="g-0">
-            <Col>
-              <p className="m-0 fw-600 custom-font-xxl-6 text-center">{t('footer_follow_us', { ns: 'general' })}</p>
-            </Col>
-            <Col className="text-center">
-              <div className="d-flex justify-content-center" style={{ columnGap: .5 + 'rem' }}>
-                <a href="#" target="_blank"><IoLogoFacebook className="facebook-icon fs-md-5 fs-xxl-4 text-white" /></a>
-                <a href="https://www.youtube.com/channel/UCAhc79crxjz1PDF-AP9-hLA/featured" target="_blank"><IoLogoYoutube className="youtube-icon fs-md-5 fs-xxl-4 text-white" /></a>
-                <a href="https://www.linkedin.com/company/mineralosrosales" target="_blank"><IoLogoLinkedin className="linkedin-icon fs-md-5 fs-xxl-4 text-white" /></a>
-                <a href="#" target="_blank"><IoLogoTwitter className="twitter-icon fs-md-5 fs-xxl-4 text-white" /></a>
-              </div>
-            </Col>
+        <Col xs={6} lg={3} xxl={2} className="d-flex flex-column pt-4" style={{ zIndex: 2 }}>
+          {/* <Row xs={1} className="g-0"> */}
+          <Row className="mb-3">
+            <p className="m-0 fw-600 custom-font-xxl-6 text-center text-secondary">{t('footer_follow_us', { ns: 'general' })}</p>
           </Row>
+          <Row className="text-center">
+            <div className="d-flex justify-content-center" style={{ columnGap: 1.25 + 'rem' }}>
+              <a href="#" target="_blank"><IoLogoFacebook className="facebook-icon fs-md-5 fs-xxl-4 text-white" /></a>
+              <a href="https://www.youtube.com/channel/UCAhc79crxjz1PDF-AP9-hLA/featured" target="_blank"><IoLogoYoutube className="youtube-icon fs-md-5 fs-xxl-4 text-white" /></a>
+              <a href="https://www.linkedin.com/company/mineralosrosales" target="_blank"><IoLogoLinkedin className="linkedin-icon fs-md-5 fs-xxl-4 text-white" /></a>
+              <a href="#" target="_blank"><IoLogoTwitter className="twitter-icon fs-md-5 fs-xxl-4 text-white" /></a>
+            </div>
+          </Row>
+          {/* </Row> */}
         </Col>
         <Col xs={6} lg={3} xxl={2} className="d-flex justify-content-center pt-4" style={{ zIndex: 2 }}>
           <Row xs={1} className="g-0">
@@ -64,7 +64,7 @@ const Footer = () => {
           </Row>
         </Col>
       </Row>
-      <Image className="footer-illustration position-absolute" src="/images/footer-illustration.svg" style={{ zIndex: 1 }} alt="footer illustration"/>
+      {/* <Image className="footer-illustration position-absolute" src="/images/footer-illustration.svg" style={{ zIndex: 1 }} alt="footer illustration"/> */}
     </Container>
   )
 }

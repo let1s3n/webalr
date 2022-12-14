@@ -30,7 +30,7 @@ const NavBar = () => {
 
   return (
 
-    <Navbar bg="blue1" className={currentpath === '/' || currentpath === '/nosotros' || currentpath === '/politicas' ? "px-4 py-2 w-100 bg-opacity-70 position-absolute top-0" : "main-navbar px-4 py-2 w-100 bg-opacity-70"} expand={false} style={{ zIndex: 2 }}>
+    <Navbar bg="primary" className={currentpath === '/' || currentpath === '/nosotros' || currentpath === '/politicas' ? "px-4 py-2 w-100 position-absolute top-0" : "main-navbar px-4 py-2 w-100"} expand={false} style={{ zIndex: 2 }}>
 
       <Container fluid className="g-0">
 
@@ -50,28 +50,28 @@ const NavBar = () => {
             <ul className="list-unstyled m-0 d-none d-xl-flex flex-row text-white" style={{ columnGap: 2 + 'rem' }}>
               <li>
 
-                <Nav.Link href="/" className="text-white py-2 fw-400 text-uppercase">HOME</Nav.Link>
+                <Nav.Link href="/" className="text-white py-2 fw-400">Home</Nav.Link>
 
               </li>
               <li>
 
-                <Nav.Link href="/nosotros" className="text-white py-2 fw-400 text-uppercase">{t('about_us', { ns: 'general' })}</Nav.Link>
+                <Nav.Link href="/nosotros" className="text-white py-2 fw-400">{t('about_us', { ns: 'general' })}</Nav.Link>
 
               </li>
               <li>
 
-                <Nav.Link href="/politicas" className="text-white py-2 fw-400 text-uppercase">{t('policies', { ns: 'general' })}</Nav.Link>
+                <Nav.Link href="/politicas" className="text-white py-2 fw-400">{t('policies', { ns: 'general' })}</Nav.Link>
 
               </li>
 
               <li>
 
-                <Nav.Link href="/responsabilidad" className="text-white py-2 fw-400 text-uppercase">{t('responsibility', { ns: 'general' })}</Nav.Link>
+                <Nav.Link href="/responsabilidad" className="text-white py-2 fw-400">{t('responsibility', { ns: 'general' })}</Nav.Link>
 
               </li>
               <li>
 
-                <Nav.Link href="/contacto" className="text-white py-2 fw-400 text-uppercase">{t('contact_us', { ns: 'general' })}</Nav.Link>
+                <Nav.Link href="/contacto" className="text-white py-2 fw-400">{t('contact_us', { ns: 'general' })}</Nav.Link>
 
               </li>
 

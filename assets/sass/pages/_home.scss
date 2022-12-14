@@ -1,156 +1,228 @@
-.hero-section{
+.hero-section {
   position: relative;
   height: 729px;
-  .hero-image{
+  .hero-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    filter: brightness(0.6);
 
-    &--origin{
+    &::before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      content: "";
+      background: #000000;
+      opacity: 0.5;
+      z-index: 0;
+    }
+
+    &--origin {
       object-position: left top;
     }
-    &--center{
+    &--center {
       object-position: center;
     }
   }
-  .hero-text{
-    bottom: 156px;
-    left: 35px;
+  .hero-text {
+    bottom: 80px;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px !important;
+    // left: 35px;
+    @include media-breakpoint-up(md) {
+      font-size: 38px !important;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 60px !important;
+    }
   }
-  .hero-illustration{
+  .hero-box-text {
+    position: absolute;
+    bottom: -39px;
+    // right: 0;
+    // width:488px;
+    // height:308px;
+    div {
+      height: 78px !important;
+      width: 65% !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+    }
+  }
+  .hero-illustration {
     position: absolute;
     bottom: 0;
     right: 0;
-    width:488px;
-    height:308px;
+    width: 488px;
+    height: 308px;
   }
-  .carousel-inner{
+  .carousel-inner {
     height: 100%;
   }
 }
 
-.quienes-somos{
+.carousel-inner {
+  .carousel-item-box {
+    height: 500px !important;
+    @include media-breakpoint-up(md) {
+      height: 370px !important;
+    }
+    @include media-breakpoint-up(lg) {
+      height: 350px !important;
+    }
+    @include media-breakpoint-up(xl) {
+      height: 500px !important;
+    }
+    h2 {
+      font-size: 24px !important;
+      @include media-breakpoint-up(lg) {
+        font-size: 28px !important;
+      }
+    }
+    p {
+      font-size: 14px !important;
+      @include media-breakpoint-up(lg) {
+        font-size: 16px !important;
+      }
+    }
+  }
+}
+
+.division-title {
+  flex-direction: column;
+  @include media-breakpoint-up(lg) {
+    flex-direction: row;
+    }
+  h2 {
+    font-size: 28px;
+    @include media-breakpoint-up(lg) {
+    font-size: 40px;
+    }
+  }
+}
+
+.quienes-somos {
   min-height: 100vh;
-  .quienes-somos-text{
-    @include media-breakpoint-up(xxl){
-      
+  .quienes-somos-text {
+    @include media-breakpoint-up(xxl) {
       text-align: justify;
-      
     }
 
     text-align: unset;
   }
-  
-  .card{
-    flex:unset;
-    @include media-breakpoint-up(md){
-      
+
+  .card {
+    flex: unset;
+    border: none;
+    @include media-breakpoint-up(md) {
       width: 389px;
       height: 478px;
-      
     }
     width: 299px;
     height: 380px;
-    
   }
-  .card-img{
+  .card-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 
-  .card-img-overlay{
-    background-color: rgba(0, 0, 0, .4);
-    @include media-breakpoint-up(xl){
+  .card-img-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    @include media-breakpoint-up(xl) {
       opacity: 0;
-      transition: all .5s ease-in-out;
-      background-color: unset;
+      // transition: all 0.5s ease-in-out;
+      // background-color: unset;
+      background-image: linear-gradient(to right, rgba(29, 51, 71, 0.73) 50%, rgba(0, 0, 0, 0.1) 50%);
+      background-size: 200%;
+      background-repeat: no-repeat;
+      background-position: right;
+      transition: background-position 0.5s ease;
     }
-    
-    &:hover{
-      @include media-breakpoint-up(xl){
+
+    &:hover {
+      @include media-breakpoint-up(xl) {
         opacity: 1;
-        background-color: rgba(0, 0, 0, .4);
+        background-position: left;
       }
-      
     }
   }
-  .custom-row{
-    @include media-breakpoint-up(xxl){
+  .custom-row {
+    @include media-breakpoint-up(xxl) {
       gap: 50px 103px;
     }
 
     gap: 50px 15px;
   }
 
-  .card-group{
-    @include media-breakpoint-up(xl){
+  .card-group {
+    @include media-breakpoint-up(xl) {
       column-gap: 10px;
     }
-    @include media-breakpoint-up(xxl){
+    @include media-breakpoint-up(xxl) {
       column-gap: 67px;
     }
   }
 }
 
-.novedades{
-  
-  .carousel-control-next{
-    
-    @include media-breakpoint-up(xxl){
+.novedades {
+  .carousel-control-next {
+    @include media-breakpoint-up(xxl) {
       right: -20px !important;
     }
     right: 0px !important;
   }
-  .carousel-control-prev{
-    
+  .carousel-control-prev {
     @include media-breakpoint-up(xl) {
       left: 0px !important;
     }
     @include media-breakpoint-up(xxl) {
       left: -50px !important;
     }
-    
   }
-  .carousel-indicators{
-    @include media-breakpoint-up(xxl){
+  .carousel-indicators {
+    @include media-breakpoint-up(xxl) {
       margin-top: 2.5rem;
     }
-    @include media-breakpoint-up(xxxxl){
+    @include media-breakpoint-up(xxxxl) {
       margin-top: 4rem;
     }
     margin-bottom: 0px;
     top: 100%;
     margin-top: 1rem;
-    bottom:unset;
+    bottom: unset;
     height: 12px;
-    [data-bs-target]{
+    [data-bs-target] {
       background-color: $blue2;
     }
   }
-  .carousel-item{
-    opacity:0;
-    transition: all .5s ease-in-out !important;
-    &>.row{
-      @include media-breakpoint-only(md){
-        
+  .carousel-item {
+    opacity: 0;
+    transition: all 0.5s ease-in-out !important;
+    & > .row {
+      @include media-breakpoint-only(md) {
         height: 400px;
       }
-      @include media-breakpoint-up(xxl){
-        
+      @include media-breakpoint-up(xxl) {
         height: 709px;
       }
-      
+
       /* height: 464px; */
       height: 500px;
-      row-gap:1rem;
+      row-gap: 1rem;
     }
   }
-  .active.carousel-item{
-    opacity:1;
+  .active.carousel-item {
+    opacity: 1;
   }
 
-  .novedades-img{
+  .novedades-img {
     width: 100%;
     height: auto;
   }
