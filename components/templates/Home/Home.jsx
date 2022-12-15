@@ -46,6 +46,7 @@ const Home = ({ locale }) => {
           </div>
         </div>
       </section>
+
       <section className="quienes-somos pt-9">
         <Container fluid="md">
           <h3 className="fw-bold text-primary mb-5 text-center fs-5 fs-lg-4 fs-xl-3">{t('who_we_are')}</h3>
@@ -234,29 +235,31 @@ const Home = ({ locale }) => {
           </div>
         </div>
       </section>
+
       <section className='mb-5'>
-        <Row style={{ background: "#f5f5f5", height: "250px" }}>
-          <Col lg={6} className="border-end border-white d-flex justify-content-center align-items-center text-center">
-            <div className='home__links-section'>
-              <p className='item-text'>Conoce nuestras Políticas</p>
-              <div className='item-button'>
-                <Link href="/politicas">
-                  <p className='mb-0'>{t('buttons.policies')}</p>
-                </Link>
+        <Container fluid>
+          <Row style={{ background: "#f5f5f5", height: "250px" }}>
+            <Col lg={6} className="border-end border-white d-flex justify-content-center align-items-center text-center">
+              <div className='home__links-section'>
+                <p className='item-text'>Conoce nuestras Políticas</p>
+                <div className='item-button'>
+                  <Link href="/politicas">
+                    <p className='mb-0'>{t('buttons.policies')}</p>
+                  </Link>
+                </div>
               </div>
-            </div>
-          </Col>
-          <Col lg={6} className="border-end border-white d-flex justify-content-center align-items-center text-center">
-            <div className='home__links-section'>
-              <p className='item-text'>Revisa las notas de prensa</p>
-              <div className='item-button'>
-                <Link href="#">
-                  <p className='mb-0'>{t('buttons.press_note')}</p>
-                </Link>
+            </Col>
+            <Col lg={6} className="border-end border-white d-flex justify-content-center align-items-center text-center">
+              <div className='home__links-section'>
+                <p className='item-text'>Revisa las notas de prensa</p>
+                <div className='item-button'>
+                  <Link href="#">
+                    <p className='mb-0'>{t('buttons.press_note')}</p>
+                  </Link>
+                </div>
               </div>
-            </div>
-          </Col>
-          {/* <Col lg={4} className="border-end border-white d-flex justify-content-center align-items-center text-center">
+            </Col>
+            {/* <Col lg={4} className="border-end border-white d-flex justify-content-center align-items-center text-center">
             <div className='home__links-section'>
               <p> </p>
               <div className='item-button'>
@@ -276,8 +279,10 @@ const Home = ({ locale }) => {
               </div>
             </div>
           </Col> */}
-        </Row>
+          </Row>
+        </Container>
       </section>
+
       <section className='home__contact-us position-relative'>
         <div>
           <Image
