@@ -4,7 +4,7 @@ import i18n from "i18next";
 import { useTranslation } from "react-i18next";
 
 import Link from 'next/link'
-import { Container, Carousel, Row, Col, CardGroup, Card, Image } from 'react-bootstrap'
+import { Container, Carousel, Row, Col, CardGroup, Card, Image, Button } from 'react-bootstrap'
 
 import useWindowDimensions from "../../../hooks/useWindowDimensions";
 
@@ -233,6 +233,65 @@ const Home = ({ locale }) => {
             </Carousel>
           </div>
         </div>
+      </section>
+      <section className='mb-5'>
+        <Row style={{ background: "#f5f5f5", height: "250px" }}>
+          <Col lg={6} className="border-end border-white d-flex justify-content-center align-items-center text-center">
+            <div className='home__links-section'>
+              <p className='item-text'>Conoce nuestras Políticas</p>
+              <div className='item-button'>
+                <Link href="/politicas">
+                  <p className='mb-0'>{t('buttons.policies')}</p>
+                </Link>
+              </div>
+            </div>
+          </Col>
+          <Col lg={6} className="border-end border-white d-flex justify-content-center align-items-center text-center">
+            <div className='home__links-section'>
+              <p className='item-text'>Revisa las notas de prensa</p>
+              <div className='item-button'>
+                <Link href="#">
+                  <p className='mb-0'>{t('buttons.press_note')}</p>
+                </Link>
+              </div>
+            </div>
+          </Col>
+          {/* <Col lg={4} className="border-end border-white d-flex justify-content-center align-items-center text-center">
+            <div className='home__links-section'>
+              <p> </p>
+              <div className='item-button'>
+                <Link href="#">
+                  <p className='mb-0'>SUNAT</p>
+                </Link>
+              </div>
+            </div>
+          </Col>
+          <Col lg={4} className="d-flex justify-content-center align-items-center text-center">
+            <div className='home__links-section'>
+              <p> </p>
+              <div className='item-button'>
+                <Link href="#">
+                  <p className='mb-0'>MINEM</p>
+                </Link>
+              </div>
+            </div>
+          </Col> */}
+        </Row>
+      </section>
+      <section className='home__contact-us position-relative'>
+        <div>
+          <Image
+            className="image-cover"
+            src="/images/home-cover1.png"
+            alt="Charla de seguridad"
+          />
+        </div>
+        <div className='button-contact position-absolute'>
+          <Link href="/contacto">
+            <p className='mb-0'>{t('buttons.contact_us')}</p>
+          </Link>
+        </div>
+        {/* <Button className='button-contact position-absolute'>{t('buttons.contact_us')}</Button> */}
       </section>
     </>
 

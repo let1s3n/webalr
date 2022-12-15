@@ -1,4 +1,9 @@
 {
+  "buttons" : {
+    "contact_us": "CONTÁCTANOS",
+    "policies": "POLÍTICAS",
+    "press_note": "PRENSA"
+  },
   "welcome_to_react": "Bienvenidos a react y next-i18next",
   "choose_language": "Elige un idioma",
   "about_us": "Nosotros",
