@@ -287,7 +287,7 @@ const Home = ({ locale }) => {
         <div>
           <Image
             className="image-cover"
-            src="/images/home-cover1.png"
+            src="/images/home-cover1.jpg"
             alt="Charla de seguridad"
           />
         </div>
