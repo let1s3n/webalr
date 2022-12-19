@@ -15,20 +15,20 @@ const Footer = () => {
             <p className="m-0 lh-1 fw-bold futuraBold mb-3">MENÚ PRINCIPAL</p>
 
             <Link href="/">
-              <p className="m-0 lh-1">Home</p>
+              <p className="m-0 lh-1" style={{cursor:"pointer"}}>Home</p>
             </Link>
 
-            <Link href="/">
-              <p className="m-0 lh-1">Nosotros</p>
+            <Link href="/nosotros">
+              <p className="m-0 lh-1" style={{cursor:"pointer"}}>Nosotros</p>
             </Link>
-            <Link href="/">
-              <p className="m-0 lh-1">Políticas</p>
+            <Link href="/politicas">
+              <p className="m-0 lh-1" style={{cursor:"pointer"}}>Políticas</p>
             </Link>
-            <Link href="/">
-              <p className="m-0 lh-1">Responsabilidad</p>
+            <Link href="/responsabilidad">
+              <p className="m-0 lh-1" style={{cursor:"pointer"}}>Responsabilidad</p>
             </Link>
-            <Link href="/">
-              <p className="m-0 lh-1">Contáctanos</p>
+            <Link href="/contacto">
+              <p className="m-0 lh-1" style={{cursor:"pointer"}}>Contáctanos</p>
             </Link>
 
 

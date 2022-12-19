@@ -30,7 +30,7 @@ const NavBar = () => {
 
   return (
 
-    <Navbar bg="primary" className={currentpath === '/' || currentpath === '/nosotros' || currentpath === '/politicas' ? "px-4 py-2 w-100 position-absolute top-0" : "main-navbar px-4 py-2 w-100"} expand={false} style={{ zIndex: 2 }}>
+    <Navbar bg="primary" className={currentpath === '/' || currentpath === '/nosotros' || currentpath === '/politicas' ? "px-4 py-3 w-100 position-absolute top-0" : "main-navbar px-4 py-3 w-100"} expand={false} style={{ zIndex: 2 }}>
 
       <Container fluid className="g-0">
 
@@ -39,7 +39,8 @@ const NavBar = () => {
           <Col xs="auto" className="d-flex">
             <Link href="/">
               <div>
-                <Image src="/images/logo-alr.png" className="img-logo" alt="logo-alr" />
+
+                <Image src="/images/logo-white.png" className="img-logo" alt="logo-alr" />
               </div>
             </Link>
             <Navbar.Toggle className="d-xl-none border-0" onClick={() => setOffCanvasShow(true)} />
@@ -50,7 +51,7 @@ const NavBar = () => {
             <ul className="list-unstyled m-0 d-none d-xl-flex flex-row text-white" style={{ columnGap: 2 + 'rem' }}>
               <li>
 
-                <Nav.Link href="/" className="text-white py-2 fw-400">{t('about_us', { ns: 'general' })}</Nav.Link>
+                <Nav.Link href="/" className="text-white py-2 fw-400">{t('home', { ns: 'general' })}</Nav.Link>
 
               </li>
               <li>
@@ -66,7 +67,7 @@ const NavBar = () => {
 
               <li>
 
-                <Nav.Link href="/responsabilidad" className="text-white py-2 fw-400">{t('responsability', { ns: 'general' })}</Nav.Link>
+                <Nav.Link href="/responsabilidad" className="text-white py-2 fw-400">{t('responsibility', { ns: 'general' })}</Nav.Link>
 
               </li>
               <li>
