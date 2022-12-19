@@ -1,39 +1,25 @@
-/* .main-footer{
-  background-color: rgba($color: #326182, $alpha: .4);
-} */
+.main-footer {
 
-/* .facebook-icon{
-  &:hover{
-    color:#3b5998;
-  }
-}
-.linkedin-icon{
-  &:hover{
-    color:#0072b1;
-  }
-}
+  .upperRow {
+    column-gap: 250px;
+    row-gap: 32px;
 
-.youtube-icon{
-  &:hover{
-    color:#c4302b;
-  }
-}
-.twitter-icon{
-  &:hover{
-    color:#26a7de;
-  }
-} */
-/* .main-footer {
-  height: 455px;
-} */
+    .socialColumn {
+      align-items: center;
 
-.footer-illustration {
-  @include media-breakpoint-up(xxl) {
-    left: 0px;
-    top: 0px;
+      @include media-breakpoint-up(xxxxl) {
+        align-items: stretch;
+      }
+    }
   }
 
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
+  .logo {
+    width: 200px;
+    height: 200px;
+
+    @include media-breakpoint-up(xxxxl) {
+      margin-top: -50px
+    }
+
+  }
 }

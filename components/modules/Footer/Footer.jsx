@@ -7,64 +7,78 @@ const Footer = () => {
   const { t } = useTranslation();
   return (
     <Container fluid className="main-footer bg-primary text-white g-0">
-      <Container className="g-0 p-6">
-        <Row className="g-0 justify-content-between border-bottom pb-5">
+      <Container className="g-0 py-6 px-3 py-xxxxl-6 px-xxxxl-20">
 
-          <Col xs={12} lg={2} xxl="auto" className="d-flex" style={{ zIndex: 2 }}>
+        <Row className="upperRow g-0 border-bottom pb-5">
 
-            <Image className="logo" src="/images/logo-alr-blanco.png" alt="ALR logo" style={{ width: 200 + 'px', height: 200 + 'px' }} />
+          <Col xxl="auto" className="d-flex flex-column" style={{ rowGap: "1rem" }}>
+            <p className="m-0 lh-1 fw-bold futuraBold mb-3">MENÚ PRINCIPAL</p>
+
+            <Link href="/">
+              <p className="m-0 lh-1">Home</p>
+            </Link>
+
+            <Link href="/">
+              <p className="m-0 lh-1">Nosotros</p>
+            </Link>
+            <Link href="/">
+              <p className="m-0 lh-1">Políticas</p>
+            </Link>
+            <Link href="/">
+              <p className="m-0 lh-1">Responsabilidad</p>
+            </Link>
+            <Link href="/">
+              <p className="m-0 lh-1">Contáctanos</p>
+            </Link>
 
 
           </Col>
-          <Col xs={12} lg={4} xxl="auto" className="d-flex justify-content-center" style={{ zIndex: 2 }}>
-            <Row className="g-0" style={{ rowGap: 1 + 'rem' }}>
-              <Col className="d-flex align-items-center ps-4" xs={12}>
-                <p className="m-0 custom-font-xxl-6">
-                  {t('footer_ALR', { ns: 'general' })} <br />
-                  VILQUE, PUNO, PERÚ
-                </p>
-              </Col>
-              <Col className="d-flex align-items-center ps-4" xs={12}>
-                <p className="m-0 custom-font-xxl-6">
-                  Av. Circunvalación Del Golf Los Inkas 134 <br />
-                  Oficina 707 Torre 1 - Santiago De Surco <br />
-                  LIMA - PERÚ
-                </p>
-              </Col>
-            </Row>
-          </Col>
-          <Col xs={6} lg={3} xxl="auto" className="d-flex flex-column" style={{ zIndex: 2 }}>
-            {/* <Row xs={1} className="g-0"> */}
-            <Row className="mb-3">
-              <p className="m-0 fw-600 custom-font-xxl-6 text-center text-secondary">{t('footer_follow_us', { ns: 'general' })}</p>
-            </Row>
-            <Row className="text-center">
-              <div className="d-flex justify-content-center" style={{ columnGap: 1.25 + 'rem' }}>
-                <a href="#" target="_blank"><IoLogoFacebook className="facebook-icon fs-md-5 fs-xxl-4 text-white" /></a>
-                <a href="https://www.youtube.com/channel/UCAhc79crxjz1PDF-AP9-hLA/featured" target="_blank"><IoLogoYoutube className="youtube-icon fs-md-5 fs-xxl-4 text-white" /></a>
-                <a href="https://www.linkedin.com/company/mineralosrosales" target="_blank"><IoLogoLinkedin className="linkedin-icon fs-md-5 fs-xxl-4 text-white" /></a>
-                <a href="#" target="_blank"><IoLogoTwitter className="twitter-icon fs-md-5 fs-xxl-4 text-white" /></a>
-              </div>
-            </Row>
-            {/* </Row> */}
-          </Col>
-          {/* <Col xs={6} lg={3} xxl={2} className="d-flex justify-content-center pt-4" style={{ zIndex: 2 }}>
-          <Row xs={1} className="g-0">
-            <Col className="text-center">
-              <Link href="/politicas" className="m-0 custom-font-6">
 
-                {t('footer_policies', { ns: 'general' })}
+          <Col xxl="auto" className="d-flex flex-column" style={{ rowGap: "2rem" }}>
 
-              </Link>
-            </Col>
-            <Col className="text-center">
-              <p className="m-0 custom-font-6">SUNAT</p>
-            </Col>
-            <Col className="text-center">
-              <p className="m-0 custom-font-6">MINEM</p>
-            </Col>
-          </Row>
-        </Col> */}
+            <div className="d-flex flex-column" style={{ rowGap: "1rem" }}>
+              <p className="m-0 lh-1 fw-bold futuraBold mb-3">CONTACTO</p>
+              <p className="m-0 lh-1">
+                {t('footer_ALR', { ns: 'general' })}
+              </p>
+              <p className="m-0 lh-1">Vilque, Puno, Perú</p>
+            </div>
+
+            <div className="d-flex flex-column" style={{ rowGap: "1rem" }}>
+
+              <p className="m-0 lh-1">
+                Av. Circunvalación Del Golf Los Inkas 134
+              </p>
+              <p className="m-0 lh-1">
+                Panorama Centro Empresarial, Oficina 707 Torre 1
+              </p>
+              <p className="m-0 lh-1">
+                Santiago De Surco
+              </p>
+              <p className="m-0 lh-1 text-yellow2">
+                <a href="mailto:contacto@acumulacionlosrosales.com">contacto@acumulacionlosrosales.com</a>
+              </p>
+            </div>
+
+          </Col>
+
+          <Col xxl="auto" className="socialColumn d-flex flex-column">
+
+
+            <Image className="logo" src="/images/logo-alr-blanco.png" alt="ALR logo" />
+
+            <p className="m-0 fw-600 lh-1 futuraMedium text-secondary mb-3">
+              {t('footer_follow_us', { ns: 'general' })}
+            </p>
+            <div className="d-flex" style={{ columnGap: 1.25 + 'rem' }}>
+              <a href="#" target="_blank"><IoLogoFacebook className="facebook-icon fs-3 text-white" /></a>
+              <a href="https://www.youtube.com/channel/UCAhc79crxjz1PDF-AP9-hLA/featured" target="_blank"><IoLogoYoutube className="youtube-icon fs-3 text-white" /></a>
+              <a href="https://www.linkedin.com/company/mineralosrosales" target="_blank"><IoLogoLinkedin className="linkedin-icon fs-3 text-white" /></a>
+              <a href="#" target="_blank"><IoLogoTwitter className="twitter-icon fs-3 text-white" /></a>
+            </div>
+
+
+          </Col>
 
         </Row>
 
@@ -73,15 +87,16 @@ const Footer = () => {
 
           <Col xs={12} className="d-flex justify-content-between align-items-center" style={{ zIndex: 2 }}>
 
-            <p>© 2022 – SMRL ALR. Todos los derechos reservados.</p>
+            <p className="lh-1 m-0">© 2022 – SMRL ALR. Todos los derechos reservados.</p>
 
-            <p>Powered by DGS</p>
+            <p className="lh-1 m-0">Powered by DGS</p>
 
 
           </Col>
 
 
         </Row>
+
       </Container>
     </Container>
   )

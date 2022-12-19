@@ -50,7 +50,7 @@ const NavBar = () => {
             <ul className="list-unstyled m-0 d-none d-xl-flex flex-row text-white" style={{ columnGap: 2 + 'rem' }}>
               <li>
 
-                <Nav.Link href="/" className="text-white py-2 fw-400">Home</Nav.Link>
+                <Nav.Link href="/" className="text-white py-2 fw-400">{t('about_us', { ns: 'general' })}</Nav.Link>
 
               </li>
               <li>
@@ -66,7 +66,7 @@ const NavBar = () => {
 
               <li>
 
-                <Nav.Link href="/responsabilidad" className="text-white py-2 fw-400">{t('responsibility', { ns: 'general' })}</Nav.Link>
+                <Nav.Link href="/responsabilidad" className="text-white py-2 fw-400">{t('responsability', { ns: 'general' })}</Nav.Link>
 
               </li>
               <li>
