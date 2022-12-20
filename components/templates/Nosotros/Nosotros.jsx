@@ -13,6 +13,7 @@ const Nosotros = () => {
 
   return (
     <div className="nosotros-page">
+
       <section className="hero-section">
         <Carousel controls={width >= 1280 ? true : false} interval={null} className="h-100">
           <Carousel.Item className="h-100">
@@ -53,8 +54,10 @@ const Nosotros = () => {
           </Carousel.Item>
         </Carousel>
       </section>
-      <section className="nuestra-historia py-11">
-        <Container fluid="md" className="g-0 px-4 px-custom1-0">
+
+      <section className="nuestra-historia p-3 p-xl-11 p-xxxxl-15">
+        <h1 className="mb-3 mb-custom1-5 futuraBold fw-bold">QUIENES SOMOS</h1>
+        <Container fluid className="g-0">
           <Row className="flex-column flex-xl-row" style={{ rowGap: 2 + 'rem' }}>
             <Col className="d-flex justify-content-center">
               <Carousel controls={false}>
@@ -93,7 +96,8 @@ const Nosotros = () => {
           </Row>
         </Container>
       </section>
-      <Container fluid className="p-3 p-xl-5">
+
+      <Container fluid className="p-3 py-xl-5 px-xl-11 px-xxxxl-15">
 
         <section id="vision-section" className="vision-section mb-4">
           <Container fluid="xxl" className="bg-blue2 bg-opacity-10 g-0">
@@ -162,12 +166,16 @@ const Nosotros = () => {
         </section>
 
       </Container>
-      <section className="perfiles d-flex flex-column justify-content-center align-items-center py-md-3 px-xl-5">
-        <div className="mb-3 mb-custom1-5 align-self-start ps-2 ps-xxl-5">
-          <h2 className="text-black">Dirección</h2>
+
+      <section className="perfiles d-flex flex-column justify-content-center align-items-center p-3 py-xl-5 px-xl-11 px-xxxxl-15">
+
+        <div className="mb-3 mb-custom1-5 align-self-start">
+          <h2 className="futuraBold fw-bold">NUESTRO PRESIDENTE</h2>
         </div>
-        <Container fluid>
-          <CardGroup className="justify-content-xl-between justify-content-xxl-center align-items-center flex-column flex-xl-row" style={{ rowGap: 2 + 'rem' }}>
+
+        <Container fluid className="g-0 mb-3 mb-custom1-10">
+
+          <CardGroup className="justify-content-center align-items-center flex-column flex-xl-row" style={{ rowGap: 2 + 'rem' }}>
 
             <Card className="text-white mx-auto mx-sm-0 border-0">
               <Card.Img src="/images/Jose_Carneiro.jpg" alt="Gerente General" />
@@ -195,6 +203,19 @@ const Nosotros = () => {
               </Card.Body>
             </Card>
 
+          </CardGroup>
+
+        </Container>
+
+        <div className="mb-3 mb-custom1-5 align-self-start">
+          <h2 className="futuraBold fw-bold">NUESTRO EQUIPO</h2>
+        </div>
+
+        <Container fluid className="g-0">
+
+          <CardGroup className="justify-content-between align-items-center flex-column flex-xl-row" style={{ rowGap: 2 + 'rem' }}>
+
+
             <Card className="text-white mx-auto mx-sm-0 border-0">
               <Card.Img src="/images/Jhon_Quispe.jpg" alt="Jefe de Operaciones y Comercialización" />
               <Card.ImgOverlay className="d-none d-xl-flex flex-column align-items-center pt-6">
@@ -221,6 +242,7 @@ const Nosotros = () => {
                 </Card.Text>
               </Card.Body>
             </Card>
+
             <Card className="text-white mx-auto mx-sm-0 border-0">
               <Card.Img src="/images/Hector_Gomez.jpg" alt="Gerente Legal y de Finanzas" />
               <Card.ImgOverlay className="d-none d-xl-flex flex-column align-items-center pt-6">
@@ -247,6 +269,7 @@ const Nosotros = () => {
                 </Card.Text>
               </Card.Body>
             </Card>
+
             <Card className="text-white mx-auto mx-sm-0 border-0">
               <Card.Img src="/images/Andre_Carneiro.jpg" alt="Jefe de Control" />
               <Card.ImgOverlay className="d-none d-xl-flex flex-column align-items-center pt-6">
@@ -270,33 +293,6 @@ const Nosotros = () => {
                 </Card.Title> */}
                 <Card.Text className="mt-4 text-justify--mobile">
                   {t('andre_carneiro_text', { ns: 'general' })}
-                </Card.Text>
-              </Card.Body>
-            </Card>
-
-            <Card className="text-white mx-auto mx-sm-0 border-0">
-              <Card.Img src="/images/Darwin_Delgado.jpg" alt="Jefe de Control" />
-              <Card.ImgOverlay className="d-none d-xl-flex flex-column align-items-center pt-6">
-                <Card.Title className="fs-3 m-0 text-center">
-                  <div className="d-flex flex-column">
-                    {t('darwin_delgado_title1', { ns: 'general' })}
-                    <span className="fs-4">{t('darwin_delgado_title2', { ns: 'general' })}</span>
-                  </div>
-                </Card.Title>
-                <Card.Text className="mt-4">
-                  {t('darwin_delgado_text', { ns: 'general' })}
-                </Card.Text>
-
-              </Card.ImgOverlay>
-              <Card.Body className="d-xl-none text-black">
-                {/* <Card.Title className="fs-3 m-0 text-center">
-                  <div className="d-flex flex-column">
-                    {t('darwin_delgado_title1', { ns: 'general' })}
-                    <span className="fs-4"> {t('darwin_delgado_title2', { ns: 'general' })}</span>
-                  </div>
-                </Card.Title> */}
-                <Card.Text className="mt-4 text-justify--mobile">
-                  {t('darwin_delgado_text', { ns: 'general' })}
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -329,6 +325,60 @@ const Nosotros = () => {
             </Card>
 
             <Card className="text-white mx-auto mx-sm-0 border-0">
+              <Card.Img src="/images/Oliver_Huaman.jpg" alt="Jefe de Permisos y Relaciones Comunitarias" />
+              <Card.ImgOverlay className="d-none d-xl-flex flex-column align-items-center pt-6">
+                <Card.Title className="fs-3 m-0 text-center">
+                  <div className="d-flex flex-column">
+                    {t('oliver_huaman_title1', { ns: 'general' })}
+                    <span className="fs-4">{t('oliver_huaman_title2', { ns: 'general' })}</span>
+                  </div>
+                </Card.Title>
+                <Card.Text className="mt-4">
+                  {t('oliver_huaman_text', { ns: 'general' })}
+                </Card.Text>
+
+              </Card.ImgOverlay>
+              <Card.Body className="d-xl-none text-black">
+                {/* <Card.Title className="fs-3 m-0 text-center">
+                  <div className="d-flex flex-column">
+                    {t('oliver_huaman_title1', { ns: 'general' })}
+                    <span className="fs-4"> {t('oliver_huaman_title2', { ns: 'general' })}</span>
+                  </div>
+                </Card.Title> */}
+                <Card.Text className="mt-4 text-justify--mobile">
+                  {t('oliver_huaman_text', { ns: 'general' })}
+                </Card.Text>
+              </Card.Body>
+            </Card>
+
+            <Card className="text-white mx-auto mx-sm-0 border-0">
+              <Card.Img src="/images/Darwin_Delgado.jpg" alt="Jefe de Control" />
+              <Card.ImgOverlay className="d-none d-xl-flex flex-column align-items-center pt-6">
+                <Card.Title className="fs-3 m-0 text-center">
+                  <div className="d-flex flex-column">
+                    {t('darwin_delgado_title1', { ns: 'general' })}
+                    <span className="fs-4">{t('darwin_delgado_title2', { ns: 'general' })}</span>
+                  </div>
+                </Card.Title>
+                <Card.Text className="mt-4">
+                  {t('darwin_delgado_text', { ns: 'general' })}
+                </Card.Text>
+
+              </Card.ImgOverlay>
+              <Card.Body className="d-xl-none text-black">
+                {/* <Card.Title className="fs-3 m-0 text-center">
+                  <div className="d-flex flex-column">
+                    {t('darwin_delgado_title1', { ns: 'general' })}
+                    <span className="fs-4"> {t('darwin_delgado_title2', { ns: 'general' })}</span>
+                  </div>
+                </Card.Title> */}
+                <Card.Text className="mt-4 text-justify--mobile">
+                  {t('darwin_delgado_text', { ns: 'general' })}
+                </Card.Text>
+              </Card.Body>
+            </Card>
+
+            <Card className="text-white mx-auto mx-sm-0 border-0">
               <Card.Img src="/images/William_Medrano.jpg" alt="Jefe de Control" />
               <Card.ImgOverlay className="d-none d-xl-flex flex-column align-items-center pt-6">
                 <Card.Title className="fs-3 m-0 text-center">
@@ -355,32 +405,7 @@ const Nosotros = () => {
               </Card.Body>
             </Card>
 
-            <Card className="text-white mx-auto mx-sm-0 border-0">
-              <Card.Img src="/images/Oliver_Huaman.jpg" alt="Jefe de Permisos y Relaciones Comunitarias" />
-              <Card.ImgOverlay className="d-none d-xl-flex flex-column align-items-center pt-6">
-                <Card.Title className="fs-3 m-0 text-center">
-                  <div className="d-flex flex-column">
-                    {t('oliver_huaman_title1', { ns: 'general' })}
-                    <span className="fs-4">{t('oliver_huaman_title2', { ns: 'general' })}</span>
-                  </div>
-                </Card.Title>
-                <Card.Text className="mt-4">
-                  {t('oliver_huaman_text', { ns: 'general' })}
-                </Card.Text>
 
-              </Card.ImgOverlay>
-              <Card.Body className="d-xl-none text-black">
-                {/* <Card.Title className="fs-3 m-0 text-center">
-                  <div className="d-flex flex-column">
-                    {t('oliver_huaman_title1', { ns: 'general' })}
-                    <span className="fs-4"> {t('oliver_huaman_title2', { ns: 'general' })}</span>
-                  </div>
-                </Card.Title> */}
-                <Card.Text className="mt-4 text-justify--mobile">
-                  {t('oliver_huaman_text', { ns: 'general' })}
-                </Card.Text>
-              </Card.Body>
-            </Card>
 
             <Card className="text-white mx-auto mx-sm-0 border-0">
               <Card.Img src="/images/Rafael_Farfan.jpg" alt="Jefe de Control" />
@@ -409,8 +434,11 @@ const Nosotros = () => {
               </Card.Body>
             </Card>
           </CardGroup>
+
         </Container>
+
       </section>
+
     </div>
   )
 }

@@ -60,9 +60,19 @@ const NavBar = () => {
   }, [width])
 
 
+  useEffect(() => {
+    console.log("scrollY: ", scrollY)
+  }, [scrollY])
+
+  useEffect(() => {
+    console.log("control: ", control)
+  }, [control])
+
+
+
   return (
 
-    <Navbar bg="primary" className="px-4 py-3 w-100 position-sticky top-0" expand={false} style={{ zIndex: 1000 }}>
+    <Navbar className={"px-4 py-3 w-100 top-0 " + (scrollY <= control ? (scrollY <= 89 ? "bg-transparent position-absolute" : "bg-transparent position-sticky") : "bg-primary position-sticky")} expand={false} style={{ zIndex: 1000 }}>
 
       <Container fluid className="g-0">
 
