@@ -72,7 +72,7 @@ const NavBar = () => {
 
   return (
 
-    <Navbar className={"px-4 py-3 w-100 top-0 " + (scrollY <= control ? (scrollY <= 89 ? "bg-transparent position-absolute" : "bg-transparent position-sticky") : "bg-primary position-sticky")} expand={false} style={{ zIndex: 1000 }}>
+    <Navbar className={"px-4 py-3 w-100 top-0 " + (scrollY <= control ? scrollY <= 90 ? "position-absolute bg-transparent" : "position-sticky bg-transparent" : "position-sticky bg-primary")} expand={false} style={{ zIndex: 1000 }}>
 
       <Container fluid className="g-0">
 
