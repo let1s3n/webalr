@@ -8,6 +8,7 @@ import { useTranslation } from "react-i18next";
 import CustomModal from "../customModal";
 import CustomOffCanvas from "../customOffCanvas";
 import usePathName from "../../../hooks/usePathName";
+import useWindowDimensions from "../../../hooks/useWindowDimensions";
 
 const NavBar = () => {
   const [loading, setLoading] = useState(true);
@@ -16,6 +17,10 @@ const NavBar = () => {
   const [locale, setLocale] = useState('');
   const currentpath = usePathName();
   const { t } = useTranslation();
+
+  const [scrollY, setScrollY] = useState(0);
+  const { height, width } = useWindowDimensions();
+  const [control, setControl] = useState();
 
   useEffect(() => {
     let cookie = cookieCutter.get('i18next');
@@ -28,9 +33,36 @@ const NavBar = () => {
 
   }, [locale])
 
+  useEffect(() => {
+    console.log("currentpath :", currentpath)
+  }, [currentpath])
+
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+    handleScroll();
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (width > 576) {
+      setControl(750);
+    } else {
+      setControl(550);
+    }
+
+  }, [width])
+
+
   return (
 
-    <Navbar bg="primary" className={currentpath === '/' || currentpath === '/nosotros' || currentpath === '/politicas' ? "px-4 py-3 w-100 position-absolute top-0" : "main-navbar px-4 py-3 w-100"} expand={false} style={{ zIndex: 2 }}>
+    <Navbar bg="primary" className="px-4 py-3 w-100 position-sticky top-0" expand={false} style={{ zIndex: 1000 }}>
 
       <Container fluid className="g-0">
 

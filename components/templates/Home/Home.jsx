@@ -28,7 +28,7 @@ const Home = ({ locale }) => {
               alt="Foto de la planta de día"
             /> */}
 
-          <video autoplay="true" muted="true" loop="true" className="hero-video">
+          <video autoPlay={true} muted={true} loop={true} className="hero-video">
             <source src={`${process.env.BUCKET}video/video_home.mp4`} type="video/mp4" />
             <p> Your browser does not support the video tag.</p>
           </video>
@@ -93,9 +93,13 @@ const Home = ({ locale }) => {
         <div className="py-4 px-xl-4">
 
           <CardGroup className="justify-content-xl-center align-items-center flex-column flex-xl-row">
+
             <Card className="text-white mx-auto mx-sm-0">
+
               <Card.Img src="/images/mision.jpg" alt="Misión de ALR" />
+
               <Card.ImgOverlay className="d-flex align-items-center justify-content-center">
+                
                 <Card.Title>
                   <Link href="/nosotros#mision-section">
 
@@ -116,7 +120,9 @@ const Home = ({ locale }) => {
                 </Card.Title>
 
               </Card.ImgOverlay>
+
             </Card>
+
             <Card className="text-white mx-auto mx-sm-0">
               <Card.Img src="/images/vision.jpg" alt="Visión de ALR" />
               <Card.ImgOverlay className="d-flex align-items-center justify-content-center">
@@ -141,6 +147,7 @@ const Home = ({ locale }) => {
 
               </Card.ImgOverlay>
             </Card>
+
             <Card className="text-white mx-auto mx-sm-0">
               <Card.Img src="/images/valores.jpg" alt="Valores de ALR" />
               <Card.ImgOverlay className="d-flex align-items-center justify-content-center">
@@ -165,6 +172,7 @@ const Home = ({ locale }) => {
 
               </Card.ImgOverlay>
             </Card>
+
           </CardGroup>
         </div>
       </section>

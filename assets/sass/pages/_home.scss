@@ -1,7 +1,9 @@
 .hero-section {
   position: relative;
   height: 729px;
-  .hero-image,.hero-video {
+
+  .hero-image,
+  .hero-video {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -22,26 +24,32 @@
     &--origin {
       object-position: left top;
     }
+
     &--center {
       object-position: center;
     }
   }
+
   .hero-text {
     bottom: 80px;
     justify-content: center;
     text-align: center;
     font-size: 30px !important;
+
     // left: 35px;
     @include media-breakpoint-up(md) {
       font-size: 38px !important;
     }
+
     @include media-breakpoint-up(lg) {
       font-size: 60px !important;
     }
   }
+
   .hero-box-text {
     position: absolute;
     bottom: -39px;
+
     // right: 0;
     // width:488px;
     // height:308px;
@@ -55,6 +63,7 @@
       font-size: 20px;
     }
   }
+
   .hero-illustration {
     position: absolute;
     bottom: 0;
@@ -62,6 +71,7 @@
     width: 488px;
     height: 308px;
   }
+
   .carousel-inner {
     height: 100%;
   }
@@ -70,26 +80,34 @@
 .carousel-inner {
   .carousel-item-box {
     height: 500px !important;
+
     @include media-breakpoint-up(md) {
       height: 370px !important;
     }
+
     @include media-breakpoint-up(lg) {
       height: 350px !important;
     }
+
     @include media-breakpoint-up(xl) {
       height: 325px !important;
     }
+
     @include media-breakpoint-up(xxl) {
       height: 500px !important;
     }
+
     h2 {
       font-size: 24px !important;
+
       @include media-breakpoint-up(lg) {
         font-size: 28px !important;
       }
     }
+
     p {
       font-size: 14px !important;
+
       @include media-breakpoint-up(lg) {
         font-size: 16px !important;
       }
@@ -99,11 +117,14 @@
 
 .division-title {
   flex-direction: column;
+
   @include media-breakpoint-up(lg) {
     flex-direction: row;
   }
+
   h2 {
     font-size: 28px;
+
     @include media-breakpoint-up(lg) {
       font-size: 40px;
     }
@@ -112,6 +133,7 @@
 
 .quienes-somos {
   min-height: 100vh;
+
   .quienes-somos-text {
     @include media-breakpoint-up(xxl) {
       text-align: justify;
@@ -123,13 +145,16 @@
   .card {
     flex: unset;
     border: none;
+
     @include media-breakpoint-up(md) {
       width: 389px;
       height: 478px;
     }
+
     width: 299px;
     height: 380px;
   }
+
   .card-img {
     width: 100%;
     height: 100%;
@@ -138,6 +163,7 @@
 
   .card-img-overlay {
     background-color: rgba(0, 0, 0, 0.4);
+
     @include media-breakpoint-up(xl) {
       opacity: 0;
       // transition: all 0.5s ease-in-out;
@@ -146,16 +172,18 @@
       background-size: 200%;
       background-repeat: no-repeat;
       background-position: right;
-      transition: background-position 0.5s ease;
+      transition: all 0.5s ease-in-out;
     }
 
     &:hover {
       @include media-breakpoint-up(xl) {
         opacity: 1;
         background-position: left;
+        transition: all 0.5s ease-in-out;
       }
     }
   }
+
   .custom-row {
     @include media-breakpoint-up(xxl) {
       gap: 50px 103px;
@@ -168,6 +196,7 @@
     @include media-breakpoint-up(xl) {
       column-gap: 10px;
     }
+
     @include media-breakpoint-up(xxl) {
       column-gap: 67px;
     }
@@ -179,39 +208,49 @@
     @include media-breakpoint-up(xxl) {
       right: -20px !important;
     }
+
     right: 0px !important;
   }
+
   .carousel-control-prev {
     @include media-breakpoint-up(xl) {
       left: 0px !important;
     }
+
     @include media-breakpoint-up(xxl) {
       left: -50px !important;
     }
   }
+
   .carousel-indicators {
     @include media-breakpoint-up(xxl) {
       margin-top: 2.5rem;
     }
+
     @include media-breakpoint-up(xxxxl) {
       margin-top: 4rem;
     }
+
     margin-bottom: 0px;
     top: 100%;
     margin-top: 1rem;
     bottom: unset;
     height: 12px;
+
     [data-bs-target] {
       background-color: $blue2;
     }
   }
+
   .carousel-item {
     opacity: 0;
     transition: all 0.5s ease-in-out !important;
-    & > .row {
+
+    &>.row {
       @include media-breakpoint-only(md) {
         height: 400px;
       }
+
       @include media-breakpoint-up(xxl) {
         height: 709px;
       }
@@ -221,6 +260,7 @@
       row-gap: 1rem;
     }
   }
+
   .active.carousel-item {
     opacity: 1;
   }
@@ -234,6 +274,7 @@
 .home {
   &__contact-us {
     height: 230px;
+
     .image-cover {
       height: 230px;
       width: 100%;
@@ -242,6 +283,7 @@
       // background-repeat: no-repeat;
       object-fit: cover;
     }
+
     .button-contact {
       padding: 6px 12px;
       cursor: pointer;
@@ -256,21 +298,25 @@
       align-items: center;
       justify-content: center;
       font-weight: 600;
+
       &:hover {
         background-color: $secondary;
         color: $primary;
       }
     }
   }
+
   &__links-section {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     .item-text {
       color: $primary;
       font-size: 20px;
       font-weight: 600;
     }
+
     .item-button {
       padding: 6px 12px;
       cursor: pointer;
@@ -283,6 +329,7 @@
       align-items: center;
       justify-content: center;
       font-weight: 600;
+
       &:hover {
         background-color: $primary;
         color: #ffffff;
