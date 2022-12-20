@@ -17,22 +17,30 @@ const Home = ({ locale }) => {
 
     <>
       <section className="hero-section">
+
+        {/* <div className="h-100"> */}
+
         <div className="h-100">
-          <div className="h-100">
-            <Image
+
+          {/* <Image
               className="hero-image"
               src="/images/hero.jpg"
               alt="Foto de la planta de día"
-            />
-            <h1 className="hero-text position-absolute text-white w-100">
+            /> */}
+
+          <video autoplay="true" muted="true" loop="true" className="hero-video">
+            <source src="/video/video_home.mp4" type="video/mp4" />
+            <p> Your browser does not support the video tag.</p>
+          </video>
+
+          <h1 className="hero-text position-absolute text-white w-100">
               <span className="d-block fw-bolder mb-2">{t('hero_text1')}</span>
               <span className="d-inline-block fw-bolder mb-2">{t('hero_text2')}</span> {" "}
               <span className="d-inline-block fw-bolder text-secondary">{t('hero_text3')}</span>
-              {/* <span className="d-inline-block fw-bolder px-4 text-secondary">{t('hero_text4')}</span> */}
             </h1>
-          </div>
-
         </div>
+
+        {/* </div> */}
 
         <div className="hero-box-text position-absolute w-100 d-none d-lg-flex justify-content-center">
           <div className="text-white bg-primary rounded">
@@ -42,9 +50,10 @@ const Home = ({ locale }) => {
               <span className="lh-sm">{t('hero_text6')}</span>
             </p>
             <span className="lh-sm">{t('hero_text7')}</span>
-            {/* <span className="d-inline-block px-4">{t('hero_text6')}</span> */}
+            
           </div>
         </div>
+
       </section>
 
       <section className="quienes-somos pt-9">

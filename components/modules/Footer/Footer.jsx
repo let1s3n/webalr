@@ -7,34 +7,35 @@ const Footer = () => {
   const { t } = useTranslation();
   return (
     <Container fluid className="main-footer bg-primary text-white g-0">
-      <Container className="g-0 py-6 px-3 py-xxxxl-6 px-xxxxl-20">
+
+      <Container className="g-0 py-6 px-4 px-custom1-3 py-xxxxl-6 px-xxxxl-20">
 
         <Row className="upperRow g-0 border-bottom pb-5">
 
-          <Col xxl="auto" className="d-flex flex-column" style={{ rowGap: "1rem" }}>
+          <Col custom1="auto" className="d-flex flex-column" style={{ rowGap: "1rem" }}>
             <p className="m-0 lh-1 fw-bold futuraBold mb-3">MENÚ PRINCIPAL</p>
 
             <Link href="/">
-              <p className="m-0 lh-1" style={{cursor:"pointer"}}>Home</p>
+              <p className="m-0 lh-1" style={{ cursor: "pointer" }}>Home</p>
             </Link>
 
             <Link href="/nosotros">
-              <p className="m-0 lh-1" style={{cursor:"pointer"}}>Nosotros</p>
+              <p className="m-0 lh-1" style={{ cursor: "pointer" }}>Nosotros</p>
             </Link>
             <Link href="/politicas">
-              <p className="m-0 lh-1" style={{cursor:"pointer"}}>Políticas</p>
+              <p className="m-0 lh-1" style={{ cursor: "pointer" }}>Políticas</p>
             </Link>
             <Link href="/responsabilidad">
-              <p className="m-0 lh-1" style={{cursor:"pointer"}}>Responsabilidad</p>
+              <p className="m-0 lh-1" style={{ cursor: "pointer" }}>Responsabilidad</p>
             </Link>
             <Link href="/contacto">
-              <p className="m-0 lh-1" style={{cursor:"pointer"}}>Contáctanos</p>
+              <p className="m-0 lh-1" style={{ cursor: "pointer" }}>Contáctanos</p>
             </Link>
 
 
           </Col>
 
-          <Col xxl="auto" className="d-flex flex-column" style={{ rowGap: "2rem" }}>
+          <Col custom1="auto" className="d-flex flex-column" style={{ rowGap: "2rem" }}>
 
             <div className="d-flex flex-column" style={{ rowGap: "1rem" }}>
               <p className="m-0 lh-1 fw-bold futuraBold mb-3">CONTACTO</p>
@@ -53,7 +54,7 @@ const Footer = () => {
                 Panorama Centro Empresarial, Oficina 707 Torre 1
               </p>
               <p className="m-0 lh-1">
-                Santiago De Surco
+                Santiago de Surco
               </p>
               <p className="m-0 lh-1 text-yellow2">
                 <a href="mailto:contacto@acumulacionlosrosales.com">contacto@acumulacionlosrosales.com</a>
@@ -62,7 +63,7 @@ const Footer = () => {
 
           </Col>
 
-          <Col xxl="auto" className="socialColumn d-flex flex-column">
+          <Col custom1="auto" className="socialColumn d-flex flex-column">
 
 
             <Image className="logo" src="/images/logo-alr-blanco.png" alt="ALR logo" />
@@ -85,11 +86,11 @@ const Footer = () => {
 
         <Row className="g-0 pt-5">
 
-          <Col xs={12} className="d-flex justify-content-between align-items-center" style={{ zIndex: 2 }}>
+          <Col xs={12} className="d-flex flex-column flex-custom1-row justify-content-between align-items-center" style={{ zIndex: 2, rowGap: "1rem" }}>
 
-            <p className="lh-1 m-0">© 2022 – SMRL ALR. Todos los derechos reservados.</p>
+            <p className="lh-1 m-0 text-basic1">© 2022 – SMRL ALR. Todos los derechos reservados.</p>
 
-            <p className="lh-1 m-0">Powered by DGS</p>
+            <p className="lh-1 m-0 text-basic1 text-end text-custom1-start">Powered by <strong>DGS</strong></p>
 
 
           </Col>

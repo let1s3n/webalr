@@ -7,7 +7,7 @@ import useWindowDimensions from "../../../hooks/useWindowDimensions";
 const Nosotros = () => {
 
   const { height, width } = useWindowDimensions();
-  
+
   const { t } = useTranslation();
 
 
@@ -54,7 +54,7 @@ const Nosotros = () => {
         </Carousel>
       </section>
       <section className="nuestra-historia py-11">
-        <Container fluid="md">
+        <Container fluid="md" className="g-0 px-4 px-custom1-0">
           <Row className="flex-column flex-xl-row" style={{ rowGap: 2 + 'rem' }}>
             <Col className="d-flex justify-content-center">
               <Carousel controls={false}>
@@ -162,8 +162,8 @@ const Nosotros = () => {
         </section>
 
       </Container>
-      <section className="perfiles d-flex flex-column justify-content-center align-items-center py-md-3">
-        <div className="mb-5 align-self-start ps-2 ps-xxl-5">
+      <section className="perfiles d-flex flex-column justify-content-center align-items-center py-md-3 px-xl-5">
+        <div className="mb-3 mb-custom1-5 align-self-start ps-2 ps-xxl-5">
           <h2 className="text-black">Dirección</h2>
         </div>
         <Container fluid>
@@ -262,7 +262,7 @@ const Nosotros = () => {
 
               </Card.ImgOverlay>
               <Card.Body className="d-xl-none text-black">
-               {/*  <Card.Title className="fs-3 m-0 text-center">
+                {/*  <Card.Title className="fs-3 m-0 text-center">
                   <div className="d-flex flex-column">
                     {t('andre_carneiro_title1', { ns: 'general' })}
                     <span className="fs-4"> {t('andre_carneiro_title2', { ns: 'general' })}</span>

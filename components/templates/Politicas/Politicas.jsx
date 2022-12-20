@@ -15,11 +15,12 @@ const PdfViewer = dynamic(
 const Politicas = () => {
 
   const { height, width } = useWindowDimensions();
-  
+
   const { t } = useTranslation();
 
   return (
     <section className="politicas-page">
+
       <section className="hero-section">
         <Carousel controls={width >= 1280 ? true : false} interval={null} className="h-100">
           <Carousel.Item className="h-100">
@@ -79,11 +80,14 @@ const Politicas = () => {
           </Carousel.Item>
         </Carousel>
       </section>
+
       <Container fluid="md" className="py-10">
+
         <Row xs={1} xl={2} xxl={3} className="politicas-grid overflow-hidden">
+
           <Col className="d-flex flex-column flex-md-row align-items-center align-items-md-start justify-content-xl-center">
             <PdfViewer url="/politicas/Politica_de_Seguridad_Salud_y_MA16.12.21.pdf" pageNumber={1} />
-            <div className="d-flex flex-column pt-3 text-center text-md-start h-100 position-relative" style={{ flex: 1 }}>
+            <div className="d-flex flex-column px-2 text-center text-md-start h-100 position-relative justify-content-center" style={{ flex: 1 }}>
               <h5>{t('politicas_ssoma_title', { ns: 'general' })}</h5>
               <p className="m-0"><span>{t('politicas_fechaPub', { ns: 'general' })}: </span> 01 de Nov. 2021</p>
               <p className="m-0"><span>{t('politicas_tipo', { ns: 'general' })}: </span> PDF</p>
@@ -93,9 +97,10 @@ const Politicas = () => {
               </Button>
             </div>
           </Col>
+
           <Col className="d-flex flex-column flex-md-row align-items-center align-items-md-start justify-content-xl-center">
             <PdfViewer url="/politicas/Politica_derechos_humanos_081221.pdf" pageNumber={1} />
-            <div className="d-flex flex-column pt-3 text-center text-md-start h-100 position-relative" style={{ flex: 1 }}>
+            <div className="d-flex flex-column px-2 text-center text-md-start h-100 position-relative justify-content-center" style={{ flex: 1 }}>
               <h5>{t('politicas_dh_title', { ns: 'general' })}</h5>
               <p className="m-0"><span>{t('politicas_fechaPub', { ns: 'general' })}: </span> 01 de Nov. 2021</p>
               <p className="m-0"><span>{t('politicas_tipo', { ns: 'general' })}: </span> PDF</p>
@@ -106,9 +111,10 @@ const Politicas = () => {
             </div>
 
           </Col>
+
           <Col className="d-flex flex-column flex-md-row align-items-center align-items-md-start justify-content-xl-center">
             <PdfViewer url="/politicas/Politica_inclusion_e_igualdad_laboral_13-12-2021.pdf" pageNumber={1} />
-            <div className="d-flex flex-column pt-3 text-center text-md-start h-100 position-relative" style={{ flex: 1 }}>
+            <div className="d-flex flex-column px-2 text-center text-md-start h-100 position-relative justify-content-center" style={{ flex: 1 }}>
               <h5>{t('politicas_inclusion_title', { ns: 'general' })}</h5>
               <p className="m-0"><span>{t('politicas_fechaPub', { ns: 'general' })}: </span> 01 de Nov. 2021</p>
               <p className="m-0"><span>{t('politicas_tipo', { ns: 'general' })}: </span> PDF</p>
@@ -118,9 +124,10 @@ const Politicas = () => {
               </Button>
             </div>
           </Col>
+
           <Col className="d-flex flex-column flex-md-row align-items-center align-items-md-start justify-content-xl-center">
             <PdfViewer url="/politicas/Politica_responsabilidad_social_y_rrcc101221.pdf" pageNumber={1} />
-            <div className="d-flex flex-column pt-3 text-center text-md-start h-100 position-relative" style={{ flex: 1 }}>
+            <div className="d-flex flex-column px-2 text-center text-md-start h-100 position-relative justify-content-center" style={{ flex: 1 }}>
               <h5>{t('politicas_RSyRC_title', { ns: 'general' })}</h5>
               <p className="m-0"><span>{t('politicas_fechaPub', { ns: 'general' })}: </span> 01 de Nov. 2021</p>
               <p className="m-0"><span>{t('politicas_tipo', { ns: 'general' })}: </span> PDF</p>
@@ -130,9 +137,10 @@ const Politicas = () => {
               </Button>
             </div>
           </Col>
+
           <Col className="d-flex flex-column flex-md-row align-items-center align-items-md-start justify-content-xl-center">
             <PdfViewer url="/politicas/Politica_trabajo_forzoso_131221.pdf" pageNumber={1} />
-            <div className="d-flex flex-column pt-3 text-center text-md-start h-100 position-relative" style={{ flex: 1 }}>
+            <div className="d-flex flex-column px-2 text-center text-md-start h-100 position-relative justify-content-center" style={{ flex: 1 }}>
               <h5>{t('politicas_trabajoForzoso_title', { ns: 'general' })}</h5>
               <p className="m-0"><span>{t('politicas_fechaPub', { ns: 'general' })}: </span> 01 de Nov. 2021</p>
               <p className="m-0"><span>{t('politicas_tipo', { ns: 'general' })}: </span> PDF</p>
@@ -142,9 +150,10 @@ const Politicas = () => {
               </Button>
             </div>
           </Col>
+
           <Col className="d-flex flex-column flex-md-row align-items-center align-items-md-start justify-content-xl-center">
             <PdfViewer url="/politicas/Politica_trabajo_infantil_081221.pdf" pageNumber={1} />
-            <div className="d-flex flex-column pt-3 text-center text-md-start h-100 position-relative" style={{ flex: 1 }}>
+            <div className="d-flex flex-column px-2 text-center text-md-start h-100 position-relative justify-content-center" style={{ flex: 1 }}>
               <h5>{t('politicas_contraTrabajoInfantil_title', { ns: 'general' })}</h5>
               <p className="m-0"><span>{t('politicas_fechaPub', { ns: 'general' })}: </span> 01 de Nov. 2021</p>
               <p className="m-0"><span>{t('politicas_tipoe', { ns: 'general' })}: </span> PDF</p>
@@ -154,8 +163,11 @@ const Politicas = () => {
               </Button>
             </div>
           </Col>
+
         </Row>
+
       </Container>
+
     </section>
   )
 }

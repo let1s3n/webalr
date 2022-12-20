@@ -37,30 +37,41 @@ function CustomOffCanvas(props) {
           <div className="d-flex align-items-center mb-6" style={{ columnGap: 1 + 'rem' }}>
             {locale === 'en' ?
               <>
-                <Image src="/images/es-icon.svg" style={{ width: 28 + 'px' }} alt="es icon" />
-                <p className="m-0 fw-600">Spanish</p>
-                <Image src="/images/fr-icon.svg" style={{ width: 28 + 'px', height: 27 + 'px' }} alt="fr icon"/>
-                <p className="m-0 fw-600">French</p>
+                <div className="d-flex align-items-center languageOption" style={{ columnGap: 1 + 'rem' }}>
+                  <Image src="/images/es-icon.svg" style={{ width: 28 + 'px' }} alt="es icon" />
+                  <p className="m-0 fw-600 lh-1">Spanish</p>
+                </div>
+                <div className="d-flex align-items-center languageOption languageOption--next" style={{ columnGap: 1 + 'rem' }}>
+                  <Image src="/images/fr-icon.svg" style={{ width: 28 + 'px', height: 27 + 'px' }} alt="fr icon" />
+                  <p className="m-0 fw-600 lh-1">French</p>
+                </div>
               </>
               :
               locale === 'fr' ?
                 <>
-                  <Image src="/images/en-icon.svg" style={{ width: 28 + 'px' }} alt="en icon"/>
-                  <p className="m-0 fw-600">English</p>
-                  <Image src="/images/es-icon.svg" style={{ width: 28 + 'px' }} alt="es icon"/>
-                  <p className="m-0 fw-600">Spanish</p>
+                  <div className="d-flex align-items-center languageOption" style={{ columnGap: 1 + 'rem' }}>
+                    <Image src="/images/en-icon.svg" style={{ width: 28 + 'px' }} alt="en icon" />
+                    <p className="m-0 fw-600 lh-1">English</p>
+                  </div>
+                  <div className="d-flex align-items-center languageOption languageOption--next" style={{ columnGap: 1 + 'rem', }}>
+                    <Image src="/images/es-icon.svg" style={{ width: 28 + 'px' }} alt="es icon" />
+                    <p className="m-0 fw-600 lh-1">Spanish</p>
+                  </div>
                 </>
                 :
                 <>
-                  <Image src="/images/fr-icon.svg" style={{ width: 28 + 'px', height: 27 + 'px' }} alt="fr icon"/>
-                  <p className="m-0 fw-600">French</p>
-                  <Image src="/images/en-icon.svg" style={{ width: 28 + 'px' }} alt="en icon"/>
-                  <p className="m-0 fw-600">English</p>
-
+                  <div className="d-flex align-items-center languageOption" style={{ columnGap: 1 + 'rem' }}>
+                    <Image src="/images/fr-icon.svg" style={{ width: 28 + 'px', height: 27 + 'px' }} alt="fr icon" />
+                    <p className="m-0 fw-600 lh-1">French</p>
+                  </div>
+                  <div className="d-flex align-items-center languageOption languageOption--next" style={{ columnGap: 1 + 'rem' }}>
+                    <Image src="/images/en-icon.svg" style={{ width: 28 + 'px' }} alt="en icon" />
+                    <p className="m-0 fw-600 lh-1">English</p>
+                  </div>
                 </>
             }
 
-            <Image src="/images/swap-icon.svg" onClick={handleLocaleSwap} alt="swap icon"/>
+            <Image src="/images/swap-icon.svg" onClick={handleLocaleSwap} alt="swap icon" />
           </div>
           <ul className="list-unstyled m-0 text-center mb-8 fs-2 fw-light text-secondary">
             <li className="mb-4" onClick={props.onHide}>
@@ -92,17 +103,17 @@ function CustomOffCanvas(props) {
             </li>
             <li className="mb-4" onClick={props.onHide}>
               <Link className="text-secondary" href="/contacto">
-                
+
                 {t('offCanvas_contact_us', { ns: 'general' })}
-                
+
               </Link>
             </li>
           </ul>
           <div className="d-flex flex-column">
-            <p className="m-0 fs-5 fw-600">{t('offCanvas_followUs', { ns: 'general' })}</p>
+            <p className="m-0 fs-5 fw-600 lh-1 text-center">{t('offCanvas_followUs', { ns: 'general' })}</p>
             <div className="d-flex">
-              <Image src="/images/linkedin-icon.svg" alt="linkedin icon"/>
-              <Image src="/images/facebook-icon.svg" alt="facebook icon"/>
+              <Image src="/images/linkedin-icon.svg" alt="linkedin icon" />
+              <Image src="/images/facebook-icon.svg" alt="facebook icon" />
             </div>
           </div>
         </Container>

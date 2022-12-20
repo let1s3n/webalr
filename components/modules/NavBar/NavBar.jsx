@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Link from 'next/link'
 /* import Image from 'next/image' */
-import { Navbar, NavDropdown, Container, Nav, Row, Col, Button, Offcanvas,Image } from 'react-bootstrap';
+import { Navbar, NavDropdown, Container, Nav, Row, Col, Button, Offcanvas, Image } from 'react-bootstrap';
 import cookieCutter from 'cookie-cutter'
 import i18n from "i18next";
 import { useTranslation } from "react-i18next";
@@ -36,7 +36,7 @@ const NavBar = () => {
 
         <Row className="g-0 w-100" style={{ columnGap: 50 + 'px' }}>
 
-          <Col xs="auto" className="d-flex">
+          <Col xs="auto" className="d-flex align-items-center">
             <Link href="/">
               <div>
 

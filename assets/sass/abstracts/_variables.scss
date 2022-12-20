@@ -1,9 +1,10 @@
 @import "bootstrap/scss/functions";
 /* $font-family-sans-serif:'Work Sans', sans-serif; */
 
-$font-family-sans-serif: 'Roboto', sans-serif;
+/* $font-family-sans-serif: 'Roboto', sans-serif; */
 
 $body-color: #000000;
+
 $primary: #1D3347;
 $secondary: #1C9B90;
 /* 
@@ -82,8 +83,10 @@ $mu-fondo-mobile:linear-gradient(90deg, #EBEBFF 0%, $white 100%);
 
 $font-size-xsm:$font-size-base * .625; */
 
+/* 
+$basic2: $secondary; */
+
 $basic1: #D6DBDF;
-$basic2: $secondary;
 
 $blue1: #326182;
 $blue2: #427AA1;

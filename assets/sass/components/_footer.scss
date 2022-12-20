@@ -7,7 +7,7 @@
     .socialColumn {
       align-items: center;
 
-      @include media-breakpoint-up(xxxxl) {
+      @include media-breakpoint-up(custom1) {
         align-items: stretch;
       }
     }
@@ -17,7 +17,7 @@
     width: 200px;
     height: 200px;
 
-    @include media-breakpoint-up(xxxxl) {
+    @include media-breakpoint-up(custom1) {
       margin-top: -50px
     }
 
