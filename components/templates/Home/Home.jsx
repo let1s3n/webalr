@@ -29,15 +29,15 @@ const Home = ({ locale }) => {
             /> */}
 
           <video autoplay="true" muted="true" loop="true" className="hero-video">
-            <source src="/video/video_home.mp4" type="video/mp4" />
+            <source src={`${process.env.BUCKET}video/video_home.mp4`} type="video/mp4" />
             <p> Your browser does not support the video tag.</p>
           </video>
 
           <h1 className="hero-text position-absolute text-white w-100">
-              <span className="d-block fw-bolder mb-2">{t('hero_text1')}</span>
-              <span className="d-inline-block fw-bolder mb-2">{t('hero_text2')}</span> {" "}
-              <span className="d-inline-block fw-bolder text-secondary">{t('hero_text3')}</span>
-            </h1>
+            <span className="d-block fw-bolder mb-2">{t('hero_text1')}</span>
+            <span className="d-inline-block fw-bolder mb-2">{t('hero_text2')}</span> {" "}
+            <span className="d-inline-block fw-bolder text-secondary">{t('hero_text3')}</span>
+          </h1>
         </div>
 
         {/* </div> */}
@@ -50,7 +50,7 @@ const Home = ({ locale }) => {
               <span className="lh-sm">{t('hero_text6')}</span>
             </p>
             <span className="lh-sm">{t('hero_text7')}</span>
-            
+
           </div>
         </div>
 
