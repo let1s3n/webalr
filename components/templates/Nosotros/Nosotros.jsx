@@ -113,8 +113,8 @@ const Nosotros = () => {
         </section>
 
         <Container fluid className="p-3 py-xl-5 px-xl-11 px-xxxxl-15">
-
-          <section id="vision-section" className="vision-section mb-4">
+          <div id="vision-section" className="w-100" style={{ height: "100px" }}></div>
+          <section className="vision-section mb-4">
             <Container fluid="xxl" className="bg-blue2 bg-opacity-10 g-0">
               <Row className="g-0" xs={1} md={2}>
                 <Col>
@@ -135,7 +135,8 @@ const Nosotros = () => {
               </Row>
             </Container>
           </section>
-          <section id="mision-section" className="mision-section mb-4">
+          <div id="mision-section" className="w-100" style={{ height: "100px" }}></div>
+          <section className="mision-section mb-4">
             <Container fluid="xxl" className="bg-yellow2 bg-opacity-10 g-0">
               <Row className="g-0" xs={1} md={2}>
                 <Col>
@@ -157,7 +158,8 @@ const Nosotros = () => {
               </Row>
             </Container>
           </section>
-          <section id="valores-section" className="valores-section mb-4">
+          <div id="valores-section" className="w-100" style={{ height: "100px" }}></div>
+          <section className="valores-section mb-4">
             <Container fluid="xxl" className="bg-white g-0">
               <Row className="g-0" xs={1} md={2}>
                 <Col>
@@ -181,8 +183,6 @@ const Nosotros = () => {
           </section>
 
         </Container>
-
-
 
       </div>
     </>
