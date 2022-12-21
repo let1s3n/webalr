@@ -4,6 +4,27 @@
       "success": 1
     }
   ],
+  "buttons": {
+    "contact_us": "CONTACT US",
+    "policies": "POLICIES",
+    "press_note": "PRESS"
+  },
+  "nav_bar": {
+    "home": "Home",
+    "about_alr": "About us",
+    "about_us": "Who we are",
+    "board_of_directors_and_management": "Board of Directors and Management",
+    "sustainability": "Sustainability",
+    "social_responsability": "Social responsability",
+    "environmental_monitoring": "Environmental monitoring",
+    "solid_waste_management": "Solid waste management",
+    "occupational_health_and_safety": "Occupational health and safety",
+    "operation": "Operation",
+    "alr_operation": "Acumulación los Rosales",
+    "press": "Press",
+    "policies": "Policies",
+    "contact_us": "Contact us"
+  },
   "welcome_to_react": "Welcome to React and next-i18next",
   "choose_language": "Choose your language",
   "home": "Home",

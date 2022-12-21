@@ -115,7 +115,7 @@ const NavBar = () => {
               </li>
 
               <li className="d-flex align-items-center">
-                <NavDropdown title={t('nav_bar.sustainability', { ns: 'general' })} id="basic-nav-dropdown">
+                <NavDropdown title={t('nav_bar.sustainability', { ns: 'general' })} id="basic-nav-dropdown2">
                   <NavDropdown.Item href="/sostenibilidad/responsabilidad-social">
                     {t('nav_bar.social_responsability', { ns: 'general' })}
                   </NavDropdown.Item>
@@ -131,10 +131,12 @@ const NavBar = () => {
                 </NavDropdown>
               </li>
 
-              <li>
-                <Nav.Link href="/operacion-acumulacion-los-rosales" className="text-white py-2 fw-400">
-                  {t('nav_bar.alr_operation', { ns: 'general' })}
-                </Nav.Link>
+              <li className="d-flex align-items-center">
+                <NavDropdown title={t('nav_bar.operation', { ns: 'general' })} id="basic-nav-dropdown3">
+                  <NavDropdown.Item href="/operacion/acumulacion-los-rosales">
+                    {t('nav_bar.alr_operation', { ns: 'general' })}
+                  </NavDropdown.Item>
+                </NavDropdown>
               </li>
 
               <li>
