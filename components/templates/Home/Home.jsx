@@ -324,7 +324,7 @@ const Home = ({ locale }) => {
               alt="Charla de seguridad"
             />
           </div>
-          <div className='button-contact position-absolute'>
+          <div className='button-contact position-absolute top-50 start-50 translate-middle'>
             <Link href="/contacto">
               <p className='mb-0'>{t('buttons.contact_us', { ns: 'general' })}</p>
             </Link>
