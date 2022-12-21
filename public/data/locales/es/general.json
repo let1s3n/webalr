@@ -1,4 +1,9 @@
 {
+  "transControl": [
+    {
+      "success": 1
+    }
+  ],
   "buttons" : {
     "contact_us": "CONTÁCTANOS",
     "policies": "POLÍTICAS",

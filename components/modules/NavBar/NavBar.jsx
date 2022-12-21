@@ -22,6 +22,12 @@ const NavBar = () => {
   const { height, width } = useWindowDimensions();
   const [control, setControl] = useState();
 
+  const [paths, setPaths] = useState([
+    "/",
+    "/nosotros",
+    "/politicas"
+  ])
+
   useEffect(() => {
     let cookie = cookieCutter.get('i18next');
     setLocale(cookie);
@@ -72,7 +78,7 @@ const NavBar = () => {
 
   return (
 
-    <Navbar className={"px-4 py-3 w-100 top-0 " + (scrollY <= control ? (scrollY <= 90 ? "position-absolute bg-transparent" : "position-sticky bg-transparent") : "position-sticky bg-primary")} expand={false} style={{ zIndex: 1000 }}>
+    <Navbar className={"px-4 py-3 w-100 top-0 " + (scrollY <= control && paths.includes(currentpath) ? (scrollY <= 90 ? "position-absolute bg-transparent" : "position-sticky bg-transparent") : "position-sticky bg-primary")} expand={false} style={{ zIndex: 1000 }}>
 
       <Container fluid className="g-0">
 
