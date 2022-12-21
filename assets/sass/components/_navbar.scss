@@ -22,3 +22,23 @@
   width: 24px;
   height: 24px;
 }
+
+.dropdown {
+  &-menu {
+    background-color: $primary;
+    border-top: 1px solid $secondary;
+    a {
+      color: #ffffff !important;
+      &:hover {
+        background-color: $secondary;
+      }
+    }
+    &.show {
+      margin-top: 33px;
+    }
+  }
+  &-toggle {
+    display: flex;
+    align-items: center;
+  }
+}

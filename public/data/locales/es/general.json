@@ -4,6 +4,21 @@
     "policies": "POLÍTICAS",
     "press_note": "PRENSA"
   },
+  "nav_bar": {
+    "home": "Home",
+    "about_alr": "Nosotros",
+    "about_us": "Quienes somos",
+    "board_of_directors_and_management": "Directorio y Gerencia",
+    "sustainability": "Sostenibilidad",
+    "social_responsability": "Responsabilidad Social",
+    "environmental_monitoring": "Monitoreo ambiental",
+    "solid_waste_management": "Manejo de residuos sólidos",
+    "occupational_health_and_safety": "Seguridad y salud ocupacional",
+    "alr_operation": "Operación Acumulación los Rosales",
+    "press": "Prensa",
+    "policies": "Políticas",
+    "contact_us": "Contáctanos"
+  },
   "welcome_to_react": "Bienvenidos a react y next-i18next",
   "choose_language": "Elige un idioma",
   "home": "Home",
