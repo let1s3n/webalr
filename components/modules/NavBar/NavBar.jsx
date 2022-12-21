@@ -100,30 +100,53 @@ const NavBar = () => {
           <Col className="d-flex align-items-center justify-content-center">
             <ul className="list-unstyled m-0 d-none d-xl-flex flex-row text-white" style={{ columnGap: 2 + 'rem' }}>
               <li>
-
-                <Nav.Link href="/" className="text-white py-2 fw-400">{t('home', { ns: 'general' })}</Nav.Link>
-
-              </li>
-              <li>
-
-                <Nav.Link href="/nosotros" className="text-white py-2 fw-400">{t('about_us', { ns: 'general' })}</Nav.Link>
-
-              </li>
-              <li>
-
-                <Nav.Link href="/politicas" className="text-white py-2 fw-400">{t('policies', { ns: 'general' })}</Nav.Link>
-
+                <Nav.Link href="/" className="text-white py-2 fw-400">{t('nav_bar.home', { ns: 'general' })}</Nav.Link>
               </li>
 
-              <li>
-
-                <Nav.Link href="/responsabilidad" className="text-white py-2 fw-400">{t('responsibility', { ns: 'general' })}</Nav.Link>
-
+              <li className="d-flex align-items-center">
+                <NavDropdown title={t('nav_bar.about_alr', { ns: 'general' })} id="basic-nav-dropdown">
+                  <NavDropdown.Item href="/nosotros">
+                    {t('nav_bar.about_us', { ns: 'general' })}
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/nosotros/directorio-y-gerencia">
+                    {t('nav_bar.board_of_directors_and_management', { ns: 'general' })}
+                  </NavDropdown.Item>
+                </NavDropdown>
               </li>
+
+              <li className="d-flex align-items-center">
+                <NavDropdown title={t('nav_bar.sustainability', { ns: 'general' })} id="basic-nav-dropdown">
+                  <NavDropdown.Item href="/sostenibilidad/responsabilidad-social">
+                    {t('nav_bar.social_responsability', { ns: 'general' })}
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/sostenibilidad/monitoreo-ambiental">
+                    {t('nav_bar.environmental_monitoring', { ns: 'general' })}
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/sostenibilidad/manejo-de-residuos-solidos">
+                    {t('nav_bar.solid_waste_management', { ns: 'general' })}
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/sostenibilidad/seguridad-y-salud-ocupacional">
+                    {t('nav_bar.occupational_health_and_safety', { ns: 'general' })}
+                  </NavDropdown.Item>
+                </NavDropdown>
+              </li>
+
               <li>
+                <Nav.Link href="/operacion-acumulacion-los-rosales" className="text-white py-2 fw-400">
+                  {t('nav_bar.alr_operation', { ns: 'general' })}
+                </Nav.Link>
+              </li>
 
-                <Nav.Link href="/contacto" className="text-white py-2 fw-400">{t('contact_us', { ns: 'general' })}</Nav.Link>
+              <li>
+                <Nav.Link href="/prensa" className="text-white py-2 fw-400">{t('nav_bar.press', { ns: 'general' })}</Nav.Link>
+              </li>
 
+              <li>
+                <Nav.Link href="/politicas" className="text-white py-2 fw-400">{t('nav_bar.policies', { ns: 'general' })}</Nav.Link>
+              </li>
+
+              <li>
+                <Nav.Link href="/contacto" className="text-white py-2 fw-400">{t('nav_bar.contact_us', { ns: 'general' })}</Nav.Link>
               </li>
 
             </ul>
