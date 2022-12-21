@@ -30,24 +30,13 @@ const Nosotros = () => {
       <div className="nosotrosPage">
 
         <section className="hero-section">
-          <Carousel controls={width >= 1280 ? true : false} interval={null} className="h-100">
+          <Carousel controls={width >= 1280 ? true : false} interval={6000} className="h-100 nostros-carousel">
             <Carousel.Item className="h-100">
               <Image
                 className="hero-image hero-image--center"
                 src="/images/nosotros1.jpg"
                 alt="Charla de seguridad"
               />
-              <h1 className="hero-text position-absolute text-white">
-                <span className="d-block bg-yellow2 bg-opacity-60 fw-normal px-4 mb-2">{t('hero_text1', { ns: 'general' })}</span>
-                <span className="d-inline-block bg-basic1 bg-opacity-40 fw-600 px-4 mb-2">{t('hero_text2', { ns: 'general' })}</span> <br />
-                <span className="d-inline-block fw-bolder bg-blue2 bg-opacity-60 px-4">{t('hero_text3', { ns: 'general' })}</span>
-              </h1>
-              <div className="hero-illustration">
-                <Image
-                  src="/images/hero-illustration.svg"
-                  alt='hero-illustration'
-                />
-              </div>
             </Carousel.Item>
             <Carousel.Item className="h-100">
               <Image
@@ -55,23 +44,16 @@ const Nosotros = () => {
                 src="/images/nosotros2.jpg"
                 alt="Equipo de laboratorio químico"
               />
-              <h1 className="hero-text position-absolute text-white">
-                <span className="d-block bg-yellow2 bg-opacity-60 fw-normal px-4 mb-2">{t('hero_text4', { ns: 'general' })}</span>
-                <span className="d-inline-block bg-basic1 bg-opacity-40 fw-600 px-4 mb-2">{t('hero_text5', { ns: 'general' })}</span> <br />
-                <span className="d-inline-block fw-bolder bg-blue2 bg-opacity-60 px-4">{t('hero_text6', { ns: 'general' })}</span>
-              </h1>
-              <div className="hero-illustration">
-                <Image
-                  src="/images/hero-illustration.svg"
-                  alt='hero-illustration'
-                />
-              </div>
             </Carousel.Item>
           </Carousel>
         </section>
 
         <section className="nuestra-historia p-3 p-xl-11 p-xxxxl-15">
-          <h1 className="mb-3 mb-custom1-5 futuraBold fw-bold">QUIENES SOMOS</h1>
+          {/* <h2 className="mb-5 mb-custom1-8 fw-bold text-center text-primary">QUIENES SOMOS</h2> */}
+          <h2 className="mb-5 mt-5 mt-xl-0 mb-custom1-8 fw-bold text-center futuraBold text-primary">
+            Somos la Minera <span className='text-secondary'>Acumulación Los Rosales</span>
+          </h2>
+
           <Container fluid className="g-0">
             <Row className="flex-column flex-xl-row" style={{ rowGap: 2 + 'rem' }}>
               <Col className="d-flex justify-content-center">
@@ -93,9 +75,9 @@ const Nosotros = () => {
                 </Carousel>
               </Col>
               <Col>
-                <h2 className="mb-3 text-black">{t('us_our_history_title', { ns: 'general' })}</h2>
-                <p className="m-0 text-justify--mobile">
-                  {t('us_our_history_text_p1', { ns: 'general' })}
+                <h2 className="mb-5 text-secondary fw-bold pt-5">{t('us_our_history_title', { ns: 'general' })}</h2>
+                <p className="m-0 text-justify--mobile text-primary">
+                  <strong>{t('us_our_history_text_p1', { ns: 'general' })}</strong>
                   <br />
                   <br />
                   {t('us_our_history_text_p2', { ns: 'general' })}
@@ -112,78 +94,66 @@ const Nosotros = () => {
           </Container>
         </section>
 
-        <Container fluid className="p-3 py-xl-5 px-xl-11 px-xxxxl-15">
-
-          <section id="vision-section" className="vision-section mb-4">
-            <Container fluid="xxl" className="bg-blue2 bg-opacity-10 g-0">
-              <Row className="g-0" xs={1} md={2}>
-                <Col>
-                  <div className="bg-blue3 d-flex align-items-center justify-content-center">
-                    <h2 className="fw-bolder m-0 text-blue2">{t('us_vision_title', { ns: 'general' })}</h2>
+        <section>
+          <Row>
+            <div className='mb-3'>
+              <h3 className='fw-bold text-center futuraBold mx-5'>La filosofía corporativa de Acumulación Los Rosales</h3>
+            </div>
+          </Row>
+          <Row className='mb-7 mt-5 px-4'>
+            <Col xs={12} lg={4}>
+              <div className='position-relative mb-4 mb-xl-0'>
+                <Image
+                  src="/images/vision-col.jpg"
+                  alt="Imagen visión"
+                  className="nosotros-img"
+                />
+                <div className='bg-secondary py-5 py-xl-7 position-absolute bg-opacity-80 nosotros-img' style={{ top: 0 }}>
+                  <div className="d-flex align-items-center justify-content-center">
+                    <h2 className="fw-bolder futuraBold mb-3 text-white">{t('us_vision_title', { ns: 'general' })}</h2>
                   </div>
-                  <p className="m-0 p-4 fs-xxl-5">
+                  <p className="m-0 px-4 p-xl-4 fs-xxl-5 px-xl-5 fw-bold text-primary text-center">
                     {t('us_vision_text', { ns: 'general' })}
                   </p>
-                </Col>
-                <Col>
-                  <Image
-                    src="/images/vision-col.jpg"
-                    alt="Imagen visión"
-                    className="nosotros-img"
-                  />
-                </Col>
-              </Row>
-            </Container>
-          </section>
-          <section id="mision-section" className="mision-section mb-4">
-            <Container fluid="xxl" className="bg-yellow2 bg-opacity-10 g-0">
-              <Row className="g-0" xs={1} md={2}>
-                <Col>
-                  <div className="bg-yellow3 d-flex align-items-center justify-content-center">
-                    <h2 className="fw-bolder m-0 text-yellow2">{t('us_mission_title', { ns: 'general' })}</h2>
+                </div>
+              </div>
+            </Col>
+            <Col xs={12} lg={4}>
+              <div className='position-relative mb-4 mb-xl-0'>
+                <Image
+                  src="/images/mision-col.jpg"
+                  alt="Imagen visión"
+                  className="nosotros-img"
+                />
+                <div className='bg-secondary py-5 py-xl-7 position-absolute bg-opacity-80 nosotros-img' style={{ top: 0 }}>
+                  <div className="d-flex align-items-center justify-content-center">
+                    <h2 className="fw-bolder futuraBold mb-3 text-white">{t('us_mission_title', { ns: 'general' })}</h2>
                   </div>
-                  <p className="m-0 p-4 fs-xxl-5">
+                  <p className="m-0 px-4 p-xl-4 fs-xxl-5 px-xl-5 fw-bold text-primary text-center">
                     {t('us_mission_text', { ns: 'general' })}
                   </p>
-                </Col>
-                <Col>
-
-                  <Image
-                    src="/images/mision-col.jpg"
-                    alt="Imagen visión"
-                    className="nosotros-img"
-                  />
-                </Col>
-              </Row>
-            </Container>
-          </section>
-          <section id="valores-section" className="valores-section mb-4">
-            <Container fluid="xxl" className="bg-white g-0">
-              <Row className="g-0" xs={1} md={2}>
-                <Col>
-                  <div className="bg-white d-flex align-items-center justify-content-center">
-                    <h2 className="fw-bolder m-0">{t('us_values_title', { ns: 'general' })}</h2>
+                </div>
+              </div>
+            </Col>
+            <Col xs={12} lg={4}>
+              <div className='position-relative'>
+                <Image
+                  src="/images/valores.jpg"
+                  alt="Imagen visión"
+                  className="nosotros-img"
+                />
+                <div className='bg-secondary py-5 py-xl-7 position-absolute bg-opacity-80 nosotros-img' style={{ top: 0 }}>
+                  <div className="d-flex align-items-center justify-content-center">
+                    <h2 className="fw-bolder futuraBold mb-3 text-white">{t('us_values_title', { ns: 'general' })}</h2>
                   </div>
-
-                  <p className="m-0 p-4 fs-xxl-5">
+                  <p className="m-0 px-4 p-xl-4 fs-xxl-5 px-xl-5 fw-bold text-primary text-center">
                     {t('us_values_text', { ns: 'general' })}
                   </p>
-                </Col>
-                <Col>
-                  <Image
-                    src="/images/valores.jpg"
-                    alt="Imagen visión"
-                    className="nosotros-img"
-                  />
-                </Col>
-              </Row>
-            </Container>
-          </section>
-
-        </Container>
-
-
-
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </section>
       </div>
     </>
   )
