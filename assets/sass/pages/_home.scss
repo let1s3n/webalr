@@ -273,10 +273,9 @@
 
 .home {
   &__contact-us {
-    height: 230px;
 
     .image-cover {
-      height: 230px;
+      height: 500px;
       width: 100%;
       // background-size: cover;
       // background-position: center center;
@@ -287,8 +286,8 @@
     .button-contact {
       padding: 6px 12px;
       cursor: pointer;
-      top: 96px;
-      left: calc(50% - 125px);
+      /* top: 96px;
+      left: calc(50% - 125px); */
       width: 250px;
       height: 45px;
       border-radius: 6px;
