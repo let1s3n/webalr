@@ -106,4 +106,34 @@
       } */
     }
   }
+  &__lemme-container {
+    height: 485px;
+    @include media-breakpoint-up(md) {
+      height: 405px;
+    }
+    @include media-breakpoint-up(lg) {
+      position: relative;
+      height: 230px;
+    }
+  }
+  &__lemme-box {
+    background-color: "#ffffff" !important;
+    top: 60px;
+    @include media-breakpoint-up(lg) {
+      position: absolute;
+      height: 280px;
+      width: 500px;
+    }
+    @include media-breakpoint-up(xl) {
+      position: absolute;
+      height: 280px;
+      width: 600px;
+    }
+  }
+  &__lemme-decoration {
+    height: 100px;
+    @include media-breakpoint-up(lg) {
+      height: 170px;
+    }
+  }
 }

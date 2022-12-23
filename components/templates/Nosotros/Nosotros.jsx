@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-import { Container, Row, Col, Carousel, Image, Card, CardGroup } from 'react-bootstrap'
+import { Container, Row, Col, Carousel, Image, Card, CardGroup, Button } from 'react-bootstrap'
 import { useTranslation } from "react-i18next";
 import Loader from '../../elements/Loader/Loader'
 
@@ -96,7 +96,7 @@ const Nosotros = () => {
 
         <section>
           <Row>
-            <div className='mb-3'>
+            <div className='mb-3 mt-5 mt-lg-0'>
               <h3 className='fw-bold text-center futuraBold mx-5'>La filosofía corporativa de Acumulación Los Rosales</h3>
             </div>
           </Row>
@@ -153,6 +153,32 @@ const Nosotros = () => {
               </div>
             </Col>
           </Row>
+        </section>
+
+        <section className='mb-7'>
+          <div className='bg-primary'>
+            <Row className='px-3 px-xl-10 nosotrosPage__lemme-container'>
+              <Col xs={12} lg={6}>
+                <div className='my-5 my-lg-0 py-4 py-xl-5 px-4 px-xl-5 d-flex align-items-center justify-content-center nosotrosPage__lemme-box' style={{background: "#ffffff"}}>
+                  <h4 className='lh-base'>
+                    Lorem ipsum dolor sit amet consectetur adipisicing. <br />
+                    numquam optio itaque repellat consequatur, <br />
+                    aliquid eligendi unde saepe, <br />
+                    <span className='text-secondary'>dolorum labore aspernatur!</span>
+                  </h4>
+                </div>
+              </Col>
+              <Col xs={12} lg={6}>
+                <div className='pt-0 pt-lg-13 text-center'>
+                  <h2 className='text-white futuraBold'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                  <div className='pt-7'>
+                    <Button className='px-5'>VER POLÍTICAS</Button>
+                  </div>
+                </div>
+              </Col>
+            </Row>
+          </div>
+          <div className='bg-secondary nosotrosPage__lemme-decoration'></div>
         </section>
       </div>
     </>
