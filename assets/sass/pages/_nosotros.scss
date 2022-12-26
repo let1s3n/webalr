@@ -1,6 +1,7 @@
 .nosotrosPage {
   .hero-section {
-    height: 520px;
+    /* height: 520px; */
+    height: 100vh;
   }
   .nosotros-img {
     @include media-breakpoint-up(xl) {
