@@ -60,7 +60,7 @@ function MyApp({ Component, pageProps }) {
   return (
 
     <SSRProvider>
-      <Loader loading={loading} />
+      {/* <Loader loading={loading} /> */}
       <Default>
         <Component {...pageProps} />
       </Default>
