@@ -1,6 +1,7 @@
 .hero-section {
   position: relative;
-  height: 729px;
+  /* height: 729px; */
+  height: calc(100vh - 39px);
 
   .hero-image,
   .hero-video {
@@ -275,7 +276,7 @@
   &__contact-us {
 
     .image-cover {
-      height: 500px;
+      height: 300px;
       width: 100%;
       // background-size: cover;
       // background-position: center center;
