@@ -270,7 +270,7 @@ const Home = ({ locale }) => {
                 <div className='home__links-section'>
                   <p className='item-text'>Revisa las notas de prensa</p>
                   <div className='item-button'>
-                    <Link href="#">
+                    <Link href="/prensa">
                       <p className='mb-0'>{t('buttons.press_note', { ns: 'general' })}</p>
                     </Link>
                   </div>

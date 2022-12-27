@@ -1,7 +1,10 @@
 .main-footer {
 
   .upperRow {
-    column-gap: 250px;
+    /* column-gap: 250px; */
+    /* justify-content: space-between; */
+
+    column-gap:100px;
     row-gap: 32px;
 
     .socialColumn {
