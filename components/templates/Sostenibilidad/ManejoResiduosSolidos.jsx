@@ -1,9 +1,9 @@
 import React from 'react'
 
-const manejoResiduosSolidos = () => {
+const ManejoResiduosSolidos = () => {
   return (
     <div>sdasdsa</div>
   )
 }
 
-export default manejoResiduosSolidos
+export default ManejoResiduosSolidos

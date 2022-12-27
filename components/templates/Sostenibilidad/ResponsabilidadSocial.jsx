@@ -1,8 +1,8 @@
 import React from 'react'
-const responsabilidadSocial = () => {
+const ResponsabilidadSocial = () => {
   return (
-    <ResponsabilidadSocial />
+    <div>asdads</div>
   )
 }
 
-export default responsabilidadSocial
+export default ResponsabilidadSocial

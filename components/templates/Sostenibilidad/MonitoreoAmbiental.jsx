@@ -1,8 +1,8 @@
 import React from 'react'
-const monitoreoAmbiental = () => {
+const MonitoreoAmbiental = () => {
   return (
     <div>asdasda</div>
   )
 }
 
-export default monitoreoAmbiental
+export default MonitoreoAmbiental

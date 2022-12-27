@@ -1,8 +1,8 @@
 import React from 'react'
-const seguridadSaludOcupacional = () => {
+const SeguridadSaludOcupacional = () => {
   return (
     <div>asdasds</div>
   )
 }
 
-export default seguridadSaludOcupacional
+export default SeguridadSaludOcupacional
