@@ -1,8 +1,9 @@
 import React from 'react'
+import Prensa from '../components/templates/Prensa/Prensa'
 
 const prensa = () => {
   return (
-    <div>prensa</div>
+    <Prensa />
   )
 }
 

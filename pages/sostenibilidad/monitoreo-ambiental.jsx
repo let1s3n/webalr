@@ -1,8 +1,9 @@
 import React from 'react'
+import MonitoreoAmbiental from '../../components/templates/Sostenibilidad/MonitoreoAmbiental'
 
 const monitoreoAmbiental = () => {
   return (
-    <div>monitoreoAmbiental</div>
+    <MonitoreoAmbiental />
   )
 }
 

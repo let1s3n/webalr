@@ -1,9 +1,10 @@
 import React from 'react'
+import AcumulacionLosRosales from '../../components/templates/Operacion/AcumulacionLosRosales'
 
-const operacionALR = () => {
+const acumulacionLosRosales = () => {
   return (
-    <div>operacionALR</div>
+    <AcumulacionLosRosales />
   )
 }
 
-export default operacionALR
+export default acumulacionLosRosales

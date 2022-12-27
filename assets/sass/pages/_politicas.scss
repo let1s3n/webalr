@@ -1,29 +1,39 @@
-.politicas-page{
+.politicas-page {
   min-height: 100vh;
-  .react-pdf__Page__canvas{
-    @include media-breakpoint-up(md){
+
+  .hero-section {
+    position: relative;
+    height: 100vh;
+  }
+
+  .react-pdf__Page__canvas {
+    @include media-breakpoint-up(md) {
       width: 300px !important;
       height: 400px !important;
     }
-    @include media-breakpoint-up(xl){
+
+    @include media-breakpoint-up(xl) {
       width: 200px !important;
       height: 300px !important;
     }
+
     width: 100% !important;
     height: auto !important;
   }
-  .react-pdf__Page__textContent{
+
+  .react-pdf__Page__textContent {
     width: 100% !important;
   }
 
-  .politicas-grid{
-    @include media-breakpoint-up(md){
+  .politicas-grid {
+    @include media-breakpoint-up(md) {
       row-gap: 2rem;
     }
+
     row-gap: 3rem;
   }
 
-  .download-btn{
+  .download-btn {
     bottom: 5%;
   }
 }

@@ -49,7 +49,7 @@ const Nosotros = () => {
         </section>
 
         <section className="nuestra-historia p-3 p-xl-11 p-xxxxl-15">
-          {/* <h2 className="mb-5 mb-custom1-8 fw-bold text-center text-primary">QUIENES SOMOS</h2> */}
+
           <h2 className="mb-5 mt-5 mt-xl-0 mb-custom1-8 fw-bold text-center futuraBold text-primary">
             Somos la Minera <span className='text-secondary'>Acumulación Los Rosales</span>
           </h2>
@@ -95,12 +95,13 @@ const Nosotros = () => {
         </section>
 
         <section>
-          <Row>
+          <Row className="g-0">
             <div className='mb-3 mt-5 mt-lg-0'>
               <h3 className='fw-bold text-center futuraBold mx-5'>La filosofía corporativa de Acumulación Los Rosales</h3>
             </div>
           </Row>
-          <Row className='mb-7 mt-5 px-4'>
+          <div id="estamentosContainer" className="estamentosContainer"></div>
+          <Row className='mb-7 mt-5 px-4 g-0'>
             <Col xs={12} lg={4}>
               <div className='position-relative mb-4 mb-xl-0'>
                 <Image
@@ -157,9 +158,9 @@ const Nosotros = () => {
 
         <section className='mb-7'>
           <div className='bg-primary'>
-            <Row className='px-3 px-xl-10 nosotrosPage__lemme-container'>
+            <Row className='px-3 px-xl-10 nosotrosPage__lemme-container g-0'>
               <Col xs={12} lg={6}>
-                <div className='my-5 my-lg-0 py-4 py-xl-5 px-4 px-xl-5 d-flex align-items-center justify-content-center nosotrosPage__lemme-box' style={{background: "#ffffff"}}>
+                <div className='my-5 my-lg-0 py-4 py-xl-5 px-4 px-xl-5 d-flex align-items-center justify-content-center nosotrosPage__lemme-box' style={{ background: "#ffffff" }}>
                   <h4 className='lh-base'>
                     Lorem ipsum dolor sit amet consectetur adipisicing. <br />
                     numquam optio itaque repellat consequatur, <br />

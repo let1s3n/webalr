@@ -117,7 +117,7 @@ const Home = ({ locale }) => {
                 <Card.ImgOverlay className="d-flex align-items-center justify-content-center">
 
                   <Card.Title>
-                    <Link href="/nosotros#mision-section">
+                    <Link href="/nosotros#estamentosContainer">
 
                       <Row style={{ cursor: "pointer" }}>
                         <Col xs="auto">
@@ -143,7 +143,7 @@ const Home = ({ locale }) => {
                 <Card.Img src="/images/vision.jpg" alt="Visión de ALR" />
                 <Card.ImgOverlay className="d-flex align-items-center justify-content-center">
                   <Card.Title className="fs-2 m-0">
-                    <Link href="/nosotros#vision-section">
+                    <Link href="/nosotros#estamentosContainer">
 
                       <Row style={{ cursor: "pointer" }}>
                         <Col xs="auto">
@@ -168,7 +168,7 @@ const Home = ({ locale }) => {
                 <Card.Img src="/images/valores.jpg" alt="Valores de ALR" />
                 <Card.ImgOverlay className="d-flex align-items-center justify-content-center">
                   <Card.Title className="fs-2 m-0">
-                    <Link href="/nosotros#valores-section">
+                    <Link href="/nosotros#estamentosContainer">
 
                       <Row style={{ cursor: "pointer" }}>
                         <Col xs="auto">

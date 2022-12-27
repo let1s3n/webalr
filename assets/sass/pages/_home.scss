@@ -1,7 +1,12 @@
 .hero-section {
   position: relative;
   /* height: 729px; */
-  height: calc(100vh - 39px);
+  height: 100vh;
+
+  @include media-breakpoint-up(md) {
+
+    height: calc(100vh - 39px);
+  }
 
   .hero-image,
   .hero-video {

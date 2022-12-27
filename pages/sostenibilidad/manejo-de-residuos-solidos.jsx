@@ -1,8 +1,8 @@
 import React from 'react'
-
+import ManejoResiduosSolidos from '../../components/templates/Sostenibilidad/ManejoResiduosSolidos'
 const manejoDeResiduosSolidos = () => {
   return (
-    <div>manejoDeResiduosSolidos</div>
+    <ManejoResiduosSolidos />
   )
 }
 

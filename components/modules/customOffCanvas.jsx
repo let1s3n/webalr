@@ -32,9 +32,9 @@ function CustomOffCanvas(props) {
         {/* <Offcanvas.Title>Offcanvas</Offcanvas.Title> */}
       </Offcanvas.Header>
       <Offcanvas.Body>
-        <Container fluid className="d-flex flex-column align-items-center">
-          <Image className="idiomas-logo mb-5" src="/images/logo-alr.png" alt="idiomas logo" />
-          <div className="d-flex align-items-center mb-6" style={{ columnGap: 1 + 'rem' }}>
+        <Container fluid className="d-flex flex-column align-items-center g-0">
+          <Image className="idiomas-logo mb-4" src="/images/logo-alr.png" alt="idiomas logo" />
+          <div className="d-flex align-items-center mb-4" style={{ columnGap: 1 + 'rem' }}>
             {locale === 'en' ?
               <>
                 <div className="d-flex align-items-center languageOption" style={{ columnGap: 1 + 'rem' }}>
@@ -73,43 +73,57 @@ function CustomOffCanvas(props) {
 
             <Image src="/images/swap-icon.svg" onClick={handleLocaleSwap} alt="swap icon" />
           </div>
-          <ul className="list-unstyled m-0 text-center mb-8 fs-2 fw-light text-secondary">
-            <li className="mb-4" onClick={props.onHide}>
-              <Link className="text-secondary" href="/">
-                Home
+          <ul className="list-unstyled m-0 text-center mb-5 fs-3 fw-light text-secondary">
+            <li className="mb-3 lh-1" onClick={props.onHide}>
+              <Link className="text-secondary lh-1" href="/">
+              {t('nav_bar.home', { ns: 'general' })}
               </Link>
             </li>
-            <li className="mb-4" onClick={props.onHide}>
-              <Link className="text-secondary" href="/nosotros">
+            <li className="mb-3 lh-1" onClick={props.onHide}>
+              <Link className="text-secondary lh-1" href="/nosotros">
 
                 {t('offCanvas_about_us', { ns: 'general' })}
 
               </Link>
             </li>
-            <li className="mb-4" onClick={props.onHide}>
-              <Link className="text-secondary" href="/politicas">
+            <li className="mb-3 lh-1" onClick={props.onHide}>
+              <Link className="text-secondary lh-1" href="/sostenibilidad/responsabilidad-social">
+
+                Sostenibilidad
+
+              </Link>
+            </li>
+            <li className="mb-3 lh-1" onClick={props.onHide}>
+              <Link className="text-secondary lh-1" href="/operacion/acumulacion-los-rosales">
+
+                Operación
+
+              </Link>
+            </li>
+            <li className="mb-3 lh-1" onClick={props.onHide}>
+              <Link className="text-secondary lh-1" href="/prensa">
+
+                Prensa
+
+              </Link>
+            </li>
+            <li className="mb-3 lh-1" onClick={props.onHide}>
+              <Link className="text-secondary lh-1" href="/politicas">
 
                 {t('offCanvas_policies', { ns: 'general' })}
 
               </Link>
             </li>
 
-            <li className="mb-4" onClick={props.onHide}>
-              <Link className="text-secondary" href="/responsabilidad">
-
-                {t('offCanvas_responsibility', { ns: 'general' })}
-
-              </Link>
-            </li>
-            <li className="mb-4" onClick={props.onHide}>
-              <Link className="text-secondary" href="/contacto">
+            <li className="lh-1" onClick={props.onHide}>
+              <Link className="text-secondary lh-1" href="/contacto">
 
                 {t('offCanvas_contact_us', { ns: 'general' })}
 
               </Link>
             </li>
           </ul>
-          <div className="d-flex flex-column">
+          <div className="d-flex flex-column" style={{rowGap:".5rem"}}>
             <p className="m-0 fs-5 fw-600 lh-1 text-center">{t('offCanvas_followUs', { ns: 'general' })}</p>
             <div className="d-flex">
               <Image src="/images/linkedin-icon.svg" alt="linkedin icon" />
