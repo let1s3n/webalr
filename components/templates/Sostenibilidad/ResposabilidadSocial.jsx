@@ -1,9 +1,8 @@
 import React from 'react'
-import ResposabilidadSocial from '../../components/templates/Sostenibilidad/ResposabilidadSocial'
-const resposabilidadSocial = () => {
+const responsabilidadSocial = () => {
   return (
-    <ResposabilidadSocial />
+    <ResponsabilidadSocial />
   )
 }
 
-export default resposabilidadSocial
+export default responsabilidadSocial
