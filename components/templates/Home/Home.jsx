@@ -72,41 +72,23 @@ const Home = ({ locale }) => {
 
         </section>
 
-        <section className="quienes-somos pt-9">
+        <section className="quienes-somos pt-6 pt-custom1-9">
           <Container fluid="md">
-            <h3 className="fw-bold text-primary mb-5 text-center fs-5 fs-lg-4 fs-xl-3">{t('who_we_are', { ns: 'general' })}</h3>
-            {/* Test multilenguaje */}
-            {/* <h3>{t('welcome_to_react', { ns: 'general' })}</h3> */}
+            <h3 className="fw-bold text-primary mb-3 mb-custom1-5 text-center fs-5 fs-lg-4 fs-xl-3">{t('who_we_are', { ns: 'general' })}</h3>
+
 
           </Container>
-          {/* <Container fluid className="bg-yellow2 bg-opacity-10 pt-5 pt-xl-11 px-5 px-xl-11 pb-5">
-          <Row className="custom-row flex-column flex-sm-row">
-            <Col>
-              <h3 className="mb-5 fs-4 fs-xxl-3">
-                <span className="text-blue2">{t('our_history1', { ns: 'general' })}</span><span className="text-yellow2"> {t('our_history2', { ns: 'general' })}</span>
-              </h3>
-              <p className="quienes-somos-text m-0 fs-6 fs-sm-5 fw-light lh-base">
-                {t('who_we_are', { ns: 'general' })}
-              </p>
-            </Col>
-            <Col>
-              <h3 className="mb-5 fs-4 fs-xxl-3">
-                <span className="text-blue2">{t('peruvian_enterprise1', { ns: 'general' })}</span><span className="text-yellow2"> {t('peruvian_enterprise2', { ns: 'general' })}</span>
-              </h3>
-              <p className="quienes-somos-text m-0 fs-6 fs-sm-5 fw-light text-justify lh-base">
-                {t('peruvian_enterprise3', { ns: 'general' })}
-              </p>
-            </Col>
-          </Row>
 
-        </Container> */}
-          <Container fluid className="g-0 mt-7 mb-7 text-center">
+          <Container fluid className="g-0 my-3 my-custom1-7 text-center">
             <div className='d-flex justify-content-center gap-2 gap-lg-3 division-title' style={{ padding: 32 + 'px', borderRadius: '0px 20px 20px 0px' }}>
-              <h2 className="text-primary m-0 fw-bolder">{t('our', { ns: 'general' })}</h2>
-              <h2 className="m-0 fw-bolder text-secondary">{t('our_mission_vision_values_title', { ns: 'general' })}</h2>
+
+              <p className="m-0 fw-bolder text-primary fs-5 fs-custom1-2">{t('our', { ns: 'general' })} <span className="text-secondary">{t('our_mission_vision_values_title', { ns: 'general' })}</span></p>
+
+              {/* <h2 className="text-primary m-0 fw-bolder">{t('our', { ns: 'general' })}</h2>
+              <h2 className="m-0 fw-bolder text-secondary">{t('our_mission_vision_values_title', { ns: 'general' })}</h2> */}
             </div>
           </Container>
-          <div className="py-4 px-xl-4">
+          <div className="py-custom1-4 px-xl-4">
 
             <CardGroup className="justify-content-xl-center align-items-center flex-column flex-xl-row">
 
@@ -194,14 +176,16 @@ const Home = ({ locale }) => {
         </section>
 
         <section className="novedades mb-5">
-          <Container fluid className="g-0 mb-7 d-flex justify-content-center pt-5">
+          <Container fluid className="g-0 mb-3 mb-custom1-7 d-flex justify-content-center pt-custom1-5">
             <div className="d-flex gap-3 justify-content-center division-title" style={{ padding: 32 + 'px', borderRadius: '20px 0px 0px 20px' }}>
-              <h2 className="m-0 fw-bolder text-primary">{t('news', { ns: 'general' })}</h2>
-              <h2 className="m-0 fw-bolder text-secondary">{t('featured', { ns: 'general' })}</h2>
+
+              <p className="m-0 fw-bolder text-primary fs-5 fs-custom1-2">{t('news', { ns: 'general' })} <span className="text-secondary">{t('featured', { ns: 'general' })}</span></p>
+              {/* <h2 className="m-0 fw-bolder text-primary">{t('news', { ns: 'general' })}</h2>
+              <h2 className="m-0 fw-bolder text-secondary">{t('featured', { ns: 'general' })}</h2> */}
             </div>
           </Container>
           <div className='bg-primary w-100 px-3 px-lg-10 py-4'>
-            <div className="my-6 my-md-10 my-xxl-8" >
+            <div className="my-md-10 my-xxl-8" >
               <Carousel controls={width >= 1280 ? true : false} interval={7000} indicators={false}>
 
                 <Carousel.Item className='px-lg-5 carousel-item-box' >
@@ -292,26 +276,7 @@ const Home = ({ locale }) => {
                   </div>
                 </div>
               </Col>
-              {/* <Col lg={4} className="border-end border-white d-flex justify-content-center align-items-center text-center">
-            <div className='home__links-section'>
-              <p> </p>
-              <div className='item-button'>
-                <Link href="#">
-                  <p className='mb-0'>SUNAT</p>
-                </Link>
-              </div>
-            </div>
-          </Col>
-          <Col lg={4} className="d-flex justify-content-center align-items-center text-center">
-            <div className='home__links-section'>
-              <p> </p>
-              <div className='item-button'>
-                <Link href="#">
-                  <p className='mb-0'>MINEM</p>
-                </Link>
-              </div>
-            </div>
-          </Col> */}
+
             </Row>
           </Container>
         </section>
@@ -329,7 +294,7 @@ const Home = ({ locale }) => {
               <p className='mb-0'>{t('buttons.contact_us', { ns: 'general' })}</p>
             </Link>
           </div>
-          {/* <Button className='button-contact position-absolute'>{t('buttons.contact_us', { ns: 'general' })}</Button> */}
+
         </section>
       </>
     </>
