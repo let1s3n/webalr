@@ -29,12 +29,12 @@ function CustomOffCanvas(props) {
         <Button variant="link" className="btn-close p-0" aria-label="Close" onClick={props.onHide} style={{ zIndex: 2 }}>
           <Image src="/images/btn-close.svg" alt="btn close" ></Image>
         </Button>
-        {/* <Offcanvas.Title>Offcanvas</Offcanvas.Title> */}
+        
       </Offcanvas.Header>
       <Offcanvas.Body>
         <Container fluid className="d-flex flex-column align-items-center g-0">
           <Image className="idiomas-logo mb-4" src="/images/logo-alr.png" alt="idiomas logo" />
-          <div className="d-flex align-items-center mb-5" style={{ columnGap: 2 + 'rem' }}>
+          <div className="d-flex align-items-center mb-4" style={{ columnGap: 2 + 'rem' }}>
             {locale === 'en' ?
               <div className="d-flex" style={{ columnGap: 2 + 'rem' }}>
                 <div className="d-flex align-items-center languageOption">
@@ -74,14 +74,14 @@ function CustomOffCanvas(props) {
             <Image src="/images/swap-icon.svg" onClick={handleLocaleSwap} alt="swap icon" />
           </div>
 
-          <ul className="list-unstyled m-0 mb-6 fs-6 fw-light text-secondary">
+          <ul className="list-unstyled m-0 fs-6 fw-light text-secondary">
 
-            <li className="mb-3 lh-1" onClick={props.onHide}>
+            <li className="mb-4 lh-1" onClick={props.onHide}>
               <Link className="text-secondary lh-1" href="/">
                 {t('nav_bar.home', { ns: 'general' })}
               </Link>
             </li>
-            <li className="mb-3 lh-1" onClick={props.onHide}>
+            <li className="mb-4 lh-1" onClick={props.onHide}>
               <div>
                 <p className="text-secondary lh-1">
 
@@ -106,7 +106,7 @@ function CustomOffCanvas(props) {
                 </ul>
               </div>
             </li>
-            <li className="mb-3 lh-1" onClick={props.onHide}>
+            <li className="mb-4 lh-1" onClick={props.onHide}>
               <div>
                 <p className="text-secondary lh-1">
 
@@ -147,7 +147,7 @@ function CustomOffCanvas(props) {
                 </ul>
               </div>
             </li>
-            <li className="mb-3 lh-1" onClick={props.onHide}>
+            <li className="mb-4 lh-1" onClick={props.onHide}>
 
               <div>
                 <p className="text-secondary lh-1">
@@ -166,14 +166,14 @@ function CustomOffCanvas(props) {
                 </ul>
               </div>
             </li>
-            <li className="mb-3 lh-1" onClick={props.onHide}>
+            <li className="mb-4 lh-1" onClick={props.onHide}>
               <Link className="text-secondary lh-1" href="/prensa">
 
                 Prensa
 
               </Link>
             </li>
-            <li className="mb-3 lh-1" onClick={props.onHide}>
+            <li className="mb-4 lh-1" onClick={props.onHide}>
               <Link className="text-secondary lh-1" href="/politicas">
 
                 {t('offCanvas_policies', { ns: 'general' })}
