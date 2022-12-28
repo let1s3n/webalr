@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 
 import dynamic from 'next/dynamic';
 
@@ -44,18 +44,18 @@ const Politicas = () => {
                 src="/images/politica1.jpg"
                 alt="Política 1"
               />
-              <h1 className="hero-text position-absolute text-white">
-                <span className="d-block bg-yellow2 bg-opacity-60 fw-normal px-4 mb-2">{t('hero_text1', { ns: 'general' })}</span>
-                <span className="d-inline-block bg-basic1 bg-opacity-40 fw-600 px-4 mb-2">{t('hero_text2', { ns: 'general' })}</span> <br />
-                <span className="d-inline-block fw-bolder bg-blue2 bg-opacity-60 px-4">{t('hero_text3', { ns: 'general' })}</span>
+              <h1 className="hero-text position-absolute text-white w-100">
+                <span className="d-block fw-bolder mb-2">{t('hero_text1', { ns: 'general' })}</span>
+                <span className="d-inline-block fw-bolder mb-2">{t('hero_text2', { ns: 'general' })}</span> {" "}
+                <span className="d-inline-block fw-bolder text-secondary">{t('hero_text3', { ns: 'general' })}</span>
               </h1>
-              <div className="hero-illustration">
+              {/* <div className="hero-illustration">
                 <Image
                   src="/images/hero-illustration.svg"
                   alt='hero-illustration'
                   fluid
                 />
-              </div>
+              </div> */}
             </Carousel.Item>
             <Carousel.Item className="h-100">
               <Image

@@ -25,6 +25,7 @@ const NavBar = () => {
   const [paths, setPaths] = useState([
     "/",
     "/nosotros",
+    "/nosotros/directorio-y-gerencia",
     "/politicas"
   ])
 

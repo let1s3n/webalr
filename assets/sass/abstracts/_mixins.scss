@@ -109,5 +109,10 @@ $utilities: map-merge($utilities, ("width": map-merge(map-get($utilities, "width
       ),
     ));
 
+$utilities: map-merge($utilities, ("border-bottom": map-merge(map-get($utilities, "border-bottom"),
+        (responsive: true),
+      ),
+    ));
+
 
 @import "bootstrap/scss/root";

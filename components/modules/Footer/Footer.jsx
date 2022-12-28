@@ -12,60 +12,66 @@ const Footer = () => {
 
         <Row className="upperRow g-0 border-bottom pb-5">
 
-          <Col custom1="auto" className="d-flex flex-column" style={{ rowGap: "1rem" }}>
-            <p className="m-0 lh-1 fw-bold futuraBold mb-3">MENÚ PRINCIPAL</p>
+          <Col xl="auto" className="d-flex flex-column border-bottom pb-5 border-bottom-xl-0 pb-xl-0" style={{ rowGap: "2rem" }}>
+            <Row className="g-0 border border-primary" style={{ columnGap: "2rem",rowGap: "2rem" }}>
+              <Col xl="auto" className="d-flex flex-column" style={{ rowGap: "1.5rem" }}>
+                <p className="m-0 lh-1 fw-bold futuraBold mb-3">MENÚ PRINCIPAL</p>
 
-            <Link href="/">
-              <p className="m-0 lh-1 fw-bold futuraBold" style={{ cursor: "pointer" }}>Home</p>
-            </Link>
+                <Link href="/">
+                  <p className="m-0 lh-1 fw-bold futuraBold" style={{ cursor: "pointer" }}>Home</p>
+                </Link>
 
-            <div className="d-flex flex-column" style={{ rowGap: ".5rem" }}>
-              <p className="m-0 lh-1 fw-bold futuraBold" style={{ cursor: "pointer" }}>Nosotros</p>
-              <div className="d-flex ps-3 flex-column" style={{ rowGap: ".5rem" }}>
-                <Link href="/nosotros/quienes-somos">Quienes Somos</Link>
+                <div className="d-flex flex-column" style={{ rowGap: ".5rem" }}>
+                  <p className="m-0 lh-1 fw-bold futuraBold" style={{ cursor: "pointer" }}>Nosotros</p>
+                  <div className="d-flex ps-3 flex-column" style={{ rowGap: ".5rem" }}>
+                    <Link href="/nosotros/quienes-somos">Quienes Somos</Link>
 
-                <Link href="/nosotros/directorio-y-gerencia">Directorio y Gerencia</Link>
-              </div>
-            </div>
+                    <Link href="/nosotros/directorio-y-gerencia">Directorio y Gerencia</Link>
+                  </div>
+                </div>
 
-            <div className="d-flex flex-column" style={{ rowGap: ".5rem" }}>
-              <p className="m-0 lh-1 fw-bold futuraBold" style={{ cursor: "pointer" }}>Sostenibilidad</p>
-              <div className="d-flex ps-3 flex-column" style={{ rowGap: ".5rem" }}>
-                <Link href="/sostenibilidad/responsabilidad-social">Responsabilidad Social</Link>
+                <div className="d-flex flex-column" style={{ rowGap: ".5rem" }}>
+                  <p className="m-0 lh-1 fw-bold futuraBold" style={{ cursor: "pointer" }}>Sostenibilidad</p>
+                  <div className="d-flex ps-3 flex-column" style={{ rowGap: ".5rem" }}>
+                    <Link href="/sostenibilidad/responsabilidad-social">Responsabilidad Social</Link>
 
-                <Link href="/sostenibilidad/monitoreo-ambiental">Monitoreo Ambiental</Link>
+                    <Link href="/sostenibilidad/monitoreo-ambiental">Monitoreo Ambiental</Link>
 
-                <Link href="/sostenibilidad/manejo-de-residuos-solidos">Manejo de Residuos Sólidos</Link>
+                    <Link href="/sostenibilidad/manejo-de-residuos-solidos">Manejo de Residuos Sólidos</Link>
 
-                <Link href="/sostenibilidad/seguridad-y-salud-ocupacional">Seguridad y Salud Ocupacional</Link>
-              </div>
-            </div>
+                    <Link href="/sostenibilidad/seguridad-y-salud-ocupacional">Seguridad y Salud Ocupacional</Link>
+                  </div>
+                </div>
+              </Col>
+
+              <Col xl="auto" className="d-flex flex-column" style={{ rowGap: "1.5rem" }}>
+
+                <p className="d-none d-xl-block m-0 lh-1 fw-bold futuraBold mb-3 invisible">MENÚ PRINCIPAL</p>
+
+                <div className="d-flex flex-column" style={{ rowGap: ".5rem" }}>
+                  <p className="m-0 lh-1 fw-bold futuraBold" style={{ cursor: "pointer" }}>Operación</p>
+                  <div className="d-flex ps-3 flex-column" style={{ rowGap: ".5rem" }}>
+                    <Link href="/operacion/acumulacion-los-rosales">Acumulación Los Rosales</Link>
+                  </div>
+                </div>
+
+                <Link href="/prensa">
+                  <p className="m-0 lh-1 fw-bold futuraBold" style={{ cursor: "pointer" }}>Prensa</p>
+                </Link>
+                <Link href="/politicas">
+                  <p className="m-0 lh-1 fw-bold futuraBold" style={{ cursor: "pointer" }}>Políticas</p>
+                </Link>
+
+                <Link href="/contacto">
+                  <p className="m-0 lh-1 fw-bold futuraBold" style={{ cursor: "pointer" }}>Contáctanos</p>
+                </Link>
+              </Col>
+            </Row>
+
+            {/* <div className="divider"></div> */}
           </Col>
 
-          <Col custom1="auto" className="d-flex flex-column" style={{ rowGap: "1rem" }}>
-
-            <p className="m-0 lh-1 fw-bold futuraBold mb-3 invisible">MENÚ PRINCIPAL</p>
-
-            <div className="d-flex flex-column" style={{ rowGap: ".5rem" }}>
-              <p className="m-0 lh-1 fw-bold futuraBold" style={{ cursor: "pointer" }}>Operación</p>
-              <div className="d-flex ps-3 flex-column" style={{ rowGap: ".5rem" }}>
-                <Link href="/operacion/acumulacion-los-rosales">Acumulación Los Rosales</Link>
-              </div>
-            </div>
-
-            <Link href="/prensa">
-              <p className="m-0 lh-1 fw-bold futuraBold" style={{ cursor: "pointer" }}>Prensa</p>
-            </Link>
-            <Link href="/politicas">
-              <p className="m-0 lh-1 fw-bold futuraBold" style={{ cursor: "pointer" }}>Políticas</p>
-            </Link>
-
-            <Link href="/contacto">
-              <p className="m-0 lh-1 fw-bold futuraBold" style={{ cursor: "pointer" }}>Contáctanos</p>
-            </Link>
-          </Col>
-
-          <Col custom1="auto" className="d-flex flex-column" style={{ rowGap: "2rem" }}>
+          <Col xl="auto" className="d-flex flex-column" style={{ rowGap: "2rem" }}>
 
             <div className="d-flex flex-column" style={{ rowGap: "1rem" }}>
               <p className="m-0 lh-1 fw-bold futuraBold mb-3">CONTACTO</p>
@@ -93,7 +99,7 @@ const Footer = () => {
 
           </Col>
 
-          <Col custom1="auto" className="socialColumn d-flex flex-column">
+          <Col xl="auto" className="socialColumn d-flex flex-column">
 
 
             <Image className="logo" src="/images/logo-alr-blanco.png" alt="ALR logo" />

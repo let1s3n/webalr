@@ -127,3 +127,15 @@ a:hover {
   padding: 0px 1rem 1rem 1rem !important;
   overflow: hidden !important;
 }
+
+
+.divider {
+  margin-top: 1.5rem;
+  height: 1.5px;
+  border-top: 1.5px solid black;
+
+
+  @include media-breakpoint-up(xl) {
+    display: none;
+  }
+}
