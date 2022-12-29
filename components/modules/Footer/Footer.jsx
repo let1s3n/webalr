@@ -24,7 +24,7 @@ const Footer = () => {
                 <div className="d-flex flex-column" style={{ rowGap: ".5rem" }}>
                   <p className="m-0 lh-1 fw-600" style={{ cursor: "pointer" }}>Nosotros</p>
                   <div className="d-flex ps-3 flex-column" style={{ rowGap: ".5rem" }}>
-                    <Link href="/nosotros/quienes-somos">Quienes Somos</Link>
+                    <Link href="/nosotros">Quienes Somos</Link>
 
                     <Link href="/nosotros/directorio-y-gerencia">Directorio y Gerencia</Link>
                   </div>
