@@ -49,10 +49,10 @@ const Home = ({ locale }) => {
               <p> Your browser does not support the video tag.</p>
             </video>
 
-            <h1 className="hero-text position-absolute text-white w-100">
-              <span className="d-block fw-bolder mb-2">{t('hero_text1', { ns: 'general' })}</span>
-              <span className="d-inline-block fw-bolder mb-2">{t('hero_text2', { ns: 'general' })}</span> {" "}
-              <span className="d-inline-block fw-bolder text-secondary">{t('hero_text3', { ns: 'general' })}</span>
+            <h1 className="hero-text position-absolute text-white w-100 fw-normal trocchiRegular">
+              <span className="d-block mb-2">{t('hero_text1', { ns: 'general' })}</span>
+              <span className="d-inline-block mb-2">{t('hero_text2', { ns: 'general' })}</span> {" "}
+              <span className="d-inline-block text-secondary">{t('hero_text3', { ns: 'general' })}</span>
             </h1>
           </div>
 
