@@ -82,10 +82,10 @@ const Home = ({ locale }) => {
           <Container fluid className="g-0 my-3 my-custom1-7 text-center">
             <div className='d-flex justify-content-center gap-2 gap-lg-3 division-title' style={{ padding: 32 + 'px', borderRadius: '0px 20px 20px 0px' }}>
 
-              <p className="m-0 fw-bolder text-primary fs-5 fs-custom1-2">{t('our', { ns: 'general' })} <span className="text-secondary">{t('our_mission_vision_values_title', { ns: 'general' })}</span></p>
+              <p className="m-0 fw-bold text-primary fs-5 fs-custom1-2">{t('our', { ns: 'general' })} <span className="text-secondary">{t('our_mission_vision_values_title', { ns: 'general' })}</span></p>
 
-              {/* <h2 className="text-primary m-0 fw-bolder">{t('our', { ns: 'general' })}</h2>
-              <h2 className="m-0 fw-bolder text-secondary">{t('our_mission_vision_values_title', { ns: 'general' })}</h2> */}
+              {/* <h2 className="text-primary m-0 fw-bold">{t('our', { ns: 'general' })}</h2>
+              <h2 className="m-0 fw-bold text-secondary">{t('our_mission_vision_values_title', { ns: 'general' })}</h2> */}
             </div>
           </Container>
           <div className="py-custom1-4 px-xl-4">
@@ -179,9 +179,9 @@ const Home = ({ locale }) => {
           <Container fluid className="g-0 mb-3 mb-custom1-7 d-flex justify-content-center pt-custom1-5">
             <div className="d-flex gap-3 justify-content-center division-title" style={{ padding: 32 + 'px', borderRadius: '20px 0px 0px 20px' }}>
 
-              <p className="m-0 fw-bolder text-primary fs-5 fs-custom1-2">{t('news', { ns: 'general' })} <span className="text-secondary">{t('featured', { ns: 'general' })}</span></p>
-              {/* <h2 className="m-0 fw-bolder text-primary">{t('news', { ns: 'general' })}</h2>
-              <h2 className="m-0 fw-bolder text-secondary">{t('featured', { ns: 'general' })}</h2> */}
+              <p className="m-0 fw-bold text-primary fs-5 fs-custom1-2">{t('news', { ns: 'general' })} <span className="text-secondary">{t('featured', { ns: 'general' })}</span></p>
+              {/* <h2 className="m-0 fw-bold text-primary">{t('news', { ns: 'general' })}</h2>
+              <h2 className="m-0 fw-bold text-secondary">{t('featured', { ns: 'general' })}</h2> */}
             </div>
           </Container>
           <div className='bg-primary w-100 px-3 px-lg-10 py-4'>
