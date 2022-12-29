@@ -50,7 +50,7 @@ const Nosotros = () => {
 
         <section className="nuestra-historia p-3 p-xl-11 p-xxxxl-15">
 
-          <h2 className="mb-5 mt-5 mt-xl-0 mb-custom1-8 fw-bold text-center futuraBold text-primary">
+          <h2 className="mb-5 mt-5 mt-xl-0 mb-custom1-8  text-center  text-primary">
             Somos la Minera <span className='text-secondary'>Acumulación Los Rosales</span>
           </h2>
 
@@ -75,7 +75,7 @@ const Nosotros = () => {
                 </Carousel>
               </Col>
               <Col>
-                <h2 className="mb-5 text-secondary fw-bold pt-5">{t('us_our_history_title', { ns: 'general' })}</h2>
+                <h2 className="mb-5 text-secondary  pt-5">{t('us_our_history_title', { ns: 'general' })}</h2>
                 <p className="m-0 text-justify--mobile text-primary">
                   <strong>{t('us_our_history_text_p1', { ns: 'general' })}</strong>
                   <br />
@@ -97,7 +97,7 @@ const Nosotros = () => {
         <section>
           <Row className="g-0">
             <div className='mb-3 mt-5 mt-lg-0'>
-              <h3 className='fw-bold text-center futuraBold mx-5'>La filosofía corporativa de Acumulación Los Rosales</h3>
+              <h3 className=' text-center  mx-5'>La filosofía corporativa de Acumulación Los Rosales</h3>
             </div>
           </Row>
           <div id="estamentosContainer" className="estamentosContainer"></div>
@@ -111,9 +111,9 @@ const Nosotros = () => {
                 />
                 <div className='bg-secondary py-5 py-xl-7 position-absolute bg-opacity-80 nosotros-img' style={{ top: 0 }}>
                   <div className="d-flex align-items-center justify-content-center">
-                    <h2 className="fw-bolder futuraBold mb-3 text-white">{t('us_vision_title', { ns: 'general' })}</h2>
+                    <h2 className=" mb-3 text-white">{t('us_vision_title', { ns: 'general' })}</h2>
                   </div>
-                  <p className="m-0 px-4 p-xl-4 fs-xxl-5 px-xl-5 fw-bold text-primary text-center">
+                  <p className="m-0 px-4 p-xl-4 fs-xxl-5 px-xl-5  text-primary text-center">
                     {t('us_vision_text', { ns: 'general' })}
                   </p>
                 </div>
@@ -128,9 +128,9 @@ const Nosotros = () => {
                 />
                 <div className='bg-secondary py-5 py-xl-7 position-absolute bg-opacity-80 nosotros-img' style={{ top: 0 }}>
                   <div className="d-flex align-items-center justify-content-center">
-                    <h2 className="fw-bolder futuraBold mb-3 text-white">{t('us_mission_title', { ns: 'general' })}</h2>
+                    <h2 className=" mb-3 text-white">{t('us_mission_title', { ns: 'general' })}</h2>
                   </div>
-                  <p className="m-0 px-4 p-xl-4 fs-xxl-5 px-xl-5 fw-bold text-primary text-center">
+                  <p className="m-0 px-4 p-xl-4 fs-xxl-5 px-xl-5  text-primary text-center">
                     {t('us_mission_text', { ns: 'general' })}
                   </p>
                 </div>
@@ -145,9 +145,9 @@ const Nosotros = () => {
                 />
                 <div className='bg-secondary py-5 py-xl-7 position-absolute bg-opacity-80 nosotros-img' style={{ top: 0 }}>
                   <div className="d-flex align-items-center justify-content-center">
-                    <h2 className="fw-bolder futuraBold mb-3 text-white">{t('us_values_title', { ns: 'general' })}</h2>
+                    <h2 className=" mb-3 text-white">{t('us_values_title', { ns: 'general' })}</h2>
                   </div>
-                  <p className="m-0 px-4 p-xl-4 fs-xxl-5 px-xl-5 fw-bold text-primary text-center">
+                  <p className="m-0 px-4 p-xl-4 fs-xxl-5 px-xl-5  text-primary text-center">
                     {t('us_values_text', { ns: 'general' })}
                   </p>
                 </div>
@@ -171,7 +171,7 @@ const Nosotros = () => {
               </Col>
               <Col xs={12} lg={6}>
                 <div className='pt-0 pt-lg-13 text-center'>
-                  <h2 className='text-white futuraBold'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                  <h2 className='text-white '>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
                   <div className='pt-7'>
                     <Button className='px-5'>VER POLÍTICAS</Button>
                   </div>

@@ -33,23 +33,13 @@ const Home = ({ locale }) => {
       <Loader loading={loading} />
       <>
         <section className="hero-section">
-
-          {/* <div className="h-100"> */}
-
           <div className="h-100">
-
-            {/* <Image
-              className="hero-image"
-              src="/images/hero.jpg"
-              alt="Foto de la planta de día"
-            /> */}
-
             <video autoPlay={true} muted={true} loop={true} className="hero-video">
               <source src={`${process.env.BUCKET}video/video_home.mp4`} type="video/mp4" />
               <p> Your browser does not support the video tag.</p>
             </video>
 
-            <h1 className="hero-text position-absolute text-white w-100 fw-normal trocchiRegular">
+            <h1 className="hero-text position-absolute text-white w-100 trocchiRegular">
               <span className="d-block mb-2">{t('hero_text1', { ns: 'general' })}</span>
               <span className="d-inline-block mb-2">{t('hero_text2', { ns: 'general' })}</span> {" "}
               <span className="d-inline-block text-secondary">{t('hero_text3', { ns: 'general' })}</span>
@@ -62,7 +52,7 @@ const Home = ({ locale }) => {
             <div className="text-white bg-primary rounded">
               <p className='mb-0'>
                 <span className="lh-sm">{t('hero_text4', { ns: 'general' })}</span>{" "}
-                <span className="lh-sm text-secondary fw-bold">{t('hero_text5', { ns: 'general' })}</span>{" "}
+                <span className="lh-sm text-secondary ">{t('hero_text5', { ns: 'general' })}</span>{" "}
                 <span className="lh-sm">{t('hero_text6', { ns: 'general' })}</span>
               </p>
               <span className="lh-sm">{t('hero_text7', { ns: 'general' })}</span>
@@ -74,7 +64,7 @@ const Home = ({ locale }) => {
 
         <section className="quienes-somos pt-6 pt-custom1-9">
           <Container fluid="md">
-            <h3 className="fw-bold text-primary mb-3 mb-custom1-5 text-center fs-5 fs-lg-4 fs-xl-3">{t('who_we_are', { ns: 'general' })}</h3>
+            <h3 className=" text-primary mb-3 mb-custom1-5 text-center fs-5 fs-lg-4 fs-xl-3">{t('who_we_are', { ns: 'general' })}</h3>
 
 
           </Container>
@@ -82,10 +72,10 @@ const Home = ({ locale }) => {
           <Container fluid className="g-0 my-3 my-custom1-7 text-center">
             <div className='d-flex justify-content-center gap-2 gap-lg-3 division-title' style={{ padding: 32 + 'px', borderRadius: '0px 20px 20px 0px' }}>
 
-              <p className="m-0 fw-bold text-primary fs-5 fs-custom1-2">{t('our', { ns: 'general' })} <span className="text-secondary">{t('our_mission_vision_values_title', { ns: 'general' })}</span></p>
+              <p className="m-0  text-primary fs-5 fs-custom1-2">{t('our', { ns: 'general' })} <span className="text-secondary">{t('our_mission_vision_values_title', { ns: 'general' })}</span></p>
 
-              {/* <h2 className="text-primary m-0 fw-bold">{t('our', { ns: 'general' })}</h2>
-              <h2 className="m-0 fw-bold text-secondary">{t('our_mission_vision_values_title', { ns: 'general' })}</h2> */}
+              {/* <h2 className="text-primary m-0 ">{t('our', { ns: 'general' })}</h2>
+              <h2 className="m-0  text-secondary">{t('our_mission_vision_values_title', { ns: 'general' })}</h2> */}
             </div>
           </Container>
           <div className="py-custom1-4 px-xl-4">
@@ -179,9 +169,7 @@ const Home = ({ locale }) => {
           <Container fluid className="g-0 mb-3 mb-custom1-7 d-flex justify-content-center pt-custom1-5">
             <div className="d-flex gap-3 justify-content-center division-title" style={{ padding: 32 + 'px', borderRadius: '20px 0px 0px 20px' }}>
 
-              <p className="m-0 fw-bold text-primary fs-5 fs-custom1-2">{t('news', { ns: 'general' })} <span className="text-secondary">{t('featured', { ns: 'general' })}</span></p>
-              {/* <h2 className="m-0 fw-bold text-primary">{t('news', { ns: 'general' })}</h2>
-              <h2 className="m-0 fw-bold text-secondary">{t('featured', { ns: 'general' })}</h2> */}
+              <p className="m-0  text-primary fs-5 fs-custom1-2">{t('news', { ns: 'general' })} <span className="text-secondary">{t('featured', { ns: 'general' })}</span></p>
             </div>
           </Container>
           <div className='bg-primary w-100 px-3 px-lg-10 py-4'>

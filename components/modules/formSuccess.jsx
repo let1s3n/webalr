@@ -12,7 +12,7 @@ const FormSuccess = () => {
   return (
     control ?
       <>
-        <h6 className="text-blue1 custom-font-6 fs-md-4 fs-xl-2 fw-bold mb-5 text-start">Datos de Contacto</h6>
+        <h6 className="text-blue1 custom-font-6 fs-md-4 fs-xl-2  mb-5 text-start">Datos de Contacto</h6>
         <Form>
           <Row xs={1} xl={2} style={{ rowGap: 1.5 + 'rem' }}>
             <Col>
