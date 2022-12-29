@@ -41,7 +41,7 @@ const Politicas = () => {
             <Carousel.Item className="h-100">
               <Image
                 className="hero-image"
-                src="/images/politica1.jpg"
+                src="/images/politica2.jpg"
                 alt="Política 1"
               />
               <h1 className="hero-text position-absolute text-white w-100 trocchiRegular">

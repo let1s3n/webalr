@@ -1,0 +1,19 @@
+.responsabilidadSocialPage {
+  .hero-container {
+    width: 100%;
+    height: 60vh;
+
+    .hero-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      -webkit-filter: brightness(.6);
+      filter: brightness(.6);
+    }
+  }
+
+  .breadcrumb {
+    justify-content: center;
+    margin: 0px;
+  }
+}
