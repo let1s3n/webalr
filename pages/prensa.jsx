@@ -1,9 +1,15 @@
 import React from 'react'
+import Head from 'next/head'
 import Prensa from '../components/templates/Prensa/Prensa'
 
 const prensa = () => {
   return (
-    <Prensa />
+    <>
+      <Head>
+        <title>SMRL Acumulación Los Rosales | Prensa</title>
+      </Head>
+      <Prensa />
+    </>
   )
 }
 

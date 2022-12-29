@@ -15,14 +15,14 @@ const Footer = () => {
           <Col xl="auto" className="d-flex flex-column border-bottom pb-5 border-bottom-xl-0 pb-xl-0" style={{ rowGap: "2rem" }}>
             <Row className="g-0 border border-primary" style={{ columnGap: "2rem",rowGap: "2rem" }}>
               <Col xl="auto" className="d-flex flex-column" style={{ rowGap: "1.5rem" }}>
-                <p className="m-0 lh-1  mb-3">MENÚ PRINCIPAL</p>
+                <p className="m-0 lh-1 fw-600 mb-3">MENÚ PRINCIPAL</p>
 
                 <Link href="/">
-                  <p className="m-0 lh-1 " style={{ cursor: "pointer" }}>Home</p>
+                  <p className="m-0 fw-600 lh-1 " style={{ cursor: "pointer" }}>Home</p>
                 </Link>
 
                 <div className="d-flex flex-column" style={{ rowGap: ".5rem" }}>
-                  <p className="m-0 lh-1 " style={{ cursor: "pointer" }}>Nosotros</p>
+                  <p className="m-0 lh-1 fw-600" style={{ cursor: "pointer" }}>Nosotros</p>
                   <div className="d-flex ps-3 flex-column" style={{ rowGap: ".5rem" }}>
                     <Link href="/nosotros/quienes-somos">Quienes Somos</Link>
 
@@ -31,7 +31,7 @@ const Footer = () => {
                 </div>
 
                 <div className="d-flex flex-column" style={{ rowGap: ".5rem" }}>
-                  <p className="m-0 lh-1 " style={{ cursor: "pointer" }}>Sostenibilidad</p>
+                  <p className="m-0 lh-1 fw-600" style={{ cursor: "pointer" }}>Sostenibilidad</p>
                   <div className="d-flex ps-3 flex-column" style={{ rowGap: ".5rem" }}>
                     <Link href="/sostenibilidad/responsabilidad-social">Responsabilidad Social</Link>
 
@@ -46,35 +46,34 @@ const Footer = () => {
 
               <Col xl="auto" className="d-flex flex-column" style={{ rowGap: "1.5rem" }}>
 
-                <p className="d-none d-xl-block m-0 lh-1  mb-3 invisible">MENÚ PRINCIPAL</p>
+                <p className="d-none d-xl-block m-0 lh-1 fw-600 mb-3 invisible">MENÚ PRINCIPAL</p>
 
                 <div className="d-flex flex-column" style={{ rowGap: ".5rem" }}>
-                  <p className="m-0 lh-1 " style={{ cursor: "pointer" }}>Operación</p>
+                  <p className="m-0 lh-1 fw-600" style={{ cursor: "pointer" }}>Operación</p>
                   <div className="d-flex ps-3 flex-column" style={{ rowGap: ".5rem" }}>
                     <Link href="/operacion/acumulacion-los-rosales">Acumulación Los Rosales</Link>
                   </div>
                 </div>
 
                 <Link href="/prensa">
-                  <p className="m-0 lh-1 " style={{ cursor: "pointer" }}>Prensa</p>
+                  <p className="m-0 lh-1 fw-600" style={{ cursor: "pointer" }}>Prensa</p>
                 </Link>
                 <Link href="/politicas">
-                  <p className="m-0 lh-1 " style={{ cursor: "pointer" }}>Políticas</p>
+                  <p className="m-0 lh-1 fw-600" style={{ cursor: "pointer" }}>Políticas</p>
                 </Link>
 
                 <Link href="/contacto">
-                  <p className="m-0 lh-1 " style={{ cursor: "pointer" }}>Contáctanos</p>
+                  <p className="m-0 lh-1 fw-600" style={{ cursor: "pointer" }}>Contáctanos</p>
                 </Link>
               </Col>
             </Row>
 
-            {/* <div className="divider"></div> */}
           </Col>
 
           <Col xl="auto" className="d-flex flex-column" style={{ rowGap: "2rem" }}>
 
             <div className="d-flex flex-column" style={{ rowGap: "1rem" }}>
-              <p className="m-0 lh-1  mb-3">CONTACTO</p>
+              <p className="m-0 lh-1 fw-600 mb-3">CONTACTO</p>
               <p className="m-0 lh-1">
                 {t('footer_ALR', { ns: 'general' })}
               </p>
