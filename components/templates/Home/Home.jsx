@@ -80,7 +80,7 @@ const Home = ({ locale }) => {
           </Container>
           <div className="py-custom1-4 px-xl-4">
 
-            <CardGroup className="justify-content-xl-center align-items-center flex-column flex-xl-row">
+            <CardGroup className="justify-content-xl-center align-items-center flex-column flex-xl-row" style={{rowGap:"1.5rem"}}>
 
               <Card className="text-white mx-auto mx-sm-0">
 

@@ -36,7 +36,7 @@ const MonitoreoAmbiental = () => {
           />
         </div>
 
-        <Container className="g-0 py-4">
+        <Container className="g-0 py-4 px-3">
           <div className="mb-4 text-center">
             <h2 className="m-0 mb-3">Monitore Ambiental</h2>
             <Breadcrumb>
@@ -52,7 +52,7 @@ const MonitoreoAmbiental = () => {
 
           <p className="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae tempore eos iure in illum quaerat.</p>
 
-          <CustomButton className="mx-auto" size="xxl" content="Ir a políticas" />
+          <CustomButton href="/politicas" className="mx-auto" size={width >= 1200 ? "xxl" : "xl"} content="Ir a políticas" />
         </Container>
       </Container>
     </>
