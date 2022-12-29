@@ -40,20 +40,26 @@ const AcumulacionLosRosales = () => {
     <>
       <Loader loading={loading} />
       <Container fluid className="operacionAcumulacionPage g-0">
-        <Container className="py-4 g-0">
+        <Container className="py-4 px-3 g-0">
           <h1>Acumulación Los Rosales</h1>
 
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eius incidunt</p>
           <Swiper
             // install Swiper modules
             modules={[Navigation, Pagination, Scrollbar, A11y]}
-            spaceBetween={50}
-            slidesPerView={3}
+            slidesPerView={1}
             navigation
             pagination={{ clickable: true }}
             scrollbar={{ draggable: true }}
             onSwiper={(swiper) => console.log(swiper)}
             onSlideChange={() => console.log('slide change')}
+            breakpoints={{
+              1200: {
+                spaceBetween: 50,
+                slidesPerView: 3
+              }
+            }}
+
           >
             <SwiperSlide>
               <Image

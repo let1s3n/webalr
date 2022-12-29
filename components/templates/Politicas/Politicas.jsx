@@ -44,7 +44,7 @@ const Politicas = () => {
                 src="/images/politica2.jpg"
                 alt="Política 1"
               />
-              <h1 className="hero-text position-absolute text-white w-100 trocchiRegular">
+              <h1 className="hero-text position-absolute text-white w-100 trocchiRegular px-3">
                 <span className="d-block mb-2">{t('hero_text1', { ns: 'general' })}</span>
                 <span className="d-inline-block mb-2">{t('hero_text2', { ns: 'general' })}</span> {" "}
                 <span className="d-inline-block text-secondary">{t('hero_text3', { ns: 'general' })}</span>
