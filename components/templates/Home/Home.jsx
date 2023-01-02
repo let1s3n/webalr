@@ -28,7 +28,7 @@ const Home = ({ locale }) => {
   useEffect(() => {
     console.log("videoElement.current: ", videoElement.current)
 
-    videoElement.current.onload = onLoadedData();
+    videoElement.current.oncanplaythrough = onLoadedData();
   }, [])
 
 
