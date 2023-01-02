@@ -34,7 +34,7 @@ const Prensa = () => {
         </div>
 
         <Container className="py-4 px-3 g-0 text-center">
-          <h1>Prensa</h1>
+          <h1 className='text-primary'>PRENSA</h1>
 
           <Breadcrumb>
             <Breadcrumb.Item href="/">Home</Breadcrumb.Item>

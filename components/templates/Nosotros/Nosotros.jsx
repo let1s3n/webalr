@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-import { Container, Row, Col, Carousel, Image, Card, CardGroup, Button } from 'react-bootstrap'
+import { Container, Row, Col, Carousel, Image, Card, CardGroup, Button, Breadcrumb } from 'react-bootstrap'
 import { useTranslation } from "react-i18next";
 import Loader from '../../elements/Loader/Loader'
 
@@ -29,18 +29,18 @@ const Nosotros = () => {
       <Loader loading={loading} />
       <div className="nosotrosPage">
 
-        <section className="hero-section">
+        <section className="">
           <Carousel controls={width >= 1280 ? true : false} interval={6000} className="h-100 nostros-carousel">
-            <Carousel.Item className="h-100">
+            <Carousel.Item className="hero-container">
               <Image
-                className="hero-image hero-image--center"
+                className="hero-image"
                 src="/images/nosotros1.jpg"
                 alt="Charla de seguridad"
               />
             </Carousel.Item>
-            <Carousel.Item className="h-100">
+            <Carousel.Item className="hero-container">
               <Image
-                className="hero-image hero-image--center"
+                className="hero-image"
                 src="/images/nosotros2.jpg"
                 alt="Equipo de laboratorio químico"
               />
@@ -48,11 +48,17 @@ const Nosotros = () => {
           </Carousel>
         </section>
 
-        <section className="nuestra-historia p-3 p-xl-11 p-xxxxl-15">
+        <section className="nuestra-historia p-3 p-xl-9 p-xxxxl-15">
 
-          <h2 className="mb-5 mt-5 mt-xl-0 mb-custom1-8  text-center  text-primary">
-            Somos la Minera <span className='text-secondary'>Acumulación Los Rosales</span>
-          </h2>
+          <div className="mb-5 mt-5 mt-xl-0 mb-custom1-8 d-flex flex-column align-items-center">
+            <h1 className="text-center text-primary">
+              SOMOS LA MINERA <span className='text-secondary'>ACUMULACIÓN LOS ROSALES</span>
+            </h1>
+            <Breadcrumb>
+              <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+              <Breadcrumb.Item href="/nosotros" active>Nosotros</Breadcrumb.Item>
+            </Breadcrumb>
+          </div>
 
           <Container fluid className="g-0">
             <Row className="flex-column flex-xl-row" style={{ rowGap: 2 + 'rem' }}>
@@ -103,13 +109,13 @@ const Nosotros = () => {
           <div id="estamentosContainer" className="estamentosContainer"></div>
           <Row className='mb-7 mt-5 px-4 g-0'>
             <Col xs={12} lg={4}>
-              <div className='position-relative mb-4 mb-xl-0'>
+              <div className='position-relative mb-4 mb-xl-0 mx-1'>
                 <Image
                   src="/images/vision-col.jpg"
                   alt="Imagen visión"
                   className="nosotros-img"
                 />
-                <div className='bg-secondary py-5 py-xl-7 position-absolute bg-opacity-80 nosotros-img' style={{ top: 0 }}>
+                <div className='bg-secondary py-5 py-xl-7 position-absolute bg-opacity-80 nosotros-img me-1' style={{ top: 0 }}>
                   <div className="d-flex align-items-center justify-content-center">
                     <h2 className=" mb-3 text-white">{t('us_vision_title', { ns: 'general' })}</h2>
                   </div>
@@ -120,13 +126,13 @@ const Nosotros = () => {
               </div>
             </Col>
             <Col xs={12} lg={4}>
-              <div className='position-relative mb-4 mb-xl-0'>
+              <div className='position-relative mb-4 mb-xl-0 mx-1'>
                 <Image
                   src="/images/mision-col.jpg"
                   alt="Imagen visión"
                   className="nosotros-img"
                 />
-                <div className='bg-secondary py-5 py-xl-7 position-absolute bg-opacity-80 nosotros-img' style={{ top: 0 }}>
+                <div className='bg-secondary py-5 py-xl-7 position-absolute bg-opacity-80 nosotros-img me-1' style={{ top: 0 }}>
                   <div className="d-flex align-items-center justify-content-center">
                     <h2 className=" mb-3 text-white">{t('us_mission_title', { ns: 'general' })}</h2>
                   </div>
@@ -137,13 +143,13 @@ const Nosotros = () => {
               </div>
             </Col>
             <Col xs={12} lg={4}>
-              <div className='position-relative'>
+              <div className='position-relative mx-1'>
                 <Image
                   src="/images/valores.jpg"
                   alt="Imagen visión"
                   className="nosotros-img"
                 />
-                <div className='bg-secondary py-5 py-xl-7 position-absolute bg-opacity-80 nosotros-img' style={{ top: 0 }}>
+                <div className='bg-secondary py-5 py-xl-7 position-absolute bg-opacity-80 nosotros-img me-1' style={{ top: 0 }}>
                   <div className="d-flex align-items-center justify-content-center">
                     <h2 className=" mb-3 text-white">{t('us_values_title', { ns: 'general' })}</h2>
                   </div>

@@ -39,7 +39,9 @@ const ManejoResiduosSolidos = () => {
 
         <Container className="g-0 py-4 px-3">
           <div className="mb-4 text-center">
-            <h2 className="m-0 mb-3">Manejo de Residuos Sólidos</h2>
+            <h1 className="text-center text-primary">
+              MANEJO DE <span className='text-secondary'>RESIDUOS SÓLIDOS</span>
+            </h1>
             <Breadcrumb>
               <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
               <Breadcrumb.Item href="#">

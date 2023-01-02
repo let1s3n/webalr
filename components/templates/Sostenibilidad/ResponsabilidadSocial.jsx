@@ -40,7 +40,9 @@ const ResponsabilidadSocial = () => {
 
         <Container className="g-0 py-4 px-3">
           <div className="mb-4 text-center">
-            <h2 className="m-0 mb-3">Responsabilidad Social</h2>
+            <h1 className="text-center text-primary">
+              RESPONSABILIDAD <span className='text-secondary'>SOCIAL</span>
+            </h1>
             <Breadcrumb>
               <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
               <Breadcrumb.Item href="#">
@@ -54,7 +56,7 @@ const ResponsabilidadSocial = () => {
 
           <p className="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae tempore eos iure in illum quaerat.</p>
 
-          <CustomButton href="/politicas" className="mx-auto" size={width >= 1200 ? "xxl" : "xl"} content="Ir a políticas" />
+          <CustomButton href="/politicas" className="mx-auto my-5" size={width >= 1200 ? "xxl" : "xl"} content="Ir a políticas" />
         </Container>
 
         <Container fluid className="g-0 mt-4 mb-10">

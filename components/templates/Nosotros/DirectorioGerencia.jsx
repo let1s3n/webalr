@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-import { Container, Row, Col, Carousel, Image, Card, CardGroup } from 'react-bootstrap'
+import { Container, Row, Col, Carousel, Image, Card, CardGroup, Breadcrumb } from 'react-bootstrap'
 import { useTranslation } from "react-i18next";
 import Loader from '../../elements/Loader/Loader'
 
@@ -28,8 +28,8 @@ const DirectorioGerencia = () => {
       <Loader loading={loading} />
 
       <div className="perfilesPage">
-        <section className="hero-section directors-management__hero-image">
-          <div className='h-100'>
+        <section className="directors-management__hero-image">
+          <div className='hero-container'>
             <Image
               className="hero-image hero-image--center"
               src="/images/hero2.jpg"
@@ -38,9 +38,18 @@ const DirectorioGerencia = () => {
           </div>
         </section>
         <section className="directors-management__content mx-auto perfiles d-flex flex-column justify-content-center align-items-center mt-4 p-3 py-xl-5">
-          <h1 className="mb-5 mt-5 mt-xl-0 mb-custom1-8  text-center  text-primary">
-            DIRECTORIO Y <span className='text-secondary'>GERENCIA</span>
-          </h1>
+          <div className="mb-5 mt-5 mt-xl-0 mb-custom1-8 d-flex flex-column align-items-center">
+            <h1 className="text-center text-primary">
+              DIRECTORIO Y <span className='text-secondary'>GERENCIA</span>
+            </h1>
+            <Breadcrumb>
+              <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+              <Breadcrumb.Item href="#">
+                Nosotros
+              </Breadcrumb.Item>
+              <Breadcrumb.Item href="/nosotros/directorio-y-gerencia" active>Directorio y Gerencia</Breadcrumb.Item>
+            </Breadcrumb>
+          </div>
 
           <Container fluid className="g-0">
             <div className='bg-primary text-white mx-lg-5 text-center px-3 px-lg-5 py-4 py-xl-5 mb-5'>

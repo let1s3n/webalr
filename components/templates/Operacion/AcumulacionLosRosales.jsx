@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Container, Image } from 'react-bootstrap'
+import { Container, Image, Breadcrumb } from 'react-bootstrap'
 
 import { useTranslation } from "react-i18next";
 
@@ -49,7 +49,20 @@ const AcumulacionLosRosales = () => {
           />
         </div>
         <Container className="py-4 px-3 g-0">
-          <h1>Acumulación Los Rosales</h1>
+          {/* <h1>Acumulación Los Rosales</h1> */}
+
+          <div className="mb-4  d-flex flex-column align-items-center">
+            <h1 className="text-center text-primary">
+              ACUMULACIÓN LOS ROSALES
+            </h1>
+            <Breadcrumb>
+              <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+              <Breadcrumb.Item href="#">
+                Operación
+              </Breadcrumb.Item>
+              <Breadcrumb.Item href="/operacion/acumulacion-los-rosales" active>Acumulación Los Rosales</Breadcrumb.Item>
+            </Breadcrumb>
+          </div>
 
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eius incidunt</p>
           <Swiper

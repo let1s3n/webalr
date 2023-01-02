@@ -27,6 +27,7 @@ const NavBar = () => {
     "/nosotros",
     "/nosotros/directorio-y-gerencia",
     "/sostenibilidad/responsabilidad-social",
+    // "/sostenibilidad/monitoreo-ambiental",
     "/politicas",
     "/operacion/acumulacion-los-rosales",
     "/prensa"
@@ -62,7 +63,12 @@ const NavBar = () => {
 
   useEffect(() => {
     if (width > 576) {
-      setControl(750);
+      if (currentpath === '/') {
+        setControl(531);
+      } else {
+        setControl(342);
+      }
+
     } else {
       setControl(550);
     }
