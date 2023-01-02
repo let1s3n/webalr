@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 
-import i18n from "i18next";
 import { useTranslation } from "react-i18next";
 
 import Link from 'next/link'
-import { Container, Carousel, Row, Col, CardGroup, Card, Image, Button } from 'react-bootstrap'
+import { Container, Carousel, Row, Col, CardGroup, Card, Image } from 'react-bootstrap'
 
 import Loader from '../../elements/Loader/Loader'
 
@@ -14,18 +13,37 @@ const Home = ({ locale }) => {
 
   const { height, width } = useWindowDimensions();
   const { t } = useTranslation();
+
   const [loading, setLoading] = useState(true);
+
+  const [videoLoading, setVideoLoading] = useState(false);
+
+  const videoElement = useRef(null);
+
+  const onLoadedData = () => {
+    console.log("VIDEO LOADED")
+    setVideoLoading(true);
+  };
+
+  useEffect(() => {
+    console.log("videoElement.current: ", videoElement.current)
+
+    videoElement.current.onload = onLoadedData();
+  }, [])
+
 
   useEffect(() => {
     let transControl = t('transControl', { ns: 'general', returnObjects: true })
 
     console.log("transControl: ", transControl)
 
-    if (typeof transControl !== 'string' && !(transControl instanceof String)) {
+    if (typeof transControl !== 'string' && !(transControl instanceof String) && videoLoading) {
       setLoading(false);
     }
 
-  }, [t])
+  }, [t, videoLoading])
+
+
 
 
   return (
@@ -34,7 +52,14 @@ const Home = ({ locale }) => {
       <>
         <section className="hero-section">
           <div className="h-100">
-            <video autoPlay={true} muted={true} loop={true} className="hero-video">
+            <video
+              autoPlay={true}
+              muted={true}
+              loop={true}
+              playsInline
+              ref={videoElement}
+              className="hero-video"
+            >
               <source src={`${process.env.BUCKET}video/video_home.mp4`} type="video/mp4" />
               <p> Your browser does not support the video tag.</p>
             </video>
@@ -78,7 +103,7 @@ const Home = ({ locale }) => {
           </Container>
           <div className="py-custom1-4 px-xl-4">
 
-            <CardGroup className="justify-content-xl-center align-items-center flex-column flex-xl-row" style={{rowGap:"1.5rem"}}>
+            <CardGroup className="justify-content-xl-center align-items-center flex-column flex-xl-row" style={{ rowGap: "1.5rem" }}>
 
               <Card className="text-white mx-auto mx-sm-0">
 
