@@ -52,11 +52,6 @@ function MyApp({ Component, pageProps }) {
     router.events.on("routeChangeError", handleComplete);
   }, [router]);
 
-  /* useEffect(() => {
-    console.log(`${process.env.NEXT_PUBLIC_URL}data/locales/{{lng}}/translation.json`);
-    console.log(`${process.env.NEXT_PUBLIC_URL}`);
-  }, []); */
-
   return (
 
     <SSRProvider>
