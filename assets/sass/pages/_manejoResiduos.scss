@@ -16,4 +16,33 @@
     justify-content: center;
     margin: 0px;
   }
+
+  .bigContainer {
+    height: auto;
+
+    @include media-breakpoint-up(custom1) {
+      height: 574px;
+    }
+  }
+
+  .smallContainer {
+    height: 211px;
+    width: 300px;
+
+    @include media-breakpoint-up(custom1) {
+      height: 392px;
+      width: 558px;
+
+      -webkit-transform: translate(-50%, -50%) !important;
+      -moz-transform: translate(-50%, -50%) !important;
+      transform: translate(-50%, -50%) !important;
+
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 }

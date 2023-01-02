@@ -173,3 +173,7 @@ a:hover {
     }
   }
 }
+
+.card-group>.card+.card {
+  border-left: 1px solid rgba(0, 0, 0, 0.176) !important;
+}

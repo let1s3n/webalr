@@ -54,6 +54,24 @@ const MonitoreoAmbiental = () => {
 
           <CustomButton href="/politicas" className="mx-auto" size={width >= 1200 ? "xxl" : "xl"} content="Ir a políticas" />
         </Container>
+
+        <Container fluid className="g-0 mt-4 mb-10">
+          <div className="bigContainer bg-primary w-70 position-relative pt-10 ps-15">
+            <div className="w-65">
+              <p className="text-white fs-5 lh-lg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor velit necessitatibus ducimus repudiandae sapiente quos explicabo in illum veniam earum porro aliquid a modi, voluptatum, hic voluptatem quaerat quibusdam!
+              </p>
+              <p className="text-white fs-5 lh-lg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatum beatae et numquam, obcaecati accusantium cumque quasi sequi atque similique, necessitatibus soluta iste tempore dignissimos id? Enim impedit fugit a!
+              </p>
+            </div>
+            <div className="smallContainer position-absolute top-50 start-100 translate-middle">
+              <Image src="/images/mision.jpg" />
+            </div>
+          </div>
+
+
+        </Container>
       </Container>
     </>
   )

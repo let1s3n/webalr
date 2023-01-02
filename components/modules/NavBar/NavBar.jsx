@@ -27,7 +27,9 @@ const NavBar = () => {
     "/nosotros",
     "/nosotros/directorio-y-gerencia",
     "/sostenibilidad/responsabilidad-social",
-    "/politicas"
+    "/politicas",
+    "/operacion/acumulacion-los-rosales",
+    "/prensa"
   ])
 
   useEffect(() => {

@@ -40,6 +40,14 @@ const AcumulacionLosRosales = () => {
     <>
       <Loader loading={loading} />
       <Container fluid className="operacionAcumulacionPage g-0">
+
+        <div className="hero-container">
+          <Image
+            className="hero-image"
+            src="/images/politica1.jpg"
+            alt="Política 1"
+          />
+        </div>
         <Container className="py-4 px-3 g-0">
           <h1>Acumulación Los Rosales</h1>
 
