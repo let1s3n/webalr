@@ -89,13 +89,8 @@ const NavBar = () => {
         <Row className="g-0 w-100" style={{ columnGap: 50 + 'px' }}>
 
           <Col xs="auto" className="d-flex align-items-center">
-            {/* <Link href="/">
-              <div> */}
             <a href="/">
               <Image src="/images/logo-white.png" className="img-logo" alt="logo-alr" />
-              {/* </div> */}
-
-              {/* </Link> */}
             </a>
             <Navbar.Toggle className="d-xl-none border-0" onClick={() => setOffCanvasShow(true)} />
             <CustomOffCanvas show={offCanvasShow} onHide={() => setOffCanvasShow(false)} />

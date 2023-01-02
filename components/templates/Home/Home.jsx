@@ -46,8 +46,6 @@ const Home = ({ locale }) => {
             </h1>
           </div>
 
-          {/* </div> */}
-
           <div className="hero-box-text position-absolute w-100 d-none d-lg-flex justify-content-center">
             <div className="text-white bg-primary rounded">
               <p className='mb-0'>
