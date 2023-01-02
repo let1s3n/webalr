@@ -44,7 +44,7 @@ const SeguridadSaludOcupacional = () => {
               <Breadcrumb.Item href="#">
                 Sostenibilidad
               </Breadcrumb.Item>
-              <Breadcrumb.Item href="/sostenibilidad/responsabilidad-social" active>Seguridad y salud ocupacional</Breadcrumb.Item>
+              <Breadcrumb.Item href="/sostenibilidad/seguridad-y-salud-ocupacional" active>Seguridad y salud ocupacional</Breadcrumb.Item>
             </Breadcrumb>
           </div>
 
@@ -56,8 +56,8 @@ const SeguridadSaludOcupacional = () => {
         </Container>
 
         <Container fluid className="g-0 mt-4 mb-10">
-          <div className="bigContainer bg-primary w-70 position-relative pt-10 ps-15">
-            <div className="w-65">
+          <div className="bigContainer bg-primary w-100 w-custom1-75 position-relative pt-custom1-10 ps-custom1-15">
+            <div className="w-65 pt-5 pt-custom1-0 mx-auto mx-custom1-0">
               <p className="text-white fs-5 lh-lg">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor velit necessitatibus ducimus repudiandae sapiente quos explicabo in illum veniam earum porro aliquid a modi, voluptatum, hic voluptatem quaerat quibusdam!
               </p>
@@ -65,12 +65,10 @@ const SeguridadSaludOcupacional = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatum beatae et numquam, obcaecati accusantium cumque quasi sequi atque similique, necessitatibus soluta iste tempore dignissimos id? Enim impedit fugit a!
               </p>
             </div>
-            <div className="smallContainer position-absolute top-50 start-100 translate-middle">
+            <div className="smallContainer pb-5 pb-custom1-0 position-custom1-absolute top-50 start-100 mx-auto mx-custom1-0">
               <Image src="/images/mision.jpg" />
             </div>
           </div>
-
-
         </Container>
       </Container>
     </>

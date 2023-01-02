@@ -45,7 +45,7 @@ const ManejoResiduosSolidos = () => {
               <Breadcrumb.Item href="#">
                 Sostenibilidad
               </Breadcrumb.Item>
-              <Breadcrumb.Item href="/sostenibilidad/responsabilidad-social" active>Manejo de residuos sólidos</Breadcrumb.Item>
+              <Breadcrumb.Item href="/sostenibilidad/manejo-de-residuos-solidos" active>Manejo de residuos sólidos</Breadcrumb.Item>
             </Breadcrumb>
           </div>
 

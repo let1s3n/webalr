@@ -18,7 +18,11 @@
   }
 
   .bigContainer {
-    height: 574px;
+    height: auto;
+
+    @include media-breakpoint-up(custom1) {
+      height: 574px;
+    }
   }
 
   .smallContainer {
