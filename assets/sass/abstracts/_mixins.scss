@@ -8,10 +8,10 @@
   }
 }
 
-@include font('futura-thin', $bucket+'fonts/Futura/FuturaStdLight.otf');
-@include font('futura-regular', $bucket+'fonts/Futura/FuturaStdBook.otf');
-@include font('futura-medium', $bucket+'fonts/Futura/FuturaStdMedium.otf');
-@include font('futura-bold', $bucket+'fonts/Futura/FuturaStdBold.otf');
+@include font('futura-thin', $cdn+'fonts/Futura/FuturaStdLight.otf');
+@include font('futura-regular', $cdn+'fonts/Futura/FuturaStdBook.otf');
+@include font('futura-medium', $cdn+'fonts/Futura/FuturaStdMedium.otf');
+@include font('futura-bold', $cdn+'fonts/Futura/FuturaStdBold.otf');
 
 $custom-spacers: (
   6:$spacer*4,

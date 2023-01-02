@@ -60,7 +60,7 @@ const Home = ({ locale }) => {
               ref={videoElement}
               className="hero-video"
             >
-              <source src={`${process.env.BUCKET}video/video_home.mp4`} type="video/mp4" />
+              <source src={`${process.env.CDN}video/video_home.mp4`} type="video/mp4" />
               <p> Your browser does not support the video tag.</p>
             </video>
 
