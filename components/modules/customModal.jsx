@@ -26,6 +26,11 @@ function CustomModal(props) {
 
   }
 
+  useEffect(() => {
+    console.log("CDN: ", process.env.NEXT_CDN)
+  }, [])
+
+
   return (
     <>
       <Loader loading={loading} />
@@ -45,7 +50,8 @@ function CustomModal(props) {
 
         </Modal.Header>
         <Modal.Body className="text-center pt-0" style={{ paddingBottom: 5 + 'rem' }}>
-          <Image className="idiomas-logo mb-3" src="/images/logo-alr.png" alt="idiomas logo" />
+          <Image className="idiomas-logo mb-3" src={`${process.env.NEXT_CDN}images/logo-alr.png`}
+            alt="idiomas logo" />
           <p className="mb-3 fs-md-5">
             {t('choose_language', { ns: 'general' })}
           </p>
