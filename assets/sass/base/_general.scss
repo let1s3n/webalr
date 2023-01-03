@@ -196,8 +196,12 @@ a:hover {
     display: flex;
   }
 
-  @include media-breakpoint-up(xxxl) {
+  @include media-breakpoint-up(custom2) {
     right: 200px;
+  }
+
+  @include media-breakpoint-up(xxxl) {
+    right: 400px;
   }
 
   &:hover {
