@@ -4,12 +4,12 @@
       "success": 1
     }
   ],
-  "buttons" : {
+  "buttons": {
     "contact_us": "CONTÁCTANOS",
     "policies": "POLÍTICAS",
     "press_note": "PRENSA"
   },
-  "nav_bar": {
+  "sections": {
     "home": "Home",
     "about_alr": "Nosotros",
     "about_us": "Quiénes somos",
@@ -27,16 +27,6 @@
   },
   "welcome_to_react": "Bienvenidos a react y next-i18next",
   "choose_language": "Elige un idioma",
-  "home": "Home",
-  "about_us": "Nosotros",
-  "policies": "Políticas",
-  "responsibility": "Responsabilidad",
-  "contact_us": "Contáctanos",
-  "offCanvas_about_us": "Nosotros",
-  "offCanvas_policies": "Políticas",
-  "offCanvas_responsibility": "Responsabilidad",
-  "offCanvas_contact_us": "Contáctenos",
-  "offCanvas_followUs": "Síguenos",
   "hero_text1": "PERUANOS HACIENDO",
   "hero_text2": "MINERÍA",
   "hero_text3": "RESPONSABLE",
@@ -64,9 +54,10 @@
   "objetivos_2022_text": "Seguimos firmes en nuestros objetivos y al año 2022 somos la mayor operación integral de reprocesamiento de PAMs de metales preciosos en Puno - Perú y una de las principales del país, logrando trazabilidad y sostenibilidad simultaneamente.",
   "aumento_capacidad_title": "AUMENTO EN NUESTRA CAPACIDAD",
   "aumento_capacidad_text": "Hemos ampliado nuestra capacidad a 340 TMD en Planta Metalúrgica Los Rosales Puno en función a autorizaciones sectoriales otorgadas en marzo 2021. Reutilizando PAMs utilizando mecanismos ambientales que garantizan nulo impacto al entorno. Cumplimos con la normatividad y simultaneamente crecemos.",
-  "footer_follow_us": "Síguenos",
-  "footer_ALR": "Planta Metalúrgica Los Rosales",
-  "footer_policies": "Políticas",
+  "footer": {
+    "follow_us": "Síguenos",
+    "ALR": "Planta Metalúrgica Los Rosales"
+  },
   "us_our_history_title": "Nuestra Historia",
   "us_our_history_text_p1": "Sociedad Minera de Responsabilidad Limitada Acumulación Los Rosales es consecuencia de diversos esfuerzos de pioneros emprendedores que actuaron en minería en el altiplano de Puno Perú desde hace 40 años atrás.",
   "us_our_history_text_p2": "Inicialmente Minas Los Rosales SRL a través de la Resolución Directoral Nº 192-79-EM/DCFM de 12 de Octubre de 1979 (MINEM) es autorizada a operar planta de beneficio de minerales Los Rosales de 100 TMD siendo que el 26 de Julio del año 2010 a través de Resolución de Presidencia Nº 2224-2010-INGEMMET/PCD/PM e inscrita en SUNARP en la PE Nº 11179265 con fecha 13 de Enero del 2011 es reconocida como la actual empresa SMRL Acumulación Los Rosales estando entonces por esos años orientada a la producción de concentrados de oro, plata y cobre.",
@@ -90,44 +81,35 @@
   "andre_carneiro_title1": "ANDRÉ CARNEIRO ESCALANTE",
   "andre_carneiro_title2": "CONTROLLER",
   "andre_carneiro_text": "Ingeniero Industrial de la Universidad de Lima con experiencia en empresas multinacionales del rubro alimentos y consumo masivo (ALICORP SAA), retail (TOTTUS SAA) y minería (Compañía Minera Antamina SA).",
-
-  
   "darwin_delgado_title1": "DARWIN DELGADO",
   "darwin_delgado_title2": "JEFE DE PLANTA",
   "darwin_delgado_text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores consectetur similique nemo suscipit, illum eaque exercitationem maxime illo ipsum quibusdam sit sapiente, amet fugiat et, perspiciatis harum eveniet incidunt odit?",
-  
   "rolando_algarate_title1": "ROLANDO ALGARATE",
   "rolando_algarate_title2": "CONTADOR GENERAL Y OFICIAL DE CUMPLIMIENTO",
   "rolando_algarate_text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores consectetur similique nemo suscipit, illum eaque exercitationem maxime illo ipsum quibusdam sit sapiente, amet fugiat et, perspiciatis harum eveniet incidunt odit?",
-
-
   "william_medrano_title1": "WILLIAM MEDRANO",
   "william_medrano_title2": "JEFE DE LABORATORIO",
   "william_medrano_text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores consectetur similique nemo suscipit, illum eaque exercitationem maxime illo ipsum quibusdam sit sapiente, amet fugiat et, perspiciatis harum eveniet incidunt odit?",
-
   "oliver_huaman_title1": "OLIVER HUAMAN SOTO",
   "oliver_huaman_title2": "JEFE DE PERMISOS Y RELACIONES COMUNITARIAS",
   "oliver_huaman_text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores consectetur similique nemo suscipit, illum eaque exercitationem maxime illo ipsum quibusdam sit sapiente, amet fugiat et, perspiciatis harum eveniet incidunt odit?",
-  
-  
   "rafael_farfan_title1": "RAFAEL FARFÁN",
   "rafael_farfan_title2": "JEFE SSOMA",
   "rafael_farfan_text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores consectetur similique nemo suscipit, illum eaque exercitationem maxime illo ipsum quibusdam sit sapiente, amet fugiat et, perspiciatis harum eveniet incidunt odit?",
-
-  "politicas_ssoma_title":"Política de Seguridad, Salud y Medio Ambiente",
-  "politicas_dh_title":"Política de Derechos Humanos",
-  "politicas_inclusion_title":"Política de Inclusión e Igualdad Laboral",
-  "politicas_RSyRC_title":"Política de Responsabilidad Social y RR.CC.",
-  "politicas_trabajoForzoso_title":"Política Contra el Trabajo Forzoso",
-  "politicas_contraTrabajoInfantil_title":"Política Contra el Trabajo Infantil",
-  "politicas_fechaPub":"Publicación",
-  "politicas_tipo":"Tipo",
-  "politicas_peso":"Tamaño",
-  "politicas_descargar":"Descargar",
-  "contacto_title":"Datos de Contacto",
-  "contacto_inputNombre":"Nombre Completo*",
-  "contacto_inputCompany":"Empresa",
-  "contacto_inputPhone":"Teléfono*",
-  "contacto_inputTellUs":"Cuéntanos...",
-  "contacto_submit":"Enviar"
+  "politicas_ssoma_title": "Política de Seguridad, Salud y Medio Ambiente",
+  "politicas_dh_title": "Política de Derechos Humanos",
+  "politicas_inclusion_title": "Política de Inclusión e Igualdad Laboral",
+  "politicas_RSyRC_title": "Política de Responsabilidad Social y RR.CC.",
+  "politicas_trabajoForzoso_title": "Política Contra el Trabajo Forzoso",
+  "politicas_contraTrabajoInfantil_title": "Política Contra el Trabajo Infantil",
+  "politicas_fechaPub": "Publicación",
+  "politicas_tipo": "Tipo",
+  "politicas_peso": "Tamaño",
+  "politicas_descargar": "Descargar",
+  "contacto_title": "Datos de Contacto",
+  "contacto_inputNombre": "Nombre Completo*",
+  "contacto_inputCompany": "Empresa",
+  "contacto_inputPhone": "Teléfono*",
+  "contacto_inputTellUs": "Cuéntanos...",
+  "contacto_submit": "Enviar"
 }

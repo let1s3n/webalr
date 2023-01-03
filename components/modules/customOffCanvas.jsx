@@ -29,7 +29,7 @@ function CustomOffCanvas(props) {
         <Button variant="link" className="btn-close p-0" aria-label="Close" onClick={props.onHide} style={{ zIndex: 2 }}>
           <Image src="/images/btn-close.svg" alt="btn close" ></Image>
         </Button>
-        
+
       </Offcanvas.Header>
       <Offcanvas.Body>
         <Container fluid className="d-flex flex-column align-items-center g-0">
@@ -78,28 +78,28 @@ function CustomOffCanvas(props) {
 
             <li className="mb-4 lh-1" onClick={props.onHide}>
               <Link className="text-secondary lh-1" href="/">
-                {t('nav_bar.home', { ns: 'general' })}
+                {t('sections.home', { ns: 'general' })}
               </Link>
             </li>
             <li className="mb-4 lh-1" onClick={props.onHide}>
               <div>
                 <p className="text-secondary lh-1">
 
-                  {t('offCanvas_about_us', { ns: 'general' })}
+                  {t('sections.about_alr', { ns: 'general' })}
 
                 </p>
                 <ul className="list-unstyled m-0 ps-4">
                   <li className="mb-2">
                     <Link className="text-secondary lh-1" href="/nosotros">
 
-                      Quienes Somos
+                      {t('sections.about_us', { ns: 'general' })}
 
                     </Link>
                   </li>
                   <li className="mb-2">
                     <Link className="text-secondary lh-1" href="/nosotros/directorio-y-gerencia">
 
-                      Directorio y Gerencia
+                      {t('sections.board_of_directors_and_management', { ns: 'general' })}
 
                     </Link>
                   </li>
@@ -110,21 +110,21 @@ function CustomOffCanvas(props) {
               <div>
                 <p className="text-secondary lh-1">
 
-                  Sostenibilidad
+                  {t('sections.sustainability', { ns: 'general' })}
 
                 </p>
                 <ul className="list-unstyled m-0 ps-4">
                   <li className="mb-2">
                     <Link className="text-secondary lh-1" href="/sostenibilidad/responsabilidad-social">
 
-                      Responsabilidad
+                      {t('sections.social_responsability', { ns: 'general' })}
 
                     </Link>
                   </li>
                   <li className="mb-2">
                     <Link className="text-secondary lh-1" href="/sostenibilidad/monitoreo-ambiental">
 
-                      Monitoreo Ambiental
+                      {t('sections.environmental_monitoring', { ns: 'general' })}
 
                     </Link>
                   </li>
@@ -132,7 +132,7 @@ function CustomOffCanvas(props) {
                   <li className="mb-2">
                     <Link className="text-secondary lh-1" href="/sostenibilidad/manejo-de-residuos-solidos">
 
-                      Manejo de residuos sólidos
+                      {t('sections.solid_waste_management', { ns: 'general' })}
 
                     </Link>
                   </li>
@@ -140,7 +140,7 @@ function CustomOffCanvas(props) {
                   <li className="mb-2">
                     <Link className="text-secondary lh-1" href="/sostenibilidad/seguridad-y-salud-ocupacional">
 
-                      Seguridad y Salud Ocupacional
+                      {t('sections.occupational_health_and_safety', { ns: 'general' })}
 
                     </Link>
                   </li>
@@ -152,14 +152,14 @@ function CustomOffCanvas(props) {
               <div>
                 <p className="text-secondary lh-1">
 
-                  Operación
+                  {t('sections.operation', { ns: 'general' })}
 
                 </p>
                 <ul className="list-unstyled m-0 ps-4">
                   <li className="mb-2">
                     <Link className="text-secondary lh-1" href="/operacion/acumulacion-los-rosales">
 
-                      Acumulación Los Rosales
+                      {t('sections.alr_operation', { ns: 'general' })}
 
                     </Link>
                   </li>
@@ -169,14 +169,14 @@ function CustomOffCanvas(props) {
             <li className="mb-4 lh-1" onClick={props.onHide}>
               <Link className="text-secondary lh-1" href="/prensa">
 
-                Prensa
+                {t('sections.press', { ns: 'general' })}
 
               </Link>
             </li>
             <li className="mb-4 lh-1" onClick={props.onHide}>
               <Link className="text-secondary lh-1" href="/politicas">
 
-                {t('offCanvas_policies', { ns: 'general' })}
+                {t('sections.policies', { ns: 'general' })}
 
               </Link>
             </li>
@@ -184,7 +184,7 @@ function CustomOffCanvas(props) {
             <li className="lh-1" onClick={props.onHide}>
               <Link className="text-secondary lh-1" href="/contacto">
 
-                {t('offCanvas_contact_us', { ns: 'general' })}
+                {t('sections.contact_us', { ns: 'general' })}
 
               </Link>
             </li>
@@ -192,7 +192,7 @@ function CustomOffCanvas(props) {
           </ul>
 
           {/* <div className="d-flex flex-column" style={{ rowGap: ".5rem" }}>
-            <p className="m-0 fs-5 fw-600 lh-1 text-center">{t('offCanvas_followUs', { ns: 'general' })}</p>
+            <p className="m-0 fs-5 fw-600 lh-1 text-center">{t('sections_followUs', { ns: 'general' })}</p>
             <div className="d-flex">
               <Image src="/images/linkedin-icon.svg" alt="linkedin icon" />
               <Image src="/images/facebook-icon.svg" alt="facebook icon" />

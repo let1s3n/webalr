@@ -75,7 +75,7 @@ const Footer = () => {
             <div className="d-flex flex-column" style={{ rowGap: "1rem" }}>
               <p className="m-0 lh-1 fw-600 mb-3">CONTACTO</p>
               <p className="m-0 lh-1">
-                {t('footer_ALR', { ns: 'general' })}
+                {t('footer.ALR', { ns: 'general' })}
               </p>
               <p className="m-0 lh-1">Vilque, Puno, Perú</p>
             </div>
@@ -104,7 +104,7 @@ const Footer = () => {
             <Image className="logo" src="/images/logo-alr-blanco.png" alt="ALR logo" />
 
             <p className="m-0 fw-600 lh-1  text-secondary mb-3">
-              {t('footer_follow_us', { ns: 'general' })}
+              {t('footer.follow_us', { ns: 'general' })}
             </p>
             <div className="d-flex" style={{ columnGap: 1.25 + 'rem' }}>
               <a href="#" target="_blank"><IoLogoFacebook className="facebook-icon fs-3 text-white" /></a>

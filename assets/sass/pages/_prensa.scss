@@ -15,5 +15,9 @@
   .breadcrumb {
     justify-content: center;
     margin: 0px;
+    font-size:14px;
+    @include media-breakpoint-up(custom1) {
+      font-size:1rem;
+    }
   }
 }
