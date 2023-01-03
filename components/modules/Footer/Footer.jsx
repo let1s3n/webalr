@@ -6,14 +6,14 @@ import { useTranslation } from "react-i18next";
 const Footer = () => {
   const { t } = useTranslation();
   return (
-    <Container fluid className="main-footer bg-primary text-white g-0">
+    <Container fluid className="main-footer bg-primary text-white g-0 position-relative">
 
       <Container className="g-0 py-6 px-4 px-custom1-3 py-xxxxl-6 px-xxxxl-20">
 
         <Row className="upperRow g-0 border-bottom pb-5">
 
           <Col xl="auto" className="d-flex flex-column border-bottom pb-5 border-bottom-xl-0 pb-xl-0" style={{ rowGap: "2rem" }}>
-            <Row className="g-0 border border-primary" style={{ columnGap: "2rem",rowGap: "2rem" }}>
+            <Row className="g-0 border border-primary" style={{ columnGap: "2rem", rowGap: "2rem" }}>
               <Col xl="auto" className="d-flex flex-column" style={{ rowGap: "1.5rem" }}>
                 <p className="m-0 lh-1 fw-600 mb-3">MENÚ PRINCIPAL</p>
 
@@ -96,6 +96,14 @@ const Footer = () => {
               </p>
             </div>
 
+            {/* <div className="pt-5">
+
+              <a className="goUpContainer border lh-1" href="#">
+                <Image className="d-block" src="/images/arrow-up.svg" />
+              </a>
+
+            </div> */}
+
           </Col>
 
           <Col xl="auto" className="socialColumn d-flex flex-column">
@@ -134,6 +142,11 @@ const Footer = () => {
         </Row>
 
       </Container>
+
+
+      <a className="goUpContainer border lh-1" href="#">
+        <Image className="d-block" src="/images/arrow-up.svg" />
+      </a>
     </Container>
   )
 }
