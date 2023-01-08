@@ -53,14 +53,14 @@ const AcumulacionLosRosales = () => {
 
           <div className="mb-4  d-flex flex-column align-items-center">
             <h1 className="text-center text-primary">
-              ACUMULACIÓN LOS ROSALES
+              {t('dictionary.weAre2', { ns: 'general' })}
             </h1>
             <Breadcrumb>
-              <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+              <Breadcrumb.Item href="/">{t('sections.home', { ns: 'general' })}</Breadcrumb.Item>
               <Breadcrumb.Item href="#">
-                Operación
+                {t('sections.operation', { ns: 'general' })}
               </Breadcrumb.Item>
-              <Breadcrumb.Item href="/operacion/acumulacion-los-rosales" active>Acumulación Los Rosales</Breadcrumb.Item>
+              <Breadcrumb.Item href="/operacion/acumulacion-los-rosales" active>{t('sections.alr_operation', { ns: 'general' })}</Breadcrumb.Item>
             </Breadcrumb>
           </div>
 

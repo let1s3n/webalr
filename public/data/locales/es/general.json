@@ -61,7 +61,13 @@
     "policies": "Conoce nuestras Políticas",
     "press": "Revisa las notas de prensa",
     "directoryAnd": "DIRECTORIO Y",
-    "management": "GERENCIA"
+    "management": "GERENCIA",
+    "weAre1": "SOMOS LA MINERA",
+    "weAre2": "ACUMULACIÓN LOS ROSALES",
+    "philosophy": "La filosofía corporativa de Acumulación Los Rosales",
+    "buttonPolicies": "VER POLÍTICAS",
+    "cardTitle": "Card title",
+    "cardText": "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
   },
   "footer": {
     "mainMenu": "Menú Principal",

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Row,Col,Container, Image, Breadcrumb, CardGroup, Card } from 'react-bootstrap'
+import { Row, Col, Container, Image, Breadcrumb, CardGroup, Card } from 'react-bootstrap'
 
 import { useTranslation } from "react-i18next";
 import Loader from '../../elements/Loader/Loader'
@@ -34,12 +34,12 @@ const Prensa = () => {
         </div>
 
         <Container className="py-4 px-3 g-0 text-center">
-          <h1 className='text-primary'>PRENSA</h1>
+          <h1 className='text-primary text-uppercase'>{t('sections.press', { ns: 'general' })}</h1>
 
           <Breadcrumb>
-            <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+            <Breadcrumb.Item href="/">{t('sections.home', { ns: 'general' })}</Breadcrumb.Item>
 
-            <Breadcrumb.Item href="/prensa" active>Prensa</Breadcrumb.Item>
+            <Breadcrumb.Item href="/prensa" active>{t('sections.press', { ns: 'general' })}</Breadcrumb.Item>
           </Breadcrumb>
 
         </Container>
@@ -52,11 +52,9 @@ const Prensa = () => {
                 <Card>
                   <Card.Img variant="top" src={`${process.env.NEXT_CDN}images/mision.jpg`} />
                   <Card.Body>
-                    <Card.Title>Card title</Card.Title>
+                    <Card.Title>{t('dictionary.cardTitle', { ns: 'general' })}</Card.Title>
                     <Card.Text>
-                      This is a longer card with supporting text below as a natural
-                      lead-in to additional content. This content is a little bit
-                      longer.
+                      {t('dictionary.cardText', { ns: 'general' })}
                     </Card.Text>
                   </Card.Body>
                 </Card>

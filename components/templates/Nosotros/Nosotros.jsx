@@ -52,11 +52,11 @@ const Nosotros = () => {
 
           <div className="mb-5 mt-5 mt-xl-0 mb-custom1-8 d-flex flex-column align-items-center">
             <h1 className="text-center text-primary">
-              SOMOS LA MINERA <span className='text-secondary'>ACUMULACIÓN LOS ROSALES</span>
+              {t('dictionary.weAre1', { ns: 'general' })} <span className='text-secondary'>{t('dictionary.weAre2', { ns: 'general' })}</span>
             </h1>
             <Breadcrumb>
-              <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-              <Breadcrumb.Item href="/nosotros" active>Nosotros</Breadcrumb.Item>
+              <Breadcrumb.Item href="/">{t('sections.home', { ns: 'general' })}</Breadcrumb.Item>
+              <Breadcrumb.Item href="/nosotros" active>{t('sections.about_alr', { ns: 'general' })}</Breadcrumb.Item>
             </Breadcrumb>
           </div>
 
@@ -103,7 +103,7 @@ const Nosotros = () => {
         <section>
           <Row className="g-0">
             <div className='mb-3 mt-5 mt-lg-0'>
-              <h3 className=' text-center  mx-5'>La filosofía corporativa de Acumulación Los Rosales</h3>
+              <h3 className=' text-center  mx-5'>{t('dictionary.philosophy', { ns: 'general' })}</h3>
             </div>
           </Row>
           <div id="estamentosContainer" className="estamentosContainer"></div>
@@ -179,7 +179,7 @@ const Nosotros = () => {
                 <div className='pt-0 pt-lg-13 text-center'>
                   <h2 className='text-white '>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
                   <div className='pt-7'>
-                    <Button className='px-5'>VER POLÍTICAS</Button>
+                    <Button className='px-5'>{t('dictionary.buttonPolicies', { ns: 'general' })}</Button>
                   </div>
                 </div>
               </Col>
