@@ -25,6 +25,9 @@
     "policies": "Policies",
     "contact_us": "Contact us"
   },
+  "warnings": {
+    "noVideo": "Your browser does not support the video tag."
+  },
   "welcome_to_react": "Welcome to React and next-i18next",
   "choose_language": "Choose your language",
   "hero_text1": "PERUVIANS IN SEARCH OF EXCELLENCE",
@@ -50,9 +53,19 @@
   "objetivos_2022_text": "We remain firm in our objectives and by 2022 we are the largest comprehensive operation for the reprocessing of precious metal EMLs in Puno - Peru and one of the main ones in the country, achieving, simultaneously, traceability and sustainability",
   "aumento_capacidad_title": "Increase in our capacity",
   "aumento_capacidad_text": "We have expanded our capacity to 340 MT/D at Los Rosales Metallurgical Plant based on sectoral authorizations granted in March 2021. Reusing EMLs and using environmental mechanisms that guarantee zero impact on the environment. We continue to grow always in compliance with all the regulations.",
+  "dictionary": {
+    "policies": "Know our Policies",
+    "press": "Check the press releases",
+    "directoryAnd": "Boards OF DIRECTOR AND",
+    "management": "MANAGEMENT"
+  },
   "footer": {
+    "mainMenu": "Main Menu",
+    "contact": "CONTACT",
     "follow_us": "Follow us",
-    "ALR": "Los Rosales Metallurgical Plant"
+    "ALR": "Los Rosales Metallurgical Plant",
+    "rights": "All rights reserved.",
+    "poweredBy": "Powered by"
   },
   "us_our_history_title": "Our History",
   "us_our_history_text_p1": "SMRL Acumulación Los Rosales is the result of various efforts of entrepreneurial pioneers who worked in mining in the highlands of Puno, Peru for 40 years.",
@@ -102,10 +115,22 @@
   "politicas_tipo": "Type",
   "politicas_peso": "Size",
   "politicas_descargar": "Download",
-  "contacto_title": "Contact Information",
-  "contacto_inputNombre": "Full name*",
-  "contacto_inputCompany": "Company",
-  "contacto_inputPhone": "Phone Number*",
-  "contacto_inputTellUs": "Tell us...",
-  "contacto_submit": "Send"
+  "contactForm": {
+    "contacto_title": "Contact Information",
+    "contacto_inputNombre": "Full name*",
+    "contacto_inputCompany": "Company",
+    "contacto_inputPhone": "Phone Number*",
+    "contacto_inputTellUs": "Tell us...",
+    "contacto_submit": "Send",
+    "thanks": "Thanks!",
+    "successMessage": "We will contact you as soon as possible."
+  },
+  "customButton": {
+    "gotoPolicies": "Go to policies"
+  },
+  "customModal": {
+    "english": "English",
+    "spanish": "Spanish",
+    "french": "French"
+  }
 }

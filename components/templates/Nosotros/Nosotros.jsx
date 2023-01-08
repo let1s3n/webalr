@@ -34,14 +34,14 @@ const Nosotros = () => {
             <Carousel.Item className="hero-container">
               <Image
                 className="hero-image"
-                src="/images/nosotros1.jpg"
+                src={`${process.env.NEXT_CDN}images/nosotros1.jpg`}
                 alt="Charla de seguridad"
               />
             </Carousel.Item>
             <Carousel.Item className="hero-container">
               <Image
                 className="hero-image"
-                src="/images/nosotros2.jpg"
+                src={`${process.env.NEXT_CDN}images/nosotros2.jpg`}
                 alt="Equipo de laboratorio químico"
               />
             </Carousel.Item>
@@ -67,14 +67,14 @@ const Nosotros = () => {
                   <Carousel.Item>
                     <Image
                       className="nuestraHistoria-image"
-                      src="/images/tanque1.jpg"
+                      src={`${process.env.NEXT_CDN}images/tanque1.jpg`}
                       alt="2 tanques"
                     />
                   </Carousel.Item>
                   <Carousel.Item>
                     <Image
                       className="nuestraHistoria-image"
-                      src="/images/tanque2.jpg"
+                      src={`${process.env.NEXT_CDN}images/tanque2.jpg`}
                       alt="3 tanques"
                     />
                   </Carousel.Item>
@@ -111,7 +111,7 @@ const Nosotros = () => {
             <Col xs={12} lg={4}>
               <div className='position-relative mb-4 mb-xl-0 mx-1'>
                 <Image
-                  src="/images/vision-col.jpg"
+                  src={`${process.env.NEXT_CDN}images/vision-col.jpg`}
                   alt="Imagen visión"
                   className="nosotros-img"
                 />
@@ -128,7 +128,7 @@ const Nosotros = () => {
             <Col xs={12} lg={4}>
               <div className='position-relative mb-4 mb-xl-0 mx-1'>
                 <Image
-                  src="/images/mision-col.jpg"
+                  src={`${process.env.NEXT_CDN}images/mision-col.jpg`}
                   alt="Imagen visión"
                   className="nosotros-img"
                 />
@@ -145,7 +145,7 @@ const Nosotros = () => {
             <Col xs={12} lg={4}>
               <div className='position-relative mx-1'>
                 <Image
-                  src="/images/valores.jpg"
+                  src={`${process.env.NEXT_CDN}images/valores.jpg`}
                   alt="Imagen visión"
                   className="nosotros-img"
                 />

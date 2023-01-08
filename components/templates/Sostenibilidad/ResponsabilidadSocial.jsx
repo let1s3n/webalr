@@ -33,7 +33,7 @@ const ResponsabilidadSocial = () => {
         <div className="hero-container">
           <Image
             className="hero-image"
-            src="/images/politica1.jpg"
+            src={`${process.env.NEXT_CDN}images/politica1.jpg`}
             alt="Política 1"
           />
         </div>
@@ -56,7 +56,7 @@ const ResponsabilidadSocial = () => {
 
           <p className="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae tempore eos iure in illum quaerat.</p>
 
-          <CustomButton href="/politicas" className="mx-auto my-5" size={width >= 1200 ? "xxl" : "xl"} content="Ir a políticas" />
+          <CustomButton href="/politicas" className="mx-auto my-5" size={width >= 1200 ? "xxl" : "xl"} content={t('customButton.gotoPolicies', { ns: 'general' })} />
         </Container>
 
         <Container fluid className="g-0 mt-4 mb-10">
@@ -70,7 +70,7 @@ const ResponsabilidadSocial = () => {
               </p>
             </div>
             <div className="smallContainer pb-5 pb-custom1-0 position-custom1-absolute top-50 start-100 mx-auto mx-custom1-0">
-              <Image src="/images/mision.jpg" />
+              <Image src={`${process.env.NEXT_CDN}images/mision.jpg`} />
             </div>
           </div>
         </Container>

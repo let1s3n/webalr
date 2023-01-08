@@ -32,7 +32,7 @@ const DirectorioGerencia = () => {
           <div className='hero-container'>
             <Image
               className="hero-image hero-image--center"
-              src="/images/hero2.jpg"
+              src={`${process.env.NEXT_CDN}images/hero2.jpg`}
               alt="Charla de seguridad"
             />
           </div>
@@ -40,14 +40,14 @@ const DirectorioGerencia = () => {
         <section className="directors-management__content mx-auto perfiles d-flex flex-column justify-content-center align-items-center mt-4 p-3 py-xl-5">
           <div className="mb-5 mt-5 mt-xl-0 mb-custom1-8 d-flex flex-column align-items-center">
             <h1 className="text-center text-primary">
-              DIRECTORIO Y <span className='text-secondary'>GERENCIA</span>
+              {t('dictionary.directoryAnd', { ns: 'general' })} <span className='text-secondary'>{t('dictionary.management', { ns: 'general' })}</span>
             </h1>
             <Breadcrumb>
-              <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+              <Breadcrumb.Item href="/">{t('sections.home', { ns: 'general' })}</Breadcrumb.Item>
               <Breadcrumb.Item href="#">
-                Nosotros
+                {t('sections.about_alr', { ns: 'general' })}
               </Breadcrumb.Item>
-              <Breadcrumb.Item href="/nosotros/directorio-y-gerencia" active>Directorio y Gerencia</Breadcrumb.Item>
+              <Breadcrumb.Item href="/nosotros/directorio-y-gerencia" active>{t('sections.board_of_directors_and_management', { ns: 'general' })}</Breadcrumb.Item>
             </Breadcrumb>
           </div>
 

@@ -61,7 +61,7 @@ const Home = ({ locale }) => {
               className="hero-video"
             >
               <source src={`${process.env.NEXT_CDN}video/video_home.mp4`} type="video/mp4" />
-              <p> Your browser does not support the video tag.</p>
+              <p> {t('warnings.noVideo', { ns: 'general' })}</p>
             </video>
 
             <h1 className="hero-text position-absolute text-white w-100 trocchiRegular px-3">
@@ -97,8 +97,6 @@ const Home = ({ locale }) => {
 
               <p className="m-0  text-primary fs-5 fs-custom1-2">{t('our', { ns: 'general' })} <span className="text-secondary">{t('our_mission_vision_values_title', { ns: 'general' })}</span></p>
 
-              {/* <h2 className="text-primary m-0 ">{t('our', { ns: 'general' })}</h2>
-              <h2 className="m-0  text-secondary">{t('our_mission_vision_values_title', { ns: 'general' })}</h2> */}
             </div>
           </Container>
           <div className="py-custom1-4 px-xl-4">
@@ -107,7 +105,7 @@ const Home = ({ locale }) => {
 
               <Card className="text-white mx-auto mx-sm-0">
 
-                <Card.Img src="/images/mision.jpg" alt="Misión de ALR" />
+                <Card.Img src={`${process.env.NEXT_CDN}images/mision.jpg`} alt="Misión de ALR" />
 
                 <Card.ImgOverlay className="d-flex align-items-center justify-content-center">
 
@@ -120,7 +118,7 @@ const Home = ({ locale }) => {
                         </Col>
                         <Col xs="auto">
                           <Image
-                            src="/images/arrow-right-white.svg"
+                            src={`${process.env.NEXT_CDN}images/arrow-right-white.svg`}
                             className="arrow-right"
                             alt="arrow right"
                           />
@@ -135,7 +133,7 @@ const Home = ({ locale }) => {
               </Card>
 
               <Card className="text-white mx-auto mx-sm-0">
-                <Card.Img src="/images/vision.jpg" alt="Visión de ALR" />
+                <Card.Img src={`${process.env.NEXT_CDN}images/vision.jpg`} alt="Visión de ALR" />
                 <Card.ImgOverlay className="d-flex align-items-center justify-content-center">
                   <Card.Title className="fs-2 m-0">
                     <Link href="/nosotros#estamentosContainer">
@@ -146,7 +144,7 @@ const Home = ({ locale }) => {
                         </Col>
                         <Col xs="auto">
                           <Image
-                            src="/images/arrow-right-white.svg"
+                            src={`${process.env.NEXT_CDN}images/arrow-right-white.svg`}
                             className="arrow-right"
                             alt="arrow right white"
                           />
@@ -160,7 +158,7 @@ const Home = ({ locale }) => {
               </Card>
 
               <Card className="text-white mx-auto mx-sm-0">
-                <Card.Img src="/images/valores.jpg" alt="Valores de ALR" />
+                <Card.Img src={`${process.env.NEXT_CDN}images/valores.jpg`} alt="Valores de ALR" />
                 <Card.ImgOverlay className="d-flex align-items-center justify-content-center">
                   <Card.Title className="fs-2 m-0">
                     <Link href="/nosotros#estamentosContainer">
@@ -171,7 +169,7 @@ const Home = ({ locale }) => {
                         </Col>
                         <Col xs="auto">
                           <Image
-                            src="/images/arrow-right-white.svg"
+                            src={`${process.env.NEXT_CDN}images/arrow-right-white.svg`}
                             className="arrow-right"
                             alt="arrow right white"
                           />
@@ -203,7 +201,7 @@ const Home = ({ locale }) => {
                   <Row>
                     <Col xs={12} sm={6} md={8} lg={6} xxl={8}>
                       <Image
-                        src="/images/CSM.jpg"
+                        src={`${process.env.NEXT_CDN}images/CSM.jpg`}
                         className="novedades-img"
                         alt="novedades img"
                       />
@@ -223,7 +221,7 @@ const Home = ({ locale }) => {
                   <Row>
                     <Col xs={12} sm={6} md={8} lg={6} xxl={8}>
                       <Image
-                        src="/images/planta-noticias.jpg"
+                        src={`${process.env.NEXT_CDN}images/planta-noticias.jpg`}
                         className="novedades-img"
                         alt="novedades img"
                       />
@@ -243,7 +241,7 @@ const Home = ({ locale }) => {
                   <Row>
                     <Col xs={12} sm={6} md={8} lg={6} xxl={8}>
                       <Image
-                        src="/images/hero2.jpg"
+                        src={`${process.env.NEXT_CDN}images/hero2.jpg`}
                         className="novedades-img"
                         alt="novedades img"
                       />
@@ -269,7 +267,7 @@ const Home = ({ locale }) => {
             <Row style={{ background: "#f5f5f5", height: "250px" }}>
               <Col lg={6} className="border-end border-white d-flex justify-content-center align-items-center text-center">
                 <div className='home__links-section'>
-                  <p className='item-text'>Conoce nuestras Políticas</p>
+                  <p className='item-text'>{t('dictionary.policies', { ns: 'general' })}</p>
                   <div className='item-button'>
                     <Link href="/politicas">
                       <p className='mb-0'>{t('buttons.policies', { ns: 'general' })}</p>
@@ -279,7 +277,7 @@ const Home = ({ locale }) => {
               </Col>
               <Col lg={6} className="border-end border-white d-flex justify-content-center align-items-center text-center">
                 <div className='home__links-section'>
-                  <p className='item-text'>Revisa las notas de prensa</p>
+                  <p className='item-text'>{t('dictionary.press', { ns: 'general' })}</p>
                   <div className='item-button'>
                     <Link href="/prensa">
                       <p className='mb-0'>{t('buttons.press_note', { ns: 'general' })}</p>
@@ -296,7 +294,7 @@ const Home = ({ locale }) => {
           <div>
             <Image
               className="image-cover"
-              src="/images/home-cover1.jpg"
+              src={`${process.env.NEXT_CDN}images/home-cover1.jpg`}
               alt="Charla de seguridad"
             />
           </div>

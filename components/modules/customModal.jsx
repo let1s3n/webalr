@@ -58,16 +58,16 @@ function CustomModal(props) {
           <div className="d-flex flex-column align-items-center" style={{ rowGap: 1 + 'rem' }}>
             <div className="d-flex align-items-center gap-3 pe-1" style={{ columnGap: 1 + 'rem', cursor: 'pointer', width: 116 + 'px' }} onClick={handleLocaleChange} data-locale="en">
 
-              <Image src="/images/en-icon.svg" style={{ width: 28 + 'px' }} alt="en icon" />
-              <p className="m-0 fs-md-5">English</p>
+              <Image src={`${process.env.NEXT_CDN}images/en-icon.svg`} style={{ width: 28 + 'px' }} alt="en icon" />
+              <p className="m-0 fs-md-5">{t('customModal.english', { ns: 'general' })}</p>
             </div>
             <div className="d-flex align-items-center gap-3" style={{ columnGap: 1 + 'rem', cursor: 'pointer', width: 116 + 'px' }} onClick={handleLocaleChange} data-locale="es">
               <Image src="/images/es-icon.svg" style={{ width: 28 + 'px' }} alt="es icon" />
-              <p className="m-0 fs-md-5">Spanish</p>
+              <p className="m-0 fs-md-5">{t('customModal.spanish', { ns: 'general' })}</p>
             </div>
             <div className="d-flex align-items-center gap-3" style={{ columnGap: 1 + 'rem', cursor: 'pointer', width: 116 + 'px' }} onClick={handleLocaleChange} data-locale="fr">
-              <Image src="/images/fr-icon.svg" style={{ width: 28 + 'px', height: 27 + 'px' }} alt="fr icon" />
-              <p className="m-0 fs-md-5">French</p>
+              <Image src={`${process.env.NEXT_CDN}images/fr-icon.svg`} style={{ width: 28 + 'px', height: 27 + 'px' }} alt="fr icon" />
+              <p className="m-0 fs-md-5">{t('customModal.french', { ns: 'general' })}</p>
             </div>
           </div>
         </Modal.Body>

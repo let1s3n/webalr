@@ -15,55 +15,55 @@ const Footer = () => {
           <Col xl="auto" className="d-flex flex-column border-bottom pb-5 border-bottom-xl-0 pb-xl-0" style={{ rowGap: "2rem" }}>
             <Row className="g-0 border border-primary" style={{ columnGap: "2rem", rowGap: "2rem" }}>
               <Col xl="auto" className="d-flex flex-column" style={{ rowGap: "1.5rem" }}>
-                <p className="m-0 lh-1 fw-600 mb-3">MENÚ PRINCIPAL</p>
+                <p className="m-0 lh-1 fw-600 mb-3">{t('footer.mainMenu', { ns: 'general' })}</p>
 
                 <Link href="/">
-                  <p className="m-0 fw-600 lh-1 " style={{ cursor: "pointer" }}>Home</p>
+                  <p className="m-0 fw-600 lh-1 " style={{ cursor: "pointer" }}>{t('sections.home', { ns: 'general' })}</p>
                 </Link>
 
                 <div className="d-flex flex-column" style={{ rowGap: ".5rem" }}>
-                  <p className="m-0 lh-1 fw-600" style={{ cursor: "pointer" }}>Nosotros</p>
+                  <p className="m-0 lh-1 fw-600" style={{ cursor: "pointer" }}>{t('sections.about_alr', { ns: 'general' })}</p>
                   <div className="d-flex ps-3 flex-column" style={{ rowGap: ".5rem" }}>
-                    <Link href="/nosotros">Quienes Somos</Link>
+                    <Link href="/nosotros">{t('sections.about_us', { ns: 'general' })}</Link>
 
-                    <Link href="/nosotros/directorio-y-gerencia">Directorio y Gerencia</Link>
+                    <Link href="/nosotros/directorio-y-gerencia">{t('sections.board_of_directors_and_management', { ns: 'general' })}</Link>
                   </div>
                 </div>
 
                 <div className="d-flex flex-column" style={{ rowGap: ".5rem" }}>
-                  <p className="m-0 lh-1 fw-600" style={{ cursor: "pointer" }}>Sostenibilidad</p>
+                  <p className="m-0 lh-1 fw-600" style={{ cursor: "pointer" }}>{t('sections.sustainability', { ns: 'general' })}</p>
                   <div className="d-flex ps-3 flex-column" style={{ rowGap: ".5rem" }}>
-                    <Link href="/sostenibilidad/responsabilidad-social">Responsabilidad Social</Link>
+                    <Link href="/sostenibilidad/responsabilidad-social">{t('sections.social_responsability', { ns: 'general' })}</Link>
 
-                    <Link href="/sostenibilidad/monitoreo-ambiental">Monitoreo Ambiental</Link>
+                    <Link href="/sostenibilidad/monitoreo-ambiental">{t('sections.environmental_monitoring', { ns: 'general' })}</Link>
 
-                    <Link href="/sostenibilidad/manejo-de-residuos-solidos">Manejo de Residuos Sólidos</Link>
+                    <Link href="/sostenibilidad/manejo-de-residuos-solidos">{t('sections.solid_waste_management', { ns: 'general' })}</Link>
 
-                    <Link href="/sostenibilidad/seguridad-y-salud-ocupacional">Seguridad y Salud Ocupacional</Link>
+                    <Link href="/sostenibilidad/seguridad-y-salud-ocupacional">{t('sections.occupational_health_and_safety', { ns: 'general' })}</Link>
                   </div>
                 </div>
               </Col>
 
               <Col xl="auto" className="d-flex flex-column" style={{ rowGap: "1.5rem" }}>
 
-                <p className="d-none d-xl-block m-0 lh-1 fw-600 mb-3 invisible">MENÚ PRINCIPAL</p>
+                <p className="d-none d-xl-block m-0 lh-1 fw-600 mb-3 invisible">{t('footer.mainMenu', { ns: 'general' })}</p>
 
                 <div className="d-flex flex-column" style={{ rowGap: ".5rem" }}>
-                  <p className="m-0 lh-1 fw-600" style={{ cursor: "pointer" }}>Operación</p>
+                  <p className="m-0 lh-1 fw-600" style={{ cursor: "pointer" }}>{t('sections.operation', { ns: 'general' })}</p>
                   <div className="d-flex ps-3 flex-column" style={{ rowGap: ".5rem" }}>
-                    <Link href="/operacion/acumulacion-los-rosales">Acumulación Los Rosales</Link>
+                    <Link href="/operacion/acumulacion-los-rosales">{t('sections.alr_operation', { ns: 'general' })}</Link>
                   </div>
                 </div>
 
                 <Link href="/prensa">
-                  <p className="m-0 lh-1 fw-600" style={{ cursor: "pointer" }}>Prensa</p>
+                  <p className="m-0 lh-1 fw-600" style={{ cursor: "pointer" }}>{t('sections.press', { ns: 'general' })}</p>
                 </Link>
                 <Link href="/politicas">
-                  <p className="m-0 lh-1 fw-600" style={{ cursor: "pointer" }}>Políticas</p>
+                  <p className="m-0 lh-1 fw-600" style={{ cursor: "pointer" }}>{t('sections.policies', { ns: 'general' })}</p>
                 </Link>
 
                 <Link href="/contacto">
-                  <p className="m-0 lh-1 fw-600" style={{ cursor: "pointer" }}>Contáctanos</p>
+                  <p className="m-0 lh-1 fw-600" style={{ cursor: "pointer" }}>{t('sections.contact_us', { ns: 'general' })}</p>
                 </Link>
               </Col>
             </Row>
@@ -73,7 +73,7 @@ const Footer = () => {
           <Col xl="auto" className="d-flex flex-column" style={{ rowGap: "2rem" }}>
 
             <div className="d-flex flex-column" style={{ rowGap: "1rem" }}>
-              <p className="m-0 lh-1 fw-600 mb-3">CONTACTO</p>
+              <p className="m-0 lh-1 fw-600 mb-3">{t('footer.contact', { ns: 'general' })}</p>
               <p className="m-0 lh-1">
                 {t('footer.ALR', { ns: 'general' })}
               </p>
@@ -99,7 +99,7 @@ const Footer = () => {
             {/* <div className="pt-5">
 
               <a className="goUpContainer border lh-1" href="#">
-                <Image className="d-block" src="/images/arrow-up.svg" />
+                <Image className="d-block" src={`${process.env.NEXT_CDN}images/arrow-up.svg" />
               </a>
 
             </div> */}
@@ -109,16 +109,16 @@ const Footer = () => {
           <Col xl="auto" className="socialColumn d-flex flex-column">
 
 
-            <Image className="logo" src="/images/logo-alr-blanco.png" alt="ALR logo" />
+            <Image className="logo" src={`${process.env.NEXT_CDN}images/logo-alr-blanco.png`} alt="ALR logo" />
 
             <p className="m-0 fw-600 lh-1  text-secondary mb-3">
               {t('footer.follow_us', { ns: 'general' })}
             </p>
             <div className="d-flex" style={{ columnGap: 1.25 + 'rem' }}>
-              <a href="#" target="_blank"><IoLogoFacebook className="facebook-icon fs-3 text-white" /></a>
+              <a href="https://www.facebook.com/acumulacionlosrosales" target="_blank"><IoLogoFacebook className="facebook-icon fs-3 text-white" /></a>
               <a href="https://www.youtube.com/channel/UCAhc79crxjz1PDF-AP9-hLA/featured" target="_blank"><IoLogoYoutube className="youtube-icon fs-3 text-white" /></a>
               <a href="https://www.linkedin.com/company/mineralosrosales" target="_blank"><IoLogoLinkedin className="linkedin-icon fs-3 text-white" /></a>
-              <a href="#" target="_blank"><IoLogoTwitter className="twitter-icon fs-3 text-white" /></a>
+              {/* <a href="#" target="_blank"><IoLogoTwitter className="twitter-icon fs-3 text-white" /></a> */}
             </div>
 
 
@@ -131,9 +131,9 @@ const Footer = () => {
 
           <Col xs={12} className="d-flex flex-column flex-custom1-row justify-content-between align-items-center" style={{ zIndex: 2, rowGap: "1rem" }}>
 
-            <p className="lh-1 m-0 text-basic1">© 2022 – SMRL ALR. Todos los derechos reservados.</p>
+            <p className="lh-1 m-0 text-basic1">© 2023 – SMRL ALR. {t('footer.rights', { ns: 'general' })}</p>
 
-            <p className="lh-1 m-0 text-basic1 text-end text-custom1-start">Powered by <strong>DGS</strong></p>
+            <p className="lh-1 m-0 text-basic1 text-end text-custom1-start">{t('footer.poweredBy', { ns: 'general' })} <a href="https://dgsperu.com" target="_blank"><strong>DGS</strong></a></p>
 
 
           </Col>
@@ -145,7 +145,7 @@ const Footer = () => {
 
 
       <a className="goUpContainer border lh-1" href="#">
-        <Image className="d-block" src="/images/arrow-up.svg" />
+        <Image className="d-block" src={`${process.env.NEXT_CDN}images/arrow-up.svg`} />
       </a>
     </Container>
   )

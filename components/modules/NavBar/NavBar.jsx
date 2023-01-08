@@ -99,7 +99,7 @@ const NavBar = () => {
 
           <Col xs="auto" className="d-flex align-items-center">
             <a href="/">
-              <Image src="/images/logo-white.png" className="img-logo" alt="logo-alr" />
+              <Image src={`${process.env.NEXT_CDN}images/logo-white.png`} className="img-logo" alt="logo-alr" />
             </a>
             <Navbar.Toggle className="d-xl-none border-0" onClick={() => setOffCanvasShow(true)} />
             <CustomOffCanvas show={offCanvasShow} onHide={() => setOffCanvasShow(false)} />
@@ -170,18 +170,18 @@ const NavBar = () => {
                   {locale === 'en' ?
                     <>
                       <Image src="/images/es-icon.svg" className="d-inline-block imgFlag" alt="es icon" />
-                      <Image src="/images/fr-icon.svg" className="d-inline-block imgFlag" alt="fr icon" />
+                      <Image src={`${process.env.NEXT_CDN}images/fr-icon.svg`} className="d-inline-block imgFlag" alt="fr icon" />
                     </>
                     :
                     locale === 'fr' ?
                       <>
-                        <Image src="/images/en-icon.svg" className="d-inline-block imgFlag" alt="en icon" />
+                        <Image src={`${process.env.NEXT_CDN}images/en-icon.svg`} className="d-inline-block imgFlag" alt="en icon" />
                         <Image src="/images/es-icon.svg" className="d-inline-block imgFlag" alt="es icon" />
                       </>
                       :
                       <>
-                        <Image src="/images/en-icon.svg" className="d-inline-block imgFlag" alt="en icon" />
-                        <Image src="/images/fr-icon.svg" className="d-inline-block imgFlag" alt="fr icon" />
+                        <Image src={`${process.env.NEXT_CDN}images/en-icon.svg`} className="d-inline-block imgFlag" alt="en icon" />
+                        <Image src={`${process.env.NEXT_CDN}images/fr-icon.svg`} className="d-inline-block imgFlag" alt="fr icon" />
                       </>
                   }
 

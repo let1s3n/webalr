@@ -44,7 +44,7 @@ const AcumulacionLosRosales = () => {
         <div className="hero-container">
           <Image
             className="hero-image"
-            src="/images/politica1.jpg"
+            src={`${process.env.NEXT_CDN}images/politica1.jpg`}
             alt="Política 1"
           />
         </div>
@@ -85,70 +85,70 @@ const AcumulacionLosRosales = () => {
             <SwiperSlide>
               <Image
                 className="hero-image"
-                src="/images/politica2.jpg"
+                src={`${process.env.NEXT_CDN}images/politica2.jpg`}
                 alt="Política 2"
               />
             </SwiperSlide>
             <SwiperSlide>
               <Image
                 className="hero-image"
-                src="/images/politica1.jpg"
+                src={`${process.env.NEXT_CDN}images/politica1.jpg`}
                 alt="Política 1"
               />
             </SwiperSlide>
             <SwiperSlide>
               <Image
                 className="hero-image"
-                src="/images/politica2.jpg"
+                src={`${process.env.NEXT_CDN}images/politica2.jpg`}
                 alt="Política 2"
               />
             </SwiperSlide>
             <SwiperSlide>
               <Image
                 className="hero-image"
-                src="/images/politica1.jpg"
+                src={`${process.env.NEXT_CDN}images/politica1.jpg`}
                 alt="Política 1"
               />
             </SwiperSlide>
             <SwiperSlide>
               <Image
                 className="hero-image"
-                src="/images/politica2.jpg"
+                src={`${process.env.NEXT_CDN}images/politica2.jpg`}
                 alt="Política 2"
               />
             </SwiperSlide>
             <SwiperSlide>
               <Image
                 className="hero-image"
-                src="/images/politica1.jpg"
+                src={`${process.env.NEXT_CDN}images/politica1.jpg`}
                 alt="Política 1"
               />
             </SwiperSlide>
             <SwiperSlide>
               <Image
                 className="hero-image"
-                src="/images/politica2.jpg"
+                src={`${process.env.NEXT_CDN}images/politica2.jpg`}
                 alt="Política 2"
               />
             </SwiperSlide>
             <SwiperSlide>
               <Image
                 className="hero-image"
-                src="/images/politica1.jpg"
+                src={`${process.env.NEXT_CDN}images/politica1.jpg`}
                 alt="Política 1"
               />
             </SwiperSlide>
             <SwiperSlide>
               <Image
                 className="hero-image"
-                src="/images/politica2.jpg"
+                src={`${process.env.NEXT_CDN}images/politica2.jpg`}
                 alt="Política 2"
               />
             </SwiperSlide>
             <SwiperSlide>
               <Image
                 className="hero-image"
-                src="/images/politica1.jpg"
+                src={`${process.env.NEXT_CDN}images/politica1.jpg`}
                 alt="Política 1"
               />
             </SwiperSlide>

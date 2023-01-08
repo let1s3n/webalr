@@ -28,7 +28,7 @@ const Prensa = () => {
         <div className="hero-container">
           <Image
             className="hero-image"
-            src="/images/politica1.jpg"
+            src={`${process.env.NEXT_CDN}images/politica1.jpg`}
             alt="Política 1"
           />
         </div>
@@ -50,7 +50,7 @@ const Prensa = () => {
             {Array.from({ length: 9 }).map((_, idx) => (
               <Col>
                 <Card>
-                  <Card.Img variant="top" src="/images/mision.jpg" />
+                  <Card.Img variant="top" src={`${process.env.NEXT_CDN}images/mision.jpg`} />
                   <Card.Body>
                     <Card.Title>Card title</Card.Title>
                     <Card.Text>
