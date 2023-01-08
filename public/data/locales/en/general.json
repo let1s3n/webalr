@@ -63,7 +63,15 @@
     "philosophy": "The corporate philosophy of Accumulation Los Rosales",
     "buttonPolicies": "POLICIES",
     "cardTitle": "Card title",
-    "cardText": "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+    "cardText": "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    "managementOf": "MANAGEMENT OF",
+    "solid_waste": "SOLID WASTE",
+    "monitoring": "ENVIRONMENTAL",
+    "environmental": "MONITORING",
+    "social": "RESPONSABILITY",
+    "responsability": "SOCIAL",
+    "health_and_safety": "OCCUPATIONAL",
+    "occupational": "HEALTH AND SAFETY"
   },
   "footer": {
     "mainMenu": "Main Menu",
@@ -138,5 +146,8 @@
     "english": "English",
     "spanish": "Spanish",
     "french": "French"
+  },
+  "policies": {
+    "pdf1": "Nov. 1st, 2021"
   }
 }

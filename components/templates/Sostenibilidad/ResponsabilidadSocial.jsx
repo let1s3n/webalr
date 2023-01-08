@@ -41,14 +41,14 @@ const ResponsabilidadSocial = () => {
         <Container className="g-0 py-4 px-3">
           <div className="mb-4 text-center">
             <h1 className="text-center text-primary">
-              RESPONSABILIDAD <span className='text-secondary'>SOCIAL</span>
+              {t('dictionary.responsability', { ns: 'general' })} <span className='text-secondary'>{t('dictionary.social', { ns: 'general' })}</span>
             </h1>
             <Breadcrumb>
-              <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+              <Breadcrumb.Item href="/">{t('sections.home', { ns: 'general' })}</Breadcrumb.Item>
               <Breadcrumb.Item href="#">
-                Sostenibilidad
+                {t('sections.sustainability', { ns: 'general' })}
               </Breadcrumb.Item>
-              <Breadcrumb.Item href="/sostenibilidad/responsabilidad-social" active>Responsabilidad Social</Breadcrumb.Item>
+              <Breadcrumb.Item href="/sostenibilidad/responsabilidad-social" active>{t('sections.social_responsability', { ns: 'general' })}</Breadcrumb.Item>
             </Breadcrumb>
           </div>
 

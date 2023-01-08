@@ -67,7 +67,15 @@
     "philosophy": "La filosofía corporativa de Acumulación Los Rosales",
     "buttonPolicies": "VER POLÍTICAS",
     "cardTitle": "Card title",
-    "cardText": "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+    "cardText": "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    "managementOf": "MANEJO DE",
+    "solid_waste": "RESIDUOS SÓLIDOS",
+    "monitoring": "MONITOREO",
+    "environmental": "AMBIENTAL",
+    "social": "SOCIAL",
+    "responsability": "RESPONSABILIDAD",
+    "health_and_safety": "SEGURIDAD Y SALUD",
+    "occupational": "OCUPACIONAL"
   },
   "footer": {
     "mainMenu": "Menú Principal",
@@ -142,5 +150,8 @@
     "english": "Inglés",
     "spanish": "Español",
     "french": "Francés"
+  },
+  "policies": {
+    "pdf1": "01 de Nov. 2021"
   }
 }

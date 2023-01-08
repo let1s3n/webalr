@@ -64,7 +64,15 @@
     "philosophy": "La philosophie d'entreprise de Acumulación Los Rosales",
     "buttonPolicies": "STRATÉGIES",
     "cardTitle": "Card title",
-    "cardText": "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+    "cardText": "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+    "managementOf": "GESTION DES",
+    "solid_waste": "DECHETS SOLIDES",
+    "monitoring": "SURVEILLANCE DE",
+    "environmental": "L'ENVIRONNEMENT",
+    "social": "SOCIAL",
+    "responsability": "RESPONSABILITY",
+    "health_and_safety": "La santé et la sécurité",
+    "occupational": "au travail"
   },
   "footer": {
     "mainMenu": "Menu principal",
@@ -139,5 +147,8 @@
     "english": "Anglais",
     "spanish": "Espagnol",
     "french": "Français"
+  },
+  "policies": {
+    "pdf1": "01 Nov. 2021"
   }
 }

@@ -39,14 +39,14 @@ const SeguridadSaludOcupacional = () => {
         <Container className="g-0 py-4 px-3">
           <div className="mb-4 text-center">
             <h1 className="text-center text-primary">
-              SEGURIDAD Y SALUD <span className='text-secondary'>OCUPACIONAL</span>
+              {t('dictionary.health_and_safety', { ns: 'general' })} <span className='text-secondary'>{t('dictionary.occupational', { ns: 'general' })}</span>
             </h1>
             <Breadcrumb>
-              <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+              <Breadcrumb.Item href="/">{t('sections.home', { ns: 'general' })}</Breadcrumb.Item>
               <Breadcrumb.Item href="#">
-                Sostenibilidad
+                {t('sections.sustainability', { ns: 'general' })}
               </Breadcrumb.Item>
-              <Breadcrumb.Item href="/sostenibilidad/seguridad-y-salud-ocupacional" active>Seguridad y salud ocupacional</Breadcrumb.Item>
+              <Breadcrumb.Item href="/sostenibilidad/seguridad-y-salud-ocupacional" active>{t('sections.occupational_health_and_safety', { ns: 'general' })}</Breadcrumb.Item>
             </Breadcrumb>
           </div>
 

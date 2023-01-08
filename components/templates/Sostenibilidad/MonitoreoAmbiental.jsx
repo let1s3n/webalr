@@ -39,14 +39,14 @@ const MonitoreoAmbiental = () => {
         <Container className="g-0 py-4 px-3">
           <div className="mb-4 text-center">
             <h1 className="text-center text-primary">
-              MONITOREO <span className='text-secondary'>AMBIENTAL</span>
+              {t('dictionary.monitoring', { ns: 'general' })} <span className='text-secondary'>{t('dictionary.environmental', { ns: 'general' })}</span>
             </h1>
             <Breadcrumb>
-              <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+              <Breadcrumb.Item href="/">{t('sections.home', { ns: 'general' })}</Breadcrumb.Item>
               <Breadcrumb.Item href="#">
-                Sostenibilidad
+                {t('sections.sustainability', { ns: 'general' })}
               </Breadcrumb.Item>
-              <Breadcrumb.Item href="/sostenibilidad/monitoreo-ambiental" active>Monitoreo Ambiental</Breadcrumb.Item>
+              <Breadcrumb.Item href="/sostenibilidad/monitoreo-ambiental" active>{t('sections.environmental_monitoring', { ns: 'general' })}</Breadcrumb.Item>
             </Breadcrumb>
           </div>
 

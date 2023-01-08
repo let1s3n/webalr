@@ -40,14 +40,14 @@ const ManejoResiduosSolidos = () => {
         <Container className="g-0 py-4 px-3">
           <div className="mb-4 text-center">
             <h1 className="text-center text-primary">
-              MANEJO DE <span className='text-secondary'>RESIDUOS SÓLIDOS</span>
+            {t('dictionary.managementOf', { ns: 'general' })} <span className='text-secondary'>{t('dictionary.solid_waste', { ns: 'general' })}</span>
             </h1>
             <Breadcrumb>
-              <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+              <Breadcrumb.Item href="/">{t('sections.home', { ns: 'general' })}</Breadcrumb.Item>
               <Breadcrumb.Item href="#">
-                Sostenibilidad
+              {t('sections.sustainability', { ns: 'general' })}
               </Breadcrumb.Item>
-              <Breadcrumb.Item href="/sostenibilidad/manejo-de-residuos-solidos" active>Manejo de residuos sólidos</Breadcrumb.Item>
+              <Breadcrumb.Item href="/sostenibilidad/manejo-de-residuos-solidos" active>{t('sections.solid_waste_management', { ns: 'general' })}</Breadcrumb.Item>
             </Breadcrumb>
           </div>
 
