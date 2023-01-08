@@ -201,6 +201,10 @@ a:hover {
   }
 
   @include media-breakpoint-up(xxxl) {
+    right: 220px;
+  }
+
+  @include media-breakpoint-up(xxxxl) {
     right: 400px;
   }
 
