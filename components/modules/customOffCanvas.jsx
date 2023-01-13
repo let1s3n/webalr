@@ -191,13 +191,6 @@ function CustomOffCanvas(props) {
 
           </ul>
 
-          {/* <div className="d-flex flex-column" style={{ rowGap: ".5rem" }}>
-            <p className="m-0 fs-5 fw-600 lh-1 text-center">{t('sections_followUs', { ns: 'general' })}</p>
-            <div className="d-flex">
-              <Image src={`${process.env.NEXT_CDN}images/linkedin-icon.svg" alt="linkedin icon" />
-              <Image src={`${process.env.NEXT_CDN}images/facebook-icon.svg" alt="facebook icon" />
-            </div>
-          </div> */}
         </Container>
       </Offcanvas.Body>
       <style global jsx>{`
