@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 
-import Home from '../components/templates/Home/Home'
+import Proximamente from '../components/templates/Proximamente/Proximamente'
 
 const index = () => {
 
@@ -10,7 +10,7 @@ const index = () => {
       <Head>
         <title>SMRL Acumulación Los Rosales</title>
       </Head>
-      <Home />
+      <Proximamente />
     </>
   )
 }
