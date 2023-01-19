@@ -162,30 +162,30 @@ const Nosotros = () => {
           </Row>
         </section>
 
-        <section className='mb-7'>
-          <div className='bg-primary'>
-            <Row className='px-3 px-xl-10 nosotrosPage__lemme-container g-0'>
-              <Col xs={12} lg={6}>
-                <div className='my-5 my-lg-0 py-4 py-xl-5 px-4 px-xl-5 d-flex align-items-center justify-content-center nosotrosPage__lemme-box' style={{ background: "#ffffff" }}>
-                  <h4 className='lh-base'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing. <br />
-                    numquam optio itaque repellat consequatur, <br />
-                    aliquid eligendi unde saepe, <br />
-                    <span className='text-secondary'>dolorum labore aspernatur!</span>
-                  </h4>
-                </div>
-              </Col>
-              <Col xs={12} lg={6}>
-                <div className='pt-0 pt-lg-13 text-center'>
-                  <h2 className='text-white '>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                  <div className='pt-7'>
-                    <Button className='px-5'>{t('dictionary.buttonPolicies', { ns: 'general' })}</Button>
-                  </div>
-                </div>
-              </Col>
-            </Row>
+        <section className='mb-7 position-relative'>
+          <div className='bg-primary nosotrosPage__lemme-box'>
+
           </div>
           <div className='bg-secondary nosotrosPage__lemme-decoration'></div>
+
+          <div className="d-flex flex-column align-items-center flex-custom1-row position-absolute top-50 start-50 translate-middle w-90" style={{ columnGap: "3rem", rowGap: "2rem" }}>
+
+            <div className='p-4 d-flex align-items-center justify-content-center w-80 w-custom1-50' style={{ background: "#ffffff", height: "250px" }}>
+              <p className='fs-6 fs-custom1-4 lh-base m-0 text-center'>
+                Lorem ipsum dolor sit amet consectetur adipisicing. <br />
+                numquam optio itaque repellat consequatur, <br />
+                aliquid eligendi unde saepe, <br />
+                <span className='text-secondary'>dolorum labore aspernatur!</span>
+              </p>
+            </div>
+
+            <div className='text-center d-flex flex-column justify-content-center w-80 w-custom1-50'>
+              <p className='text-white mb-5 mb-xxxxl-10 lh-1 fs-4 fs-custom1-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div>
+                <Button className='px-5'>{t('dictionary.buttonPolicies', { ns: 'general' })}</Button>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </>
