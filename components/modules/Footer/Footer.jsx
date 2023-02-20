@@ -96,14 +96,6 @@ const Footer = () => {
               </p>
             </div>
 
-            {/* <div className="pt-5">
-
-              <a className="goUpContainer border lh-1" href="#">
-                <Image className="d-block" src={`${process.env.NEXT_CDN}images/arrow-up.svg" />
-              </a>
-
-            </div> */}
-
           </Col>
 
           <Col xl="auto" className="socialColumn d-flex flex-column">
@@ -133,7 +125,7 @@ const Footer = () => {
 
             <p className="lh-1 m-0 text-basic1">© 2023 – SMRL ALR. {t('footer.rights', { ns: 'general' })}</p>
 
-            <p className="lh-1 m-0 text-basic1 text-end text-custom1-start">{t('footer.poweredBy', { ns: 'general' })} <a href="https://dgsperu.com" target="_blank"><strong>DGS</strong></a></p>
+            <p className="lh-1 m-0 text-basic1 text-end text-custom1-start">{t('footer.poweredBy', { ns: 'general' })} <a target="_blank"><strong>Hexagon Studio</strong></a></p>
 
 
           </Col>
