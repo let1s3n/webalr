@@ -40,7 +40,7 @@ const ResponsabilidadSocial = () => {
 
         <Container className="g-0 py-4 px-3">
           <div className="mb-4 text-center">
-            <h1 className="text-center text-primary">
+            <h1 className="fs-2 text-center text-primary">
               {t('dictionary.responsability', { ns: 'general' })} <span className='text-secondary'>{t('dictionary.social', { ns: 'general' })}</span>
             </h1>
             <Breadcrumb>

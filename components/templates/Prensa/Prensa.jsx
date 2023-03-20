@@ -34,7 +34,7 @@ const Prensa = () => {
         </div>
 
         <Container className="py-4 px-3 g-0 text-center">
-          <h1 className='text-primary text-uppercase'>{t('sections.press', { ns: 'general' })}</h1>
+          <h1 className='fs-2 text-primary text-uppercase'>{t('sections.press', { ns: 'general' })}</h1>
 
           <Breadcrumb>
             <Breadcrumb.Item href="/">{t('sections.home', { ns: 'general' })}</Breadcrumb.Item>

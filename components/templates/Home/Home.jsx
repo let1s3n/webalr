@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 
 import { useTranslation } from "react-i18next";
-
+import cookieCutter from 'cookie-cutter'
 import Link from 'next/link'
 import { Container, Carousel, Row, Col, CardGroup, Card, Image } from 'react-bootstrap'
 
@@ -9,12 +9,13 @@ import Loader from '../../elements/Loader/Loader'
 
 import useWindowDimensions from "../../../hooks/useWindowDimensions";
 
-const Home = ({ locale }) => {
+const Home = () => {
 
   const { height, width } = useWindowDimensions();
   const { t } = useTranslation();
 
   const [loading, setLoading] = useState(true);
+  const [locale, setLocale] = useState("");
 
   const [videoLoading, setVideoLoading] = useState(false);
 
@@ -26,6 +27,12 @@ const Home = ({ locale }) => {
   };
 
   useEffect(() => {
+    let cookie = cookieCutter.get('i18next');
+
+    if (cookie !== "") {
+      setLocale(cookie);
+    }
+
     console.log("videoElement.current: ", videoElement.current)
 
     videoElement.current.oncanplaythrough = onLoadedData();
@@ -43,6 +50,9 @@ const Home = ({ locale }) => {
 
   }, [t, videoLoading])
 
+  useEffect(() => {
+    console.log("locale: ", locale)
+  }, [locale])
 
 
 
@@ -65,9 +75,10 @@ const Home = ({ locale }) => {
             </video>
 
             <h1 className="hero-text position-absolute text-white w-100 trocchiRegular px-3">
-              <span className="d-block mb-2">{t('hero_text1', { ns: 'general' })}</span>
-              <span className="d-inline-block mb-2">{t('hero_text2', { ns: 'general' })}</span> {" "}
-              <span className="d-inline-block text-secondary">{t('hero_text3', { ns: 'general' })}</span>
+              <p className="mb-2">{t('hero_text1', { ns: 'general' })}</p>
+              <p className="mb-2">
+                <span className={locale === "en" ? "text-secondary" : ""}>{t('hero_text2', { ns: 'general' })}</span> <span className={locale === "en" ? "" : "text-secondary"}> {t('hero_text3', { ns: 'general' })}</span>
+              </p>
             </h1>
           </div>
 

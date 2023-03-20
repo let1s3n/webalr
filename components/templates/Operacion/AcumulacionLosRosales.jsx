@@ -52,8 +52,9 @@ const AcumulacionLosRosales = () => {
           {/* <h1>Acumulación Los Rosales</h1> */}
 
           <div className="mb-4  d-flex flex-column align-items-center">
-            <h1 className="text-center text-primary">
-              {t('dictionary.weAre2', { ns: 'general' })}
+            <h1 className="fs-2 text-center text-primary">
+              {/* {t('dictionary.weAre2', { ns: 'general' })} */}
+              ACUMULACIÓN LOS ROSALES
             </h1>
             <Breadcrumb>
               <Breadcrumb.Item href="/">{t('sections.home', { ns: 'general' })}</Breadcrumb.Item>
