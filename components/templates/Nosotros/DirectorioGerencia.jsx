@@ -39,7 +39,7 @@ const DirectorioGerencia = () => {
         </section>
         <section className="directors-management__content mx-auto perfiles d-flex flex-column justify-content-center align-items-center mt-4 p-3 py-xl-5">
           <div className="mb-5 mt-5 mt-xl-0 mb-custom1-8 d-flex flex-column align-items-center">
-            <h1 className="text-center text-primary">
+            <h1 className="fs-2 text-center text-primary">
               {t('dictionary.directoryAnd', { ns: 'general' })} <span className='text-secondary'>{t('dictionary.management', { ns: 'general' })}</span>
             </h1>
             <Breadcrumb>

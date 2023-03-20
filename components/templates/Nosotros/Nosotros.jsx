@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
 
-import { Container, Row, Col, Carousel, Image, Card, CardGroup, Button, Breadcrumb } from 'react-bootstrap'
+import { Container, Row, Col, Carousel, Image, Button, Breadcrumb } from 'react-bootstrap'
 import { useTranslation } from "react-i18next";
-import Loader from '../../elements/Loader/Loader'
 
+import Loader from '../../elements/Loader/Loader'
 import useWindowDimensions from "../../../hooks/useWindowDimensions";
 
 const Nosotros = () => {
@@ -29,7 +29,7 @@ const Nosotros = () => {
       <Loader loading={loading} />
       <div className="nosotrosPage">
 
-        <section className="">
+        <section>
           <Carousel controls={width >= 1280 ? true : false} interval={6000} className="h-100 nostros-carousel">
             <Carousel.Item className="hero-container">
               <Image
@@ -51,8 +51,8 @@ const Nosotros = () => {
         <section className="nuestra-historia p-3 p-xl-9 p-xxxxl-15">
 
           <div className="mb-5 mt-5 mt-xl-0 mb-custom1-8 d-flex flex-column align-items-center">
-            <h1 className="text-center text-primary">
-              {t('dictionary.weAre1', { ns: 'general' })} <span className='text-secondary'>{t('dictionary.weAre2', { ns: 'general' })}</span>
+            <h1 className="fs-2 text-center text-primary">
+              {t('dictionary.weAre1', { ns: 'general' })} <span className='text-secondary'>{t('dictionary.weAre2', { ns: 'general' })}</span> {t('dictionary.weAre3', { ns: 'general' })}
             </h1>
             <Breadcrumb>
               <Breadcrumb.Item href="/">{t('sections.home', { ns: 'general' })}</Breadcrumb.Item>
@@ -83,7 +83,7 @@ const Nosotros = () => {
               <Col>
                 <h2 className="mb-5 text-secondary  pt-5">{t('us_our_history_title', { ns: 'general' })}</h2>
                 <p className="m-0 text-justify--mobile text-primary">
-                  <strong>{t('us_our_history_text_p1', { ns: 'general' })}</strong>
+                  {t('us_our_history_text_p1', { ns: 'general' })}
                   <br />
                   <br />
                   {t('us_our_history_text_p2', { ns: 'general' })}
@@ -103,7 +103,7 @@ const Nosotros = () => {
         <section>
           <Row className="g-0">
             <div className='mb-3 mt-5 mt-lg-0'>
-              <h3 className=' text-center  mx-5'>{t('dictionary.philosophy', { ns: 'general' })}</h3>
+              <h3 className='text-center  mx-5'>{t('dictionary.philosophy', { ns: 'general' })}</h3>
             </div>
           </Row>
           <div id="estamentosContainer" className="estamentosContainer"></div>
