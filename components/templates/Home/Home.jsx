@@ -75,7 +75,7 @@ const Home = ({ locale }) => {
             <div className="text-white bg-primary rounded">
               <p className='mb-0'>
                 <span className="lh-sm">{t('hero_text4', { ns: 'general' })}</span>{" "}
-                <span className="lh-sm text-secondary ">{t('hero_text5', { ns: 'general' })}</span>{" "}
+                <span className="lh-sm">{t('hero_text5', { ns: 'general' })}</span>{" "}
                 <span className="lh-sm">{t('hero_text6', { ns: 'general' })}</span>
               </p>
               <span className="lh-sm">{t('hero_text7', { ns: 'general' })}</span>
@@ -87,8 +87,7 @@ const Home = ({ locale }) => {
 
         <section className="quienes-somos pt-6 pt-custom1-9">
           <Container fluid="md">
-            <h3 className=" text-primary mb-3 mb-custom1-5 text-center fs-5 fs-lg-4 fs-xl-3">{t('who_we_are', { ns: 'general' })}</h3>
-
+            <p className="text-primary mb-3 mb-custom1-5 text-center fs-5 fs-lg-4 fs-xl-3">{t('who_we_are', { ns: 'general' })}</p>
 
           </Container>
 
