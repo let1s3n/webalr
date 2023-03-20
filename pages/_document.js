@@ -6,7 +6,7 @@ class MyDocument extends Document {
       // Agregamos el idioma que deseemos, aquí por ejemplo español.
       <Html lang="es">
         <Head>
-          <meta name="robots" content="index,follow" />
+          <meta name="robots" content="noindex,nofollow" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
             rel="preconnect"
