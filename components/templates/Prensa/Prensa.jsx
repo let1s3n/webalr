@@ -48,7 +48,7 @@ const Prensa = () => {
 
           <Row xs={1} md={3} className="gy-4 gx-0 gx-md-4">
             {Array.from({ length: 9 }).map((_, idx) => (
-              <Col>
+              <Col key={idx}>
                 <Card>
                   <Card.Img variant="top" src={`${process.env.NEXT_CDN}images/mision.jpg`} />
                   <Card.Body>
