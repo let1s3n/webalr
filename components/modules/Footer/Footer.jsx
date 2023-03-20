@@ -125,7 +125,7 @@ const Footer = () => {
 
             <p className="lh-1 m-0 text-basic1">© 2023 – SMRL ALR. {t('footer.rights', { ns: 'general' })}</p>
 
-            <p className="lh-1 m-0 text-basic1 text-end text-custom1-start">{t('footer.poweredBy', { ns: 'general' })} <a target="_blank"><strong>Hexagon Studio</strong></a></p>
+            <p className="lh-1 m-0 text-basic1 text-end text-custom1-start">{t('footer.poweredBy', { ns: 'general' })} <a href="https://www.hexagonstudio.pe" target="_blank"><strong>Hexagon Studio</strong></a></p>
 
 
           </Col>
@@ -137,7 +137,7 @@ const Footer = () => {
 
 
       <a className="goUpContainer border lh-1" href="#">
-        <Image className="d-block" src={`${process.env.NEXT_CDN}images/arrow-up.svg`} />
+        <Image alt="arrow up image" className="d-block" src={`${process.env.NEXT_CDN}images/arrow-up.svg`} />
       </a>
     </Container>
   )
