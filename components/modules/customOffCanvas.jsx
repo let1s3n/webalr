@@ -76,12 +76,12 @@ function CustomOffCanvas(props) {
 
           <ul className="list-unstyled m-0 fs-6 fw-light text-secondary">
 
-            <li className="mb-4 lh-1" onClick={props.onHide}>
+            <li className="mb-3 lh-1" onClick={props.onHide}>
               <Link className="text-secondary lh-1" href="/">
                 {t('sections.home', { ns: 'general' })}
               </Link>
             </li>
-            <li className="mb-4 lh-1" onClick={props.onHide}>
+            <li className="mb-3 lh-1" onClick={props.onHide}>
               <div>
                 <p className="text-secondary lh-1">
 
@@ -106,7 +106,7 @@ function CustomOffCanvas(props) {
                 </ul>
               </div>
             </li>
-            <li className="mb-4 lh-1" onClick={props.onHide}>
+            <li className="mb-3 lh-1" onClick={props.onHide}>
               <div>
                 <p className="text-secondary lh-1">
 
@@ -118,6 +118,13 @@ function CustomOffCanvas(props) {
                     <Link className="text-secondary lh-1" href="/sostenibilidad/responsabilidad-social">
 
                       {t('sections.social_responsability', { ns: 'general' })}
+
+                    </Link>
+                  </li>
+                  <li className="mb-2">
+                    <Link className="text-secondary lh-1" href="/sostenibilidad/responsabilidad-social">
+
+                      {t('sections.community_relations', { ns: 'general' })}
 
                     </Link>
                   </li>
@@ -147,7 +154,7 @@ function CustomOffCanvas(props) {
                 </ul>
               </div>
             </li>
-            <li className="mb-4 lh-1" onClick={props.onHide}>
+            <li className="mb-3 lh-1" onClick={props.onHide}>
 
               <div>
                 <p className="text-secondary lh-1">
@@ -166,14 +173,14 @@ function CustomOffCanvas(props) {
                 </ul>
               </div>
             </li>
-            <li className="mb-4 lh-1" onClick={props.onHide}>
+            <li className="mb-3 lh-1" onClick={props.onHide}>
               <Link className="text-secondary lh-1" href="/prensa">
 
                 {t('sections.press', { ns: 'general' })}
 
               </Link>
             </li>
-            <li className="mb-4 lh-1" onClick={props.onHide}>
+            <li className="mb-3 lh-1" onClick={props.onHide}>
               <Link className="text-secondary lh-1" href="/politicas">
 
                 {t('sections.policies', { ns: 'general' })}
