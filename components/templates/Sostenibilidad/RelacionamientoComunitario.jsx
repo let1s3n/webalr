@@ -6,7 +6,7 @@ import Loader from '../../elements/Loader/Loader'
 import useWindowDimensions from "../../../hooks/useWindowDimensions";
 
 import CustomButton from '../../elements/CustomButton'
-const ResponsabilidadSocial = () => {
+const RelacionamientoComunitario = () => {
 
   const { height, width } = useWindowDimensions();
 
@@ -41,20 +41,20 @@ const ResponsabilidadSocial = () => {
         <Container className="g-0 py-4 px-3">
           <div className="mb-4 text-center">
             <h1 className="fs-2 text-center text-primary">
-              {t('dictionary.responsability', { ns: 'general' })} <span className='text-secondary'>{t('dictionary.social', { ns: 'general' })}</span>
+              {t('dictionary.relations', { ns: 'general' })} <span className='text-secondary'>{t('dictionary.community', { ns: 'general' })}</span>
             </h1>
             <Breadcrumb>
               <Breadcrumb.Item href="/">{t('sections.home', { ns: 'general' })}</Breadcrumb.Item>
               <Breadcrumb.Item href="#">
                 {t('sections.sustainability', { ns: 'general' })}
               </Breadcrumb.Item>
-              <Breadcrumb.Item href="/sostenibilidad/responsabilidad-social" active>{t('sections.social_responsability', { ns: 'general' })}</Breadcrumb.Item>
+              <Breadcrumb.Item href="/sostenibilidad/relacionamiento-comunitario" active>{t('sections.community_relations', { ns: 'general' })}</Breadcrumb.Item>
             </Breadcrumb>
           </div>
 
-          <p className="text-center">{t('sustainability_social_responsability_text_p1', { ns: 'general' })}</p>
+          <p className="text-center">{t('sustainability_social_community_relations_text_p1', { ns: 'general' })}</p>
 
-          {/* <p className="text-center">{t('sustainability_social_responsability_text_p2', { ns: 'general' })}</p> */}
+          {/* <p className="text-center">{t('sustainability_social_community_relations_text_p2', { ns: 'general' })}</p> */}
 
           <CustomButton href="/politicas" className="mx-auto my-5" size={width >= 1200 ? "xxl" : "xl"} content={t('customButton.gotoPolicies', { ns: 'general' })} />
         </Container>
@@ -63,7 +63,7 @@ const ResponsabilidadSocial = () => {
           <div className="bigContainer bg-primary w-100 w-custom1-75 position-relative pt-custom1-10 ps-custom1-15">
             <div className="w-65 pt-5 pt-custom1-0 mx-auto mx-custom1-0">
               <p className="text-white fs-5 lh-lg">
-                {t('sustainability_social_responsability_text_p2', { ns: 'general' })}
+                {t('sustainability_social_community_relations_text_p2', { ns: 'general' })}
               </p>
               {/* <p className="text-white fs-5 lh-lg">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatum beatae et numquam, obcaecati accusantium cumque quasi sequi atque similique, necessitatibus soluta iste tempore dignissimos id? Enim impedit fugit a!
@@ -79,4 +79,4 @@ const ResponsabilidadSocial = () => {
   )
 }
 
-export default ResponsabilidadSocial
+export default RelacionamientoComunitario

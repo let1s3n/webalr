@@ -27,6 +27,7 @@ const NavBar = () => {
     "/nosotros",
     "/nosotros/directorio-y-gerencia",
     "/sostenibilidad/responsabilidad-social",
+    "/sostenibilidad/relacionamiento-comunitario",
     "/sostenibilidad/monitoreo-ambiental",
     "/sostenibilidad/manejo-de-residuos-solidos",
     "/sostenibilidad/seguridad-y-salud-ocupacional",
@@ -126,6 +127,9 @@ const NavBar = () => {
                 <NavDropdown title={t('sections.sustainability', { ns: 'general' })} id="basic-nav-dropdown2">
                   <NavDropdown.Item href="/sostenibilidad/responsabilidad-social">
                     {t('sections.social_responsability', { ns: 'general' })}
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/sostenibilidad/relacionamiento-comunitario">
+                    {t('sections.community_relations', { ns: 'general' })}
                   </NavDropdown.Item>
                   <NavDropdown.Item href="/sostenibilidad/monitoreo-ambiental">
                     {t('sections.environmental_monitoring', { ns: 'general' })}
