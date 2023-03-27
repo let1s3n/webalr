@@ -50,9 +50,8 @@ const SeguridadSaludOcupacional = () => {
             </Breadcrumb>
           </div>
 
-          <p className="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam eligendi enim dolore! Unde perspiciatis vero reprehenderit veniam praesentium neque quae itaque, eligendi at eum? Magni ad ea voluptas repellendus doloribus.</p>
+          <p className="text-center">{t('sustainability_ssoma_text_p1', { ns: 'general' })}</p>
 
-          <p className="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae tempore eos iure in illum quaerat.</p>
 
           <CustomButton href="/politicas" className="mx-auto" size={width >= 1200 ? "xxl" : "xl"} content={t('customButton.gotoPolicies', { ns: 'general' })} />
         </Container>
@@ -61,11 +60,9 @@ const SeguridadSaludOcupacional = () => {
           <div className="bigContainer bg-primary w-100 w-custom1-75 position-relative pt-custom1-10 ps-custom1-15">
             <div className="w-65 pt-5 pt-custom1-0 mx-auto mx-custom1-0">
               <p className="text-white fs-5 lh-lg">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor velit necessitatibus ducimus repudiandae sapiente quos explicabo in illum veniam earum porro aliquid a modi, voluptatum, hic voluptatem quaerat quibusdam!
+                {t('sustainability_ssoma_text_p2', { ns: 'general' })}
               </p>
-              <p className="text-white fs-5 lh-lg">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatum beatae et numquam, obcaecati accusantium cumque quasi sequi atque similique, necessitatibus soluta iste tempore dignissimos id? Enim impedit fugit a!
-              </p>
+
             </div>
             <div className="smallContainer pb-5 pb-custom1-0 position-custom1-absolute top-50 start-100 mx-auto mx-custom1-0">
               <Image src={`${process.env.NEXT_CDN}images/mision.jpg`} />
