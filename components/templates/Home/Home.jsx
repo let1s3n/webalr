@@ -238,10 +238,10 @@ const Home = () => {
                     </Col>
                     <Col xs={12} sm={6} md={4} lg={6} xxl={4} className="px-4">
                       <h2 className="m-0 mb-3 text-secondary">
-                        {t('objetivos_2022_title', { ns: 'general' })}
+                        {t('objetivos_2023_title', { ns: 'general' })}
                       </h2>
                       <p className="text-justify--mobile text-white m-0">
-                        {t('objetivos_2022_text', { ns: 'general' })}
+                        {t('objetivos_2023_text', { ns: 'general' })}
                       </p>
                     </Col>
                   </Row>
