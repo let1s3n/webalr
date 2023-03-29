@@ -111,23 +111,6 @@ const Nosotros = () => {
             <Col xs={12} lg={4}>
               <div className='position-relative mb-4 mb-xl-0 mx-1'>
                 <Image
-                  src={`${process.env.NEXT_CDN}images/vision-col.jpg`}
-                  alt="Imagen visión"
-                  className="nosotros-img"
-                />
-                <div className='bg-secondary py-5 py-xl-7 position-absolute bg-opacity-80 nosotros-img me-1' style={{ top: 0 }}>
-                  <div className="d-flex align-items-center justify-content-center">
-                    <h2 className=" mb-3 text-white">{t('us_vision_title', { ns: 'general' })}</h2>
-                  </div>
-                  <p className="m-0 px-4 p-xl-4 fs-xxl-5 px-xl-5 text-center">
-                    {t('us_vision_text', { ns: 'general' })}
-                  </p>
-                </div>
-              </div>
-            </Col>
-            <Col xs={12} lg={4}>
-              <div className='position-relative mb-4 mb-xl-0 mx-1'>
-                <Image
                   src={`${process.env.NEXT_CDN}images/mision-col.jpg`}
                   alt="Imagen visión"
                   className="nosotros-img"
@@ -142,6 +125,24 @@ const Nosotros = () => {
                 </div>
               </div>
             </Col>
+            <Col xs={12} lg={4}>
+              <div className='position-relative mb-4 mb-xl-0 mx-1'>
+                <Image
+                  src={`${process.env.NEXT_CDN}images/vision-col.jpg`}
+                  alt="Imagen visión"
+                  className="nosotros-img"
+                />
+                <div className='bg-secondary py-5 py-xl-7 position-absolute bg-opacity-80 nosotros-img me-1' style={{ top: 0 }}>
+                  <div className="d-flex align-items-center justify-content-center">
+                    <h2 className=" mb-3 text-white">{t('us_vision_title', { ns: 'general' })}</h2>
+                  </div>
+                  <p className="m-0 px-4 p-xl-4 fs-xxl-5 px-xl-5 text-center">
+                    {t('us_vision_text', { ns: 'general' })}
+                  </p>
+                </div>
+              </div>
+            </Col>
+
             <Col xs={12} lg={4}>
               <div className='position-relative mx-1'>
                 <Image
@@ -172,15 +173,14 @@ const Nosotros = () => {
 
             <div className='p-4 d-flex align-items-center justify-content-center w-80 w-custom1-50' style={{ background: "#ffffff", height: "250px" }}>
               <p className='fs-6 fs-custom1-4 lh-base m-0 text-center'>
-                Lorem ipsum dolor sit amet consectetur adipisicing. <br />
-                numquam optio itaque repellat consequatur, <br />
-                aliquid eligendi unde saepe, <br />
-                <span className='text-secondary'>dolorum labore aspernatur!</span>
+                {t('us_lemme_text1', { ns: 'general' })}
               </p>
             </div>
 
-            <div className='text-center d-flex flex-column justify-content-center w-80 w-custom1-50'>
-              <p className='text-white mb-5 mb-xxxxl-10 lh-1 fs-4 fs-custom1-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div className='text-center d-flex flex-column justify-content-around w-80 w-custom1-50' style={{ height: "250px" }}>
+              <p className='text-white mb-0 lh-1 fs-4 fs-custom1-2'>
+                {t('us_lemme_text2', { ns: 'general' })}
+              </p>
               <div>
                 <Button className='px-5'>{t('dictionary.buttonPolicies', { ns: 'general' })}</Button>
               </div>
