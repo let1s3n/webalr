@@ -119,7 +119,7 @@ const Nosotros = () => {
                   <div className="d-flex align-items-center justify-content-center">
                     <h2 className=" mb-3 text-white">{t('us_vision_title', { ns: 'general' })}</h2>
                   </div>
-                  <p className="m-0 px-4 p-xl-4 fs-xxl-5 px-xl-5  text-primary text-center">
+                  <p className="m-0 px-4 p-xl-4 fs-xxl-5 px-xl-5 text-center">
                     {t('us_vision_text', { ns: 'general' })}
                   </p>
                 </div>
@@ -136,7 +136,7 @@ const Nosotros = () => {
                   <div className="d-flex align-items-center justify-content-center">
                     <h2 className=" mb-3 text-white">{t('us_mission_title', { ns: 'general' })}</h2>
                   </div>
-                  <p className="m-0 px-4 p-xl-4 fs-xxl-5 px-xl-5  text-primary text-center">
+                  <p className="m-0 px-4 p-xl-4 fs-xxl-5 px-xl-5 text-center">
                     {t('us_mission_text', { ns: 'general' })}
                   </p>
                 </div>
@@ -153,7 +153,7 @@ const Nosotros = () => {
                   <div className="d-flex align-items-center justify-content-center">
                     <h2 className=" mb-3 text-white">{t('us_values_title', { ns: 'general' })}</h2>
                   </div>
-                  <p className="m-0 px-4 p-xl-4 fs-xxl-5 px-xl-5  text-primary text-center">
+                  <p className="m-0 px-4 p-xl-4 fs-xxl-5 px-xl-5 text-center">
                     {t('us_values_text', { ns: 'general' })}
                   </p>
                 </div>
