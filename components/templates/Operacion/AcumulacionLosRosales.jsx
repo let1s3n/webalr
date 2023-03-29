@@ -42,10 +42,15 @@ const AcumulacionLosRosales = () => {
       <Container fluid className="operacionAcumulacionPage g-0">
 
         <div className="hero-container">
-          <Image
+          {/* <Image
             className="hero-image"
             src={`${process.env.NEXT_CDN}images/politica1.jpg`}
             alt="Política 1"
+          /> */}
+          <Image
+            className="hero-image"
+            src={`${process.env.NEXT_CDN}images/hero3.jpg`}
+            alt="Hero 2"
           />
         </div>
         <Container className="py-4 px-3 g-0">

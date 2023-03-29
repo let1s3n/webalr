@@ -53,24 +53,18 @@ const ResponsabilidadSocial = () => {
           </div>
 
           <p className="text-center">{t('sustainability_social_responsability_text_p1', { ns: 'general' })}</p>
-
-          {/* <p className="text-center">{t('sustainability_social_responsability_text_p2', { ns: 'general' })}</p> */}
-
           <CustomButton href="/politicas" className="mx-auto my-5" size={width >= 1200 ? "xxl" : "xl"} content={t('customButton.gotoPolicies', { ns: 'general' })} />
         </Container>
 
         <Container fluid className="g-0 mt-4 mb-10">
           <div className="bigContainer bg-primary w-100 w-custom1-75 position-relative pt-custom1-10 ps-custom1-15">
-            <div className="w-65 pt-5 pt-custom1-0 mx-auto mx-custom1-0">
-              <p className="text-white fs-5 lh-lg">
+            <div className="h-100 w-65 pt-5 pt-custom1-0 d-custom1-flex align-items-center mx-auto mx-custom1-0">
+              <p className="text-white fs-5 lh-lg mb-0">
                 {t('sustainability_social_responsability_text_p2', { ns: 'general' })}
               </p>
-              {/* <p className="text-white fs-5 lh-lg">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatum beatae et numquam, obcaecati accusantium cumque quasi sequi atque similique, necessitatibus soluta iste tempore dignissimos id? Enim impedit fugit a!
-              </p> */}
             </div>
             <div className="smallContainer pb-5 pb-custom1-0 position-custom1-absolute top-50 start-100 mx-auto mx-custom1-0">
-              <Image src={`${process.env.NEXT_CDN}images/mision.jpg`} />
+              <Image src={`${process.env.NEXT_CDN}images/responsabilidadSocial2.jpg`} />
             </div>
           </div>
         </Container>

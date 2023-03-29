@@ -57,7 +57,7 @@ const SeguridadSaludOcupacional = () => {
         </Container>
 
         <Container fluid className="g-0 mt-4 mb-10">
-          <div className="bigContainer bg-primary w-100 w-custom1-75 position-relative pt-custom1-10 ps-custom1-15">
+          {/* <div className="bigContainer bg-primary w-100 w-custom1-75 position-relative pt-custom1-10 ps-custom1-15">
             <div className="w-65 pt-5 pt-custom1-0 mx-auto mx-custom1-0">
               <p className="text-white fs-5 lh-lg">
                 {t('sustainability_ssoma_text_p2', { ns: 'general' })}
@@ -67,7 +67,8 @@ const SeguridadSaludOcupacional = () => {
             <div className="smallContainer pb-5 pb-custom1-0 position-custom1-absolute top-50 start-100 mx-auto mx-custom1-0">
               <Image src={`${process.env.NEXT_CDN}images/mision.jpg`} />
             </div>
-          </div>
+          </div> */}
+          <Image className="d-block w-100" src={`${process.env.NEXT_CDN}images/ssoma.jpg`} />
         </Container>
       </Container>
     </>
