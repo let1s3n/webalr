@@ -173,13 +173,13 @@ function CustomOffCanvas(props) {
                 </ul>
               </div>
             </li>
-            <li className="mb-3 lh-1" onClick={props.onHide}>
+            {/* <li className="mb-3 lh-1" onClick={props.onHide}>
               <Link className="text-secondary lh-1" href="/prensa">
 
                 {t('sections.press', { ns: 'general' })}
 
               </Link>
-            </li>
+            </li> */}
             <li className="mb-3 lh-1" onClick={props.onHide}>
               <Link className="text-secondary lh-1" href="/politicas">
 

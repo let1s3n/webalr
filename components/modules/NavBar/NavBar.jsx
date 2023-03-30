@@ -151,9 +151,9 @@ const NavBar = () => {
                 </NavDropdown>
               </li>
 
-              <li>
+              {/* <li>
                 <Nav.Link href="/prensa" className="text-white py-2 fw-400">{t('sections.press', { ns: 'general' })}</Nav.Link>
-              </li>
+              </li> */}
 
               <li>
                 <Nav.Link href="/politicas" className="text-white py-2 fw-400">{t('sections.policies', { ns: 'general' })}</Nav.Link>
