@@ -55,9 +55,9 @@ const Footer = () => {
                   </div>
                 </div>
 
-                <Link href="/prensa">
+                {/* <Link href="/prensa">
                   <p className="m-0 lh-1 fw-600" style={{ cursor: "pointer" }}>{t('sections.press', { ns: 'general' })}</p>
-                </Link>
+                </Link> */}
                 <Link href="/politicas">
                   <p className="m-0 lh-1 fw-600" style={{ cursor: "pointer" }}>{t('sections.policies', { ns: 'general' })}</p>
                 </Link>
@@ -123,7 +123,7 @@ const Footer = () => {
 
           <Col xs={12} className="d-flex flex-column flex-custom1-row justify-content-between align-items-center" style={{ zIndex: 2, rowGap: "1rem" }}>
 
-            <p className="lh-1 m-0 text-basic1">© 2023 – SMRL ALR. {t('footer.rights', { ns: 'general' })}</p>
+            <p className="lh-1 m-0 text-basic1 text-center text-custom1-start">© 2023 – SMRL ALR. {t('footer.rights', { ns: 'general' })}</p>
 
             <p className="lh-1 m-0 text-basic1 text-end text-custom1-start">{t('footer.poweredBy', { ns: 'general' })} <a href="https://www.hexagonstudio.pe" target="_blank"><strong>Hexagon Studio</strong></a></p>
 

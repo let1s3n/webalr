@@ -25,7 +25,7 @@ const CustomForm = () => {
   return (
     <>
       <Loader loading={loading} />
-      <Container className="form-container text-center bg-basic1 pt-5 pb-6 px-6 px-md-11 px-xl-7" style={{ borderRadius: 47 + 'px' }}>
+      <Container className="form-container text-center bg-basic1 pt-5 pb-6 px-3 px-md-11 px-xl-7" style={{ borderRadius: 47 + 'px' }}>
         {enviado ? <FormSuccess />
           :
           <>

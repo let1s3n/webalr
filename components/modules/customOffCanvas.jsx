@@ -32,9 +32,9 @@ function CustomOffCanvas(props) {
 
       </Offcanvas.Header>
       <Offcanvas.Body>
-        <Container fluid className="d-flex flex-column align-items-center g-0">
-          <Image className="idiomas-logo mb-4" src={`${process.env.NEXT_CDN}images/logo-alr.png`} alt="idiomas logo" />
-          <div className="d-flex align-items-center mb-4" style={{ columnGap: 2 + 'rem' }}>
+        <Container fluid className="d-flex flex-column align-items-center g-0" style={{ rowGap: "2.5rem" }}>
+          <Image className="idiomas-logo" src={`${process.env.NEXT_CDN}images/logo-alr.png`} alt="idiomas logo" />
+          <div className="d-flex align-items-center" style={{ columnGap: 2 + 'rem' }}>
             {locale === 'en' ?
               <div className="d-flex" style={{ columnGap: 2 + 'rem' }}>
                 <div className="d-flex align-items-center languageOption">
@@ -122,7 +122,7 @@ function CustomOffCanvas(props) {
                     </Link>
                   </li>
                   <li className="mb-2">
-                    <Link className="text-secondary lh-1" href="/sostenibilidad/responsabilidad-social">
+                    <Link className="text-secondary lh-1" href="/sostenibilidad/relacionamiento-comunitario">
 
                       {t('sections.community_relations', { ns: 'general' })}
 

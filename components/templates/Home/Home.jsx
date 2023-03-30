@@ -285,7 +285,7 @@ const Home = () => {
                   </div>
                 </div>
               </Col>
-              <Col lg={6} className="border-end border-white d-flex justify-content-center align-items-center text-center">
+              {/* <Col lg={6} className="border-end border-white d-flex justify-content-center align-items-center text-center">
                 <div className='home__links-section'>
                   <p className='item-text'>{t('dictionary.press', { ns: 'general' })}</p>
                   <div className='item-button'>
@@ -294,7 +294,7 @@ const Home = () => {
                     </Link>
                   </div>
                 </div>
-              </Col>
+              </Col> */}
 
             </Row>
           </Container>
