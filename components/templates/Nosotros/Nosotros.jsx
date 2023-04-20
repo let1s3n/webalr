@@ -82,7 +82,7 @@ const Nosotros = () => {
               </Col>
               <Col>
                 <h2 className="mb-5 text-secondary  pt-5">{t('us_our_history_title', { ns: 'general' })}</h2>
-                <p className="m-0 text-justify--mobile text-primary">
+                <p className="m-0 text-primary" style={{textAlign:"justify"}}>
                   {t('us_our_history_text_p1', { ns: 'general' })}
                   <br />
                   <br />
