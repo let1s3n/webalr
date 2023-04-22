@@ -125,6 +125,8 @@ const Footer = () => {
 
             <p className="lh-1 m-0 text-basic1 text-center text-custom1-start">© 2023 – SMRL ALR. {t('footer.rights', { ns: 'general' })}</p>
 
+            <Image alt="Marca Perú Logo" className="d-block" src={`${process.env.NEXT_CDN}images/marcaPais.svg`} style={{width:"150px"}}/>
+
             <p className="lh-1 m-0 text-basic1 text-end text-custom1-start">{t('footer.poweredBy', { ns: 'general' })} <a href="https://www.hexagonstudio.pe" target="_blank"><strong>Hexagon Studio</strong></a></p>
 
 

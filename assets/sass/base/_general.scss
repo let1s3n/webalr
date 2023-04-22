@@ -1,6 +1,6 @@
 :root {
-  --swiper-theme-color: #1C9B90 !important;
-  --swiper-navigation-color: #1D3347 !important;
+  --swiper-theme-color: #1c9b90 !important;
+  --swiper-navigation-color: #1d3347 !important;
 }
 
 body.modal-open {
@@ -129,10 +129,8 @@ button {
 } */
 
 .trocchiRegular {
-  font-family: 'Trocchi', serif;
+  font-family: "Trocchi", serif;
 }
-
-
 
 a:hover {
   color: inherit !important;
@@ -143,12 +141,10 @@ a:hover {
   overflow: hidden !important;
 }
 
-
 .divider {
   margin-top: 1.5rem;
   height: 1.5px;
   border-top: 1.5px solid black;
-
 
   @include media-breakpoint-up(xl) {
     display: none;
@@ -174,7 +170,7 @@ a:hover {
   }
 }
 
-.card-group>.card+.card {
+.card-group > .card + .card {
   border-left: 1px solid rgba(0, 0, 0, 0.176) !important;
 }
 
@@ -188,9 +184,10 @@ a:hover {
   cursor: pointer;
   position: absolute;
   right: 150px;
-  bottom: 180px;
+  /* bottom: 180px; */
+  bottom: 280px;
   box-shadow: none;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 
   @include media-breakpoint-up(custom1) {
     display: flex;
