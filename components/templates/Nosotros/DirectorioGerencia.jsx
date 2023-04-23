@@ -189,33 +189,61 @@ const DirectorioGerencia = () => {
                   </div>
                 </Col>
               </Row>
+              <Row className='mb-3'>
+                <Col xs={12} lg={6}>
+                  <div className='p-5 directors-management__card bg-primary text-white mb-4 mb-xl-0'>
+                    <div>
+                      <h3>{t('jhonathan_ochochoque_title1', { ns: 'general' })}</h3>
+                      <div className='border border-secondary w-25 mb-3'></div>
+                      <h6>{t('jhonathan_ochochoque_title2', { ns: 'general' })}</h6>
+                    </div>
+                    <div className="pt-3">
+                      <p className='mb-0'>{t('jhonathan_ochochoque_text', { ns: 'general' })}</p>
+                    </div>
+                  </div>
+                </Col>
+
+
+                <Col xs={12} lg={6}>
+                  <div className='p-5 directors-management__card bg-primary text-white mb-4 mb-xl-0'>
+                    <div>
+                      <h3>{t('jose_gutierrez_title1', { ns: 'general' })}</h3>
+                      <div className='border border-secondary w-25 mb-3'></div>
+                      <h6>{t('jose_gutierrez_title2', { ns: 'general' })}</h6>
+                    </div>
+                    <div className="pt-3">
+                      <p className='mb-0'>{t('jose_gutierrez_text', { ns: 'general' })}</p>
+                    </div>
+                  </div>
+                </Col>
+              </Row>
 
               <Row className='mb-3'>
                 <Col xs={12} lg={6}>
                   <div className='p-5 directors-management__card bg-primary text-white mb-4 mb-xl-0'>
                     <div>
-                      <h3>{t('arturo_lozano_title1', { ns: 'general' })}</h3>
+                      <h3>{t('deysi_callo_title1', { ns: 'general' })}</h3>
                       <div className='border border-secondary w-25 mb-3'></div>
-                      <h6>{t('arturo_lozano_title2', { ns: 'general' })}</h6>
+                      <h6>{t('deysi_callo_title2', { ns: 'general' })}</h6>
                     </div>
                     <div className="pt-3">
-                      <p className='mb-0'>{t('arturo_lozano_text', { ns: 'general' })}</p>
-                    </div>
-                  </div>
-                </Col>
-                <Col xs={12} lg={6}>
-                  <div className='p-5 directors-management__card bg-primary text-white mb-4 mb-xl-0'>
-                    <div>
-                      <h3>{t('katherine_villalobos_title1', { ns: 'general' })}</h3>
-                      <div className='border border-secondary w-25 mb-3'></div>
-                      <h6>{t('katherine_villalobos_title2', { ns: 'general' })}</h6>
-                    </div>
-                    <div className="pt-3">
-                      <p className='mb-0'>{t('katherine_villalobos_text', { ns: 'general' })}</p>
+                      <p className='mb-0'>{t('deysi_callo_text', { ns: 'general' })}</p>
                     </div>
                   </div>
                 </Col>
 
+                <Col xs={12} lg={6}>
+                  <div className='p-5 directors-management__card bg-primary text-white mb-4 mb-xl-0'>
+                    <div>
+                      <h3>{t('fiorela_choquehuanca_title1', { ns: 'general' })}</h3>
+                      <div className='border border-secondary w-25 mb-3'></div>
+                      <h6>{t('fiorela_choquehuanca_title2', { ns: 'general' })}</h6>
+                    </div>
+                    <div className="pt-3">
+                      <p className='mb-0'>{t('fiorela_choquehuanca_text', { ns: 'general' })}</p>
+                    </div>
+                  </div>
+                </Col>
               </Row>
 
               <Row className='mb-3'>
@@ -250,28 +278,28 @@ const DirectorioGerencia = () => {
                 <Col xs={12} lg={6}>
                   <div className='p-5 directors-management__card bg-primary text-white mb-4 mb-xl-0'>
                     <div>
-                      <h3>{t('deysi_callo_title1', { ns: 'general' })}</h3>
+                      <h3>{t('arturo_lozano_title1', { ns: 'general' })}</h3>
                       <div className='border border-secondary w-25 mb-3'></div>
-                      <h6>{t('deysi_callo_title2', { ns: 'general' })}</h6>
+                      <h6>{t('arturo_lozano_title2', { ns: 'general' })}</h6>
                     </div>
                     <div className="pt-3">
-                      <p className='mb-0'>{t('deysi_callo_text', { ns: 'general' })}</p>
+                      <p className='mb-0'>{t('arturo_lozano_text', { ns: 'general' })}</p>
+                    </div>
+                  </div>
+                </Col>
+                <Col xs={12} lg={6}>
+                  <div className='p-5 directors-management__card bg-primary text-white mb-4 mb-xl-0'>
+                    <div>
+                      <h3>{t('katherine_villalobos_title1', { ns: 'general' })}</h3>
+                      <div className='border border-secondary w-25 mb-3'></div>
+                      <h6>{t('katherine_villalobos_title2', { ns: 'general' })}</h6>
+                    </div>
+                    <div className="pt-3">
+                      <p className='mb-0'>{t('katherine_villalobos_text', { ns: 'general' })}</p>
                     </div>
                   </div>
                 </Col>
 
-                <Col xs={12} lg={6}>
-                  <div className='p-5 directors-management__card bg-primary text-white mb-4 mb-xl-0'>
-                    <div>
-                      <h3>{t('fiorela_choquehuanca_title1', { ns: 'general' })}</h3>
-                      <div className='border border-secondary w-25 mb-3'></div>
-                      <h6>{t('fiorela_choquehuanca_title2', { ns: 'general' })}</h6>
-                    </div>
-                    <div className="pt-3">
-                      <p className='mb-0'>{t('fiorela_choquehuanca_text', { ns: 'general' })}</p>
-                    </div>
-                  </div>
-                </Col>
               </Row>
 
             </div>
