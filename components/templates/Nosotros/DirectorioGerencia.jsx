@@ -219,19 +219,19 @@ const DirectorioGerencia = () => {
               </Row>
 
               <Row className='mb-3'>
+
                 <Col xs={12} lg={6}>
                   <div className='p-5 directors-management__card bg-primary text-white mb-4 mb-xl-0'>
                     <div>
-                      <h3>{t('deysi_callo_title1', { ns: 'general' })}</h3>
+                      <h3>{t('rafael_farfan_title1', { ns: 'general' })}</h3>
                       <div className='border border-secondary w-25 mb-3'></div>
-                      <h6>{t('deysi_callo_title2', { ns: 'general' })}</h6>
+                      <h6>{t('rafael_farfan_title2', { ns: 'general' })}</h6>
                     </div>
                     <div className="pt-3">
-                      <p className='mb-0'>{t('deysi_callo_text', { ns: 'general' })}</p>
+                      <p className='mb-0'>{t('rafael_farfan_text', { ns: 'general' })}</p>
                     </div>
                   </div>
                 </Col>
-
                 <Col xs={12} lg={6}>
                   <div className='p-5 directors-management__card bg-primary text-white mb-4 mb-xl-0'>
                     <div>
@@ -250,28 +250,30 @@ const DirectorioGerencia = () => {
                 <Col xs={12} lg={6}>
                   <div className='p-5 directors-management__card bg-primary text-white mb-4 mb-xl-0'>
                     <div>
-                      <h3>{t('rafael_farfan_title1', { ns: 'general' })}</h3>
+                      <h3>{t('edil_millan_title1', { ns: 'general' })}</h3>
                       <div className='border border-secondary w-25 mb-3'></div>
-                      <h6>{t('rafael_farfan_title2', { ns: 'general' })}</h6>
+                      <h6>{t('edil_millan_title2', { ns: 'general' })}</h6>
                     </div>
                     <div className="pt-3">
-                      <p className='mb-0'>{t('rafael_farfan_text', { ns: 'general' })}</p>
+                      <p className='mb-0'>{t('edil_millan_text', { ns: 'general' })}</p>
+                    </div>
+                  </div>
+                </Col>
+                <Col xs={12} lg={6}>
+                  <div className='p-5 directors-management__card bg-primary text-white mb-4 mb-xl-0'>
+                    <div>
+                      <h3>{t('deysi_callo_title1', { ns: 'general' })}</h3>
+                      <div className='border border-secondary w-25 mb-3'></div>
+                      <h6>{t('deysi_callo_title2', { ns: 'general' })}</h6>
+                    </div>
+                    <div className="pt-3">
+                      <p className='mb-0'>{t('deysi_callo_text', { ns: 'general' })}</p>
                     </div>
                   </div>
                 </Col>
 
-                <Col xs={12} lg={6}>
-                  <div className='p-5 directors-management__card bg-primary text-white mb-4 mb-xl-0'>
-                    <div>
-                      <h3>{t('franco_montoya_title1', { ns: 'general' })}</h3>
-                      <div className='border border-secondary w-25 mb-3'></div>
-                      <h6>{t('franco_montoya_title2', { ns: 'general' })}</h6>
-                    </div>
-                    <div className="pt-3">
-                      <p className='mb-0'>{t('franco_montoya_text', { ns: 'general' })}</p>
-                    </div>
-                  </div>
-                </Col>
+
+
               </Row>
 
               <Row className='mb-3'>
@@ -318,6 +320,23 @@ const DirectorioGerencia = () => {
                 <Col xs={12} lg={6}>
                   <div className='p-5 directors-management__card bg-primary text-white mb-4 mb-xl-0'>
                     <div>
+                      <h3>{t('franco_montoya_title1', { ns: 'general' })}</h3>
+                      <div className='border border-secondary w-25 mb-3'></div>
+                      <h6>{t('franco_montoya_title2', { ns: 'general' })}</h6>
+                    </div>
+                    <div className="pt-3">
+                      <p className='mb-0'>{t('franco_montoya_text', { ns: 'general' })}</p>
+                    </div>
+                  </div>
+                </Col>
+
+              </Row>
+
+              <Row className='mb-3'>
+
+                <Col xs={12} lg={6}>
+                  <div className='p-5 directors-management__card bg-primary text-white mb-4 mb-xl-0'>
+                    <div>
                       <h3>{t('jefe_comercial_title1', { ns: 'general' })}</h3>
                       <div className='border border-secondary w-25 mb-3'></div>
                       <h6>{t('jefe_comercial_title2', { ns: 'general' })}</h6>
@@ -327,7 +346,6 @@ const DirectorioGerencia = () => {
                     </div>
                   </div>
                 </Col>
-
               </Row>
 
             </div>
