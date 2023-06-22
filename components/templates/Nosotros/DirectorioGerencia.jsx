@@ -315,7 +315,7 @@ const DirectorioGerencia = () => {
                     </div>
                   </div>
                 </Col>
-                <Col xs={12} lg={6}>
+                {/* <Col xs={12} lg={6}>
                   <div className='p-5 directors-management__card bg-primary text-white mb-4 mb-xl-0'>
                     <div>
                       <h3>{t('jefe_comercial_title1', { ns: 'general' })}</h3>
@@ -326,7 +326,7 @@ const DirectorioGerencia = () => {
                       <p className='mb-0'>{t('jefe_comercial_text', { ns: 'general' })}</p>
                     </div>
                   </div>
-                </Col>
+                </Col> */}
               </Row>
 
             </div>
