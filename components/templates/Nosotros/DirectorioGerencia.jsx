@@ -315,18 +315,18 @@ const DirectorioGerencia = () => {
                     </div>
                   </div>
                 </Col>
-                {/* <Col xs={12} lg={6}>
+                <Col xs={12} lg={6}>
                   <div className='p-5 directors-management__card bg-primary text-white mb-4 mb-xl-0'>
                     <div>
-                      <h3>{t('jefe_comercial_title1', { ns: 'general' })}</h3>
+                      <h3>{t('cesar_giron_title1', { ns: 'general' })}</h3>
                       <div className='border border-secondary w-25 mb-3'></div>
-                      <h6>{t('jefe_comercial_title2', { ns: 'general' })}</h6>
+                      <h6>{t('cesar_giron_title2', { ns: 'general' })}</h6>
                     </div>
                     <div className="pt-3">
-                      <p className='mb-0'>{t('jefe_comercial_text', { ns: 'general' })}</p>
+                      <p className='mb-0'>{t('cesar_giron_text', { ns: 'general' })}</p>
                     </div>
                   </div>
-                </Col> */}
+                </Col>
               </Row>
 
             </div>
