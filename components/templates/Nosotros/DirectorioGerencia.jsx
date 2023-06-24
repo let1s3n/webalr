@@ -59,7 +59,7 @@ const DirectorioGerencia = () => {
               <div>
                 <h2 className=''>{t('jose_carneiro_title1', { ns: 'general' })}</h2>
                 <div className='border border-secondary w-25 mx-auto mb-3'></div>
-                <h3>{t('jose_carneiro_title2', { ns: 'general' })}</h3>
+                <h6>{t('jose_carneiro_title2', { ns: 'general' })}</h6>
               </div>
               <div className="pt-4 px-3 px-md-5 px-xl-6">
                 <p>{t('jose_carneiro_text', { ns: 'general' })}</p>
