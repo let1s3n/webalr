@@ -289,7 +289,7 @@ const Home = () => {
         </section>
 
         <section className='mb-5'>
-          <Container fluid>
+          <Container fluid className="g-0">
             <Row style={{ background: "#f5f5f5", height: "250px" }}>
               <Col lg={6} className="border-end border-white d-flex justify-content-center align-items-center text-center">
                 <div className='home__links-section'>
@@ -301,16 +301,16 @@ const Home = () => {
                   </div>
                 </div>
               </Col>
-              {/* <Col lg={6} className="border-end border-white d-flex justify-content-center align-items-center text-center">
+              <Col lg={6} className="border-end border-white d-flex justify-content-center align-items-center text-center">
                 <div className='home__links-section'>
                   <p className='item-text'>{t('dictionary.press', { ns: 'general' })}</p>
                   <div className='item-button'>
-                    <Link href="/prensa">
+                    <Link href="/politicas">
                       <p className='mb-0'>{t('buttons.press_note', { ns: 'general' })}</p>
                     </Link>
                   </div>
                 </div>
-              </Col> */}
+              </Col>
 
             </Row>
           </Container>
