@@ -166,6 +166,9 @@ a:hover {
       height: 100%;
 
       object-fit: cover;
+      @include media-breakpoint-down(sm) {
+        object-position: top;
+      }
     }
   }
 }

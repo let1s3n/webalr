@@ -97,7 +97,7 @@ function CustomOffCanvas(props) {
                     </Link>
                   </li>
                   <li className="mb-2">
-                    <Link className="text-secondary lh-1" href="/nosotros/directorio-y-gerencia">
+                    <Link className="text-secondary lh-1" href="/nosotros/gerencia">
 
                       {t('sections.board_of_directors_and_management', { ns: 'general' })}
 

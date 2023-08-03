@@ -26,7 +26,7 @@ const Footer = () => {
                   <div className="d-flex ps-3 flex-column" style={{ rowGap: ".5rem" }}>
                     <Link href="/nosotros">{t('sections.about_us', { ns: 'general' })}</Link>
 
-                    <Link href="/nosotros/directorio-y-gerencia">{t('sections.board_of_directors_and_management', { ns: 'general' })}</Link>
+                    <Link href="/nosotros/gerencia">{t('sections.board_of_directors_and_management', { ns: 'general' })}</Link>
                   </div>
                 </div>
 
