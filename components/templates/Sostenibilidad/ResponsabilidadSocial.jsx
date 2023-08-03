@@ -57,7 +57,7 @@ const ResponsabilidadSocial = () => {
         </Container>
 
         <Container fluid className="g-0 mt-4 mb-10">
-          <div className="bigContainer bg-primary w-100 w-custom1-75 position-relative px-3 px-custom1-0 py-5 py-custom1-0 pt-custom1-10 ps-custom1-15">
+          <div className="bigContainer bg-primary w-100 w-custom1-75 position-relative px-3 px-custom1-0 py-5 py-custom1-0 pt-custom1-10 pt-vl-5 ps-custom1-15">
             <div className="h-100 w-custom1-65 d-custom1-flex align-items-center mb-4 mb-custom1-0 mx-auto mx-custom1-0">
               <p className="text-white fs-5 lh-lg mb-0 text-center text-custom1-start">
                 {t('sustainability_social_responsability_text_p2', { ns: 'general' })}

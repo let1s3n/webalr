@@ -4,7 +4,6 @@
   height: 100vh;
 
   @include media-breakpoint-up(md) {
-
     height: calc(100vh - 39px);
   }
 
@@ -138,8 +137,9 @@
 }
 
 .quienes-somos {
-  min-height: 100vh;
-
+  @include media-breakpoint-down(xxxxl) {
+    min-height: 100vh;
+  }
   .quienes-somos-text {
     @include media-breakpoint-up(xxl) {
       text-align: justify;
@@ -174,7 +174,11 @@
       opacity: 0;
       // transition: all 0.5s ease-in-out;
       // background-color: unset;
-      background-image: linear-gradient(to right, rgba(29, 51, 71, 0.73) 50%, rgba(0, 0, 0, 0.1) 50%);
+      background-image: linear-gradient(
+        to right,
+        rgba(29, 51, 71, 0.73) 50%,
+        rgba(0, 0, 0, 0.1) 50%
+      );
       background-size: 200%;
       background-repeat: no-repeat;
       background-position: right;
@@ -252,7 +256,7 @@
     opacity: 0;
     transition: all 0.5s ease-in-out !important;
 
-    &>.row {
+    & > .row {
       @include media-breakpoint-only(md) {
         height: 400px;
       }
@@ -274,12 +278,15 @@
   .novedades-img {
     width: 100%;
     height: auto;
+
+    /* @include media-breakpoint-up(xxxxl) {
+      width: 75%;
+    } */
   }
 }
 
 .home {
   &__contact-us {
-
     .image-cover {
       height: 300px;
       width: 100%;
