@@ -42,7 +42,8 @@
 
     .nuestraHistoria-image {
       @include media-breakpoint-up(sm) {
-        width: auto;
+        /* width: auto; */
+        width: 546px;
       }
 
       @include media-breakpoint-up(xl) {
@@ -54,6 +55,7 @@
       }
 
       height: 500px;
+      /* height: auto; */
       width: 100%;
     }
 

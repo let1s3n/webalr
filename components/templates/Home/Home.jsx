@@ -17,14 +17,14 @@ const Home = () => {
   const [loading, setLoading] = useState(true);
   const [locale, setLocale] = useState("");
 
-  const [videoLoading, setVideoLoading] = useState(false);
+  /* const [videoLoading, setVideoLoading] = useState(false); */
 
-  const videoElement = useRef(null);
+  /* const videoElement = useRef(null); */
 
-  const onLoadedData = () => {
+  /* const onLoadedData = () => {
     console.log("VIDEO LOADED")
     setVideoLoading(true);
-  };
+  }; */
 
   useEffect(() => {
     let cookie = cookieCutter.get('i18next');
@@ -33,9 +33,9 @@ const Home = () => {
       setLocale(cookie);
     }
 
-    console.log("videoElement.current: ", videoElement.current)
+    /* console.log("videoElement.current: ", videoElement.current)
 
-    videoElement.current.oncanplaythrough = onLoadedData();
+    videoElement.current.oncanplaythrough = onLoadedData(); */
   }, [])
 
 
@@ -44,17 +44,19 @@ const Home = () => {
 
     console.log("transControl: ", transControl)
 
-    if (typeof transControl !== 'string' && !(transControl instanceof String) && videoLoading) {
+    /* if (typeof transControl !== 'string' && !(transControl instanceof String) && videoLoading) {
+      setLoading(false);
+    } */
+
+    if (typeof transControl !== 'string' && !(transControl instanceof String)) {
       setLoading(false);
     }
 
-  }, [t, videoLoading])
+  }, [t])
 
   useEffect(() => {
     console.log("locale: ", locale)
   }, [locale])
-
-
 
   return (
     <>
@@ -62,7 +64,7 @@ const Home = () => {
       <>
         <section className="hero-section">
           <div className="h-100">
-            <video
+            {/* <video
               autoPlay={true}
               muted={true}
               loop={true}
@@ -72,8 +74,12 @@ const Home = () => {
             >
               <source src={`${process.env.NEXT_CDN}video/video_home.mp4`} type="video/mp4" />
               <p> {t('warnings.noVideo', { ns: 'general' })}</p>
-            </video>
-
+            </video> */}
+            <Image
+              src={`${process.env.NEXT_CDN}images/fotoNoche1.jpg`}
+              className="hero-video"
+              alt="Foto noche 1"
+            />
             <h1 className="hero-text position-absolute text-white w-100 trocchiRegular px-3">
               <p className="mb-2">{t('hero_text1', { ns: 'general' })}</p>
               <p className="mb-2">
@@ -255,10 +261,15 @@ const Home = () => {
                 <Carousel.Item className='px-lg-5 carousel-item-box' >
                   <Row>
                     <Col xs={12} sm={6} md={8} lg={6} xxl={8}>
-                      <Image
+                      {/* <Image
                         src={`${process.env.NEXT_CDN}images/hero2.jpg`}
                         className="novedades-img"
                         alt="novedades img"
+                      /> */}
+                      <Image
+                        src={`${process.env.NEXT_CDN}images/fotoNoche1.jpg`}
+                        className="novedades-img"
+                        alt="foto noche 1"
                       />
                     </Col>
                     <Col xs={12} sm={6} md={4} lg={6} xxl={4} className="px-4">

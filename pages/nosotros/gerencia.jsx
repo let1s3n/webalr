@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 
 import DirectorioGerencia from '../../components/templates/Nosotros/DirectorioGerencia'
-const directorioGerencia = () => {
+const gerencia = () => {
   return (
     <>
       <Head>
@@ -26,4 +26,4 @@ const directorioGerencia = () => {
   )
 }
 
-export default directorioGerencia
+export default gerencia

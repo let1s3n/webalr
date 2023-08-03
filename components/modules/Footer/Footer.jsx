@@ -101,7 +101,8 @@ const Footer = () => {
           <Col xl="auto" className="socialColumn d-flex flex-column">
 
 
-            <Image className="logo" src={`${process.env.NEXT_CDN}images/logo-alr-blanco.png`} alt="ALR logo" />
+            {/* <Image className="logo" src={`${process.env.NEXT_CDN}images/logo-alr-blanco.png`} alt="ALR logo" /> */}
+            <Image className="logo" src={`${process.env.NEXT_CDN}images/logoUltimo.png`} alt="ALR logo" />
 
             <p className="m-0 fw-600 lh-1  text-secondary mb-3">
               {t('footer.follow_us', { ns: 'general' })}

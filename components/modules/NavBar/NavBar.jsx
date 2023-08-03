@@ -25,7 +25,7 @@ const NavBar = () => {
   const [paths, setPaths] = useState([
     "/",
     "/nosotros",
-    "/nosotros/directorio-y-gerencia",
+    "/nosotros/gerencia",
     "/sostenibilidad/responsabilidad-social",
     "/sostenibilidad/relacionamiento-comunitario",
     "/sostenibilidad/monitoreo-ambiental",
@@ -88,8 +88,6 @@ const NavBar = () => {
     console.log("control: ", control)
   }, [control])
 
-
-
   return (
 
     <Navbar className={"px-4 py-3 w-100 top-0 " + (scrollY <= control && paths.includes(currentpath) ? (scrollY <= 90 ? "position-absolute bg-transparent" : "position-sticky bg-transparent") : "position-sticky bg-primary")} expand={false} style={{ zIndex: 1000 }}>
@@ -101,6 +99,7 @@ const NavBar = () => {
           <Col xs="auto" className="d-flex align-items-center">
             <a href="/">
               <Image src={`${process.env.NEXT_CDN}images/logo-white.png`} className="img-logo" alt="logo-alr" />
+              {/* <Image src={`${process.env.NEXT_CDN}images/logoUltimo.png`} className="img-logo" alt="logo-alr" /> */}
             </a>
             <Navbar.Toggle className="d-xl-none border-0" onClick={() => setOffCanvasShow(true)} />
             <CustomOffCanvas show={offCanvasShow} onHide={() => setOffCanvasShow(false)} />
@@ -117,7 +116,7 @@ const NavBar = () => {
                   <NavDropdown.Item href="/nosotros">
                     {t('sections.about_us', { ns: 'general' })}
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="/nosotros/directorio-y-gerencia">
+                  <NavDropdown.Item href="/nosotros/gerencia">
                     {t('sections.board_of_directors_and_management', { ns: 'general' })}
                   </NavDropdown.Item>
                 </NavDropdown>

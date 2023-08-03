@@ -50,7 +50,7 @@ const Nosotros = () => {
 
         <section className="nuestra-historia p-3 p-xl-9 p-xxxxl-15">
 
-          <div className="mb-5 mt-5 mt-xl-0 mb-custom1-8 d-flex flex-column align-items-center">
+          <div className="mb-5 mt-5 mt-xl-0 mb-custom1-3 d-flex flex-column align-items-center">
             <h1 className="fs-2 text-center text-primary">
               {t('dictionary.weAre1', { ns: 'general' })} <span className='text-secondary'>{t('dictionary.weAre2', { ns: 'general' })}</span> {t('dictionary.weAre3', { ns: 'general' })}
             </h1>
@@ -67,14 +67,14 @@ const Nosotros = () => {
                   <Carousel.Item>
                     <Image
                       className="nuestraHistoria-image"
-                      src={`${process.env.NEXT_CDN}images/tanque1.jpg`}
+                      src={`${process.env.NEXT_CDN}images/fotoNoche1.jpg`}
                       alt="2 tanques"
                     />
                   </Carousel.Item>
                   <Carousel.Item>
                     <Image
                       className="nuestraHistoria-image"
-                      src={`${process.env.NEXT_CDN}images/tanque2.jpg`}
+                      src={`${process.env.NEXT_CDN}images/fotoNoche1.jpg`}
                       alt="3 tanques"
                     />
                   </Carousel.Item>

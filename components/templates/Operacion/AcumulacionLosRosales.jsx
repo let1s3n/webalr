@@ -49,7 +49,7 @@ const AcumulacionLosRosales = () => {
           /> */}
           <Image
             className="hero-image"
-            src={`${process.env.NEXT_CDN}images/hero3.jpg`}
+            src={`${process.env.NEXT_CDN}images/fotoNoche1.jpg`}
             alt="Hero 2"
           />
         </div>
