@@ -211,13 +211,18 @@ const Home = () => {
           </Container>
           <div className='bg-primary w-100 px-3 px-lg-10 py-4'>
             <div className="my-md-10 my-xxl-8" >
-              <Carousel controls={width >= 1280 ? true : false} interval={7000} indicators={false}>
+              <Carousel controls={width >= 1280 ? true : false} interval={null} indicators={false}>
 
                 <Carousel.Item className='px-lg-5 carousel-item-box' >
                   <Row>
                     <Col xs={12} sm={6} md={8} lg={6} xxl={8}>
-                      <Image
+                      {/* <Image
                         src={`${process.env.NEXT_CDN}images/CSM.jpg`}
+                        className="novedades-img"
+                        alt="novedades img"
+                      /> */}
+                      <Image
+                        src={`${process.env.NEXT_CDN}images/CSM2.jpg`}
                         className="novedades-img"
                         alt="novedades img"
                       />
@@ -290,7 +295,7 @@ const Home = () => {
 
         <section className='mb-5'>
           <Container fluid className="g-0">
-            <Row style={{ background: "#f5f5f5", height: "250px" }}>
+            <Row className="g-0" style={{ background: "#f5f5f5", height: "250px" }}>
               <Col lg={6} className="border-end border-white d-flex justify-content-center align-items-center text-center">
                 <div className='home__links-section'>
                   <p className='item-text'>{t('dictionary.policies', { ns: 'general' })}</p>

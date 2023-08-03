@@ -84,7 +84,7 @@
 
 .carousel-inner {
   .carousel-item-box {
-    height: 500px !important;
+    /* height: 500px !important;
 
     @include media-breakpoint-up(md) {
       height: 370px !important;
@@ -100,7 +100,7 @@
 
     @include media-breakpoint-up(xxl) {
       height: 500px !important;
-    }
+    } */
 
     h2 {
       font-size: 24px !important;
@@ -257,16 +257,16 @@
     transition: all 0.5s ease-in-out !important;
 
     & > .row {
-      @include media-breakpoint-only(md) {
+      /* @include media-breakpoint-only(md) {
         height: 400px;
       }
 
       @include media-breakpoint-up(xxl) {
         height: 709px;
-      }
+      } */
 
       /* height: 464px; */
-      height: 500px;
+      /* height: 500px; */
       row-gap: 1rem;
     }
   }
@@ -276,12 +276,15 @@
   }
 
   .novedades-img {
+    display: inline-block;
     width: 100%;
-    height: auto;
-
-    /* @include media-breakpoint-up(xxxxl) {
-      width: 75%;
-    } */
+    /* height: auto; */
+    height: 250px;
+    object-fit: cover;
+    @include media-breakpoint-up(xxxxl) {
+      height: 500px;
+      object-fit: cover;
+    }
   }
 }
 
