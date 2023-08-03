@@ -70,7 +70,7 @@ const AcumulacionLosRosales = () => {
             </Breadcrumb>
           </div>
 
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eius incidunt</p>
+          {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eius incidunt</p> */}
           <Swiper
             // install Swiper modules
             modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -91,11 +91,32 @@ const AcumulacionLosRosales = () => {
             <SwiperSlide>
               <Image
                 className="hero-image"
-                src={`${process.env.NEXT_CDN}images/politica2.jpg`}
-                alt="Política 2"
+                src={`${process.env.NEXT_CDN}images/fotoNoche1.jpg`}
+                alt="Foto noche 1"
               />
             </SwiperSlide>
             <SwiperSlide>
+              <Image
+                className="hero-image"
+                src={`${process.env.NEXT_CDN}images/fotoOperacion1.jpg`}
+                alt="Foto operacion 1"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                className="hero-image"
+                src={`${process.env.NEXT_CDN}images/fotoOperacion2.jpg`}
+                alt="Foto operacion 2"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                className="hero-image"
+                src={`${process.env.NEXT_CDN}images/fotoOperacion3.jpg`}
+                alt="Foto operacion 3"
+              />
+            </SwiperSlide>
+            {/* <SwiperSlide>
               <Image
                 className="hero-image"
                 src={`${process.env.NEXT_CDN}images/politica1.jpg`}
@@ -157,7 +178,7 @@ const AcumulacionLosRosales = () => {
                 src={`${process.env.NEXT_CDN}images/politica1.jpg`}
                 alt="Política 1"
               />
-            </SwiperSlide>
+            </SwiperSlide> */}
           </Swiper>
         </Container>
       </Container>

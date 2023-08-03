@@ -31,9 +31,14 @@ const DirectorioGerencia = () => {
 
         <section className="directors-management__hero-image">
           <div className='hero-container'>
-            <Image
+            {/* <Image
               className="hero-image hero-image--center"
               src={`${process.env.NEXT_CDN}images/hero2.jpg`}
+              alt="Charla de seguridad"
+            /> */}
+            <Image
+              className="hero-image hero-image--center"
+              src={`${process.env.NEXT_CDN}images/fotoNoche1.jpg`}
               alt="Charla de seguridad"
             />
           </div>
