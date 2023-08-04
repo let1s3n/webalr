@@ -32,8 +32,8 @@ const ManejoResiduosSolidos = () => {
         <div className="hero-container">
           <Image
             className="hero-image"
-            src={`${process.env.NEXT_CDN}images/politica1.jpg`}
-            alt="Política 1"
+            src={`${process.env.NEXT_CDN}images/residuosSolidos.jpeg`}
+            alt="Residuos solidos"
           />
         </div>
 

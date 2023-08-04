@@ -33,8 +33,8 @@ const RelacionamientoComunitario = () => {
         <div className="hero-container">
           <Image
             className="hero-image"
-            src={`${process.env.NEXT_CDN}images/politica1.jpg`}
-            alt="Política 1"
+            src={`${process.env.NEXT_CDN}images/relacionamientoComunitario.jpg`}
+            alt="Relacionamiento Comunitario"
           />
         </div>
 

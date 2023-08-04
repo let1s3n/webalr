@@ -49,7 +49,7 @@ const AcumulacionLosRosales = () => {
           /> */}
           <Image
             className="hero-image"
-            src={`${process.env.NEXT_CDN}images/fotoNoche1.jpg`}
+            src={`${process.env.NEXT_CDN}images/operacionBanner.jpg`}
             alt="Hero 2"
           />
         </div>
@@ -98,8 +98,22 @@ const AcumulacionLosRosales = () => {
             <SwiperSlide>
               <Image
                 className="hero-image"
+                src={`${process.env.NEXT_CDN}images/tanques.jpeg`}
+                alt="Tanques"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                className="hero-image"
                 src={`${process.env.NEXT_CDN}images/fotoOperacion1.jpg`}
                 alt="Foto operacion 1"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                className="hero-image"
+                src={`${process.env.NEXT_CDN}images/personal.jpg`}
+                alt="Personal"
               />
             </SwiperSlide>
             <SwiperSlide>

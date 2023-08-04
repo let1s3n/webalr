@@ -67,15 +67,15 @@ const Nosotros = () => {
                   <Carousel.Item>
                     <Image
                       className="nuestraHistoria-image"
-                      src={`${process.env.NEXT_CDN}images/fotoNoche1.jpg`}
+                      src={`${process.env.NEXT_CDN}images/personal3.jpeg`}
                       alt="2 tanques"
                     />
                   </Carousel.Item>
                   <Carousel.Item>
                     <Image
                       className="nuestraHistoria-image"
-                      src={`${process.env.NEXT_CDN}images/fotoNoche1.jpg`}
-                      alt="3 tanques"
+                      src={`${process.env.NEXT_CDN}images/personal2.jpeg`}
+                      alt="personal 2"
                     />
                   </Carousel.Item>
                 </Carousel>

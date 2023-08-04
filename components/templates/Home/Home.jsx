@@ -247,7 +247,7 @@ const Home = () => {
                         alt="novedades img"
                       /> */}
                       <Image
-                        src={`${process.env.NEXT_CDN}images/fotoNoche1.jpg`}
+                        src={`${process.env.NEXT_CDN}images/lingotes.jpeg`}
                         className="novedades-img"
                         alt="novedades img"
                       />
@@ -272,9 +272,9 @@ const Home = () => {
                         alt="novedades img"
                       /> */}
                       <Image
-                        src={`${process.env.NEXT_CDN}images/fotoNoche1.jpg`}
+                        src={`${process.env.NEXT_CDN}images/molinos.jpeg`}
                         className="novedades-img"
-                        alt="foto noche 1"
+                        alt="molinos"
                       />
                     </Col>
                     <Col xs={12} sm={6} md={4} lg={6} xxl={4} className="px-4">
@@ -283,6 +283,26 @@ const Home = () => {
                       </h2>
                       <p className="text-justify--mobile text-white m-0">
                         {t('aumento_capacidad_text', { ns: 'general' })}
+                      </p>
+                    </Col>
+                  </Row>
+                </Carousel.Item>
+
+                <Carousel.Item className='px-lg-5 carousel-item-box' >
+                  <Row>
+                    <Col xs={12} sm={6} md={8} lg={6} xxl={8}>
+                      <Image
+                        src={`${process.env.NEXT_CDN}images/fotoOperacion1.jpg`}
+                        className="novedades-img"
+                        alt="foto operacion 1"
+                      />
+                    </Col>
+                    <Col xs={12} sm={6} md={4} lg={6} xxl={4} className="px-4">
+                      <h2 className="m-0 mb-3 text-secondary">
+                        {t('fiestas_patrias_title', { ns: 'general' })}
+                      </h2>
+                      <p className="text-justify--mobile text-white m-0">
+                        {t('fiestas_patrias_text', { ns: 'general' })}
                       </p>
                     </Col>
                   </Row>

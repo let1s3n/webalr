@@ -38,8 +38,8 @@ const DirectorioGerencia = () => {
             /> */}
             <Image
               className="hero-image hero-image--center"
-              src={`${process.env.NEXT_CDN}images/fotoNoche1.jpg`}
-              alt="Charla de seguridad"
+              src={`${process.env.NEXT_CDN}images/fotoGrupal.jpg`}
+              alt="Foto grupal"
             />
           </div>
         </section>

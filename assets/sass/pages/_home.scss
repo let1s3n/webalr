@@ -279,7 +279,8 @@
     display: inline-block;
     width: 100%;
     /* height: auto; */
-    height: 250px;
+    /* height: 250px; */
+    height: 350px;
     object-fit: cover;
     @include media-breakpoint-up(xxxxl) {
       height: 500px;

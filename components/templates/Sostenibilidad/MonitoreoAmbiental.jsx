@@ -2,10 +2,20 @@ import React, { useState, useEffect } from 'react'
 import { Container, Image, Breadcrumb } from 'react-bootstrap'
 
 import { useTranslation } from "react-i18next";
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
 import Loader from '../../elements/Loader/Loader'
 import useWindowDimensions from "../../../hooks/useWindowDimensions";
 
 import CustomButton from '../../elements/CustomButton'
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
 const MonitoreoAmbiental = () => {
 
   const { height, width } = useWindowDimensions();
@@ -31,8 +41,8 @@ const MonitoreoAmbiental = () => {
         <div className="hero-container">
           <Image
             className="hero-image"
-            src={`${process.env.NEXT_CDN}images/politica1.jpg`}
-            alt="Política 1"
+            src={`${process.env.NEXT_CDN}images/ssoma1.jpg`}
+            alt="somma 1"
           />
         </div>
 
@@ -69,7 +79,35 @@ const MonitoreoAmbiental = () => {
               <Image src={`${process.env.NEXT_CDN}images/mision.jpg`} />
             </div>
           </div> */}
-          <Image className="d-block w-100" src={`${process.env.NEXT_CDN}images/monitoreoAmbiental.jpg`} />
+
+
+          <Swiper
+            // install Swiper modules
+            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            slidesPerView={1}
+            navigation
+            pagination={{ clickable: true }}
+            scrollbar={{ draggable: true }}
+            onSwiper={(swiper) => console.log(swiper)}
+            onSlideChange={() => console.log('slide change')}
+            breakpoints={{
+              1200: {
+                /* spaceBetween: 50, */
+                slidesPerView: 1
+              }
+            }}
+
+          >
+            <SwiperSlide>
+              <Image className="d-block w-100" src={`${process.env.NEXT_CDN}images/monitoreoAmbiental.jpg`} style={{ objectFit: "cover" }} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image className="d-block w-100" src={`${process.env.NEXT_CDN}images/monitoreoAmbiental3.jpeg`} style={{ objectFit: "cover" }}/>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image className="d-block w-100" src={`${process.env.NEXT_CDN}images/monitoreoAmbiental2.jpeg`} style={{ objectFit: "cover" }}/>
+            </SwiperSlide>
+          </Swiper>
         </Container>
       </Container>
     </>
