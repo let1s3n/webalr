@@ -109,7 +109,8 @@ const Footer = () => {
             </p>
             <div className="d-flex" style={{ columnGap: 1.25 + 'rem' }}>
               <a href="https://www.facebook.com/acumulacionlosrosales" target="_blank"><IoLogoFacebook className="facebook-icon fs-3 text-white" /></a>
-              <a href="https://www.youtube.com/channel/UCAhc79crxjz1PDF-AP9-hLA/featured" target="_blank"><IoLogoYoutube className="youtube-icon fs-3 text-white" /></a>
+              {/* <a href="https://www.youtube.com/channel/UCAhc79crxjz1PDF-AP9-hLA/featured" target="_blank"><IoLogoYoutube className="youtube-icon fs-3 text-white" /></a> */}
+              <a href="https://www.youtube.com/channel/UCmchyMaugdiYvD720sbc7Eg" target="_blank"><IoLogoYoutube className="youtube-icon fs-3 text-white" /></a>
               <a href="https://www.linkedin.com/company/mineralosrosales" target="_blank"><IoLogoLinkedin className="linkedin-icon fs-3 text-white" /></a>
               {/* <a href="#" target="_blank"><IoLogoTwitter className="twitter-icon fs-3 text-white" /></a> */}
             </div>
