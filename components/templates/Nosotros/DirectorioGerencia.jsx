@@ -242,12 +242,12 @@ const DirectorioGerencia = () => {
                 <Col xs={12} lg={6}>
                   <div className='p-5 directors-management__card bg-primary text-white mb-4 mb-xl-0'>
                     <div>
-                      <h3>{t('harleth_alvarez_title1', { ns: 'general' })}</h3>
+                      <h3>{t('rafael_farfan_title1', { ns: 'general' })}</h3>
                       <div className='border border-secondary w-25 mb-3'></div>
-                      <h6>{t('harleth_alvarez_title2', { ns: 'general' })}</h6>
+                      <h6>{t('rafael_farfan_title2', { ns: 'general' })}</h6>
                     </div>
                     <div className="pt-3">
-                      <p className='mb-0'>{t('harleth_alvarez_text', { ns: 'general' })}</p>
+                      <p className='mb-0'>{t('rafael_farfan_text', { ns: 'general' })}</p>
                     </div>
                   </div>
                 </Col>
