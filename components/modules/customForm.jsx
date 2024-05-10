@@ -14,8 +14,6 @@ const CustomForm = () => {
   useEffect(() => {
     let transControl = t('transControl', { ns: 'general', returnObjects: true })
 
-    console.log("transControl: ", transControl)
-
     if (typeof transControl !== 'string' && !(transControl instanceof String)) {
       setLoading(false);
     }

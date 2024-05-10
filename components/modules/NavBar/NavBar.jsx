@@ -42,15 +42,6 @@ const NavBar = () => {
 
   }, [])
 
-  useEffect(() => {
-    console.log("locale: ", locale)
-
-  }, [locale])
-
-  useEffect(() => {
-    console.log("currentpath :", currentpath)
-  }, [currentpath])
-
 
   useEffect(() => {
     const handleScroll = () => {
@@ -78,15 +69,6 @@ const NavBar = () => {
     }
 
   }, [width])
-
-
-  useEffect(() => {
-    console.log("scrollY: ", scrollY)
-  }, [scrollY])
-
-  useEffect(() => {
-    console.log("control: ", control)
-  }, [control])
 
   return (
 

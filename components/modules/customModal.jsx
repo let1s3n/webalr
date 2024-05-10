@@ -14,11 +14,6 @@ function CustomModal(props) {
 
   }
 
-  useEffect(() => {
-    console.log("CDN: ", process.env.NEXT_CDN)
-  }, [])
-
-
   return (
     <Modal
       {...props}
